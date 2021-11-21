@@ -1,6 +1,6 @@
 # The-Cessna-172-Project-V3
-These plans are based on a "Pay What You Want" model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 
+These plans are based on a "Pay What You Want" model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 ### 👉[Watch the Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)👈
 
 ### Support:
