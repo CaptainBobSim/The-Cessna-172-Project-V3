@@ -5,7 +5,7 @@ These plans are based on a "Pay What You Want" model. Though I could charge mone
 
 ### 📰[Join the Email Newsletter](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
 
-### [💗Support my work on Patreon!](https://www.patreon.com/Captain_Bob)
+### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
 
 ## Copyright
