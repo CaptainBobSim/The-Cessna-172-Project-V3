@@ -3,6 +3,8 @@
 These plans are based on a "Pay What You Want" model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 ### 👉[Watch the Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)👈
 
+###[Join the Email Newsletter:](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
+
 ### Support:
 💗Support my work on Patreon!
 https://www.patreon.com/Captain_Bob
