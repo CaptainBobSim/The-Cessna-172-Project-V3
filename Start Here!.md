@@ -1,16 +1,12 @@
 # The-Cessna-172-Project-V3
 
 These plans are based on a "Pay What You Want" model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
-### 👉[Watch the Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)👈
+### 👉[Watch the Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)
 
-###[Join the Email Newsletter:](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
+### 📰[Join the Email Newsletter:](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
 
-### Support:
-💗Support my work on Patreon!
-https://www.patreon.com/Captain_Bob
-
-💗Support the project on PayPal!
-https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD
+### [💗Support my work on Patreon!](https://www.patreon.com/Captain_Bob)
+### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
 
 ### Copyright
 Copyright _ Non Commerical_ Not for Resale https://creativecommons.org/licenses/by-nc/4.0/
