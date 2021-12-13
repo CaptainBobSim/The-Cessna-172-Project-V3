@@ -7,7 +7,7 @@ These plans are based on a "Pay What You Want" model. Though I could charge mone
 
 ### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
-### [📚All of my C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
+### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
 
 ## Copyright
 [Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)
