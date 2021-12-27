@@ -1,0 +1,432 @@
+Visiting folder Cessna 172 Project Version 3
+Visiting file c172 blend model v1 . f3d
+Opening `c172 blend model`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\c172 blend model_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\c172 blend model_v1.step
+Closing c172 blend model
+Visiting folder Hardware
+Visiting file 1-1 Shell Complete Assy_2358T53 v1 . f3d
+Opening `1-1 Shell Complete Assy_2358T53`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\1-1 Shell Complete Assy_2358T53_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\1-1 Shell Complete Assy_2358T53_v1.step
+Closing 1-1 Shell Complete Assy_2358T53
+Visiting file Defender Security 5/16 in key Cabinet and Drawer Lock v5 . f3d
+filename `Defender Security 5/16 in key Cabinet and Drawer Lock` contained bad chars, replacing by `Defender Security 5 16 in key Cabinet and Drawer Lock`
+Opening `Defender Security 5/16 in key Cabinet and Drawer Lock`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Defender Security 5 16 in key Cabinet and Drawer Lock_990749b7_v5.f3d
+filename `Defender Security 5/16 in key Cabinet and Drawer Lock` contained bad chars, replacing by `Defender Security 5 16 in key Cabinet and Drawer Lock`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Defender Security 5 16 in key Cabinet and Drawer Lock_990749b7_v5.step
+Closing Defender Security 5/16 in key Cabinet and Drawer Lock
+Visiting file M2 90592A075_STEEL HEX NUT v1 . f3d
+Opening `M2 90592A075_STEEL HEX NUT`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\M2 90592A075_STEEL HEX NUT_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\M2 90592A075_STEEL HEX NUT_v1.step
+Closing M2 90592A075_STEEL HEX NUT
+Visiting file M2 92010A802_Passivated 18-8 Phillips Flat Head Screw v1 . f3d
+Opening `M2 92010A802_Passivated 18-8 Phillips Flat Head Screw`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\M2 92010A802_Passivated 18-8 Phillips Flat Head Screw_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\M2 92010A802_Passivated 18-8 Phillips Flat Head Screw_v1.step
+Closing M2 92010A802_Passivated 18-8 Phillips Flat Head Screw
+Visiting file Microswitch CN0098 v1 . f3d
+Opening `Microswitch CN0098`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Microswitch CN0098_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Microswitch CN0098_v1.step
+Closing Microswitch CN0098
+Visiting file Solenoid, Blue v3 . f3d
+Opening `Solenoid, Blue`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Solenoid, Blue_v3.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Solenoid, Blue_v3.step
+Closing Solenoid, Blue
+Visiting file Standard Spacing Block 90 degree v1 . f3d
+Opening `Standard Spacing Block 90 degree`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Standard Spacing Block 90 degree_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Hardware\Standard Spacing Block 90 degree_v1.step
+Closing Standard Spacing Block 90 degree
+Visiting folder Junk Drawer
+Visiting file *Trashed* LARGE SOLENOID ACTUAL Simualted CB v2 . f3d
+filename `*Trashed* LARGE SOLENOID ACTUAL Simualted CB` contained bad chars, replacing by ` Trashed  LARGE SOLENOID ACTUAL Simualted CB`
+Opening `*Trashed* LARGE SOLENOID ACTUAL Simualted CB`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 182, in export_file
+    options = em.createFusionArchiveExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16876, in createFusionArchiveExportOptions
+    return _fusion.ExportManager_createFusionArchiveExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+filename `*Trashed* LARGE SOLENOID ACTUAL Simualted CB` contained bad chars, replacing by ` Trashed  LARGE SOLENOID ACTUAL Simualted CB`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 186, in export_file
+    options = em.createSTEPExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16837, in createSTEPExportOptions
+    return _fusion.ExportManager_createSTEPExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+Closing *Trashed* LARGE SOLENOID ACTUAL Simualted CB
+Visiting file 2A Panel Drawing v3 . f2d
+file 2A Panel Drawing has extension f2d which is not currently handled, skipping
+Visiting file ARCHIVE 2A-0-100 v1 . f3d
+Opening `ARCHIVE 2A-0-100`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\ARCHIVE 2A-0-100_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\ARCHIVE 2A-0-100_v1.step
+Closing ARCHIVE 2A-0-100
+Visiting file C172 SW Panel Mod CB Tycon v2 . f3d
+Opening `C172 SW Panel Mod CB Tycon`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\C172 SW Panel Mod CB Tycon_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\C172 SW Panel Mod CB Tycon_v2.step
+Closing C172 SW Panel Mod CB Tycon
+Visiting file Defender Security 5/16 in key Cabinet and Drawer Lock v1 . f3d
+filename `Defender Security 5/16 in key Cabinet and Drawer Lock` contained bad chars, replacing by `Defender Security 5 16 in key Cabinet and Drawer Lock`
+Opening `Defender Security 5/16 in key Cabinet and Drawer Lock`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Defender Security 5 16 in key Cabinet and Drawer Lock_990749b7_v1.f3d
+filename `Defender Security 5/16 in key Cabinet and Drawer Lock` contained bad chars, replacing by `Defender Security 5 16 in key Cabinet and Drawer Lock`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Defender Security 5 16 in key Cabinet and Drawer Lock_990749b7_v1.step
+Closing Defender Security 5/16 in key Cabinet and Drawer Lock
+Visiting file Dual Rocker Switch v1 . f3d
+Opening `Dual Rocker Switch`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Dual Rocker Switch_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Dual Rocker Switch_v1.step
+Closing Dual Rocker Switch
+Visiting file Key Assy v2 . f3d
+Opening `Key Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Key Assy_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Key Assy_v2.step
+Closing Key Assy
+Visiting file Modified Tyco Circuit Breaker v1 . f3d
+Opening `Modified Tyco Circuit Breaker`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Modified Tyco Circuit Breaker_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Modified Tyco Circuit Breaker_v1.step
+Closing Modified Tyco Circuit Breaker
+Visiting file rotary_asm v1 . f3d
+Opening `rotary_asm`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\rotary_asm_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\rotary_asm_v1.step
+Closing rotary_asm
+Visiting file Simulated CB Tycon Circuit Breaker v1 . f3d
+Opening `Simulated CB Tycon Circuit Breaker`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Simulated CB Tycon Circuit Breaker_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Simulated CB Tycon Circuit Breaker_v1.step
+Closing Simulated CB Tycon Circuit Breaker
+Visiting file Switch Panel Assy v2 . f3d
+Opening `Switch Panel Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Switch Panel Assy_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Switch Panel Assy_v2.step
+Closing Switch Panel Assy
+Visiting file Toggle Switch - eBay v1 . f3d
+Opening `Toggle Switch - eBay`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Toggle Switch - eBay_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Toggle Switch - eBay_v1.step
+Closing Toggle Switch - eBay
+Visiting file Yoke Assy Attempt 1 v3 . f3d
+Opening `Yoke Assy Attempt 1`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Yoke Assy Attempt 1_v3.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Yoke Assy Attempt 1_v3.step
+Closing Yoke Assy Attempt 1
+Visiting file Yoke Gear Prototype v1 . f3d
+Opening `Yoke Gear Prototype`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Yoke Gear Prototype_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Junk Drawer\Yoke Gear Prototype_v1.step
+Closing Yoke Gear Prototype
+Visiting file *trashed* Yoke Assy V2 v1 . f3d
+filename `*trashed* Yoke Assy V2` contained bad chars, replacing by ` trashed  Yoke Assy V2`
+Opening `*trashed* Yoke Assy V2`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 182, in export_file
+    options = em.createFusionArchiveExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16876, in createFusionArchiveExportOptions
+    return _fusion.ExportManager_createFusionArchiveExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+filename `*trashed* Yoke Assy V2` contained bad chars, replacing by ` trashed  Yoke Assy V2`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 186, in export_file
+    options = em.createSTEPExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16837, in createSTEPExportOptions
+    return _fusion.ExportManager_createSTEPExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+Closing *trashed* Yoke Assy V2
+Visiting folder Section 0
+Visiting file C172 Reference v2 . f3d
+Opening `C172 Reference`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\C172 Reference_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\C172 Reference_v2.step
+Closing C172 Reference
+Visiting file Cessna_172SP v3 . f3d
+Opening `Cessna_172SP`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\Cessna_172SP_v3.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\Cessna_172SP_v3.step
+Closing Cessna_172SP
+Visiting folder 0-0 Full Assembly
+Visiting file 0-0 Complete 172 Assy v28 . f3d
+Opening `0-0 Complete 172 Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-0 Full Assembly\0-0 Complete 172 Assy_v28.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-0 Full Assembly\0-0 Complete 172 Assy_v28.step
+Closing 0-0 Complete 172 Assy
+Visiting folder 0-1 Full Shell
+Visiting file 0-1-001 CANVAS for Reference v5 . f3d
+Opening `0-1-001 CANVAS for Reference`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1-001 CANVAS for Reference_v5.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1-001 CANVAS for Reference_v5.step
+Closing 0-1-001 CANVAS for Reference
+Visiting file 0-1-000 V5 Form Shell Assembly v50 . f3d
+Opening `0-1-000 V5 Form Shell Assembly`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1-000 V5 Form Shell Assembly_v50.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1-000 V5 Form Shell Assembly_v50.step
+Closing 0-1-000 V5 Form Shell Assembly
+Visiting folder 0-1 Archives
+Visiting file ARCHIVE 0-1 V6 Form Shell Assembly for Splitting v2 . f3d
+Opening `ARCHIVE 0-1 V6 Form Shell Assembly for Splitting`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V6 Form Shell Assembly for Splitting_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V6 Form Shell Assembly for Splitting_v2.step
+Closing ARCHIVE 0-1 V6 Form Shell Assembly for Splitting
+Visiting file ARCHIVE 0-1 V1 Shell Assembly for Splitting v13 . f3d
+Opening `ARCHIVE 0-1 V1 Shell Assembly for Splitting`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V1 Shell Assembly for Splitting_v13.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V1 Shell Assembly for Splitting_v13.step
+Closing ARCHIVE 0-1 V1 Shell Assembly for Splitting
+Visiting file 0-1 V3 Form Shell Assembly for Splitting Copy v1 . f3d
+Opening `0-1 V3 Form Shell Assembly for Splitting Copy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\0-1 V3 Form Shell Assembly for Splitting Copy_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\0-1 V3 Form Shell Assembly for Splitting Copy_v1.step
+Closing 0-1 V3 Form Shell Assembly for Splitting Copy
+Visiting file 0-1 C172 Cabin Height Measurements.PNG v1 . art
+file 0-1 C172 Cabin Height Measurements.PNG has extension art which is not currently handled, skipping
+Visiting file ARCHIVE 0-1 V2 Form Shell Assembly for Splitting v9 . f3d
+Opening `ARCHIVE 0-1 V2 Form Shell Assembly for Splitting`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V2 Form Shell Assembly for Splitting_v9.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V2 Form Shell Assembly for Splitting_v9.step
+Closing ARCHIVE 0-1 V2 Form Shell Assembly for Splitting
+Visiting file ARCHIVE 0-1 V4 Form Shell Assembly for Splitting v10 . f3d
+Opening `ARCHIVE 0-1 V4 Form Shell Assembly for Splitting`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V4 Form Shell Assembly for Splitting_v10.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V4 Form Shell Assembly for Splitting_v10.step
+Closing ARCHIVE 0-1 V4 Form Shell Assembly for Splitting
+Visiting file ARCHIVE 0-1 V3 Form Shell Assembly for Splitting v7 . f3d
+Opening `ARCHIVE 0-1 V3 Form Shell Assembly for Splitting`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V3 Form Shell Assembly for Splitting_v7.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 0\0-1 Full Shell\0-1 Archives\ARCHIVE 0-1 V3 Form Shell Assembly for Splitting_v7.step
+Closing ARCHIVE 0-1 V3 Form Shell Assembly for Splitting
+Visiting folder 0-1 Canvases
+Visiting file Rez 4-4.PNG v1 . art
+file Rez 4-4.PNG has extension art which is not currently handled, skipping
+Visiting file Rez 5-5.PNG v1 . art
+file Rez 5-5.PNG has extension art which is not currently handled, skipping
+Visiting file 0-1 Firewall looking forward draiwng.PNG v1 . art
+file 0-1 Firewall looking forward draiwng.PNG has extension art which is not currently handled, skipping
+Visiting file Rez 2-2.PNG v1 . art
+file Rez 2-2.PNG has extension art which is not currently handled, skipping
+Visiting file 0-1 C172 Cabin Width Measurement.PNG v1 . art
+file 0-1 C172 Cabin Width Measurement.PNG has extension art which is not currently handled, skipping
+Visiting file 0-1 Front view no dimensions.PNG v1 . art
+file 0-1 Front view no dimensions.PNG has extension art which is not currently handled, skipping
+Visiting file Rez 6-6 and 7-7.PNG v1 . art
+file Rez 6-6 and 7-7.PNG has extension art which is not currently handled, skipping
+Visiting file Rez 3-3.PNG v1 . art
+file Rez 3-3.PNG has extension art which is not currently handled, skipping
+Visiting file 0-1 C172 Top view.PNG v1 . art
+file 0-1 C172 Top view.PNG has extension art which is not currently handled, skipping
+Visiting file 0-1 c172 side profile Area sections.png v1 . art
+file 0-1 c172 side profile Area sections.png has extension art which is not currently handled, skipping
+Visiting file Rez 1-1.PNG v1 . art
+file Rez 1-1.PNG has extension art which is not currently handled, skipping
+Visiting file 01_Cessna172S_sn172S8774_e.jpg v1 . art
+file 01_Cessna172S_sn172S8774_e.jpg has extension art which is not currently handled, skipping
+Visiting folder Section 1
+Visiting file 1-0 Full Section 1 Assy v24 . f3d
+Opening `1-0 Full Section 1 Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-0 Full Section 1 Assy_v24.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-0 Full Section 1 Assy_v24.step
+Closing 1-0 Full Section 1 Assy
+Visiting file 1-1 Shell Complete Assy v88 . f3d
+Opening `1-1 Shell Complete Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-1 Shell Complete Assy_v88.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-1 Shell Complete Assy_v88.step
+Closing 1-1 Shell Complete Assy
+Visiting file 1-1 Shell Complete Assy Drawing v43 . f2d
+file 1-1 Shell Complete Assy Drawing has extension f2d which is not currently handled, skipping
+Visiting file 1-5-000 PC v2 . f3d
+Opening `1-5-000 PC`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-5-000 PC_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-5-000 PC_v2.step
+Closing 1-5-000 PC
+Visiting folder 1-600 Aux Easter Egg Systems
+Visiting file Harbor Freight Awooga Horn v2 . f3d
+Opening `Harbor Freight Awooga Horn`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-600 Aux Easter Egg Systems\Harbor Freight Awooga Horn_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 1\1-600 Aux Easter Egg Systems\Harbor Freight Awooga Horn_v2.step
+Closing Harbor Freight Awooga Horn
+Visiting folder Section 2
+Visiting file ACTUAL Simualted CB v21 . f3d
+Opening `ACTUAL Simualted CB`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\ACTUAL Simualted CB_v21.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\ACTUAL Simualted CB_v21.step
+Closing ACTUAL Simualted CB
+Visiting file Flap Assy v3 . f3d
+Opening `Flap Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Flap Assy_v3.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Flap Assy_v3.step
+Closing Flap Assy
+Visiting file Key Assy v25 . f3d
+Opening `Key Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Key Assy_v25.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Key Assy_v25.step
+Closing Key Assy
+Visiting file Key Assy Drawing v3 . f2d
+file Key Assy Drawing has extension f2d which is not currently handled, skipping
+Visiting file Modified Tyco Circuit Breaker v14 . f3d
+Opening `Modified Tyco Circuit Breaker`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Modified Tyco Circuit Breaker_v14.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Modified Tyco Circuit Breaker_v14.step
+Closing Modified Tyco Circuit Breaker
+Visiting file Simple Instrument v10 . f3d
+Opening `Simple Instrument`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Simple Instrument_v10.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\Simple Instrument_v10.step
+Closing Simple Instrument
+Visiting file timeline G1000 C172 Panel BASIC Sketch v40 . f3d
+Opening `timeline G1000 C172 Panel BASIC Sketch`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\timeline G1000 C172 Panel BASIC Sketch_v40.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\timeline G1000 C172 Panel BASIC Sketch_v40.step
+Closing timeline G1000 C172 Panel BASIC Sketch
+Visiting folder 2-0 Full Assy
+Visiting file 2-0-000 Full Assembly Section 2 v34 . f3d
+Opening `2-0-000 Full Assembly Section 2`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-0 Full Assy\2-0-000 Full Assembly Section 2_v34.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-0 Full Assy\2-0-000 Full Assembly Section 2_v34.step
+Closing 2-0-000 Full Assembly Section 2
+Visiting folder 2-1 Shell
+Visiting file 2-1-100 Full Shell Drawing v13 . f2d
+file 2-1-100 Full Shell Drawing has extension f2d which is not currently handled, skipping
+Visiting file 2-1-100 Full Shell STRUCTURE v138 . f3d
+Opening `2-1-100 Full Shell STRUCTURE`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\2-1-100 Full Shell STRUCTURE_v138.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\2-1-100 Full Shell STRUCTURE_v138.step
+Closing 2-1-100 Full Shell STRUCTURE
+Visiting folder Archive
+Visiting file ARCHIVE C172 Panel BASIC Sketch v7 . f3d
+Opening `ARCHIVE C172 Panel BASIC Sketch`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE C172 Panel BASIC Sketch_v7.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE C172 Panel BASIC Sketch_v7.step
+Closing ARCHIVE C172 Panel BASIC Sketch
+Visiting file *also archive* G1000 C172 Panel BASIC Sketch v21 . f3d
+filename `*also archive* G1000 C172 Panel BASIC Sketch` contained bad chars, replacing by ` also archive  G1000 C172 Panel BASIC Sketch`
+Opening `*also archive* G1000 C172 Panel BASIC Sketch`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 182, in export_file
+    options = em.createFusionArchiveExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16876, in createFusionArchiveExportOptions
+    return _fusion.ExportManager_createFusionArchiveExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+filename `*also archive* G1000 C172 Panel BASIC Sketch` contained bad chars, replacing by ` also archive  G1000 C172 Panel BASIC Sketch`
+Traceback (most recent call last):
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 218, in visit_file
+    counter += export_file(ctx, format, file, doc)
+  File "C:/Users/Trevor/Documents/Fusion360Exporter-master/Fusion360Exporter-master/Exporter.py", line 186, in export_file
+    options = em.createSTEPExportOptions(str(output_path))
+  File "C:/Users/Trevor/AppData/Local/Autodesk/webdeploy/production/97f9b2cd7bcb11d89be9f43364b3bb92648fda4b/Api/Python/packages\adsk\fusion.py", line 16837, in createSTEPExportOptions
+    return _fusion.ExportManager_createSTEPExportOptions(self, *args)
+RuntimeError: 3 : The file name is not valid.
+
+Closing *also archive* G1000 C172 Panel BASIC Sketch
+Visiting file ARCHIVE 2-1-700 G1000 SIMPLE v2 . f3d
+Opening `ARCHIVE 2-1-700 G1000 SIMPLE`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE 2-1-700 G1000 SIMPLE_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE 2-1-700 G1000 SIMPLE_v2.step
+Closing ARCHIVE 2-1-700 G1000 SIMPLE
+Visiting file 2-1-000 Full Shell ASSEMBLY v13 . f3d
+Opening `2-1-000 Full Shell ASSEMBLY`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\2-1-000 Full Shell ASSEMBLY_v13.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\2-1-000 Full Shell ASSEMBLY_v13.step
+Closing 2-1-000 Full Shell ASSEMBLY
+Visiting file FORMER Version 2-1-200 Analog Instrument Panel v11 . f3d
+Opening `FORMER Version 2-1-200 Analog Instrument Panel`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\FORMER Version 2-1-200 Analog Instrument Panel_v11.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\FORMER Version 2-1-200 Analog Instrument Panel_v11.step
+Closing FORMER Version 2-1-200 Analog Instrument Panel
+Visiting file Older 2-1-100 Full Shell Drawing v1 . f2d
+file Older 2-1-100 Full Shell Drawing has extension f2d which is not currently handled, skipping
+Visiting file ARCHIVE 2-1-300 G1000 Instrument Panel v5 . f3d
+Opening `ARCHIVE 2-1-300 G1000 Instrument Panel`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE 2-1-300 G1000 Instrument Panel_v5.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-1 Shell\Archive\ARCHIVE 2-1-300 G1000 Instrument Panel_v5.step
+Closing ARCHIVE 2-1-300 G1000 Instrument Panel
+Visiting folder 2-3 Yoke Assembly
+Visiting file 2-3-001 Cessna Yoke Grommet v2 . f3d
+Opening `2-3-001 Cessna Yoke Grommet`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\2-3-001 Cessna Yoke Grommet_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\2-3-001 Cessna Yoke Grommet_v2.step
+Closing 2-3-001 Cessna Yoke Grommet
+Visiting file 2-3-001 Cessna Yoke Grommet Drawing v1 . f2d
+file 2-3-001 Cessna Yoke Grommet Drawing has extension f2d which is not currently handled, skipping
+Visiting file Cessna Early Style Yoke v2 . f3d
+Opening `Cessna Early Style Yoke`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\Cessna Early Style Yoke_v2.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\Cessna Early Style Yoke_v2.step
+Closing Cessna Early Style Yoke
+Visiting file STL c152+yoke+back v1 . f3d
+Opening `STL c152+yoke+back`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\STL c152+yoke+back_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\STL c152+yoke+back_v1.step
+Closing STL c152+yoke+back
+Visiting file STL c152+yoke+front+with+logo v1 . f3d
+Opening `STL c152+yoke+front+with+logo`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\STL c152+yoke+front+with+logo_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\STL c152+yoke+front+with+logo_v1.step
+Closing STL c152+yoke+front+with+logo
+Visiting file Yoke Assembly v83 . f3d
+Opening `Yoke Assembly`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\Yoke Assembly_v83.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2\2-3 Yoke Assembly\Yoke Assembly_v83.step
+Closing Yoke Assembly
+Visiting file Yoke Assembly Drawing v5 . f2d
+file Yoke Assembly Drawing has extension f2d which is not currently handled, skipping
+Visiting folder Section 2A
+Visiting file 2A-0-000 v3 . f3d
+Opening `2A-0-000`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-0-000_v3.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-0-000_v3.step
+Closing 2A-0-000
+Visiting file 2A-1-000 Panel v46 . f3d
+Opening `2A-1-000 Panel`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-1-000 Panel_v46.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-1-000 Panel_v46.step
+Closing 2A-1-000 Panel
+Visiting file 2A-3-000 Switch Panel Assy v24 . f3d
+Opening `2A-3-000 Switch Panel Assy`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-3-000 Switch Panel Assy_v24.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\2A-3-000 Switch Panel Assy_v24.step
+Closing 2A-3-000 Switch Panel Assy
+Visiting file 2A-1-000 Panel Drawing v2 . f2d
+file 2A-1-000 Panel Drawing has extension f2d which is not currently handled, skipping
+Visiting file Large Solenoid CB v17 . f3d
+Opening `Large Solenoid CB`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\Large Solenoid CB_v17.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2A\Large Solenoid CB_v17.step
+Closing Large Solenoid CB
+Visiting file Switch Panel Assy Drawing v7 . f2d
+file Switch Panel Assy Drawing has extension f2d which is not currently handled, skipping
+Visiting folder 2A-0
+Visiting folder Section 2G
+Visiting file 2G Panel FSM v9 . f3d
+Opening `2G Panel FSM`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2G\2G Panel FSM_v9.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2G\2G Panel FSM_v9.step
+Closing 2G Panel FSM
+Visiting file 2G Panel NONFSM v1 . f3d
+Opening `2G Panel NONFSM`
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2G\2G Panel NONFSM_v1.f3d
+Saved C:\Users\Trevor\Desktop\Fusion360Export\Cessna 172 Project Version 3\Section 2G\2G Panel NONFSM_v1.step
+Closing 2G Panel NONFSM
+Visiting folder Section 3
+Visiting folder Section 4
