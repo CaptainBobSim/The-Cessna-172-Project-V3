@@ -9,7 +9,8 @@ These plans are based on a "Pay What You Want" model. Though I could charge mone
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
 ### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
 
-Want to help? Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
+
+Want to help with the project? Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 
 ## Copyright
 [Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)
