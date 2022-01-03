@@ -24,6 +24,9 @@ The Spreadsheet shows the "live" versions of everything. These have not been for
 
 👉https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
 
+## Issues:
+We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
+Create a new issue for if a part breaks, so we can factor it into a redesign.
 
 ## Why?
 The Flight Simulation Community has given me so much and I would like to give back. Free C172 Plans were what started me off in flight simulation when I was younger, and I don't want cost to be an obstacle for any young aspiring individuals to build their very own Cessna 172 Flight Sim.
