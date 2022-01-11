@@ -17,7 +17,9 @@ Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 [Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Spreadsheet
-	Files in this GitHub may not represent the most up to date version of the project. 
+	Files in this GitHub may not represent the most up to date version of the project.
+	Also: Top level files are usually to big to store on GitHub.
+	
 	The most up to date method is to use links on the "Simple PBS" page of this spreadsheet:
 	Please start an issue should a link not properly work.
 The Spreadsheet shows the "live" versions of everything. These have not been formally released so may have bugs. Use this method if you are a risk taker :)
