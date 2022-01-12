@@ -26,9 +26,9 @@ The Spreadsheet shows the "live" versions of everything. These have not been for
 
 👉https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
 
-## What does the sections mean?
-####### Section 0 : Full Assemblies 
-####### Section 1 : PC / Shell Assemblies 
+## What does the sections mean? <br />
+####### Section 0 : Full Assemblies <br />
+####### Section 1 : PC / Shell Assemblies <br />
 ####### Section 2A/G : Multiple panels including work drawings for them 
 
 ## Issues:
