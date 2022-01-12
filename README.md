@@ -26,6 +26,11 @@ The Spreadsheet shows the "live" versions of everything. These have not been for
 
 👉https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
 
+## What does the sections mean?
+####### Section 0 : Full Assemblies
+####### Section 1 : PC / Shell Assemblies
+####### Section 2A/G : Multiple panels including work drawings for them
+
 ## Issues:
 We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
 Create a new issue for if a part breaks, so we can factor it into a redesign.
