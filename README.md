@@ -26,10 +26,18 @@ The Spreadsheet shows the "live" versions of everything. These have not been for
 
 👉https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
 
-## What does the sections mean? <br />
+## What Do the Sections Mean? <br />
 Section 0 : Full Assemblies <br />
-Section 1 : PC / Shell Assemblies <br />
-Section 2A/G : Multiple panels including work drawings for them 
+Section 1 : Nose (Where the PC goes) [defined as from 24" fw of firewall to the firewall]<br />
+Section 2 : Section where the instrument panel fits into [defined as from the firewall to 24" aft of firewall] <br />
+Section 2A/2G : Multiple panels including work drawings for them. Letter designates type. <br />
+Section 2A : Analog Panel using Steam Gauges and radio stack <br />
+Section 2G : Garmin G1000 based Cessna 172 Panel <br />
+
+Coming Later: <br />
+Section 3/4 : Pilot/CoPilot Seats [defined as 24" aft of firewall to 72" aft] <br />
+Section 5 : Instructor Section/Back Seat Bench <br />
+
 
 ## Issues:
 We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
