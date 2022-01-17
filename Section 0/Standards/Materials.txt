@@ -1,0 +1,7 @@
+Screws:
+Screws should be Metric for smaller items and imperial for construction.
+Use M4 10mm screws and M3 8mm screws wherever possible.
+
+Wood:
+Plywood should be 19/32 inch (15mm) laminated and sanded plywood
+Structural pieces are 2x4s, measuring 1.5 inch (38mm) by 3.5 inch (89mm).
