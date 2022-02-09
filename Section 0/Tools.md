@@ -11,6 +11,7 @@ http://www.jeromeleary.com/gears/
 
 ## Fusion 360 Plugins:
 Manufacturing Dogbone Generator: https://github.com/DVE2000/Dogbone
+Settings: Tool Diameter .125", offset .1" Static, Normal, From Top Face 
 
 Exporting a face as a dxf without making a sketch: https://github.com/tapnair/Export2D
 
