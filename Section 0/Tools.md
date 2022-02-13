@@ -8,3 +8,11 @@ https://www.engineersedge.com/calculators/spur_gear_calculator_and_generator_155
 
 Yoke Rack/Pinion Generator
 http://www.jeromeleary.com/gears/
+
+## Fusion 360 Plugins:
+Manufacturing Dogbone Generator: https://github.com/DVE2000/Dogbone
+Settings: Tool Diameter .125", offset .1" Static, Normal, From Top Face 
+
+Exporting a face as a dxf without making a sketch: https://github.com/tapnair/Export2D
+
+Export every fusion 360 file (for backup or GitHub): https://github.com/Jnesselr/fusion-360-total-exporter
