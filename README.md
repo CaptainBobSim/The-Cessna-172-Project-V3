@@ -3,12 +3,11 @@
 These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD) model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 ### 👉[Watch the Build Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)
 
-### 📰[Join the Email Newsletter](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
 
 ### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
 ### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
-
+### 📰[Join the Email Newsletter](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
 
 ### Want to Help Develop the 172?
 Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
