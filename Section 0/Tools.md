@@ -9,6 +9,9 @@ https://www.engineersedge.com/calculators/spur_gear_calculator_and_generator_155
 Yoke Rack/Pinion Generator
 http://www.jeromeleary.com/gears/
 
+## File Converters
+DWG to SVG: https://www.autodwg.com/dwg2svg/
+
 ## Fusion 360 Plugins:
 Manufacturing Dogbone Generator: https://github.com/DVE2000/Dogbone
 Settings: Tool Diameter .125", offset .1" Static, Normal, From Top Face 
