@@ -7,7 +7,7 @@ Helvetica Font: https://freefontsfamily.com/helvetica-font-family/
 Other notable aircraft fonts are 
 News Gothic Font: https://fontsgeek.com/fonts/News-Gothic-Regular
 Bahnschrift Font: https://fontsgeek.com/bahnschrift-font
-MS 33558 Regular font (Standard millitary font): https://www.wfonts.com/font/ms-33558
+MS 33558 Regular font (Standard millitary font): https://www.wfonts.com/font/ms-33558 or https://forums.x-plane.org/index.php?/files/file/12831-milspec-33558-instrument-font-truetype/
 Calibri
 Latha font
 Gordon Medium
@@ -15,3 +15,4 @@ AV Semi round straight
 
 
 
+Search ttf here to find a few aviation fonts: https://www.simpits.org/fileproc/showfiles.php
