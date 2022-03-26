@@ -7,15 +7,15 @@
    viewBox="0 0 88.900002 20.5235"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="Anunciator Engraving.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview7"
+     id="namedview34"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.8973437"
-     inkscape:cx="153.37232"
-     inkscape:cy="62.98279"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="1912"
+     inkscape:zoom="3.2797618"
+     inkscape:cx="168"
+     inkscape:cy="38.874774"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2">
     <marker
@@ -78,13 +78,9 @@
        id="*PAPER_SPACE" />
   </defs>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-80.055157,-77.034214)"
-     style="display:inline">
+     transform="translate(-80.055157,-77.034214)">
     <g
-       inkscape:label="0"
        id="g962"
        transform="matrix(0.26458333,0,0,0.26458333,124.63745,-209.67349)">
       <path
@@ -118,10 +114,7 @@
     </g>
   </g>
   <g
-     inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Image Layer"
-     sodipodi:insensitive="true"
      style="display:none"
      transform="translate(-80.055157,-77.034214)">
     <image
@@ -135,34 +128,7 @@
        transform="rotate(-0.7874175)" />
   </g>
   <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="Text"
-     style="display:inline"
-     transform="translate(-80.055157,-77.034214)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.79375px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.154056"
-       x="91.417564"
-       y="84.744644"
-       id="text3617"><tspan
-         sodipodi:role="line"
-         id="tspan3615"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.154056"
-         x="91.417564"
-         y="84.744644"
-         dy="0">L      <tspan
-   id="tspan76552">LOWFUEL   R </tspan></tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.154056"
-         x="91.417564"
-         y="91.865532"
-         id="tspan4543">OIL PRESS     L    VAC   R        VOLTS</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Not useful info"
      style="display:none"
      transform="translate(-80.055157,-77.034214)">
     <path
