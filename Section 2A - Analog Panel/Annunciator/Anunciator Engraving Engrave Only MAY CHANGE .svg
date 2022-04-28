@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="88.900002mm"
+   height="20.5235mm"
+   viewBox="0 0 88.900002 20.5235"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Anunciator Engraving Engrave Only MAY CHANGE .svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3416246"
+     inkscape:cx="88.698433"
+     inkscape:cy="46.585312"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path914" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path917" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path919" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path921" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE" />
+    <symbol
+       id="*PAPER_SPACE" />
+    <marker
+       id="DistanceX-4"
+       orient="auto"
+       refX="0.0"
+       refY="0.0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5"
+         style="stroke:#000000; stroke-width:0.5"
+         id="path858" />
+    </marker>
+    <pattern
+       id="Hatch-5"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path861" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path863" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path865" />
+    </pattern>
+    <symbol
+       id="*MODEL_SPACE-9" />
+    <symbol
+       id="*PAPER_SPACE-6" />
+  </defs>
+  <g
+     inkscape:label="-&gt; Cutout Layer"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-80.055157,-77.034214)"
+     style="display:inline">
+    <g
+       inkscape:label="0"
+       id="g962"
+       transform="matrix(0.26458333,0,0,0.26458333,124.63745,-209.67349)">
+      <path
+         d="m 163.17288,1122.4043 a 8.1357864,8.1357864 0 1 0 -16.27157,0 8.1357864,8.1357864 0 1 0 16.27157,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path930" />
+      <path
+         d="m -147.9013,1122.4043 a 8.1357864,8.1357864 0 1 0 -16.27157,0 8.1357864,8.1357864 0 1 0 16.27157,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path936" />
+      <path
+         d="m 149.77276,1160.6903 h -300.54551 a 17.228724,17.228724 0 0 1 -17.22874,-17.2287 v -42.1146 a 17.228724,17.228724 0 0 1 17.22874,-17.2288 h 300.54551 a 17.228724,17.228724 0 0 1 17.22872,17.2288 v 42.1146 a 17.228724,17.228724 0 0 1 -17.22872,17.2287 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path938" />
+      <path
+         d="m -148.65146,1148.726 a 5.65247,5.65247 0 1 0 -11.30494,0 5.65247,5.65247 0 1 0 11.30494,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path942" />
+      <path
+         d="m -148.65146,1096.0826 a 5.65247,5.65247 0 1 0 -11.30494,0 5.65247,5.65247 0 1 0 11.30494,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path944" />
+      <path
+         d="m 158.9564,1148.726 a 5.6524682,5.6524682 0 1 0 -11.30493,0 5.6524682,5.6524682 0 1 0 11.30493,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path946" />
+      <path
+         d="m 158.9564,1096.0826 a 5.6524682,5.6524682 0 1 0 -11.30493,0 5.6524682,5.6524682 0 1 0 11.30493,0 z"
+         style="fill:none;stroke:#000000;stroke-width:0.997033"
+         id="path948" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="-&gt; Text"
+     style="display:inline"
+     transform="translate(-80.055157,-77.034214)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.79375px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.154056"
+       x="90.825928"
+       y="85.730698"
+       id="text3617"><tspan
+         sodipodi:role="line"
+         id="tspan3615"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.154056"
+         x="90.825928"
+         y="85.730698"
+         dy="0 0 0">  L    LOW  FUEL  R   ----------------------------</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.154056"
+         x="90.825928"
+         y="92.851585"
+         id="tspan4543">OIL  PRESS    L     VAC   R       VOLTS</tspan></text>
+  </g>
+</svg>
