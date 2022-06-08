@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
+      <active>true</active>
+      <description>Airspeed</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.3.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-571-ÿÿÿÿMobiFlight Mega" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="287" stepperCompassMode="False" />
+        <interpolation active="True">
+          <value x="0" y="0" />
+          <value x="40" y="33" />
+          <value x="50" y="53" />
+          <value x="60" y="73" />
+          <value x="70" y="95" />
+          <value x="80" y="120" />
+          <value x="90" y="143" />
+          <value x="100" y="165" />
+          <value x="110" y="180" />
+          <value x="120" y="205" />
+          <value x="130" y="222" />
+          <value x="140" y="237" />
+          <value x="160" y="265" />
+          <value x="180" y="287" />
+          <value x="200" y="315" />
+        </interpolation>
+        <preconditions />
+        <transformation active="False" expression="30" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
