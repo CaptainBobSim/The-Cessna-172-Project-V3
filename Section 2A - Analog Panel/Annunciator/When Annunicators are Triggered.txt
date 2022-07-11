@@ -1,0 +1,87 @@
+ is located on
+the left side of the instrument panel and provides caution (amber)
+and warning (red) messages for selected portions of the airplane
+systems. The annunciator is designed to flash messages for
+approximately 10 seconds to gain the attention of the pilot before
+changing to steady on. The annunciator panel cannot be turned off
+by the pilot.
+
+
+Fuel L/R is triggered when less than 5 gallons and remains for 60 seconds
+Low Voltage if Voltage is Negative on AMMETER (Discharge)
+
+
+
+Each fuel tank also incorporates warning circuits which can
+detect low fuel conditions and erroneous transmitter messages.
+Anytime fuel in the tank drops below approximately 5 gallons (and
+remains below this level for more than 60 seconds), the amber LOW
+FUEL message will flash on the annunciator panel for approximately
+10 seconds and then remain steady amber. The annunciator cannot
+be turned off by the pilot. If the left tank is low, the message will
+read L LOW FUEL. If the right tank is low, the message will read
+LOW FUEL R. If both tanks are low, the message will read L LOW
+FUEL R. 
+
+
+
+Illumination of "VOL TS" on the annunciator panel may
+occur during low RPM conditions with an electrical load on
+the system such as during a low RPM taxi. Under these
+conditions, the annunciator will go out at higher RPM. The I
+master switch need not be recycled since an overvoltage
+condition has not occurred to deactivate the alternator
+system. 
+
+
+In addition, a separate low oil pressure indication is provided
+through the panel annunciator. This annunciator is wired to a
+pressure switch located on the rear of the engine accessory case.
+When oil pressure is below 20 PSI, 
+
+
+TST DIM or BRT positions (earlier serial number airplanes)
+TEST or the DAY or NIGHT positions (later serial number airplanes). 
+\
+All amber and red
+messages will flash until the switch is released. 
+
+
+
+The low voltage warning annunciator is incorporated in thel
+annunciator panel and activates when voltage falls below 24.5 volts.
+If low voltage is detected, the red annunciation VOL TS will flash for
+approximately 10 seconds before illuminating steadily. The pilot
+cannot turn off the annunciator. 
+
+
+In the event an overvoltage condition occurs, the alternator
+control unit automatically opens the ALT FLO circuit breaker-,I
+removing alternator field current and shutting off the alternator. Theil
+battery will then supply system current as shown by a discharge
+rate on the ammeter. Under these conditions, depending on
+electrical system load, the low voltage warning annunciator will
+illuminate when system voltage drops below normal. The alternator
+control unit may be reset by resetting the circuit breaker. If the lo~
+voltage warning annunciator extinguishes, normal alternate
+charging has resumed; however, if the annunciator illuminate
+again, a malfunction has occurred, and the flight should b
+terminated as soon as practicable.
+
+
+
+lighting intensity for the
+avionics displays and the NAV indicators (pilot's panel) is controlled
+by the annunciator panel test switch. When the switch is in the BRT
+position (earlier serial number airplanes) or the DAY position (later
+serial number airplanes), this lighting m
+
+
+f output of the left pump falls below 3.0 in. Hg., the amber L VAC
+message will flash on the annunciator panel for approximately 10
+seconds before turning steady on. If output of the right pump falls
+below 3.0 in. Hg., the amber VAC R message will flash on the
+annunciator panel for approximately 10 seconds before turning
+steady on. If output of both pumps falls below 3.0 in. Hg., the amber
+L VAC R message will flash on the annunciator panel for
+approximately 10 seconds before turning steady on

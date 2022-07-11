@@ -4,7 +4,7 @@
     <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
       <active>true</active>
       <description>Airspeed</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.3.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.4.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Stepper" serial="MobiFlight Mega/ SN-571-ÿÿÿÿMobiFlight Mega" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="287" stepperCompassMode="False" />
@@ -31,5 +31,14 @@
       </settings>
     </config>
   </outputs>
-  <inputs />
+  <inputs>
+    <config guid="234a4f5d-d80f-4063-b170-c421658bdc7b">
+      <active>true</active>
+      <description>command</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.4.0.4, Culture=neutral, PublicKeyToken=null" serial="" name="" type="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
 </MobiflightConnector>
