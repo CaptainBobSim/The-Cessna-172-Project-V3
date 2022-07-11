@@ -19,3 +19,6 @@ Gill Sans
 B612 Font (for Avionics Displays ie Airbus): https://b612-font.com/
 
 
+Specific components:
+Turn Coordinator uses Universal Bold: https://fontsgeek.com/fonts/Universal-Bold
+
