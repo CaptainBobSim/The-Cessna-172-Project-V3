@@ -53,3 +53,6 @@ The Flight Simulation Community has given me so much and I would like to give ba
 If you are just getting started in Flight Simulation: I believe in you. You can do this. It will take time and hard work, but for me it is definitely worth it, and you might find it is too.
 
 "Everyone is smart and can be smarter"
+
+## Thank you!
+Thank you to Kovinator for being an absolute madlad and helping so much with the instruments!
