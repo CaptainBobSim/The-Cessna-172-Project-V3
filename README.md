@@ -33,7 +33,7 @@ The Spreadsheet shows the "live" versions of everything. These have not been for
 ## What Does Each Section Mean? <br />
 Section 0 : Full Assemblies <br />
 Section 1 : Nose (Where the PC goes) [defined as from 24" fw of firewall to the firewall]<br />
-Section 2 : Section where the instrument panel fits into [defined as from the firewall to 24" aft of firewall] <br />
+Section 2 : Structure and All Instruments [defined as from the firewall to 24" aft of firewall] <br />
 Section 2A/2G : Multiple panels including work drawings for them. Letter designates type. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2A : Analog Panel using Steam Gauges and radio stack <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2G : Garmin G1000 based Cessna 172 Panel <br />
