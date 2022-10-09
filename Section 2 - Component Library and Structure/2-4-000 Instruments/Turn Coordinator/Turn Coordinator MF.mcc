@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
+      <active>true</active>
+      <description>Airplane</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Airplane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-60" stepperCompassMode="False" />
+        <interpolation active="True">
+          <value x="-800" y="-60" />
+          <value x="800" y="60" />
+        </interpolation>
+        <preconditions />
+        <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e91f07aa-3aa6-433f-9179-2f8361b309d5">
+      <active>true</active>
+      <description>Ball</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TURN COORDINATOR BALL,Position)" UUID="fb66e24d-5aea-4eb2-88c0-9d96cff6233f" />
+        <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" />
+        <interpolation active="True">
+          <value x="-1000" y="28" />
+          <value x="1000" y="-28" />
+        </interpolation>
+        <preconditions />
+        <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
