@@ -4,8 +4,8 @@
     <config guid="6b7864d4-d7e7-4c05-a484-090eb338039b">
       <active>true</active>
       <description>MSG</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="LVAR" Value="" />
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -18,11 +18,11 @@
     <config guid="fd28f360-52de-480b-a381-2849b3d849de">
       <active>true</active>
       <description>NAV</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GPS DRIVES NAV1,Bool)" UUID="f6960682-68a0-4ba7-a19c-969b46f9c43b" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Output" serial="MobiFlight Uno/ SN-94c-aea" trigger="normal" pin="NAV" pinBrightness="255" />
         <preconditions />
@@ -32,7 +32,7 @@
     <config guid="8a0711a4-3c45-4cbe-9364-e70ed94a7f15">
       <active>true</active>
       <description>GPS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GPS DRIVES NAV1,Bool)" UUID="f6960682-68a0-4ba7-a19c-969b46f9c43b" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -46,7 +46,7 @@
     <config guid="4dde4d04-d318-494c-bcb4-f87d776f4429">
       <active>true</active>
       <description>WPT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GPS IS ACTIVE WAY POINT,Bool)" UUID="25f6d056-ec2d-4a4c-948b-02a8b33aa5dc" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -60,7 +60,7 @@
     <config guid="df9c995c-bcc4-42ab-a7ba-6edf9bd1c1c5">
       <active>true</active>
       <description>ARM</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GPS IS ACTIVE WAY POINT,Bool)" UUID="25f6d056-ec2d-4a4c-948b-02a8b33aa5dc" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -74,7 +74,7 @@
     <config guid="34c7769a-1313-4a14-a4ee-2e4956c3768e">
       <active>true</active>
       <description>ACTV</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GPS IS ACTIVE WP LOCKED,Bool)" UUID="cb721e93-4fee-4d3b-830e-14fcc5541058" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -90,7 +90,7 @@
     <config guid="db9c3c9e-8da7-4092-8ee3-90fb346a8c77">
       <active>true</active>
       <description>SW1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Uno/ SN-94c-aea" name="SW1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Uno/ SN-94c-aea" name="SW1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_GPS_DRIVES_NAV1)" presetId="e20b5a20-4a49-4909-8cea-cb26a06c0793" />
           <onRelease />
