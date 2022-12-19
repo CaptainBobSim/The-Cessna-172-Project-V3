@@ -5,8 +5,8 @@
    height="246.6693"
    version="1.1"
    id="svg84"
-   sodipodi:docname="DXF One Knob.svg"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="Source_Outline with Text_ONE-HOLE.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,15 +24,17 @@
      inkscape:snap-midpoints="false"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:zoom="0.64378662"
-     inkscape:cx="329.30166"
-     inkscape:cy="107.17837"
-     inkscape:window-width="1366"
-     inkscape:window-height="697"
+     inkscape:zoom="1.2875732"
+     inkscape:cx="251.63617"
+     inkscape:cy="140.57453"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g82" />
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <desc
      id="desc2">DXF One Knob.dxf - scale = 1.0, origin = (0.0, 0.0), method = manual</desc>
   <defs
@@ -284,8 +286,8 @@
        transform="translate(299.08268,-999.18504)"><tspan
          sodipodi:role="line"
          id="tspan12939"
-         x="-0.10937022"
+         x="-0.10937624"
          y="1024.4712"
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.6667px;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic';text-align:center;text-anchor:middle">CaptainBobSim Multi Radio</tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.6667px;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic';text-align:center;text-anchor:middle">CaptainBobSim Multi-Radio</tspan></text>
   </g>
 </svg>
