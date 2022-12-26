@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>First Arduino</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="OFF" Pin="2" />
+  <Button Name="R" Pin="3" />
+  <Button Name="L" Pin="4" />
+  <Button Name="Both" Pin="5" />
+  <Button Name="Start" Pin="6" />
+  <Button Name="ALT" Pin="7" />
+  <Button Name="BATT" Pin="8" />
+  <Button Name="Fuel Pump" Pin="9" />
+  <Button Name="Beacon" Pin="10" />
+  <Button Name="Land" Pin="11" />
+  <Button Name="Taxi" Pin="12" />
+  <Button Name="Nav" Pin="13" />
+  <Button Name="Strobe" Pin="14" />
+  <Button Name="Pitot" Pin="15" />
+  <Button Name="Bus 1" Pin="16" />
+  <Button Name="Bus 2" Pin="17" />
+</Config>

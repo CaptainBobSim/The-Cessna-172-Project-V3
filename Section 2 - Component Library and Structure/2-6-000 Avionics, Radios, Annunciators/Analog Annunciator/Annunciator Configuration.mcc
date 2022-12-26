@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="4b7052b6-e7c9-4859-bcef-9c40faa8f96d">
+      <active>true</active>
+      <description>LEFT Low Fuel</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL TANK LEFT MAIN QUANTITY,Gallons)" UUID="46951af9-d5dc-4645-9574-876d4a77346d" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-05b-d85" trigger="normal" pin="Lfuel" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f5bf4bc7-5e28-4b94-aaad-8061d6b62c7a">
+      <active>true</active>
+      <description>RIGHT Low Fuel</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL TANK RIGHT MAIN QUANTITY,Gallons)" UUID="c636d0d9-29c1-416c-91ef-9ab3d68072ae" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-05b-d85" trigger="normal" pin="Rfuel" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d55e13e1-dfae-4b3d-be08-5756e5f2deaf">
+      <active>true</active>
+      <description>LOW FUEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="LowFuel" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-05b-d85" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="4b7052b6-e7c9-4859-bcef-9c40faa8f96d" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="f5bf4bc7-5e28-4b94-aaad-8061d6b62c7a" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="e7470d62-0bfb-4851-88ed-f30a22d5ceaa">
+      <active>true</active>
+      <description>TEST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.5, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-05b-d85" name="(TEST)" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="TestAnnunciator" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="TestAnnunciator" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="89a3a91b-a0a4-4b51-b440-4aed9ba807a3">
+      <active>true</active>
+      <description>DIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.5, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-05b-d85" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="AnnunciatorBrightness" varExpression="150" />
+          <onRelease type="VariableInputAction" varType="number" varName="AnnunciatorBrightness" varExpression="255" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
