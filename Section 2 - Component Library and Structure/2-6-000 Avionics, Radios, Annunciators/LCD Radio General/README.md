@@ -10,6 +10,20 @@ Source Files is where you'll find all of the raw files if you want to make any c
 V1 Small Multi Radio 16x2 is a folder that houses the original design that was a lot smaller.
 Use this only with the 16x2 radio. Isn't it cute!
 
+Bill 'o Materials:
+(4) M3 20mm Screws
+(4) M3 8mm Screws
+(8) M3 Nuts
+(4) M3 10mm M/F Standoffs
+(4) M3 20mm M/F Standoffs
+(4) Panel Screws (your choice)
+3D Printed Parts
+Faceplate
+Dual Encoder
+(1-2) Single Encoders
+Jumper Wires
+Arduino Mega 2560
+16x2 or 20x4 LCD display
 
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
