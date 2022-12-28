@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>LCD Arduino</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LcdDisplay Name="LcdDisplay" Address="39" Cols="20" Lines="4" />
+  <Encoder Name="Freq Fine" PinLeft="2" PinRight="3" EncoderType="2" />
+  <Button Name="Freq Press" Pin="4" />
+  <Encoder Name="Freq Rough" PinLeft="6" PinRight="5" EncoderType="2" />
+  <Button Name="-BLANK-" Pin="7" />
+  <Encoder Name="Index" PinLeft="8" PinRight="9" EncoderType="1" />
+  <Button Name="Index Reset" Pin="10" />
+</Config>

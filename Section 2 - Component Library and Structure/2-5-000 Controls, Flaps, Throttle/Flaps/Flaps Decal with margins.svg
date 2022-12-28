@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="60mm"
-   height="68.974678mm"
-   viewBox="0 0 60 68.974678"
+   width="76.657501mm"
+   height="79.869026mm"
+   viewBox="0 0 76.657501 79.869026"
    version="1.1"
    id="svg5"
    sodipodi:docname="Flaps Decal with margins.svg"
@@ -28,14 +28,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.8948731"
-     inkscape:cx="30.87278"
-     inkscape:cy="148.29489"
+     inkscape:cx="205.81853"
+     inkscape:cy="175.73736"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g131-6-5-8"
+     inkscape:current-layer="layer6"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1" />
   <defs
@@ -93,7 +93,7 @@
      id="layer3"
      inkscape:label="Ref Image"
      style="display:none;opacity:1"
-     transform="translate(-80.583332,-155.58216)">
+     transform="translate(-72.484725,-151.11396)">
     <image
        width="127.24451"
        height="95.43338"
@@ -109,7 +109,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(-80.583332,-155.58216)">
+     transform="translate(-72.484725,-151.11396)">
     <g
        inkscape:label="0"
        id="g131-6-5"
@@ -150,7 +150,7 @@
      id="layer5"
      inkscape:label="BG"
      style="display:inline"
-     transform="translate(-80.583332,-155.58216)">
+     transform="translate(-72.484725,-151.11396)">
     <g
        inkscape:label="0"
        id="g131-6"
@@ -203,7 +203,7 @@
      id="layer2"
      inkscape:label="Colors"
      style="display:inline"
-     transform="translate(-80.583332,-155.58216)">
+     transform="translate(-72.484725,-151.11396)">
     <rect
        style="fill:#818dc3;fill-opacity:0;stroke-width:1"
        id="rect17903"
@@ -261,7 +261,7 @@
      id="layer4"
      inkscape:label="Text Engrave"
      style="display:inline"
-     transform="translate(-80.583332,-155.58216)">
+     transform="translate(-72.484725,-151.11396)">
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -463,7 +463,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Cutout"
-     transform="translate(5.1027072,2.605052)">
+     transform="translate(13.201314,7.0732498)">
     <g
        inkscape:label="0"
        id="g131-6-5-8"
@@ -483,7 +483,7 @@
          id="path105-7-2-8" />
       <path
          d="m -62.4,1026.5197 a 7.2,7.2 0 1 0 -14.4,0 7.2,7.2 0 1 0 14.4,0 z"
-         style="fill:#ffffff;stroke:#ffffff;stroke-opacity:1;fill-opacity:0.99512202"
+         style="fill:#ffffff;fill-opacity:0.995122;stroke:#ffffff;stroke-opacity:1"
          id="path111-9-6-0" />
       <path
          d="m -62.4,1218.5197 a 7.2,7.2 0 1 0 -14.4,0 7.2,7.2 0 1 0 14.4,0 z"
@@ -491,15 +491,15 @@
          id="path115-8-6-3" />
       <path
          d="m 76.8,1026.5197 a 7.2,7.2 0 1 0 -14.4,0 7.2,7.2 0 1 0 14.4,0 z"
-         style="fill:#ffffff;stroke:#ffffff;stroke-opacity:1;fill-opacity:0.99512202"
+         style="fill:#ffffff;fill-opacity:0.995122;stroke:#ffffff;stroke-opacity:1"
          id="path121-0-0-8" />
       <path
          d="m 76.8,1218.5197 a 7.2,7.2 0 1 0 -14.4,0 7.2,7.2 0 1 0 14.4,0 z"
-         style="fill:#ffffff;stroke:#ffffff;stroke-opacity:1;stroke-width:1.00157481;stroke-dasharray:none;fill-opacity:0.99512202"
+         style="fill:#ffffff;fill-opacity:0.995122;stroke:#ffffff;stroke-width:1.00157;stroke-dasharray:none;stroke-opacity:1"
          id="path123-4-4-4" />
     </g>
     <path
-       style="fill:#ffffff;fill-opacity:0.99512202;stroke:#ffffff;stroke-width:0.4233071;stroke-dasharray:none"
+       style="fill:#ffffff;fill-opacity:0.995122;stroke:#ffffff;stroke-width:0.423307;stroke-dasharray:none"
        d="m 42.094845,40.766909 c -3.33144,-0.872834 -5.504076,-4.314557 -4.830113,-7.651493 0.612979,-3.034985 3.125641,-5.227243 6.171319,-5.384378 1.213073,-0.06259 2.119316,0.127927 3.293816,0.692433 0.740252,0.355792 1.001768,0.547173 1.679258,1.228911 1.211276,1.21887 1.747177,2.285844 1.967913,3.918102 0.294322,2.1764 -0.648239,4.485567 -2.424897,5.940723 -0.634541,0.519714 -1.805866,1.099501 -2.61814,1.295937 -0.851535,0.20593 -2.371659,0.187049 -3.239156,-0.04024 z"
        id="path413"
        transform="matrix(0.26458333,0,0,0.26458333,-5.1027072,-2.605052)" />
