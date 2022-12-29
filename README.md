@@ -1,6 +1,7 @@
 # The-Cessna-172-Project-V3
 [Click here to download everything](https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/archive/refs/heads/main.zip)
-![2-0-000_Full_Assembly_Section_2_2022-Dec-29_05-45-53PM-000_CustomizedView5984404674](https://user-images.githubusercontent.com/76851401/209990508-e7c851ee-8901-4fab-89c3-0c94f8e06761.png)
+![2-0-000_Full_Assembly_Section_2_2022-Dec-29_05-50-40PM-000_CustomizedView6171420002](https://user-images.githubusercontent.com/76851401/209990757-5b79265b-1078-4bf4-af83-6bcda4c6758b.png)
+
 
 	Your Dream Flight Simulator Has Just Landed
 
