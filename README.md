@@ -1,7 +1,6 @@
 # The-Cessna-172-Project-V3
 [Click here to download everything](https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/archive/refs/heads/main.zip)
-
-![1 4 2022 Simulator Render](https://user-images.githubusercontent.com/76851401/166124404-db05233c-3797-4909-9695-6030061e29fd.PNG)
+![2-0-000_Full_Assembly_Section_2_2022-Dec-29_05-45-53PM-000_CustomizedView5984404674](https://user-images.githubusercontent.com/76851401/209990508-e7c851ee-8901-4fab-89c3-0c94f8e06761.png)
 
 	Your Dream Flight Simulator Has Just Landed
 
@@ -49,7 +48,7 @@ We all have issues. Let's be honest. If you find any that pertain to the 172 pro
 Create a new issue for if a part breaks, so we can factor it into a redesign.
 
 ## Why?
-The Flight Simulation Community has given me so much and I would like to give back. Free C172 Plans were what started me off in flight simulation when I was younger, and I don't want cost to be an obstacle for any young aspiring individuals to build their very own Cessna 172 Flight Sim.
+The Flight Simulation Community has given me so much and I would like to give back. Free C172 Plans were what started me off in flight simulation when I was younger, and I don't want cost to be an obstacle for any aspiring individuals to build their very own Cessna 172 Flight Sim.
 
 If you are just getting started in Flight Simulation: I believe in you. You can do this. It will take time and hard work, but for me it is definitely worth it, and you might find it is too.
 
