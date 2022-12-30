@@ -2,6 +2,10 @@ Tools Used Frequently (Online)
 https://eleif.net/photo_measure.html
 
 Spur Gear Generator:
+
+*Recently I've Been Using This One*
+https://evolventdesign.com/pages/calculators
+
 I prefer this instead of Fusion, because Fusion doesn't let you preview it.
 Neither really lets you change it later, so I prefer this one, where I can just delete and paste the new sketch.
 https://www.engineersedge.com/calculators/spur_gear_calculator_and_generator_15506.htm
