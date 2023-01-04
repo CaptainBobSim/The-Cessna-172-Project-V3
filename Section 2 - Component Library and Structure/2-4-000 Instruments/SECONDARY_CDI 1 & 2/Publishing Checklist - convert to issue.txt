@@ -1,0 +1,6 @@
+Publish ______ Tasks
+- [ ] Add a DRAWING PDF
+- [ ] MobiFlight mcc file
+- [ ] Mounting Template .DXF
+- [ ] Add Wiring diagram PNG
+- [ ] Put fritzing in source
