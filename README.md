@@ -2,7 +2,6 @@
 [Click here to download everything](https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/archive/refs/heads/main.zip)
 ![2-0-000_Full_Assembly_Section_2_2022-Dec-29_05-50-40PM-000_CustomizedView6171420002](https://user-images.githubusercontent.com/76851401/209990757-5b79265b-1078-4bf4-af83-6bcda4c6758b.png)
 
-
 	Your Dream Flight Simulator Has Just Landed
 
 These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD) model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
@@ -22,14 +21,8 @@ Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 [Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Spreadsheet
-	Files in this GitHub may not represent the most up to date version of the project.
-	Also: Top level files are usually to big to store on GitHub.
-	
-	The most up to date method is to use links on the "Simple PBS" page of this spreadsheet:
-	Please start an issue should a link not properly work.
-The Spreadsheet shows the "live" versions of everything. These have not been formally released so may have bugs. Use this method if you are a risk taker :)
-
-👉https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
+Top level files are usually to big to store on GitHub, so instead you can download them from the links on [this spreadsheet.](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing)
+Please start an issue should a link not properly work.
 
 ## What Does Each Section Mean? <br />
 Section 0 : Full Assemblies <br />
@@ -55,5 +48,5 @@ If you are just getting started in Flight Simulation: I believe in you. You can 
 
 "Everyone is smart and can be smarter"
 
-## Thank you!
-Thank you to Kovinator for being an absolute madlad and helping so much with the instruments!
+## Special Thanks:
+Thank you to Kovinator for being an absolute madlad and helping so much with the instruments! He made all of the servo small fuel instruments as well as various adaptaions of large instruments.
