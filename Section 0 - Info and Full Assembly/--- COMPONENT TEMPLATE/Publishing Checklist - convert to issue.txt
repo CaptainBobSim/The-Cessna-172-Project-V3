@@ -1,3 +1,12 @@
+Design Issues:
+- [ ] 
+
+
+Prototype Issues:
+- [ ] 
+
+
+
 Publish ______ Tasks
 - [ ] Add a DRAWING PDF
 - [ ] MobiFlight mcc file
