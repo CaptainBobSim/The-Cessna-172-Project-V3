@@ -7,7 +7,7 @@ Prototype Issues:
 
 
 
-Publish ______ Tasks
+Publishing Tasks:
 - [ ] Add a DRAWING PDF
 - [ ] MobiFlight mcc file
 - [ ] Mounting Template .DXF
