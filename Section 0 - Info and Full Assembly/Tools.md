@@ -27,3 +27,6 @@ Export every fusion 360 file (for backup or GitHub): https://github.com/Jnesselr
 
 
 Box maker: https://en.makercase.com/#/basicbox
+
+
+SnapEDA: https://apps.autodesk.com/FUSION/en/Detail/Index?id=5446990520022318629&appLang=en&os=Win64&autostart=true
