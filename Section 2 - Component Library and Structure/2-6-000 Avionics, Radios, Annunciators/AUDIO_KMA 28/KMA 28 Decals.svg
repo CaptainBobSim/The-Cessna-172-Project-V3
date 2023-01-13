@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.5946522"
-     inkscape:cx="-295.97133"
-     inkscape:cy="304.3796"
+     inkscape:cx="151.34897"
+     inkscape:cy="450.68361"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -75,7 +75,7 @@
          style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
            x="-155.35547"
            y="549.43297"
-           id="tspan1057">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+           id="tspan1152">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -126,14 +126,14 @@
      inkscape:label="Text">
     <text
        xml:space="preserve"
-       style="font-size:3.175px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0396875px;fill:#ffffff;stroke-width:0.264583"
-       x="11.027538"
-       y="-9.0546741"
+       style="font-size:3.52778px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0396875px;stroke-width:0.264583"
+       x="9.4163723"
+       y="10.967534"
        id="text845"><tspan
          sodipodi:role="line"
          id="tspan843"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
-         x="11.027538"
-         y="-9.0546741">ALL CAPS ARIAL</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.264583"
+         x="9.4163723"
+         y="10.967534">ALL CAPS ARIAL</tspan></text>
   </g>
 </svg>
