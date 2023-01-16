@@ -10,6 +10,7 @@ These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?b
 
 ### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
+### [🔨Become a Developer](https://captainbobsim.com/want-to-help/)
 ### [🛒Shop Cessna 172 Items](https://captainbobsim.com/product-category/cessna-172/)
 ### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
 ### 📰[Join the Email Newsletter](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
