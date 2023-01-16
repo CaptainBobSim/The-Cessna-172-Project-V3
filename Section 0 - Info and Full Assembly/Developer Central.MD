@@ -1,4 +1,7 @@
-Hello Fellow Developers!
+Not a developer yet? [Become a Developer Here](https://captainbobsim.com/want-to-help/)
+
+
+Well Hello Fellow Developers!
 
 Your work is very valuable to the flight simulation community! Thank you so much for all you do!
 
