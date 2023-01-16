@@ -1,12 +1,12 @@
-Not a developer yet? [Become a Developer Here](https://captainbobsim.com/want-to-help/)
+Not a developer yet? [Become a Developer Here](https://captainbobsim.com/want-to-help/) or email CaptainBobSim@gmail.com
 
 
 Well Hello Fellow Developers!
 Thank you so much for all you do!
 
+### Licensing
 Your work is very valuable to the flight simulation community! I want to make sure that I respect your hard work.
 
-### Licensing
 As a contributor/developer you have the ability to set folder level licenses, described in the (["What are these.MD"](https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/blob/main/Section%200%20-%20Info%20and%20Full%20Assembly/FOLDER%20LEVEL%20LICENSES%20-%20for%20contributers/What%20are%20these.MD) file under ["Section 0 - Info and Full Assembly/FOLDER LEVEL LICENSES - for contributers/"](https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/tree/main/Section%200%20-%20Info%20and%20Full%20Assembly/FOLDER%20LEVEL%20LICENSES%20-%20for%20contributers)
 This lets you to choose to use the default license, make their work Open-Source, or make their files so that nobody (including me) can sell their work.
 
@@ -22,4 +22,4 @@ To sync the repository with your computer, use [GitHub Desktop](https://desktop.
 Press the <> Code button, and select "Open with GitHub Desktop"
 
 ### Contact
-If you ever have any questions at all feel free to @ mention me in a discussion on GitHub, Discord, Instagram or email me CaptainBobSim@gmail.com.
+If you ever have any questions at all feel free to @ mention me in a discussion/issue on GitHub, Discord, Instagram or email me CaptainBobSim@gmail.com.
