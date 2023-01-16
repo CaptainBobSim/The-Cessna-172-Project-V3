@@ -1,0 +1,2 @@
+https://github.com/allanglen/c172-flight-sim-panel/blob/master/parts/avionics/garmin-gns-430/knob_inner.stl
+https://github.com/allanglen/c172-flight-sim-panel/blob/master/parts/avionics/garmin-gns-430/knob_outer.stl
