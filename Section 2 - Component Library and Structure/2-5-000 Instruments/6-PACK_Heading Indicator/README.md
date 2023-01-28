@@ -6,7 +6,7 @@
 [Buy it assembled]()
 
 
-Welcome to the Simulator of your dreams!
+Welcome to the Heading Indicator of your dreams!
 
 To navigate all of the files on your journey towards homecockpitness,
 Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
