@@ -2,15 +2,43 @@
 <MobiflightConnector>
   <outputs>
     <config guid="f2c89948-0866-4314-99c8-67e6db146ef7">
-      <active>true</active>
+      <active>false</active>
       <description>HDG Wheel</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Wheel" stepperInputRev="360" stepperOutputRev="8806" stepperTestValue="360" stepperCompassMode="False" />
+        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Wheel" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="360" stepperCompassMode="False" stepperAcceleration="0" stepperSpeed="0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86452b0f-e166-4551-a6bd-573300f3acb2">
+      <active>true</active>
+      <description>HDG Bug</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="90" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="STEPPER" stepperInputRev="100" stepperOutputRev="4096" stepperTestValue="360" stepperCompassMode="True" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f97ec0e3-7932-45b1-a771-0c504e4dc2bd">
+      <active>true</active>
+      <description>860 zero</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.5, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>

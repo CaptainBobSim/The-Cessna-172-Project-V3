@@ -18,6 +18,7 @@ Arduino Mega 2560 (can be shared with other compontents)
 
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
+Unless stated otherwise in a license file within this folder, this is licenced using
 **[Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)**
 Contact CaptainBobSim@gmail.com for licensing details.
 
