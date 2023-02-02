@@ -1,1 +1,0 @@
-Karl's Cessna 172 Shell moved to User Uploads. I took a lot of inspiration from it when designing the simulator, and would like to thank him for it!
