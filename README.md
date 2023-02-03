@@ -26,7 +26,7 @@ Top level files are usually to big to store on GitHub, so instead you can downlo
 Please start an issue should a link not properly work.
 
 ## What Does Each Section Mean? <br />
-Section 0 : Full Assemblies <br />
+Section 0 : Full Assembly and Helpful Documentation <br />
 Section 1 : Nose (Where the PC goes) [defined as from 24" fw of firewall to the firewall]<br />
 Section 2 : Structure and All Instruments/Components [defined as from the firewall to 24" aft of firewall] <br />
 Section 2A/2G : Multiple panels including drawings for them. Letter designates type. <br />
