@@ -1,0 +1,1 @@
+Rotary Encoder: PEC11L-4220F-S0015
