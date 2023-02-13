@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>PrototypeArduino</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Encoder Name="HDG Adjust" PinLeft="2" PinRight="3" EncoderType="3" />
+  <Button Name="HDG Adjust Push" Pin="4" />
+  <Encoder Name="HDG AP Adjust" PinLeft="5" PinRight="6" EncoderType="3" />
+  <Button Name="HDG AP Push" Pin="7" />
+  <Stepper Name="HDG Wheel" Pin1="9" Pin2="10" Pin3="11" Pin4="12" BtnPin="13" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="HDG AP Bug" Pin1="14" Pin2="15" Pin3="16" Pin4="17" BtnPin="8" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+</Config>

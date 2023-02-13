@@ -3,8 +3,8 @@
   <outputs>
     <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
       <active>true</active>
-      <description>Airspeed (Resolution increased by multiplying values by 10)</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>Airspeed (Resolution increased by multiplying values by 10) FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
         <modifiers>
           <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
@@ -32,15 +32,37 @@
         <configrefs />
       </settings>
     </config>
-  </outputs>
-  <inputs>
-    <config guid="234a4f5d-d80f-4063-b170-c421658bdc7b">
-      <active>true</active>
-      <description>command</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.3, Culture=neutral, PublicKeyToken=null" serial="" name="" type="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <config guid="a2987fa9-4bfa-4f77-b8c2-c7364c3c062a">
+      <active>false</active>
+      <description>Airspeed (Resolution increased by multiplying values by 10) XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/indicated_airspeed" />
+        <modifiers>
+          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="40" y="330" />
+            <value x="50" y="530" />
+            <value x="60" y="730" />
+            <value x="70" y="950" />
+            <value x="80" y="1200" />
+            <value x="90" y="1430" />
+            <value x="100" y="1650" />
+            <value x="110" y="1800" />
+            <value x="120" y="2050" />
+            <value x="130" y="2220" />
+            <value x="140" y="2370" />
+            <value x="160" y="2650" />
+            <value x="180" y="2870" />
+            <value x="200" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="BLANK" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
     </config>
-  </inputs>
+  </outputs>
+  <inputs />
 </MobiflightConnector>

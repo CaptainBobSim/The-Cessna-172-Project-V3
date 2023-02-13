@@ -3,33 +3,73 @@
   <outputs>
     <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
       <active>true</active>
-      <description>Airplane</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>Airplane FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
-        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Airplane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-60" stepperCompassMode="False" />
-        <interpolation active="True">
-          <value x="-800" y="-60" />
-          <value x="800" y="60" />
-        </interpolation>
+        <modifiers>
+          <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-800" y="-60" />
+            <value x="800" y="60" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="60" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
-        <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0633dd14-bb2f-4c11-a825-a407a9411d88">
+      <active>false</active>
+      <description>Airplane XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/turn_rate_roll_deg_pilot" />
+        <modifiers>
+          <transformation active="False" expression="$*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-800" y="-60" />
+            <value x="800" y="60" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="10" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
         <configrefs />
       </settings>
     </config>
     <config guid="e91f07aa-3aa6-433f-9179-2f8361b309d5">
       <active>true</active>
-      <description>Ball</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>Ball FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN COORDINATOR BALL,Position)" UUID="fb66e24d-5aea-4eb2-88c0-9d96cff6233f" />
-        <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
-        <display type="Stepper" serial="First Arduino/ SN-cÿÿÿÿÿÿÿFirst Arduino" trigger="normal" stepperAddress="Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" />
-        <interpolation active="True">
-          <value x="-1000" y="28" />
-          <value x="1000" y="-28" />
-        </interpolation>
+        <modifiers>
+          <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+          <interpolation active="True">
+            <value x="-1000" y="28" />
+            <value x="1000" y="-28" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
-        <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63c1e5a6-09fc-4a8a-a93c-2719cc423e84">
+      <active>false</active>
+      <description>Ball XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/slip_deg" />
+        <modifiers>
+          <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+          <interpolation active="True">
+            <value x="-1000" y="28" />
+            <value x="1000" y="-28" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
         <configrefs />
       </settings>
     </config>
