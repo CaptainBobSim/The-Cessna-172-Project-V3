@@ -1,4 +1,4 @@
-[Build Video Here]()
+[Build Video Here](https://youtu.be/Jd7F1pjxnOc)
 [Configuration Video Here]()
 
 [Buy it as a Kit]()
@@ -16,7 +16,7 @@ Source Files is where you'll find all of the raw files if you want to make any c
 
 Bill 'o Materials:
 x2 BYJ48 Stepper Motors (and Drivers)
-Arduino Mega 2560 (can be shared with other compontents)
+Arduino Mega 2560 (can be shared with other components)
 Black, Orange, White Filament
 x1 Laser Cut Acrylic Glass
 x4 8mm M3 Screws
@@ -28,8 +28,13 @@ North/South Pole Magnet
 x2 Hall Effect Switches A3144/OH3144/AH3144E
 Hook Up Wire
 Soldering Material
+8mm M3 Countersunk Screw
 x4 Panel Mounting Screws 6/32" 1" Long and Nut
 
+White Paint Marker
+Orange Paint Marker
+
+Go to video for links: https://youtu.be/Jd7F1pjxnOc
 
 
 
