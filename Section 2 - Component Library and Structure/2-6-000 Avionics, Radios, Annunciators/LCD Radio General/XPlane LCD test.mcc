@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="c0cc3b15-fc86-426b-a824-b49b15d9c07c">
+      <active>true</active>
+      <description>LCD PAGE 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MobiFlight Mega/ SN-aaa-15c" trigger="normal" address="LcdDisplay">
+          <line>@@@.@@@ COM1B!!!.!!!</line>
+          <line>???.??? COM2DIII.III</line>
+          <line>GGG.GG  NAV1E HHH.HH</line>
+          <line>JJJ.JJ  NAV2F KKK.KK</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="&gt;" value="0" logic="and" />
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="&lt;=" value="4" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+          <configref active="True" ref="66d1978b-747f-4e54-b0a4-0e2b3cb57510" placeholder="@" />
+          <configref active="True" ref="01c99fe2-3415-4263-8267-cfecca1e1dd3" placeholder="!" />
+          <configref active="True" ref="59db42be-0f2c-4ab0-ba8e-e875543ae386" placeholder="?" />
+          <configref active="True" ref="25c3eb03-a8f5-4f39-9926-f098c42bb24e" placeholder="I" />
+          <configref active="True" ref="e896c4ef-ca07-4156-af28-e7099d549df1" placeholder="B" />
+          <configref active="True" ref="5ff03036-b68c-478a-a373-484f632bd41c" placeholder="D" />
+          <configref active="True" ref="4479c52b-31d1-4db0-888f-763685d06881" placeholder="E" />
+          <configref active="True" ref="6d69561f-88c3-4b10-8abe-5edf94ad777c" placeholder="F" />
+          <configref active="True" ref="82800afe-d579-4431-9817-c319c24d888c" placeholder="G" />
+          <configref active="True" ref="77fe46ef-9bb3-43fc-8caa-0a2e8b9dd8ae" placeholder="H" />
+          <configref active="True" ref="309d74b5-e45e-48d5-89f8-a3a5c09e02a4" placeholder="J" />
+          <configref active="True" ref="18830b28-0467-4287-b84f-64d5948eee06" placeholder="K" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="31a12bcd-5169-4a05-afa6-71a37acd1c2e">
+      <active>true</active>
+      <description>LCD PAGE 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="LcdDisplay" serial="MobiFlight Mega/ SN-aaa-15c" trigger="normal" address="LcdDisplay">
+          <line>MM.MM ALT @</line>
+          <line>QQQ HDG AP!</line>
+          <line>ZZZZ XPNDR?</line>
+          <line>          B</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="&gt;" value="4" logic="and" />
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="&lt;=" value="8" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+          <configref active="True" ref="e896c4ef-ca07-4156-af28-e7099d549df1" placeholder="@" />
+          <configref active="True" ref="5ff03036-b68c-478a-a373-484f632bd41c" placeholder="!" />
+          <configref active="True" ref="4479c52b-31d1-4db0-888f-763685d06881" placeholder="?" />
+          <configref active="True" ref="6d69561f-88c3-4b10-8abe-5edf94ad777c" placeholder="B" />
+          <configref active="True" ref="d2947e3f-7444-4ead-944e-7f625bef4a74" placeholder="M" />
+          <configref active="True" ref="85b6d339-f523-408c-a042-879fef13ca48" placeholder="Q" />
+          <configref active="True" ref="0e19822f-2206-4e4e-a992-b0e3a749c797" placeholder="Z" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b">
+      <active>true</active>
+      <description>Index Reading and limiter</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="IEEERemainder($, 8)+1" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="1" operand="&lt;" ifValue="(8)+$" elseValue="$" />
+          <interpolation active="False">
+            <value x="0" y="0" />
+            <value x="1024" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66d1978b-747f-4e54-b0a4-0e2b3cb57510">
+      <active>true</active>
+      <description>1 Active Freq 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com1_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="Round($*10,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59db42be-0f2c-4ab0-ba8e-e875543ae386">
+      <active>true</active>
+      <description>2 Active Freq 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com2_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="Round($*10,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="01c99fe2-3415-4263-8267-cfecca1e1dd3">
+      <active>true</active>
+      <description>1 Stdby Freq 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="Round($*10,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="25c3eb03-a8f5-4f39-9926-f098c42bb24e">
+      <active>true</active>
+      <description>2 Stdby Freq 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com2_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="True" expression="Round($*10,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e896c4ef-ca07-4156-af28-e7099d549df1">
+      <active>true</active>
+      <description>Index &lt; 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="if(#=1 or #=5,1,0)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="1" operand="=" ifValue="&lt;" elseValue=" " />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5ff03036-b68c-478a-a373-484f632bd41c">
+      <active>true</active>
+      <description>Index &lt; 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="if(#=2 or #=6,2,0)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="2" operand="=" ifValue="&lt;" elseValue=" " />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4479c52b-31d1-4db0-888f-763685d06881">
+      <active>true</active>
+      <description>Index &lt; 3</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="if(#=3 or #=7,3,0)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="3" operand="=" ifValue="&lt;" elseValue=" " />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6d69561f-88c3-4b10-8abe-5edf94ad777c">
+      <active>true</active>
+      <description>Index &lt; 4</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="if(#=4 or #=8,4,0)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="4" operand="=" ifValue="&lt;" elseValue=" " />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="82800afe-d579-4431-9817-c319c24d888c">
+      <active>true</active>
+      <description>3 Active Nav 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="309d74b5-e45e-48d5-89f8-a3a5c09e02a4">
+      <active>true</active>
+      <description>4 Active Nav 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/com2_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="77fe46ef-9bb3-43fc-8caa-0a2e8b9dd8ae">
+      <active>true</active>
+      <description>3 Stby Nav 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18830b28-0467-4287-b84f-64d5948eee06">
+      <active>true</active>
+      <description>4 Stby Nav 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav2_stdby_freq_hz" />
+        <modifiers>
+          <transformation active="False" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d2947e3f-7444-4ead-944e-7f625bef4a74">
+      <active>true</active>
+      <description>5 Altimeter</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/altitude" />
+        <modifiers>
+          <transformation active="True" expression="Round($*100,0)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="85b6d339-f523-408c-a042-879fef13ca48">
+      <active>true</active>
+      <description>6 HDG AP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/heading" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6cc80d83-ce50-4ed7-a71e-db5b3c18908b">
+      <active>false</active>
+      <description>7 OBS1 CRS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="376b17b9-72ef-450d-8730-c396fccb44e0">
+      <active>false</active>
+      <description>8 OBS2 CRS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0e19822f-2206-4e4e-a992-b0e3a749c797">
+      <active>true</active>
+      <description>XPNDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/transponder_code" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5">
+      <active>true</active>
+      <description>XPNDR Index</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="XPNDR Index" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="IEEERemainder($, 4)+1" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="0" operand="&lt;=" ifValue="(4)+$" elseValue="$" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="f3682460-3358-402a-a2bd-bc2c01b9cfc5">
+      <active>true</active>
+      <description>Index</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Index" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="VariableInputAction" varType="number" varName="Index" varExpression="$-1" />
+          <onLeftFast />
+          <onRight type="VariableInputAction" varType="number" varName="Index" varExpression="$+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="660e87c4-ef68-466c-8594-91ce2bf62fb8">
+      <active>false</active>
+      <description>Index Reset</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Index Reset" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Index" varExpression="1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="93805c98-14af-4558-a52c-49a71a1e56ee">
+      <active>true</active>
+      <description>1 Stby 1 Adjust Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f34a3c12-e51b-466f-912f-89d6eef99dc0">
+      <active>true</active>
+      <description>1 Stby 1 Adjust Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="39434e90-e301-4ee8-b926-ea9c5c624981">
+      <active>true</active>
+      <description>1 Freq 1 Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="$" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c96938c7-e285-4d00-bd8c-e0c84f5183af">
+      <active>true</active>
+      <description>2 Stby 2 Adjust Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_coarse_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd499546-4b34-47f0-9618-fc4f9def7506">
+      <active>true</active>
+      <description>2 Stby 2 Adjust Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com2_fine_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="75c10895-b4ff-4037-bbbd-94d8f44f58a8">
+      <active>true</active>
+      <description>2 Freq 2 Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com2_standy_flip" expression="$" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="276038f2-2b2d-4ba6-96c7-3c29ae109d83">
+      <active>true</active>
+      <description>3 Stby Nav1 Adjust Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3487067-5a13-41b4-a516-a471295f56ef">
+      <active>true</active>
+      <description>3 Stby Nav1 Adjust Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5fc8fc59-cdcc-4834-af8d-06620481caef">
+      <active>true</active>
+      <description>3 Freq Nav1 Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="$" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="870d9b5c-1edf-442e-9001-8d988b4759ae">
+      <active>true</active>
+      <description>4 Stby Nav2 Adjust Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_coarse_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c579a26e-94bf-43e6-bf47-d4827de622ff">
+      <active>true</active>
+      <description>4 Stby Nav2 Adjust Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav2_fine_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="56c097a8-f570-461d-bcd8-bc74a07ba934">
+      <active>true</active>
+      <description>4 Freq Nav2 Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav2_standy_flip" expression="$" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="336c3b2b-3a17-41af-9360-be5e9582ec13">
+      <active>true</active>
+      <description>5 Altimeter</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/altitude_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="244aa38f-f3ca-4658-be63-de96fdbbc721">
+      <active>true</active>
+      <description>6 HDG AP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a41e5e40-969f-43a7-9fd8-f66b8876b1ab">
+      <active>true</active>
+      <description>7 XPNDR 1000</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_thousands_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d662d8e1-1e5f-49ed-91dc-103dc9096065">
+      <active>true</active>
+      <description>7 XPNDR 100</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_hundreds_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="46d7b962-1799-4435-90d5-7102a9d5337b">
+      <active>true</active>
+      <description>7 XPNDR 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_tens_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e47a3478-6f01-4a91-81b4-ec632bba5775">
+      <active>true</active>
+      <description>7 XPNDR 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_down" expression="$" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ones_up" expression="$" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+          <precondition type="config" active="true" ref="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="face1de5-942a-4955-a0cf-c345108a462f">
+      <active>true</active>
+      <description>7 XPNDR Index</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-aaa-15c" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="VariableInputAction" varType="number" varName="XPNDR Index" varExpression="$-1" />
+          <onLeftFast />
+          <onRight type="VariableInputAction" varType="number" varName="XPNDR Index" varExpression="$+1" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ee0d329-5690-4998-860e-e1ec6cd36942">
+      <active>true</active>
+      <description>7 XPNDR 1200 VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Logitech Extreme 3D / JS-0049ec90-b730-11eb-8001-444553540000" name="Button 8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/transponder_code" expression="1200" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

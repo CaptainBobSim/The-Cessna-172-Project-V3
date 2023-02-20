@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Flaps Arduino</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Servo Name="Flaps Servo" DataPin="55" />
+  <AnalogInput Name="Flap Input" Pin="54" Sensitivity="5" />
+</Config>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="cdf046a9-3eb5-404d-8d39-5c16d1b286ff">
+      <active>true</active>
+      <description>ILS 1 CDI</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/nav1_hdef_dots_pilot" />
+        <modifiers>
+          <transformation active="True" expression="($*4)+10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Servo" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Servo" servoMin="0" servoMax="20" servoMaxRotationPercent="100" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c71a9c52-ebff-47e1-8db2-ed7654e1d4c9">
+      <active>true</active>
+      <description>Nav1 Glideslope</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_vdef_dot2" />
+        <modifiers>
+          <transformation active="True" expression="($*4)+10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Servo" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Servo" servoMin="0" servoMax="20" servoMaxRotationPercent="100" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c040758f-9757-48dd-8a62-7c749a5cbc0e">
+      <active>true</active>
+      <description>ILS 1 Compass Card: CDI Copy Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav1_course_degm" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="Stepper" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c7e1c93-1b81-44f1-a8d8-513965a879a8">
+      <active>true</active>
+      <description>ILS 1 CDI</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/nav2_hdef_dots_pilot" />
+        <modifiers>
+          <transformation active="True" expression="($*4)+10" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Servo" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Servo" servoMin="0" servoMax="20" servoMaxRotationPercent="100" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef32e7a8-b4b5-4dc2-b68c-ef2508fb5af1">
+      <active>true</active>
+      <description>ILS 2 Compass Card</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/nav2_course_degm" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Stepper" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="Stepper" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="0fbfc57d-9972-4223-81cb-926366d6f0da">
+      <active>true</active>
+      <description>Nav1 Encoder</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" name="Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/radios/nav1_course_degm" expression="$+2" />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="669119a5-0dde-411f-8100-4240b157923f">
+      <active>true</active>
+      <description>Nav2 Encoder</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="PrototypeArduino/ SN-cÿÿÿÿÿÿÿ" name="Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/radios/nav2_course_degm" expression="$+2" />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
