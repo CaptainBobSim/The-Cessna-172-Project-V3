@@ -13,7 +13,14 @@ These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?b
 ### [🔨Become a Developer](https://captainbobsim.com/want-to-help/)
 ### [🛒Shop Cessna 172 Items](https://captainbobsim.com/product-category/cessna-172/)
 ### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
-### 📰[Join the Email Newsletter](https://mailchi.mp/3afd070e8526/wf5uthbr9t)
+
+## Table of Contents: <br />
+Section 0 : Documentation <br />
+Section 1 : (Archived for now) Nose (Where the PC goes) [defined as from 24" fw of firewall to the firewall]<br />
+Section 2 : Structure and All Instruments/Components [defined as from the firewall to 24" aft of firewall] <br />
+Section 2A/2G : INSTRUMENT PANELS and panel templates. Letter designates type. <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2A : Analog Panel Template (Steam Gauges and Radio Stack) <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2G : Garmin G1000 based Cessna 172 Panel <br />
 
 ### Want to Help Develop the 172?
 Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
@@ -24,14 +31,6 @@ Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 ## Spreadsheet
 Top level files are usually to big to store on GitHub, so instead you can download them from the links on [this spreadsheet.](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing)
 Please start an issue should a link not properly work.
-
-## What Does Each Section Mean? <br />
-Section 0 : Full Assembly and Helpful Documentation <br />
-Section 1 : Nose (Where the PC goes) [defined as from 24" fw of firewall to the firewall]<br />
-Section 2 : Structure and All Instruments/Components [defined as from the firewall to 24" aft of firewall] <br />
-Section 2A/2G : Multiple panels including drawings for them. Letter designates type. <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2A : Analog Panel using Steam Gauges and Radio Stack <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2G : Garmin G1000 based Cessna 172 Panel <br />
 
 Coming Later: <br />
 Section 3/4 : Pilot/CoPilot Seats [defined as 24" aft of firewall to 72" aft] <br />
