@@ -6,13 +6,9 @@
 
 These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD) model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 ### 👉[Watch the Build Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)
-
-
 ### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
 ### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
-### [🔨Become a Developer](https://captainbobsim.com/want-to-help/)
 ### [🛒Shop Cessna 172 Items](https://captainbobsim.com/product-category/cessna-172/)
-### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
 
 ## Table of Contents: <br />
 Section 0 : Documentation <br />
@@ -22,8 +18,10 @@ Section 2A/2G : INSTRUMENT PANELS and panel templates. Letter designates type. <
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2A : Analog Panel Template (Steam Gauges and Radio Stack) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2G : Garmin G1000 based Cessna 172 Panel <br />
 
-### Want to Help Develop the 172?
+### [🔨Become a Developer](https://captainbobsim.com/want-to-help/)
 Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
+
+### [📚C172 research/Dimensions](https://github.com/CaptainBobSim/C172-Research)
 
 ## Copyright
 [Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)
