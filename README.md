@@ -6,8 +6,7 @@
 
 These plans are based on a ["Pay What You Want"](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD) model. Though I could charge money for these plans, I want to give this project's plans and files away on this GitHub for free. 
 ### 👉[Watch the Build Videos Here](https://www.youtube.com/watch?v=Gfau2fuKCAs&list=PL3BZuuA7xo1La9Q11wTtN-bd93COms_3J)
-### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob)
-### [💗Support the project on PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
+### [💗Support development of the project on Patreon!](https://www.patreon.com/Captain_Bob) or [PayPal!](https://www.paypal.com/donate?business=H4MLB9GPEUEX4&item_name=Cessna+172+Project&currency_code=USD)
 ### [🛒Shop Cessna 172 Items](https://captainbobsim.com/product-category/cessna-172/)
 
 ## Table of Contents: <br />
@@ -17,6 +16,10 @@ Section 2 : Structure and All Instruments/Components [defined as from the firewa
 Section 2A/2G : INSTRUMENT PANELS and panel templates. Letter designates type. <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2A : Analog Panel Template (Steam Gauges and Radio Stack) <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section 2G : Garmin G1000 based Cessna 172 Panel <br />
+
+Coming Later: <br />
+Section 3/4 : Pilot/CoPilot Seats [defined as 24" aft of firewall to 72" aft] <br />
+Section 5 : Instructor Section/Back Seat Bench <br />
 
 ### [🔨Become a Developer](https://captainbobsim.com/want-to-help/)
 Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
@@ -29,11 +32,6 @@ Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 ## Spreadsheet
 Top level files are usually to big to store on GitHub, so instead you can download them from the links on [this spreadsheet.](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing)
 Please start an issue should a link not properly work.
-
-Coming Later: <br />
-Section 3/4 : Pilot/CoPilot Seats [defined as 24" aft of firewall to 72" aft] <br />
-Section 5 : Instructor Section/Back Seat Bench <br />
-
 
 ## Issues:
 We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
