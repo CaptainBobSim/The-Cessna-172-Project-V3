@@ -1,9 +1,8 @@
 [Build Video Here](https://youtu.be/Jd7F1pjxnOc)
-[Configuration Video Here]()
+[Configuration Video Here](https://youtu.be/P1zUqRlHDGw)
 
-[Buy it as a Kit]()
-
-[Buy it assembled]()
+[Buy it as a Kit or Assembled](https://captainbobsim.com/product/heading-indicator-kit-or-assembled/)
+[Buy a PCB to make Wiring Easier](https://captainbobsim.com/product/heading-indicator-circuit-board/)
 
 
 Welcome to the Heading Indicator of your dreams!
