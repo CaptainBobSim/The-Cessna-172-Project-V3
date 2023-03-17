@@ -8,7 +8,6 @@ Prototype Issues:
 
 
 Publishing Tasks:
-
 - [ ] Add a DRAWING PDF (optional)
 - [ ] Make a Cut/Engrave SVG
 - [ ] Rotate all STLs using MeshMixer for easy printability (no slicer rotate)
