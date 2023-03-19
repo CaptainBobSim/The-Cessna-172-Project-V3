@@ -12,7 +12,7 @@ Make sure your pitch diameter is in multiples of 2 so it can be halved!
 Arduinos: 
 Each pin may not draw more than 40 mA of current!
 Each Arduino MEGA may not draw more than 150mA of current! [200mA is actual limit - 150mA is safety limit]
-
+Components male, Arduino female?
 
 
 Laser: 
@@ -20,3 +20,6 @@ Black: Cut Acrylic
 Red: Engrave Acrylic
 Green: Etch lightly enough to burn but not cut paper
 Blue: Cut Paper
+
+
+
