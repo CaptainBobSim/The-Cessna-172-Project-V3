@@ -1,12 +1,12 @@
-[Build Video Here]()
-[Configuration Video Here]()
+Build Video Here:
+Configuration Video:
 
-[🛒Buy it as a Kit or Assembled]()
+🛒Buy it as a Kit or Assembled:
 
 Welcome to the Simulator of your dreams!
 
-To navigate all of the files on your journey towards homecockpitness,
-Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
+How to navigate the files?
+- Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
 
 
 __Bill 'o Materials:__
