@@ -15,7 +15,6 @@ Publishing Tasks:
 - [ ] MobiFlight .mcc file and .mfmcfile
 - [ ] Mounting Template .DXF
 - [ ] Add Wiring diagram PNG
-- [ ] Put fritzing in source
 - [ ] Write the ReadMe
 	- [ ] Video Here
 	- [ ] Buy it as a Kit

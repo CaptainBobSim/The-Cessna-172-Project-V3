@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="eb327711-1ab1-43f6-95cb-2f9e710fb286">
+      <active>false</active>
+      <description>--- SELECT YOUR SIMULATOR ---</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8fb093df-22e2-4864-bb37-1609e78753ba">
+      <active>false</active>
+      <description>VSI X-Plane (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a84b844-e625-4ae0-a1c4-0d93f22380fb">
+      <active>true</active>
+      <description>VSI FS2020 (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
+        <modifiers>
+          <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="27b1eb98-7d00-4fcd-893b-ece8a931e996">
+      <active>false</active>
+      <description>--- SELECT YOUR MOTOR CONFIGURATION ---</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
+        <modifiers>
+          <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5c0d5f3b-5987-4243-9396-5cd02b3e3418">
+      <active>false</active>
+      <description>VSI Stepper x27 with stop (default)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="de2cca79-9696-4e35-8343-c49b5237daab">
+      <active>false</active>
+      <description>VSI Stepper x27 stop removed</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ef5a8025-bbd5-46e4-b497-f8f759e01d3a">
+      <active>true</active>
+      <description>VSI Stepper BYJ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
