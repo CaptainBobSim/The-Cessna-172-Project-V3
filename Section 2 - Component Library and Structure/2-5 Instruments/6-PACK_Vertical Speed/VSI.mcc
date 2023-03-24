@@ -5,7 +5,7 @@
       <active>false</active>
       <description>--- SELECT YOUR SIMULATOR ---</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -68,7 +68,7 @@
             <value x="1800" y="158" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs />
       </settings>
@@ -86,7 +86,7 @@
             <value x="1800" y="158" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />
@@ -107,7 +107,7 @@
             <value x="2000" y="170" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />
@@ -128,7 +128,7 @@
             <value x="2000" y="170" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="VideoArduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="2048" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="eb327711-1ab1-43f6-95cb-2f9e710fb286" placeholder="v" />

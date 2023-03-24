@@ -4,7 +4,7 @@
     <config guid="5c9ade4a-4526-48b8-a310-b4d97f44163f">
       <active>false</active>
       <description>Hey Everyone! Refer to the GitHub for more information about this file.</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
         <modifiers>
           <transformation active="True" expression="50" substrStart="0" substrEnd="7" />
@@ -18,7 +18,7 @@
     <config guid="f4848912-6801-46fd-8f5b-f82f8a421ffa">
       <active>true</active>
       <description>Heading Card Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -32,7 +32,7 @@
     <config guid="a71da16d-ab3d-4e81-9649-c148e3fbd9b1">
       <active>false</active>
       <description>Heading Card Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -46,7 +46,7 @@
     <config guid="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412">
       <active>false</active>
       <description>Heading Card Raw TEST</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -60,7 +60,7 @@
     <config guid="24cb5269-ee83-4f08-942a-dad90b87d67c">
       <active>true</active>
       <description>Heading Card Accounting for Zero Position</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="(#+(360-25))%360" substrStart="0" substrEnd="7" />
@@ -78,7 +78,7 @@
     <config guid="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc">
       <active>true</active>
       <description>Heading Bug Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK DIR,Degrees)" UUID="e47210e8-7db4-4980-9f57-b3682fb3742d" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -96,7 +96,7 @@
     <config guid="8cefc78d-ac7a-46f0-b7ec-fcdee599884e">
       <active>false</active>
       <description>Heading Bug Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit/autopilot/heading_mag" />
         <modifiers>
           <transformation active="False" expression="90" substrStart="0" substrEnd="7" />
@@ -114,7 +114,7 @@
     <config guid="7102e75f-de45-4a21-8705-6af4d4db60bf">
       <active>true</active>
       <description>Heading Bug Accounting for Zero and Heading Card</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="((!+#)+(360-5))%360" substrStart="0" substrEnd="7" />
@@ -134,7 +134,7 @@
     <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
       <active>true</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
         <modifiers>
           <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
@@ -165,7 +165,7 @@
     <config guid="a2987fa9-4bfa-4f77-b8c2-c7364c3c062a">
       <active>false</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/indicated_airspeed" />
         <modifiers>
           <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
@@ -196,7 +196,7 @@
     <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
       <active>true</active>
       <description>Airplane FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
         <modifiers>
           <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
@@ -214,7 +214,7 @@
     <config guid="0633dd14-bb2f-4c11-a825-a407a9411d88">
       <active>false</active>
       <description>Airplane XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/turn_rate_roll_deg_pilot" />
         <modifiers>
           <transformation active="False" expression="$*100" substrStart="0" substrEnd="7" />
@@ -232,7 +232,7 @@
     <config guid="e91f07aa-3aa6-433f-9179-2f8361b309d5">
       <active>true</active>
       <description>Ball FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN COORDINATOR BALL,Position)" UUID="fb66e24d-5aea-4eb2-88c0-9d96cff6233f" />
         <modifiers>
           <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
@@ -250,7 +250,7 @@
     <config guid="63c1e5a6-09fc-4a8a-a93c-2719cc423e84">
       <active>false</active>
       <description>Ball XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/slip_deg" />
         <modifiers>
           <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
@@ -270,7 +270,7 @@
     <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
       <active>false</active>
       <description>HDG Drift Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
           <onLeftFast />
@@ -286,7 +286,7 @@
     <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
       <active>true</active>
       <description>HDG Drift Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
           <onLeftFast />
@@ -302,7 +302,7 @@
     <config guid="8534157f-111e-493a-b190-ef13ca466641">
       <active>false</active>
       <description>HDG AP Bug Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
           <onLeftFast />
@@ -316,7 +316,7 @@
     <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
       <active>true</active>
       <description>HDG AP Bug Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
           <onLeftFast />
@@ -330,7 +330,7 @@
     <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
       <active>true</active>
       <description>HDG Adjust DG Push Status</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
           <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
@@ -342,7 +342,7 @@
     <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
       <active>false</active>
       <description>HDG Bug Push - Zero</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
           <onRelease />
