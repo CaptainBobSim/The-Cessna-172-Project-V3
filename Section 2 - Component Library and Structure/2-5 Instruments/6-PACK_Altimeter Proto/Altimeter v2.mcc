@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="f7e06fae-bed3-4fce-98b6-815850c6f7e7">
+      <active>true</active>
+      <description>Read Alt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="protoduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="alt" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28f5b825-2d7b-4d02-aabf-6e14c76576ba">
+      <active>false</active>
+      <description>Altimeter 100ft Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="1-(A%1000)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="protoduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="alt" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f7e06fae-bed3-4fce-98b6-815850c6f7e7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5c2883fd-ba07-4977-93a8-02c125c0a5cf">
+      <active>true</active>
+      <description>Altimeter 1,000ft Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="(A%10000)/10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="protoduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="alt" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="5000" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f7e06fae-bed3-4fce-98b6-815850c6f7e7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="062c238b-80cf-4182-8b59-e407ed9d1083">
+      <active>false</active>
+      <description>Altimeter 10,000ft Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="(A%100000)/100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="protoduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="alt" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f7e06fae-bed3-4fce-98b6-815850c6f7e7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
