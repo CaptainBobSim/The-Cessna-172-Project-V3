@@ -4,7 +4,7 @@
     <config guid="bf3a255d-fe68-4d94-b4af-543fed2bc796">
       <active>true</active>
       <description>AS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -18,7 +18,7 @@
     <config guid="5c9ade4a-4526-48b8-a310-b4d97f44163f">
       <active>false</active>
       <description>Hey Everyone! Refer to the GitHub for more information about this file.</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
         <modifiers>
           <transformation active="True" expression="50" substrStart="0" substrEnd="7" />
@@ -32,7 +32,7 @@
     <config guid="f4848912-6801-46fd-8f5b-f82f8a421ffa">
       <active>true</active>
       <description>Heading Card Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -46,7 +46,7 @@
     <config guid="a71da16d-ab3d-4e81-9649-c148e3fbd9b1">
       <active>false</active>
       <description>Heading Card Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -60,7 +60,7 @@
     <config guid="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412">
       <active>false</active>
       <description>Heading Card Raw TEST</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
         <modifiers>
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
@@ -74,7 +74,7 @@
     <config guid="24cb5269-ee83-4f08-942a-dad90b87d67c">
       <active>true</active>
       <description>Heading Card Accounting for Zero Position</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="(#+(360-25))%360" substrStart="0" substrEnd="7" />
@@ -92,7 +92,7 @@
     <config guid="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc">
       <active>true</active>
       <description>Heading Bug Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK DIR,Degrees)" UUID="e47210e8-7db4-4980-9f57-b3682fb3742d" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -110,7 +110,7 @@
     <config guid="8cefc78d-ac7a-46f0-b7ec-fcdee599884e">
       <active>false</active>
       <description>Heading Bug Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit/autopilot/heading_mag" />
         <modifiers>
           <transformation active="False" expression="90" substrStart="0" substrEnd="7" />
@@ -128,7 +128,7 @@
     <config guid="7102e75f-de45-4a21-8705-6af4d4db60bf">
       <active>true</active>
       <description>Heading Bug Accounting for Zero and Heading Card</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="((!+#)+(360-5))%360" substrStart="0" substrEnd="7" />
@@ -148,7 +148,7 @@
     <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
       <active>true</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
         <modifiers>
           <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
@@ -179,7 +179,7 @@
     <config guid="a2987fa9-4bfa-4f77-b8c2-c7364c3c062a">
       <active>false</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/indicated_airspeed" />
         <modifiers>
           <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
@@ -210,7 +210,7 @@
     <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
       <active>true</active>
       <description>Airplane FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
         <modifiers>
           <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
@@ -228,7 +228,7 @@
     <config guid="0633dd14-bb2f-4c11-a825-a407a9411d88">
       <active>false</active>
       <description>Airplane XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/turn_rate_roll_deg_pilot" />
         <modifiers>
           <transformation active="False" expression="$*100" substrStart="0" substrEnd="7" />
@@ -246,7 +246,7 @@
     <config guid="e91f07aa-3aa6-433f-9179-2f8361b309d5">
       <active>true</active>
       <description>Ball FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN COORDINATOR BALL,Position)" UUID="fb66e24d-5aea-4eb2-88c0-9d96cff6233f" />
         <modifiers>
           <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
@@ -264,7 +264,7 @@
     <config guid="63c1e5a6-09fc-4a8a-a93c-2719cc423e84">
       <active>false</active>
       <description>Ball XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/slip_deg" />
         <modifiers>
           <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
@@ -282,7 +282,7 @@
     <config guid="eb327711-1ab1-43f6-95cb-2f9e710fb286">
       <active>false</active>
       <description>--- SELECT YOUR SIMULATOR ---</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
@@ -300,7 +300,7 @@
     <config guid="8fb093df-22e2-4864-bb37-1609e78753ba">
       <active>false</active>
       <description>VSI X-Plane (Read)</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
         <modifiers>
           <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
@@ -318,7 +318,7 @@
     <config guid="1a84b844-e625-4ae0-a1c4-0d93f22380fb">
       <active>true</active>
       <description>VSI FS2020 (Read)</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
         <modifiers>
           <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
@@ -336,7 +336,7 @@
     <config guid="27b1eb98-7d00-4fcd-893b-ece8a931e996">
       <active>false</active>
       <description>--- SELECT YOUR MOTOR CONFIGURATION ---</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
         <modifiers>
           <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
@@ -354,7 +354,7 @@
     <config guid="5c0d5f3b-5987-4243-9396-5cd02b3e3418">
       <active>true</active>
       <description>VSI Stepper x27 with stop (default)</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
@@ -375,7 +375,7 @@
     <config guid="de2cca79-9696-4e35-8343-c49b5237daab">
       <active>false</active>
       <description>VSI Stepper x27 stop removed</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
         <modifiers>
           <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
@@ -396,7 +396,7 @@
     <config guid="ef5a8025-bbd5-46e4-b497-f8f759e01d3a">
       <active>false</active>
       <description>VSI Stepper BYJ </description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
         <modifiers>
           <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
@@ -417,7 +417,7 @@
     <config guid="c0cc3b15-fc86-426b-a824-b49b15d9c07c">
       <active>true</active>
       <description>LCD PAGE 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -453,7 +453,7 @@
     <config guid="31a12bcd-5169-4a05-afa6-71a37acd1c2e">
       <active>true</active>
       <description>LCD PAGE 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -484,7 +484,7 @@
     <config guid="f87e4c1d-910e-4a93-8c14-6dea7f6afd7b">
       <active>true</active>
       <description>Index Reading and limiter</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="IEEERemainder($, 8)+1" substrStart="0" substrEnd="7" />
@@ -502,7 +502,7 @@
     <config guid="66d1978b-747f-4e54-b0a4-0e2b3cb57510">
       <active>true</active>
       <description>1 Active Freq 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -516,7 +516,7 @@
     <config guid="59db42be-0f2c-4ab0-ba8e-e875543ae386">
       <active>true</active>
       <description>2 Active Freq 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:2,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -530,7 +530,7 @@
     <config guid="01c99fe2-3415-4263-8267-cfecca1e1dd3">
       <active>true</active>
       <description>1 Stdby Freq 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -544,7 +544,7 @@
     <config guid="25c3eb03-a8f5-4f39-9926-f098c42bb24e">
       <active>true</active>
       <description>2 Stdby Freq 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:2,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -558,7 +558,7 @@
     <config guid="e896c4ef-ca07-4156-af28-e7099d549df1">
       <active>true</active>
       <description>Index &lt; 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="if(#=1 or #=5,1,0)" substrStart="0" substrEnd="7" />
@@ -574,7 +574,7 @@
     <config guid="5ff03036-b68c-478a-a373-484f632bd41c">
       <active>true</active>
       <description>Index &lt; 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="if(#=2 or #=6,2,0)" substrStart="0" substrEnd="7" />
@@ -590,7 +590,7 @@
     <config guid="4479c52b-31d1-4db0-888f-763685d06881">
       <active>true</active>
       <description>Index &lt; 3</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="if(#=3 or #=7,3,0)" substrStart="0" substrEnd="7" />
@@ -606,7 +606,7 @@
     <config guid="6d69561f-88c3-4b10-8abe-5edf94ad777c">
       <active>true</active>
       <description>Index &lt; 4</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="if(#=4 or #=8,4,0)" substrStart="0" substrEnd="7" />
@@ -622,7 +622,7 @@
     <config guid="82800afe-d579-4431-9817-c319c24d888c">
       <active>true</active>
       <description>3 Active Nav 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:1,MHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
         <modifiers>
           <transformation active="True" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
@@ -636,7 +636,7 @@
     <config guid="309d74b5-e45e-48d5-89f8-a3a5c09e02a4">
       <active>true</active>
       <description>4 Active Nav 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:2,MHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
         <modifiers>
           <transformation active="True" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
@@ -650,7 +650,7 @@
     <config guid="77fe46ef-9bb3-43fc-8caa-0a2e8b9dd8ae">
       <active>true</active>
       <description>3 Stby Nav 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,MHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
         <modifiers>
           <transformation active="True" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
@@ -664,7 +664,7 @@
     <config guid="18830b28-0467-4287-b84f-64d5948eee06">
       <active>true</active>
       <description>4 Stby Nav 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:2,MHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
         <modifiers>
           <transformation active="True" expression="Round($*100,2)" substrStart="0" substrEnd="7" />
@@ -678,7 +678,7 @@
     <config guid="d2947e3f-7444-4ead-944e-7f625bef4a74">
       <active>true</active>
       <description>5 Altimeter</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, inHg)" UUID="2f595653-50dd-4394-8895-af62769febe5" />
         <modifiers>
           <transformation active="True" expression="Round($*100,0)" substrStart="0" substrEnd="7" />
@@ -692,7 +692,7 @@
     <config guid="85b6d339-f523-408c-a042-879fef13ca48">
       <active>true</active>
       <description>6 HDG AP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK DIR,Degrees)" UUID="e47210e8-7db4-4980-9f57-b3682fb3742d" />
         <modifiers>
           <transformation active="True" expression="Round($,0)" substrStart="0" substrEnd="7" />
@@ -706,7 +706,7 @@
     <config guid="6cc80d83-ce50-4ed7-a71e-db5b3c18908b">
       <active>true</active>
       <description>7 OBS1 CRS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -720,7 +720,7 @@
     <config guid="376b17b9-72ef-450d-8730-c396fccb44e0">
       <active>true</active>
       <description>8 OBS2 CRS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -734,7 +734,7 @@
     <config guid="0e19822f-2206-4e4e-a992-b0e3a749c797">
       <active>true</active>
       <description>XPNDR</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
@@ -748,7 +748,7 @@
     <config guid="3918e97a-2b6b-436f-9fe3-2e3b5a78eec5">
       <active>true</active>
       <description>XPNDR Index</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="XPNDR Index" varExpression="$" />
         <modifiers>
           <transformation active="True" expression="IEEERemainder($, 4)+1" substrStart="0" substrEnd="7" />
@@ -764,7 +764,7 @@
     <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
       <active>false</active>
       <description>HDG Drift Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
           <onLeftFast />
@@ -780,7 +780,7 @@
     <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
       <active>true</active>
       <description>HDG Drift Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
           <onLeftFast />
@@ -796,7 +796,7 @@
     <config guid="8534157f-111e-493a-b190-ef13ca466641">
       <active>false</active>
       <description>HDG AP Bug Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
           <onLeftFast />
@@ -810,7 +810,7 @@
     <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
       <active>true</active>
       <description>HDG AP Bug Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
           <onLeftFast />
@@ -824,7 +824,7 @@
     <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
       <active>true</active>
       <description>HDG Adjust DG Push Status</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
           <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
@@ -836,7 +836,7 @@
     <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
       <active>false</active>
       <description>HDG Bug Push - Zero</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
           <onRelease />
@@ -848,7 +848,7 @@
     <config guid="f3682460-3358-402a-a2bd-bc2c01b9cfc5">
       <active>true</active>
       <description>Index</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Index" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Index" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="VariableInputAction" varType="number" varName="Index" varExpression="$-1" />
           <onLeftFast />
@@ -862,7 +862,7 @@
     <config guid="660e87c4-ef68-466c-8594-91ce2bf62fb8">
       <active>true</active>
       <description>Index Reset</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Index Reset" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Index Reset" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="Index" varExpression="(1)-1" />
           <onRelease />
@@ -874,7 +874,7 @@
     <config guid="93805c98-14af-4558-a52c-49a71a1e56ee">
       <active>true</active>
       <description>1 Stby 1 Adjust Rough</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" presetId="ec154767-41ce-4a2f-865b-3e6fe7c90c89" />
           <onLeftFast />
@@ -890,7 +890,7 @@
     <config guid="f34a3c12-e51b-466f-912f-89d6eef99dc0">
       <active>true</active>
       <description>1 Stby 1 Adjust Fine</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_DEC)" presetId="04725cc3-7346-4f5d-ad89-c1ffaaa6e978" />
           <onLeftFast />
@@ -906,7 +906,7 @@
     <config guid="39434e90-e301-4ee8-b926-ea9c5c624981">
       <active>true</active>
       <description>1 Freq 1 Swap</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM_STBY_RADIO_SWAP)" presetId="a526dd94-0322-4fd6-89c7-445ccbb5579c" />
           <onRelease />
@@ -920,7 +920,7 @@
     <config guid="c96938c7-e285-4d00-bd8c-e0c84f5183af">
       <active>true</active>
       <description>2 Stby 2 Adjust Rough</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_WHOLE_DEC)" presetId="9e748e8d-2ee3-47fc-9253-dac2452f8cbe" />
           <onLeftFast />
@@ -936,7 +936,7 @@
     <config guid="fd499546-4b34-47f0-9618-fc4f9def7506">
       <active>true</active>
       <description>2 Stby 2 Adjust Fine</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_FRACT_DEC)" presetId="de76b2e3-c555-499f-a2fd-f3c5d3461c68" />
           <onLeftFast />
@@ -952,7 +952,7 @@
     <config guid="75c10895-b4ff-4037-bbbd-94d8f44f58a8">
       <active>true</active>
       <description>2 Freq 2 Swap</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM2_RADIO_SWAP)" presetId="b4d05ce0-0005-427a-b698-45c28cde0a18" />
           <onRelease />
@@ -966,7 +966,7 @@
     <config guid="276038f2-2b2d-4ba6-96c7-3c29ae109d83">
       <active>true</active>
       <description>3 Stby Nav1 Adjust Rough</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" presetId="bcb45f55-c67a-44b9-a951-096e450ccec7" />
           <onLeftFast />
@@ -982,7 +982,7 @@
     <config guid="c3487067-5a13-41b4-a516-a471295f56ef">
       <active>true</active>
       <description>3 Stby Nav1 Adjust Fine</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_FRACT_DEC)" presetId="f92f319c-75e2-471e-845a-764540c65040" />
           <onLeftFast />
@@ -998,7 +998,7 @@
     <config guid="5fc8fc59-cdcc-4834-af8d-06620481caef">
       <active>true</active>
       <description>3 Freq Nav1 Swap</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_SWAP)" presetId="72e5dd2a-4e9d-4d61-940a-e523202f8dd0" />
           <onRelease />
@@ -1012,7 +1012,7 @@
     <config guid="870d9b5c-1edf-442e-9001-8d988b4759ae">
       <active>true</active>
       <description>4 Stby Nav2 Adjust Rough</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_WHOLE_DEC)" presetId="f777e5bf-89b0-4964-ab23-c11870a37d6e" />
           <onLeftFast />
@@ -1028,7 +1028,7 @@
     <config guid="c579a26e-94bf-43e6-bf47-d4827de622ff">
       <active>true</active>
       <description>4 Stby Nav2 Adjust Fine</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_FRACT_DEC)" presetId="c9709caa-0465-4079-9291-703f5adb7451" />
           <onLeftFast />
@@ -1044,7 +1044,7 @@
     <config guid="56c097a8-f570-461d-bcd8-bc74a07ba934">
       <active>true</active>
       <description>4 Freq Nav2 Swap</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_SWAP)" presetId="63711aad-e826-4be2-8ee6-b8af7ba92dd8" />
           <onRelease />
@@ -1058,7 +1058,7 @@
     <config guid="336c3b2b-3a17-41af-9360-be5e9582ec13">
       <active>true</active>
       <description>5 Altimeter</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:KOHLSMAN_DEC)" presetId="d3828258-b00c-4dad-b59d-4fb0d4f18a2a" />
           <onLeftFast />
@@ -1074,7 +1074,7 @@
     <config guid="244aa38f-f3ca-4658-be63-de96fdbbc721">
       <active>true</active>
       <description>6 HDG AP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
           <onLeftFast />
@@ -1090,7 +1090,7 @@
     <config guid="a41e5e40-969f-43a7-9fd8-f66b8876b1ab">
       <active>true</active>
       <description>7 XPNDR 1000</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1000_DEC)" presetId="231098f4-3bd6-4b8b-8c98-005bba9dccc1" />
           <onLeftFast />
@@ -1107,7 +1107,7 @@
     <config guid="d662d8e1-1e5f-49ed-91dc-103dc9096065">
       <active>true</active>
       <description>7 XPNDR 100</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_100_DEC)" presetId="978c1cf0-8dbc-4d07-aacf-640aca78bde9" />
           <onLeftFast />
@@ -1124,7 +1124,7 @@
     <config guid="46d7b962-1799-4435-90d5-7102a9d5337b">
       <active>true</active>
       <description>7 XPNDR 10</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_10_DEC)" presetId="4bd8d51a-8bce-43e0-8de3-8510ef4af071" />
           <onLeftFast />
@@ -1141,7 +1141,7 @@
     <config guid="e47a3478-6f01-4a91-81b4-ec632bba5775">
       <active>true</active>
       <description>7 XPNDR 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_1_DEC)" presetId="03d314e6-bc23-4a44-b2d5-6ac922f3f6c1" />
           <onLeftFast />
@@ -1158,7 +1158,7 @@
     <config guid="face1de5-942a-4955-a0cf-c345108a462f">
       <active>true</active>
       <description>7 XPNDR Index</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="VariableInputAction" varType="number" varName="XPNDR Index" varExpression="$-1" />
           <onLeftFast />
@@ -1174,7 +1174,7 @@
     <config guid="6ee0d329-5690-4998-860e-e1ec6cd36942">
       <active>true</active>
       <description>7 XPNDR 1200 VFR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.1, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="LCD Arduino/ SN-fab-ÿÿÿÿ" name="Freq Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderVFR)" presetId="cb4278d8-5c94-47b1-bb60-958da077feb6" />
           <onRelease />
@@ -1184,6 +1184,212 @@
         </preconditions>
         <configrefs />
       </settings>
+    </config>
+    <config guid="c1022578-63bf-4df4-ac45-36b03f8c608e">
+      <active>true</active>
+      <description>OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="0" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59807390-0909-4ca1-a7df-59733153e300">
+      <active>true</active>
+      <description>RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="89474efa-ee80-4b6d-8f31-0c9cd1cb9990">
+      <active>true</active>
+      <description>LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="2" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b154980c-00f9-4164-b429-ddbd076c6159">
+      <active>true</active>
+      <description>BOTH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="Both" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="3" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef7da5a0-330f-4a92-ab69-d9773aefbbeb">
+      <active>true</active>
+      <description>START</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="Start" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="4" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14ca7509-96ec-4600-b6f8-3a4072643427">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3101" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3101" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="0" />
+          </onRelease>
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29a76d35-c1b9-464d-b762-26e95bcad400">
+      <active>true</active>
+      <description>BATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="BATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3102" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x3102" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="0" />
+          </onRelease>
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5dc4580-14a6-400d-add5-1d197f631d4e">
+      <active>true</active>
+      <description>FUEL PUMP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="FUEL PUMP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 s0 (A:GENERAL ENG FUEL PUMP SWITCH EX1:1, Enum) != if{ l0 (&gt;K:ELECT_FUEL_PUMP1_SET)" presetId="0" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 s0 (A:GENERAL ENG FUEL PUMP SWITCH EX1:1, Enum) != if{ l0 (&gt;K:ELECT_FUEL_PUMP1_SET)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="767526aa-424b-4dfa-82fe-6a83b11c6b16">
+      <active>true</active>
+      <description>BCN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="BCN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:BEACON_LIGHTS_SET)" presetId="876cc2ca-f2f3-4976-b127-2de104ad6ff8" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:BEACON_LIGHTS_SET)" presetId="d7e202e2-11c8-4793-87ac-33b107e10c4c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c537654a-8984-4140-a4df-8be3f1e5fb17">
+      <active>true</active>
+      <description>LAND</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="LAND" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_ON)" presetId="35e4eeec-24be-415e-84f2-adc360882d7f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_OFF)" presetId="3988a3a1-613e-4128-8af8-fd72c1a441ca" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbc69ffe-3e68-49ca-9cc7-20b00d583134">
+      <active>true</active>
+      <description>TAXI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="TAXI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:TAXI_LIGHTS_SET)" presetId="de6a10e9-de1b-41ca-90bc-77b5faf9f660" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:TAXI_LIGHTS_SET)" presetId="d4c024a6-e293-441d-84f8-e26c3ec13f7f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="222e95c2-31a9-4c75-9e19-bb4d70f3c723">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:NAV_LIGHTS_SET)" presetId="4d3c4792-81b2-4170-a177-c63452540194" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:NAV_LIGHTS_SET)" presetId="1b199647-edfa-40f1-b2ca-8b004598c403" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d02e50f8-d703-436e-905a-2ba99071f4e4">
+      <active>true</active>
+      <description>STROBE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="STROBE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:STROBES_ON)" presetId="4e4e5190-4ce5-4bb4-83e1-4f01857b4102" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:STROBES_OFF)" presetId="1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f55c9b6-26f9-48a8-9f64-58312953f497">
+      <active>true</active>
+      <description>PITOT HEAT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="PITOT HEAT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_ON)" presetId="ce094f1c-281d-4cec-bdec-a2487fa9d1d0" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_OFF)" presetId="441ec40a-3c27-42f2-8834-8d2a1e940dc1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c0ac667-05c6-4dd6-b0fc-43f92b5edfe3">
+      <active>true</active>
+      <description>AV 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Module Yay/ SN-8b2-781" name="AV1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x2E80" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" inputValue="1" />
+          </onPress>
+          <onRelease type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x2E80" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" inputValue="0" />
+          </onRelease>
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c70f38b4-cbce-4cf3-9cea-6dc7fa272e05">
+      <active>true</active>
+      <description>AV 2</description>
     </config>
   </inputs>
 </MobiflightConnector>
