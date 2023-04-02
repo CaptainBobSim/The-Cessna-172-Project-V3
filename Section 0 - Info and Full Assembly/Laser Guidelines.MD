@@ -7,6 +7,6 @@ ff0000 (red) 	RGB: 255	0	0 	FOR ETCHING TEXT
 0000ff (blue) 	RGB: 0		0	255 	FOR 3RD TEXT/AUX Even Stronger Etch
 ffff00 (yellow) RGB:255		255	0 	FOR CUTTING PAPER (ie Labels)
 ff6600 (orange) RGB: 255	102	0	FOR CUTTING PAPER OUTLINE (Cut Label Entirely)
-ff00ff (magenta)RGB: 255	0	255	FOR ALLIGNMENT
+ff00ff (magenta)RGB: 255	0	255	FOR ALLIGNMENT - Do not set this to actually fire anything! Set this to the size of your material and jog the head to it. Useful for "Print then Laser" operations.
 00ffff (cyan) 	RGB: 0		255	255	FOR ETCHING PAPER (ie to test on paper first)
 

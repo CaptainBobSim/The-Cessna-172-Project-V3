@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.8409652"
-     inkscape:cx="397.16269"
-     inkscape:cy="340.08542"
+     inkscape:zoom="0.2973261"
+     inkscape:cx="-450.68361"
+     inkscape:cy="645.75562"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3" />
+     inkscape:current-layer="layer8" />
   <defs
      id="defs2">
     <rect
@@ -41,48 +41,76 @@
        width="806.15504"
        height="54.59923"
        id="rect2221" />
+    <rect
+       x="-155.35452"
+       y="532.27854"
+       width="806.15504"
+       height="54.59923"
+       id="rect826" />
   </defs>
   <g
      inkscape:label="Template Drudgery"
      inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="display:none;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.750001;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
-       id="rect1219"
-       width="215.89999"
-       height="279.39999"
-       x="0"
-       y="0"
-       rx="4.0846581e-07"
-       inkscape:label="8.5 x 11 USA Paper" />
+     id="layer1"
+     style="display:inline">
     <g
        inkscape:groupmode="layer"
-       id="layer2"
-       inkscape:label="Don't place decals Here"
+       id="layer6"
+       inkscape:label="Don't place decals Here!"
        style="display:none">
-      <rect
-         style="fill:#bc2a45;fill-opacity:1;fill-rule:evenodd;stroke-width:1.0691;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
-         id="rect1281"
-         width="215.89999"
-         height="6.4765458"
-         x="3.5527137e-15"
-         y="145.26172"
-         rx="2.7382862e-06" />
-      <text
-         xml:space="preserve"
-         transform="matrix(0.26458333,0,0,0.26458333,77.719255,4.8823981)"
-         id="text2219"
-         style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
-           x="-155.35547"
-           y="549.43297"
-           id="tspan345">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+      <g
+         inkscape:groupmode="layer"
+         id="g824"
+         inkscape:label="Don't place decals Here"
+         style="display:inline"
+         transform="translate(0,134.13828)">
+        <rect
+           style="fill:#bc2a45;fill-opacity:1;fill-rule:evenodd;stroke-width:1.84917;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           id="rect818"
+           width="215.89999"
+           height="19.37591"
+           x="3.5527137e-15"
+           y="145.26172"
+           rx="2.7382862e-06" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.26458333,0,0,0.26458333,77.719255,4.8823981)"
+           id="text822"
+           style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect826);display:inline"><tspan
+             x="-155.35547"
+             y="549.43297"
+             id="tspan1726">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="Don't place decals Here"
+         style="display:inline">
+        <rect
+           style="fill:#bc2a45;fill-opacity:1;fill-rule:evenodd;stroke-width:1.0691;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+           id="rect1281"
+           width="215.89999"
+           height="6.4765458"
+           x="3.5527137e-15"
+           y="145.26172"
+           rx="2.7382862e-06" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.26458333,0,0,0.26458333,77.719255,4.8823981)"
+           id="text2219"
+           style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
+             x="-155.35547"
+             y="549.43297"
+             id="tspan1728">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+      </g>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:3.88056px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0144596px;stroke-width:0.0963971"
+       style="display:inline;font-size:3.88056px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0144596px;stroke-width:0.0963971"
        x="25.259148"
        y="142.64163"
-       id="text2285"><tspan
+       id="text2285"
+       inkscape:label="Support The Project!"><tspan
          sodipodi:role="line"
          id="tspan2283"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:0.0963971"
@@ -103,7 +131,7 @@
        rx="3.8759748e-07"
        inkscape:label="Final Background" />
     <rect
-       style="fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.715507;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       style="display:inline;fill:#808080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.715507;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
        id="rect1532"
        width="199.27119"
        height="125.53283"
@@ -115,7 +143,23 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="Reference" />
+     inkscape:label="Reference">
+    <g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="Laser Reference"
+       style="display:none;fill:#ff00ff;fill-opacity:1;stroke:#ff00ff;stroke-opacity:1">
+      <rect
+         style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect1219"
+         width="215.89999"
+         height="279.39999"
+         x="0"
+         y="0"
+         rx="4.0846581e-07"
+         inkscape:label="8.5 x 11 USA Paper" />
+    </g>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
