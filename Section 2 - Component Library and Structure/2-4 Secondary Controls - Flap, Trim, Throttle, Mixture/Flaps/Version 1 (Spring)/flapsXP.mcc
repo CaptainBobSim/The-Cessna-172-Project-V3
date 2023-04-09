@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="84652a3c-a756-45cf-8ee6-e18e52b8a03b">
+      <active>true</active>
+      <description>Flap indicator</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/controls/wing1l_fla1def" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="10" y="400" />
+            <value x="20" y="635" />
+            <value x="30" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="Servo" serial="Flaps Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" servoAddress="Flap Ind Servo" servoMin="0" servoMax="1024" servoMaxRotationPercent="25" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="30beedfb-b849-47fa-9e9e-5c93bc9ce6fe">
+      <active>true</active>
+      <description>Flap Selector</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Flap Handle" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="XplaneInputAction" inputType="DataRef" path="sim/flightmodel/controls/flaprqst" expression="if (@&lt;=122&gt;=70, 1, if (@&lt;=181&gt;=123, .6667, if (@&lt;275&gt;=180, .3334, 0)))" />
+        </analog>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="84652a3c-a756-45cf-8ee6-e18e52b8a03b" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
