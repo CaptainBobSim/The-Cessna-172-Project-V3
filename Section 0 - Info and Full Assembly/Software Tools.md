@@ -1,3 +1,9 @@
+## Flight Simulator:
+https://flightsim.to/file/35759/msfs-pop-out-panel-manager
+https://flightsim.to/file/36500/ready-to-fly-button-skipper
+Not really but maybe cool https://flightsim.to/file/19345/msfs-2020-google-map-replacement
+https://flightsim.to/file/34176/msfs-world-map-landmarks-permanently-off
+
 Tools Used Frequently (Online)
 https://eleif.net/photo_measure.html
 
@@ -25,6 +31,8 @@ Settings: Tool Diameter .125", offset .1" Static, Normal, From Top Face
 
 Exporting a face as a dxf without making a sketch: https://github.com/tapnair/Export2D
 
+
+Export just a few F360: https://github.com/tapnair/Project-Archiver
 Export every fusion 360 file (for backup or GitHub): https://github.com/Jnesselr/fusion-360-total-exporter
 
 

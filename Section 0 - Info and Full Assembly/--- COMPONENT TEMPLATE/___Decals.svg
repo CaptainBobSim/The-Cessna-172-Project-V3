@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.2973261"
-     inkscape:cx="-450.68361"
-     inkscape:cy="645.75562"
+     inkscape:zoom="1.1893044"
+     inkscape:cx="260.65657"
+     inkscape:cy="52.131313"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer8" />
+     inkscape:current-layer="layer7" />
   <defs
      id="defs2">
     <rect
@@ -79,7 +79,7 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect826);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan1726">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+             id="tspan473">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
       </g>
       <g
          inkscape:groupmode="layer"
@@ -101,7 +101,7 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan1728">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+             id="tspan475">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
       </g>
     </g>
     <text
@@ -116,6 +116,38 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:0.0963971"
          x="25.259148"
          y="142.64163">The Cessna 172 Project -- Support the Project Here: CaptainBobSim.com/project-support</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0396875px;fill:#ffffff;stroke-width:0.264583"
+       x="74.43119"
+       y="-26.08942"
+       id="text322"
+       inkscape:label="Design Standards"><tspan
+         sodipodi:role="line"
+         id="tspan320"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
+         x="74.43119"
+         y="-26.08942">Design Standards:</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
+         x="74.43119"
+         y="-22.0389"
+         id="tspan376">Fill holes with White</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
+         x="74.43119"
+         y="-17.98838"
+         id="tspan430">Laser Engrave according to laser standards</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
+         x="74.43119"
+         y="-13.93786"
+         id="tspan432">Use Laser Paper Cutout Layer</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.175px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke-width:0.264583"
+         x="74.43119"
+         y="-9.9691095"
+         id="tspan378" /></text>
   </g>
   <g
      inkscape:groupmode="layer"
