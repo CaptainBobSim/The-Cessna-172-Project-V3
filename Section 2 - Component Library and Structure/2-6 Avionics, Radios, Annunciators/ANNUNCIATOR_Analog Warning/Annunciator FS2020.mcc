@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="99bc8226-647a-4fb9-9da6-f58f0b04841d">
+      <active>true</active>
+      <description>Test All</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL|LOW|FUEL|FUEL R|---|--|-|OIL|PRESS|LVAC|VAC|VACR|VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09fda44a-ab69-4456-88b5-5a674ba86547">
+      <active>true</active>
+      <description>LOW FUEL L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL LEFT QUANTITY,Gallons)" UUID="d7c4bbf7-1e00-4940-8ff3-38b03588fb18" />
+        <modifiers>
+          <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb">
+      <active>true</active>
+      <description>LOW FUEL R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <modifiers>
+          <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="FUEL R" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c041083e-4ada-48e6-b060-c9ee37d70262">
+      <active>true</active>
+      <description>LOW FUEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <modifiers>
+          <transformation active="True" expression="#+!" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="09fda44a-ab69-4456-88b5-5a674ba86547" placeholder="#" />
+          <configref active="True" ref="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb" placeholder="!" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a9378c15-6cbc-4bc7-b505-d5d1e509ed9d">
+      <active>true</active>
+      <description>Dash</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="---|--|-" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="17aa043b-320d-47c6-b7c1-0264753fd0be">
+      <active>true</active>
+      <description>OIL PRESS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GENERAL ENG OIL PRESSURE:1,Psf)" UUID="6f6b2c67-49cb-4f07-9bbc-170917f928d0" />
+        <modifiers>
+          <transformation active="True" expression="$*0.00694444" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="20" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="OIL|PRESS" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66af18b1-7b65-434b-b3aa-f82243bff1a8">
+      <active>true</active>
+      <description>VAC L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WARNING VACUUM, Bool)" UUID="0c3ca597-5777-4b54-849c-f63b0c17881b" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VAC" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1">
+      <active>true</active>
+      <description>VAC R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VAC|VACR" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f96c239-d1fb-43c3-b27b-228145962ad0">
+      <active>true</active>
+      <description>VOLT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ELECTRICAL MAIN BUS VOLTAGE,Volts)" UUID="c989f6c0-4d0c-4505-9354-1254051eb17a" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="24.5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5b2448a-9b7a-41e2-ba5e-d1c93d1bf06a">
+      <active>false</active>
+      <description>Is Tested</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MobiFlight Mega/ SN-571-ÿÿÿÿMobiFlight Mega" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81cc783e-ab15-45f5-9bd9-5444337c5192">
+      <active>true</active>
+      <description>TimeVar</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="d3c4798e-62a9-45d6-9071-83dcfd561d1f">
+      <active>true</active>
+      <description>TST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="47ae3a4c-5474-4d90-bab2-de6ad16a9b78">
+      <active>true</active>
+      <description>DIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="50" />
+          <onRelease type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="255" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

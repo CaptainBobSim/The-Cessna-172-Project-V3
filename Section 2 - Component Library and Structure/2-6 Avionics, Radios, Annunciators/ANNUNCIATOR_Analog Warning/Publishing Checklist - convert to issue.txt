@@ -1,0 +1,24 @@
+Design Issues:
+- [ ] Decals
+- [ ] Engrave version of decals
+
+Prototype Issues:
+- [ ] 
+
+
+
+Publishing Tasks:
+- [ ] Add a DRAWING PDF (optional)
+- [ ] Make a Cut/Engrave SVG
+- [ ] Rotate all STLs using MeshMixer for easy printability (no slicer rotate)
+- [ ] Attach .STEP and .f3d
+- [ ] MobiFlight .mcc file and .mfmcfile
+- [ ] Mounting Template .DXF
+- [ ] Add Wiring diagram PNG
+- [ ] Write the ReadMe
+	- [ ] Video Here
+	- [ ] Buy it as a Kit
+	- [ ] Buy it assembled
+- [ ] Partslist on ReadMe
+
+

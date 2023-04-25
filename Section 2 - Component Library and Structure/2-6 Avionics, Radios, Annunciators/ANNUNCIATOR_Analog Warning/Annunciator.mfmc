@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Annunciator</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="L FUEL" Pin="2" />
+  <Output Name="LOW" Pin="3" />
+  <Output Name="FUEL" Pin="4" />
+  <Output Name="FUEL R" Pin="5" />
+  <Output Name="---" Pin="6" />
+  <Output Name="--" Pin="7" />
+  <Output Name="-" Pin="8" />
+  <Output Name="OIL" Pin="9" />
+  <Output Name="PRESS" Pin="10" />
+  <Output Name="LVAC" Pin="11" />
+  <Output Name="VAC" Pin="12" />
+  <Output Name="VACR" Pin="13" />
+  <Output Name="VOLT" Pin="14" />
+  <Button Name="TST" Pin="15" />
+  <Button Name="BRT" Pin="16" />
+</Config>
