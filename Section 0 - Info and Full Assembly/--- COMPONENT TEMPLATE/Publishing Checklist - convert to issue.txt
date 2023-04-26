@@ -20,5 +20,6 @@ Publishing Tasks:
 	- [ ] Buy it as a Kit
 	- [ ] Buy it assembled
 - [ ] Partslist on ReadMe
+- [ ] Download only this folder via: https://download-directory.github.io/
 
 
