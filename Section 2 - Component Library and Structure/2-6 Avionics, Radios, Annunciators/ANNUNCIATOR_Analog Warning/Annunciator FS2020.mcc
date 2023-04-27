@@ -105,7 +105,7 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VAC" pinBrightness="255" />
+        <display type="-" serial="MobiFlight Mega/ SN-658-ba3" trigger="normal" pin="VAC" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -133,10 +133,8 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="True" value="24.5" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VOLT" pinBrightness="255" />
-        <preconditions>
-          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
-        </preconditions>
+        <display type="-" serial="MobiFlight Mega/ SN-658-ba3" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions />
         <configrefs />
       </settings>
     </config>
