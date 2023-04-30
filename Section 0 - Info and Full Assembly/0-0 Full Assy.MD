@@ -1,9 +1,0 @@
-Go to https://a360.co/3fVHbfW for the top level assembly
-
-Files in this GitHub may not represent the most up to date version of the project. 
-
-The most up to date method is to use links on the "Simple PBS" page of this spreadsheet:
-https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing
-
-Links on this document may not nessesarily represent the accurate status of the project.
-Please alert CaptainBobSim@gmail.com should a link not properly work.
