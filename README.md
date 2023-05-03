@@ -46,3 +46,4 @@ If you are just getting started in Flight Simulation: I believe in you. You can 
 
 ## Special Thanks:
 Thank you to Kovinator for being an absolute madlad and helping so much with the instruments! He made all of the servo small fuel instruments as well as various adaptaions of large instruments.
+Thank you to knector01 for making the dual potentiometer for the dimming knobs!
