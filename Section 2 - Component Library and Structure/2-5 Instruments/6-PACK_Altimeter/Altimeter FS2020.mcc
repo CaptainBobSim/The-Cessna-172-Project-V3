@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b3723ffc-24ba-44ae-9e92-e172fb497ce7">
+      <active>true</active>
+      <description>Hundreds Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="(-$)%1000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81eed118-c9ba-4125-9905-a761bbb87bcf">
+      <active>true</active>
+      <description>Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="(($)%10000)/10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29d51b3f-ada7-4229-b4e8-718bd36f746c">
+      <active>true</active>
+      <description>Ten Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="((-$)%100000)/100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
