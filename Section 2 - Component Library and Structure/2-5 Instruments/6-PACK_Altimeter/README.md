@@ -1,4 +1,4 @@
-Build Video Here:
+Build Video Here: https://youtu.be/wicxIUsyGlA
 Configuration Video:
 
 🛒Buy it as a Kit or Assembled: Contact CaptainBobSim@gmail.com
@@ -7,7 +7,7 @@ Welcome to the Altimeter of your dreams!
 
 How to navigate the files?
 - Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
-
+- Mirror Mirror contains the Right Side Knob
 
 __Bill 'o Materials:__
 📦 3D Printed Parts
@@ -24,7 +24,8 @@ To swap which side your knob is on:
 Mirror ALT VSI Bezel.stl
 Mirror Faceplate.stl
 Mirror Motor Mount.stl
-Mirror these in your slicer.
+
+You can also use the default files and mirror the files in your slicer.
 
 
 

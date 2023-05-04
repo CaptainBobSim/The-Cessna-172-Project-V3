@@ -2,7 +2,7 @@
 <MobiflightConnector>
   <outputs>
     <config guid="b3723ffc-24ba-44ae-9e92-e172fb497ce7">
-      <active>true</active>
+      <active>false</active>
       <description>Hundreds Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -16,7 +16,7 @@
       </settings>
     </config>
     <config guid="81eed118-c9ba-4125-9905-a761bbb87bcf">
-      <active>true</active>
+      <active>false</active>
       <description>Thousands Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -30,7 +30,7 @@
       </settings>
     </config>
     <config guid="29d51b3f-ada7-4229-b4e8-718bd36f746c">
-      <active>true</active>
+      <active>false</active>
       <description>Ten Thousands Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -43,6 +43,82 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="86b0246e-d497-433a-99a6-a3bd668c2b56">
+      <active>true</active>
+      <description>Altimeter Adjust Read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Altimeter_Adjust" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="19" y="2790" />
+            <value x="71" y="2992" />
+            <value x="110" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="-" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f1911183-6bf1-4013-868e-a5031130883c">
+      <active>true</active>
+      <description>Altimeter Adjust Write</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Altimeter_Adjust" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="#/100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="29 (A:KOHLSMAN SETTING HG, inHg)" presetId="4844d32e-2293-43ea-9699-9bca2ae49ead" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="86b0246e-d497-433a-99a6-a3bd668c2b56" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="35604fc1-a467-4e1f-89bf-8be013f4b7b4">
+      <active>true</active>
+      <description>Altset actual read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, inHg)" UUID="2f595653-50dd-4394-8895-af62769febe5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
-  <inputs />
+  <inputs>
+    <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
+      <active>true</active>
+      <description>Khosman Potentiometer Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6e6790e5-9e6f-4c47-a675-84a7d8d66f51">
+      <active>false</active>
+      <description>Khosman Potentiometer Variable Copy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 19 - 45.0495 / 27.9 + 27.9 max 29.92 min (&gt;K:KOHLSMAN_SET)" presetId="6da1ae46-0184-474e-925e-f8b507758ef6" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
 </MobiflightConnector>
