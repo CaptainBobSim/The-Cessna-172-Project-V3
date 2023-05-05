@@ -2,7 +2,7 @@
 <MobiflightConnector>
   <outputs>
     <config guid="b3723ffc-24ba-44ae-9e92-e172fb497ce7">
-      <active>false</active>
+      <active>true</active>
       <description>Hundreds Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -10,13 +10,13 @@
           <transformation active="True" expression="(-$)%1000" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
     </config>
     <config guid="81eed118-c9ba-4125-9905-a761bbb87bcf">
-      <active>false</active>
+      <active>true</active>
       <description>Thousands Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -30,7 +30,7 @@
       </settings>
     </config>
     <config guid="29d51b3f-ada7-4229-b4e8-718bd36f746c">
-      <active>false</active>
+      <active>true</active>
       <description>Ten Thousands Needle</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
@@ -38,7 +38,7 @@
           <transformation active="True" expression="((-$)%100000)/100" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -52,38 +52,22 @@
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
-            <value x="19" y="2790" />
-            <value x="71" y="2992" />
+            <value x="17" y="2790" />
+            <value x="72" y="2992" />
             <value x="110" y="3150" />
           </interpolation>
         </modifiers>
-        <display type="-" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="InputAction" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="@ 0.338639 16 * * (&gt;K:2:KOHLSMAN_SET) l0 (&gt;L:INSTRUMENT_Altimeter_1)" presetId="5a018434-3058-4956-9f0f-83c28fcdfc65" />
+          </analog>
+        </display>
         <preconditions />
         <configrefs />
       </settings>
     </config>
-    <config guid="f1911183-6bf1-4013-868e-a5031130883c">
-      <active>true</active>
-      <description>Altimeter Adjust Write</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="Altimeter_Adjust" varExpression="$" />
-        <modifiers>
-          <transformation active="True" expression="#/100" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="InputAction" serial="">
-          <analog>
-            <onChange type="MSFS2020CustomInputAction" command="29 (A:KOHLSMAN SETTING HG, inHg)" presetId="4844d32e-2293-43ea-9699-9bca2ae49ead" />
-          </analog>
-        </display>
-        <preconditions />
-        <configrefs>
-          <configref active="True" ref="86b0246e-d497-433a-99a6-a3bd668c2b56" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
     <config guid="35604fc1-a467-4e1f-89bf-8be013f4b7b4">
-      <active>true</active>
+      <active>false</active>
       <description>Altset actual read</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, inHg)" UUID="2f595653-50dd-4394-8895-af62769febe5" />
@@ -101,20 +85,9 @@
     <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
       <active>true</active>
       <description>Khosman Potentiometer Variable</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <analog>
           <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
-        </analog>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="6e6790e5-9e6f-4c47-a675-84a7d8d66f51">
-      <active>false</active>
-      <description>Khosman Potentiometer Variable Copy</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <analog>
-          <onChange type="MSFS2020CustomInputAction" command="@ 19 - 45.0495 / 27.9 + 27.9 max 29.92 min (&gt;K:KOHLSMAN_SET)" presetId="6da1ae46-0184-474e-925e-f8b507758ef6" />
         </analog>
         <preconditions />
         <configrefs />
