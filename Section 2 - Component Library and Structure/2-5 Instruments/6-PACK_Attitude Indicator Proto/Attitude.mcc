@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="1a98552e-30e0-49ae-b75e-91e79159c6c4">
+      <active>true</active>
+      <description>Attitude Roll</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR BANK DEGREES,Degrees)" UUID="6357059b-d04d-42b5-ab24-5212f273d8bf" />
+        <modifiers>
+          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="Stepper" stepperInputRev="3600" stepperOutputRev="2040" stepperTestValue="1800" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="02832176-a936-445a-99d3-b4dc07409395">
+      <active>true</active>
+      <description>Attitude Pitch</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR PITCH DEGREES,Degrees)" UUID="26539606-5bbf-4b94-a212-1ecf0d8d3733" />
+        <modifiers>
+          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-180" y="-180" />
+            <value x="180" y="180" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" stepperAddress="Stepper 1" stepperInputRev="3600" stepperOutputRev="2040" stepperTestValue="100" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>

@@ -10,7 +10,7 @@
           <transformation active="True" expression="(-$)%1000" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -24,7 +24,7 @@
           <transformation active="True" expression="(($)%10000)/10" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -38,7 +38,7 @@
           <transformation active="True" expression="((-$)%100000)/100" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -57,7 +57,7 @@
             <value x="110" y="3150" />
           </interpolation>
         </modifiers>
-        <display type="InputAction" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal">
+        <display type="InputAction" serial="AltimeterArduino/ SN-e19-de4" trigger="normal">
           <analog>
             <onChange type="MSFS2020CustomInputAction" command="@ 0.338639 16 * * (&gt;K:2:KOHLSMAN_SET) l0 (&gt;L:INSTRUMENT_Altimeter_1)" presetId="5a018434-3058-4956-9f0f-83c28fcdfc65" />
           </analog>
@@ -75,7 +75,7 @@
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -85,7 +85,7 @@
     <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
       <active>true</active>
       <description>Khosman Potentiometer Variable</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="AltimeterArduino/ SN-e19-de4" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <analog>
           <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
         </analog>

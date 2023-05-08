@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Arduino</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Stepper Name="Ten Thousand" Pin1="2" Pin2="3" Pin3="4" Pin4="5" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="One Thousand" Pin1="6" Pin2="7" Pin3="8" Pin4="9" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="Hundred" Pin1="10" Pin2="11" Pin3="12" Pin4="13" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <AnalogInput Name="Kohlsman Window" Pin="54" Sensitivity="2" />
+</Config>

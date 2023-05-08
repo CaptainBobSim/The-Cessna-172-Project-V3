@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="5c9ade4a-4526-48b8-a310-b4d97f44163f">
+      <active>false</active>
+      <description>Hey Everyone! Refer to the GitHub for more information about this file.</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
+        <modifiers>
+          <transformation active="True" expression="50" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f4848912-6801-46fd-8f5b-f82f8a421ffa">
+      <active>true</active>
+      <description>Heading Card Raw FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
+        <modifiers>
+          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412">
+      <active>false</active>
+      <description>Heading Card Raw TEST</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
+        <modifiers>
+          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="24cb5269-ee83-4f08-942a-dad90b87d67c">
+      <active>true</active>
+      <description>Heading Card Accounting for Zero Position</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="(#+(360-25))%360" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG Wheel" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="187" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f4848912-6801-46fd-8f5b-f82f8a421ffa" placeholder="#" />
+          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc">
+      <active>true</active>
+      <description>Heading Bug Raw FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK DIR,Degrees)" UUID="e47210e8-7db4-4980-9f57-b3682fb3742d" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="360" />
+            <value x="360" y="0" />
+          </interpolation>
+        </modifiers>
+        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8cefc78d-ac7a-46f0-b7ec-fcdee599884e">
+      <active>false</active>
+      <description>Heading Bug Raw XPLANE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/autopilot/heading_mag" />
+        <modifiers>
+          <transformation active="False" expression="90" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="360" />
+            <value x="360" y="0" />
+          </interpolation>
+        </modifiers>
+        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7102e75f-de45-4a21-8705-6af4d4db60bf">
+      <active>true</active>
+      <description>Heading Bug Accounting for Zero and Heading Card</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="((!+#)+(360-5))%360" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG AP Bug" stepperInputRev="360" stepperOutputRev="5100" stepperTestValue="180" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f4848912-6801-46fd-8f5b-f82f8a421ffa" placeholder="#" />
+          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" />
+          <configref active="True" ref="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc" placeholder="!" />
+          <configref active="True" ref="8cefc78d-ac7a-46f0-b7ec-fcdee599884e" placeholder="!" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
+      <active>true</active>
+      <description>Airspeed (Resolution increased by multiplying values by 10) FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
+        <modifiers>
+          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="400" y="330" />
+            <value x="500" y="530" />
+            <value x="600" y="730" />
+            <value x="700" y="950" />
+            <value x="800" y="1200" />
+            <value x="900" y="1430" />
+            <value x="1000" y="1650" />
+            <value x="1100" y="1800" />
+            <value x="1200" y="2050" />
+            <value x="1300" y="2220" />
+            <value x="1400" y="2370" />
+            <value x="1600" y="2650" />
+            <value x="1800" y="2870" />
+            <value x="2000" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="3600" stepperOutputRev="1100" stepperTestValue="3600" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2987fa9-4bfa-4f77-b8c2-c7364c3c062a">
+      <active>false</active>
+      <description>Airspeed (Resolution increased by multiplying values by 10) XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/indicated_airspeed" />
+        <modifiers>
+          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="40" y="330" />
+            <value x="50" y="530" />
+            <value x="60" y="730" />
+            <value x="70" y="950" />
+            <value x="80" y="1200" />
+            <value x="90" y="1430" />
+            <value x="100" y="1650" />
+            <value x="110" y="1800" />
+            <value x="120" y="2050" />
+            <value x="130" y="2220" />
+            <value x="140" y="2370" />
+            <value x="160" y="2650" />
+            <value x="180" y="2870" />
+            <value x="200" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="BLANK" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
+      <active>true</active>
+      <description>Airplane FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
+        <modifiers>
+          <transformation active="True" expression="$*57.2958*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-800" y="-60" />
+            <value x="800" y="60" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="60" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0633dd14-bb2f-4c11-a825-a407a9411d88">
+      <active>false</active>
+      <description>Airplane XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/turn_rate_roll_deg_pilot" />
+        <modifiers>
+          <transformation active="False" expression="$*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-800" y="-60" />
+            <value x="800" y="60" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="10" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e91f07aa-3aa6-433f-9179-2f8361b309d5">
+      <active>true</active>
+      <description>Ball FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TURN COORDINATOR BALL,Position)" UUID="fb66e24d-5aea-4eb2-88c0-9d96cff6233f" />
+        <modifiers>
+          <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+          <interpolation active="True">
+            <value x="-1000" y="28" />
+            <value x="1000" y="-28" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63c1e5a6-09fc-4a8a-a93c-2719cc423e84">
+      <active>false</active>
+      <description>Ball XP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/slip_deg" />
+        <modifiers>
+          <transformation active="True" expression="$*1000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="=" ifValue="1" elseValue="0" />
+          <interpolation active="True">
+            <value x="-1000" y="28" />
+            <value x="1000" y="-28" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="99bc8226-647a-4fb9-9da6-f58f0b04841d">
+      <active>true</active>
+      <description>Test All</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL|LOW|FUEL|FUEL R|---|--|-|OIL|PRESS|LVAC|VAC|VACR|VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09fda44a-ab69-4456-88b5-5a674ba86547">
+      <active>true</active>
+      <description>LOW FUEL L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL LEFT QUANTITY,Gallons)" UUID="d7c4bbf7-1e00-4940-8ff3-38b03588fb18" />
+        <modifiers>
+          <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb">
+      <active>true</active>
+      <description>LOW FUEL R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <modifiers>
+          <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="FUEL R" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c041083e-4ada-48e6-b060-c9ee37d70262">
+      <active>true</active>
+      <description>LOW FUEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <modifiers>
+          <transformation active="True" expression="#+!" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="09fda44a-ab69-4456-88b5-5a674ba86547" placeholder="#" />
+          <configref active="True" ref="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb" placeholder="!" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a9378c15-6cbc-4bc7-b505-d5d1e509ed9d">
+      <active>true</active>
+      <description>Dash</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="---|--|-" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="17aa043b-320d-47c6-b7c1-0264753fd0be">
+      <active>true</active>
+      <description>OIL PRESS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GENERAL ENG OIL PRESSURE:1,Psf)" UUID="6f6b2c67-49cb-4f07-9bbc-170917f928d0" />
+        <modifiers>
+          <transformation active="True" expression="$*0.00694444" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="20" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="OIL|PRESS" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66af18b1-7b65-434b-b3aa-f82243bff1a8">
+      <active>true</active>
+      <description>VAC L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WARNING VACUUM, Bool)" UUID="0c3ca597-5777-4b54-849c-f63b0c17881b" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1">
+      <active>true</active>
+      <description>VAC R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VAC|VACR" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f96c239-d1fb-43c3-b27b-228145962ad0">
+      <active>true</active>
+      <description>VOLT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ELECTRICAL MAIN BUS VOLTAGE,Volts)" UUID="c989f6c0-4d0c-4505-9354-1254051eb17a" />
+        <modifiers>
+          <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="24.5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5b2448a-9b7a-41e2-ba5e-d1c93d1bf06a">
+      <active>false</active>
+      <description>Is Tested</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81cc783e-ab15-45f5-9bd9-5444337c5192">
+      <active>true</active>
+      <description>TimeVar</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b3723ffc-24ba-44ae-9e92-e172fb497ce7">
+      <active>true</active>
+      <description>Hundreds Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="-(($)%1000)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81eed118-c9ba-4125-9905-a761bbb87bcf">
+      <active>true</active>
+      <description>Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="(($)%10000)/10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29d51b3f-ada7-4229-b4e8-718bd36f746c">
+      <active>true</active>
+      <description>Ten Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="-(($)%100000)/100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86b0246e-d497-433a-99a6-a3bd668c2b56">
+      <active>true</active>
+      <description>Altimeter Adjust Read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Altimeter_Adjust" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="17" y="2790" />
+            <value x="72" y="2992" />
+            <value x="110" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="InputAction" serial="AltimeterArduino/ SN-e19-de4" trigger="normal">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="@ 0.338639 16 * * (&gt;K:2:KOHLSMAN_SET) l0 (&gt;L:INSTRUMENT_Altimeter_1)" presetId="5a018434-3058-4956-9f0f-83c28fcdfc65" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35604fc1-a467-4e1f-89bf-8be013f4b7b4">
+      <active>false</active>
+      <description>Altset actual read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, inHg)" UUID="2f595653-50dd-4394-8895-af62769febe5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8fb093df-22e2-4864-bb37-1609e78753ba">
+      <active>false</active>
+      <description>VSI X-Plane (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a84b844-e625-4ae0-a1c4-0d93f22380fb">
+      <active>true</active>
+      <description>VSI FS2020 (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
+        <modifiers>
+          <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5c0d5f3b-5987-4243-9396-5cd02b3e3418">
+      <active>true</active>
+      <description>VSI Stepper x27 with stop (default)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-1800" y="158" />
+            <value x="1800" y="-158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="210" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="de2cca79-9696-4e35-8343-c49b5237daab">
+      <active>false</active>
+      <description>VSI Stepper x27 stop removed</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ef5a8025-bbd5-46e4-b497-f8f759e01d3a">
+      <active>false</active>
+      <description>VSI Stepper BYJ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
+      <active>false</active>
+      <description>HDG Drift Adjust XP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="false" ref="AdjustStatusHDG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
+      <active>true</active>
+      <description>HDG Drift Adjust FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_INC)" presetId="4c3cde84-00e4-4a98-83f3-0e015dab0929" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="false" ref="AdjustStatusHDG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8534157f-111e-493a-b190-ef13ca466641">
+      <active>false</active>
+      <description>HDG AP Bug Adjust XP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
+      <active>true</active>
+      <description>HDG AP Bug Adjust FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_INC)" presetId="debca2cf-3a15-40f0-b839-3e1e153cd0f4" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
+      <active>true</active>
+      <description>HDG Adjust DG Push Status</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
+      <active>false</active>
+      <description>HDG Bug Push - Zero</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3c4798e-62a9-45d6-9071-83dcfd561d1f">
+      <active>true</active>
+      <description>TST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="47ae3a4c-5474-4d90-bab2-de6ad16a9b78">
+      <active>true</active>
+      <description>DIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="50" />
+          <onRelease type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="255" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
+      <active>true</active>
+      <description>Khosman Potentiometer Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="AltimeterArduino/ SN-e19-de4" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

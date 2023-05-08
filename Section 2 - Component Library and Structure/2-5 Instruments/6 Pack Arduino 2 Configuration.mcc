@@ -166,6 +166,181 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="b3723ffc-24ba-44ae-9e92-e172fb497ce7">
+      <active>true</active>
+      <description>Hundreds Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="-(($)%1000)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81eed118-c9ba-4125-9905-a761bbb87bcf">
+      <active>true</active>
+      <description>Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="(($)%10000)/10" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29d51b3f-ada7-4229-b4e8-718bd36f746c">
+      <active>true</active>
+      <description>Ten Thousands Needle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <modifiers>
+          <transformation active="True" expression="-(($)%100000)/100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Ten Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86b0246e-d497-433a-99a6-a3bd668c2b56">
+      <active>true</active>
+      <description>Altimeter Adjust Read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Altimeter_Adjust" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="17" y="2790" />
+            <value x="72" y="2992" />
+            <value x="110" y="3150" />
+          </interpolation>
+        </modifiers>
+        <display type="InputAction" serial="AltimeterArduino/ SN-e19-de4" trigger="normal">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="@ 0.338639 16 * * (&gt;K:2:KOHLSMAN_SET) l0 (&gt;L:INSTRUMENT_Altimeter_1)" presetId="5a018434-3058-4956-9f0f-83c28fcdfc65" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35604fc1-a467-4e1f-89bf-8be013f4b7b4">
+      <active>false</active>
+      <description>Altset actual read</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, inHg)" UUID="2f595653-50dd-4394-8895-af62769febe5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8fb093df-22e2-4864-bb37-1609e78753ba">
+      <active>false</active>
+      <description>VSI X-Plane (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="False" expression="5000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a84b844-e625-4ae0-a1c4-0d93f22380fb">
+      <active>true</active>
+      <description>VSI FS2020 (Read)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:VERTICAL SPEED,Feet per minute)" UUID="d9f02170-cc32-474c-b680-8fa1d8891677" />
+        <modifiers>
+          <transformation active="False" expression="50000" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="-1800" y="-158" />
+            <value x="1800" y="158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5c0d5f3b-5987-4243-9396-5cd02b3e3418">
+      <active>true</active>
+      <description>VSI Stepper x27 with stop (default)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-1800" y="158" />
+            <value x="1800" y="-158" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="210" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="de2cca79-9696-4e35-8343-c49b5237daab">
+      <active>false</active>
+      <description>VSI Stepper x27 stop removed</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ef5a8025-bbd5-46e4-b497-f8f759e01d3a">
+      <active>false</active>
+      <description>VSI Stepper BYJ </description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/position/vh_ind_fpm" />
+        <modifiers>
+          <transformation active="True" expression="v" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="-2000" y="-170" />
+            <value x="2000" y="170" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="-170" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
+        </configrefs>
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="d3c4798e-62a9-45d6-9071-83dcfd561d1f">
@@ -188,6 +363,17 @@
           <onPress type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="50" />
           <onRelease type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="255" />
         </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
+      <active>true</active>
+      <description>Khosman Potentiometer Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="AltimeterArduino/ SN-e19-de4" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
+        </analog>
         <preconditions />
         <configrefs />
       </settings>
