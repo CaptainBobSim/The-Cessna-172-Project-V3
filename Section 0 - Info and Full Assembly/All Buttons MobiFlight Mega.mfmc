@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Mega</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="2" />
+  <Button Name="Button 1" Pin="3" />
+  <Button Name="Button 2" Pin="4" />
+  <Button Name="Button 3" Pin="5" />
+  <Button Name="Button 4" Pin="6" />
+  <Button Name="Button 5" Pin="7" />
+  <Button Name="Button 6" Pin="8" />
+  <Button Name="Button 7" Pin="9" />
+  <Button Name="Button 8" Pin="10" />
+  <Button Name="Button 9" Pin="11" />
+  <Button Name="Button 10" Pin="12" />
+  <Button Name="Button 11" Pin="13" />
+  <Button Name="Button 12" Pin="14" />
+  <Button Name="Button 13" Pin="15" />
+  <Button Name="Button 14" Pin="16" />
+  <Button Name="Button 15" Pin="17" />
+  <Button Name="Button 16" Pin="18" />
+  <Button Name="Button 17" Pin="19" />
+  <Button Name="Button 18" Pin="20" />
+  <Button Name="Button 19" Pin="21" />
+  <Button Name="Button 20" Pin="22" />
+  <Button Name="Button 21" Pin="23" />
+  <Button Name="Button 22" Pin="24" />
+  <Button Name="Button 23" Pin="25" />
+  <Button Name="Button 24" Pin="26" />
+  <Button Name="Button 25" Pin="27" />
+  <Button Name="Button 26" Pin="28" />
+  <Button Name="Button 27" Pin="29" />
+  <Button Name="Button 28" Pin="30" />
+  <Button Name="Button 29" Pin="31" />
+  <Button Name="Button 30" Pin="32" />
+  <Button Name="Button 31" Pin="33" />
+  <Button Name="Button 32" Pin="34" />
+  <Button Name="Button 33" Pin="35" />
+  <Button Name="Button 34" Pin="36" />
+  <Button Name="Button 35" Pin="37" />
+  <Button Name="Button 36" Pin="38" />
+  <Button Name="Button 37" Pin="39" />
+  <Button Name="Button 38" Pin="40" />
+  <Button Name="Button 39" Pin="41" />
+  <Button Name="Button 40" Pin="42" />
+  <Button Name="Button 41" Pin="43" />
+  <Button Name="Button 42" Pin="44" />
+  <Button Name="Button 43" Pin="45" />
+  <Button Name="Button 44" Pin="46" />
+  <Button Name="Button 45" Pin="47" />
+  <Button Name="Button 46" Pin="48" />
+  <Button Name="Button 47" Pin="49" />
+  <Button Name="Button 48" Pin="50" />
+  <Button Name="Button 49" Pin="51" />
+  <Button Name="Button 50" Pin="52" />
+  <Button Name="Button 51" Pin="53" />
+  <Button Name="Button 52" Pin="54" />
+  <Button Name="Button 53" Pin="55" />
+  <Button Name="Button 54" Pin="56" />
+  <Button Name="Button 55" Pin="57" />
+  <Button Name="Button 56" Pin="58" />
+  <Button Name="Button 57" Pin="59" />
+  <Button Name="Button 58" Pin="60" />
+  <Button Name="Button 59" Pin="61" />
+  <Button Name="Button 60" Pin="62" />
+  <Button Name="Button 61" Pin="63" />
+  <Button Name="Button 62" Pin="64" />
+  <Button Name="Button 63" Pin="65" />
+  <Button Name="Button 64" Pin="66" />
+  <Button Name="Button 65" Pin="67" />
+  <Button Name="Button 66" Pin="68" />
+  <Button Name="Button 67" Pin="69" />
+</Config>
