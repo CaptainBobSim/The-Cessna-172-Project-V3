@@ -7,7 +7,7 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
         <modifiers>
-          <transformation active="True" expression="(-$)%1000" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="-($%1000)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="Hundred" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="-1000" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
@@ -21,7 +21,7 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
         <modifiers>
-          <transformation active="True" expression="(($)%10000)/10" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="($%10000)/10" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Stepper" serial="AltimeterArduino/ SN-e19-de4" trigger="normal" stepperAddress="One Thousand" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="1000" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
