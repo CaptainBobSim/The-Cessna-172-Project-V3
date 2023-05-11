@@ -5,12 +5,10 @@ Design Issues:
 Prototype Issues:
 - [ ] 
 
-
-
 Publishing Tasks:
 - [ ] Add a DRAWING PDF (optional)
 - [ ] Make a Cut/Engrave SVG
-- [ ] Rotate all STLs using MeshMixer for easy printability (no slicer rotate)
+- [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
 - [ ] Attach .STEP and .f3d
 - [ ] MobiFlight .mcc file and .mfmcfile
 - [ ] Mounting Template .DXF
@@ -21,5 +19,3 @@ Publishing Tasks:
 	- [ ] Buy it assembled
 - [ ] Partslist on ReadMe
 - [ ] Download only this folder via: https://download-directory.github.io/
-
-

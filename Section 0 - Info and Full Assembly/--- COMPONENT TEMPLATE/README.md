@@ -4,6 +4,7 @@ Configuration Video:
 🛒Buy it as a Kit or Assembled:
 
 Welcome to the Simulator of your dreams!
+Support the project here: https://captainbobsim.com/project-support/
 
 How to navigate the files?
 - Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
