@@ -1,5 +1,5 @@
 Build Video Here: https://youtu.be/wicxIUsyGlA
-Configuration Video:
+Configuration Video: 
 
 🛒Buy it as a Kit or Assembled: Contact CaptainBobSim@gmail.com
 
@@ -28,6 +28,42 @@ Mirror Motor Mount.stl
 You can also use the default files and mirror the files in your slicer.
 
 
+Pinout:
+Shown in video:
+
+| Arduino Pin    | What             | Label           |
+|----------------|------------------|-----------------|
+| Digital pin 2  | Altimeter 100    | IN1             |
+| Digital pin 3  |                  | IN2             |
+| Digital pin 4  |                  | IN3             |
+| Digital pin 5  |                  | IN4             |
+| Digital pin 6  | Altimeter 1,000  | IN1             |
+| Digital pin 7  |                  | IN2             |
+| Digital pin 8  |                  | IN3             |
+| Digital pin 9  |                  | IN4             |
+| Digital pin 10 | Altimeter 10,000 | IN1             |
+| Digital pin 11 |                  | IN2             |
+| Digital pin 12 |                  | IN3             |
+| Digital pin 13 |                  | IN4             |
+| Analog pin 0   | Altimeter        | Kollsman Window |
+
+Implemented into 6 Pack:
+
+| Arduino Pin    | What             | Label |
+|----------------|------------------|-------|
+| Digital pin 30 | Altimeter 100    | IN1   |
+| Digital pin 31 |                  | IN2   |
+| Digital pin 32 |                  | IN3   |
+| Digital pin 33 |                  | IN4   |
+| Digital pin 34 | Altimeter 1,000  | IN1   |
+| Digital pin 35 |                  | IN2   |
+| Digital pin 36 |                  | IN3   |
+| Digital pin 37 |                  | IN4   |
+| Digital pin 38 | Altimeter 10,000 | IN1   |
+| Digital pin 39 |                  | IN2   |
+| Digital pin 40 |                  | IN3   |
+| Digital pin 41 |                  | IN4   |
+| Analog pin 0   | Altimeter        | Kollsman Window |
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
 Unless stated otherwise in a license file within this folder, this is licenced using

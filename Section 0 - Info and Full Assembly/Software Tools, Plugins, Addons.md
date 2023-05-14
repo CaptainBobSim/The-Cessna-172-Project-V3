@@ -9,6 +9,7 @@ C172 Livery: Civil Air Patrol https://liveries.to/usafnukem/civil-air-patrol-c17
 
 ## GitHub
 Download only a folder (not entire repo) https://download-directory.github.io/
+Markdown Table Generator: https://www.tablesgenerator.com/markdown_tables
 
 ## Online Tools/Generators
 Image measure given a dimension: https://eleif.net/photo_measure.html
