@@ -1,0 +1,7 @@
+- [ ] Ground Plane on bottom
+- [ ] Stay Spicy airplane :)
+- [ ] Autoroute Traces
+- [ ] Write Version Number on PCB
+- [ ] CaptainBobSim.com
+- [ ] Write all component names
+- [ ] Pinouts for everything

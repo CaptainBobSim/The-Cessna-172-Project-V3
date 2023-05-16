@@ -19,3 +19,11 @@ Publishing Tasks:
 	- [ ] Buy it assembled
 - [ ] Partslist on ReadMe
 - [ ] Download only this folder via: https://download-directory.github.io/
+
+PCB Checklist
+- [ ] Ground Plane on bottom
+- [ ] Stay Spicy airplane :)
+- [ ] Autoroute Traces
+- [ ] Write Version Number on PCB
+- [ ] CaptainBobSim.com
+- [ ] Write all component names
