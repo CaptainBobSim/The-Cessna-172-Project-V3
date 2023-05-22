@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="16"
-     inkscape:cx="18.8125"
-     inkscape:cy="8.4375"
+     inkscape:zoom="1"
+     inkscape:cx="406"
+     inkscape:cy="453"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="svg5" />
   <defs
      id="defs2">
     <rect
@@ -79,7 +79,7 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect826);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan1841">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+             id="tspan2711">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
       </g>
       <g
          inkscape:groupmode="layer"
@@ -101,21 +101,9 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan1843">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
+             id="tspan2713">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text>
       </g>
     </g>
-    <text
-       xml:space="preserve"
-       style="display:inline;font-size:3.88056px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0144596px;stroke-width:0.0963971"
-       x="25.259148"
-       y="142.64163"
-       id="text2285"
-       inkscape:label="Support The Project!"><tspan
-         sodipodi:role="line"
-         id="tspan2283"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:0.0963971"
-         x="25.259148"
-         y="142.64163">The Cessna 172 Project -- Support the Project Here: CaptainBobSim.com/project-support</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0396875px;fill:#ffffff;stroke-width:0.264583"
@@ -220,4 +208,16 @@
          x="11.027538"
          y="-9.0546741">ALL CAPS ARIAL</tspan></text>
   </g>
+  <text
+     xml:space="preserve"
+     style="display:inline;font-size:3.88056px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0144596px;stroke-width:0.0963971"
+     x="15.998731"
+     y="125.97289"
+     id="text2285"
+     inkscape:label="Support The Project!"><tspan
+       sodipodi:role="line"
+       id="tspan2283"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:Impact;-inkscape-font-specification:Impact;stroke-width:0.0963971"
+       x="15.998731"
+       y="125.97289">The Cessna 172 Project -- Support the Project Here: CaptainBobSim.com/project-support</tspan></text>
 </svg>
