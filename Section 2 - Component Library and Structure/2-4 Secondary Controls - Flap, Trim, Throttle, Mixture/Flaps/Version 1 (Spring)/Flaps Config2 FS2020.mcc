@@ -4,7 +4,7 @@
     <config guid="553352cc-f30a-43f1-ba5a-8e37efa0e4c1">
       <active>true</active>
       <description>Flaps Servo</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)" UUID="c19b9300-13da-46f5-8489-56bceb192f64" />
         <modifiers>
           <transformation active="True" expression="$*100" substrStart="0" substrEnd="7" />
@@ -16,7 +16,7 @@
             <value x="100" y="22" />
           </interpolation>
         </modifiers>
-        <display type="Servo" serial="Flaps Arduino/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" servoAddress="Flaps Servo" servoMin="0" servoMax="22" servoMaxRotationPercent="24" />
+        <display type="Servo" serial="Flaps Arduino/ SN-1f0-834" trigger="normal" servoAddress="Flaps Servo" servoMin="0" servoMax="22" servoMaxRotationPercent="21" />
         <preconditions />
         <configrefs />
       </settings>
@@ -26,17 +26,21 @@
     <config guid="45e62232-d0f9-4c7b-b6f3-79e5b7f3328c">
       <active>true</active>
       <description>Flaps Arduino</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-58FFFEFFFEFFFFFFFF" name="Flap Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-1f0-834" name="Flap Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <analog>
-          <onChange type="MSFS2020CustomInputAction" command="@ 250 - -93.6171 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="0" />
+          <onChange type="MSFS2020CustomInputAction" command="@ 500 - 96.3706 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="0" />
         </analog>
         <preconditions />
         <configrefs />
       </settings>
     </config>
     <config guid="6a516507-919b-4420-aa58-4ade096c914b">
-      <active>true</active>
+      <active>false</active>
       <description>/For The flaps go to hubhop.mobiflight.com/tools then have your up position as min and down as max. Subtract 50 for minimum.</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="" name="" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
     </config>
   </inputs>
 </MobiflightConnector>
