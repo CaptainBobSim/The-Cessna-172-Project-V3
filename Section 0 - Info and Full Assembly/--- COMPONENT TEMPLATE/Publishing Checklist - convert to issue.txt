@@ -1,7 +1,7 @@
 Design Issues:
 - [ ] Decals
 - [ ] Engrave version of decals
-
+- [ ] Add Alignment nubs to parts that have decals
 Prototype Issues:
 - [ ] 
 
