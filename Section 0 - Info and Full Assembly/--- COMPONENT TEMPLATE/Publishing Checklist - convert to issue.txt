@@ -2,6 +2,15 @@ Design Issues:
 - [ ] Decals
 - [ ] Engrave version of decals
 - [ ] Add Alignment nubs to parts that have decals
+
+PCB Checklist
+- [ ] Ground Plane on bottom
+- [ ] Stay Spicy airplane :)
+- [ ] Autoroute Traces
+- [ ] Write Version Number on PCB
+- [ ] CaptainBobSim.com
+- [ ] Write all component names
+
 Prototype Issues:
 - [ ] 
 
@@ -19,11 +28,4 @@ Publishing Tasks:
 	- [ ] Buy it assembled
 - [ ] Partslist on ReadMe
 - [ ] Download only this folder via: https://download-directory.github.io/
-
-PCB Checklist
-- [ ] Ground Plane on bottom
-- [ ] Stay Spicy airplane :)
-- [ ] Autoroute Traces
-- [ ] Write Version Number on PCB
-- [ ] CaptainBobSim.com
-- [ ] Write all component names
+- [ ] Follow steps on product central https://www.notion.so/captainbobsim/Product-Central-fe05d96d32074a269806f0e77462978f
