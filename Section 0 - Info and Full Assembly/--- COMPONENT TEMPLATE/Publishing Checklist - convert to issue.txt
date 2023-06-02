@@ -16,7 +16,7 @@ Prototype Issues:
 
 Publishing Tasks:
 - [ ] Add a DRAWING PDF (optional)
-- [ ] Make a Cut/Engrave SVG
+- [ ] Post on Printables
 - [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
 - [ ] Attach .STEP and .f3d
 - [ ] MobiFlight .mcc file and .mfmcfile
