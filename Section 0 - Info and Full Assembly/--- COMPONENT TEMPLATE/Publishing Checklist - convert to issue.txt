@@ -15,17 +15,21 @@ Prototype Issues:
 - [ ] 
 
 Publishing Tasks:
-- [ ] Add a DRAWING PDF (optional)
-- [ ] Post on Printables
+- [ ] Add Wiring diagram PNG (Also add to video)
+- [ ] Partslist on ReadMe (Also add to video)
 - [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
+- [ ] Mounting Template .DXF and maybe PDF
 - [ ] Attach .STEP and .f3d
-- [ ] MobiFlight .mcc file and .mfmcfile
-- [ ] Mounting Template .DXF
-- [ ] Add Wiring diagram PNG
-- [ ] Write the ReadMe
+- [ ] MobiFlight .mcc file and .mfmc file
+- [ ] Take pictures
+- [ ] Printables
+The Printables version will not be updated. The best place to get it is here: https://captainbobsim.com/product/the-cessna-172-project-files/?customize_changeset_uuid=
+Find the MobiFlight code under Section 2/Instrument
+- [ ] Tweak the ReadMe
 	- [ ] Video Here
-	- [ ] Buy it as a Kit
-	- [ ] Buy it assembled
-- [ ] Partslist on ReadMe
-- [ ] Download only this folder via: https://download-directory.github.io/
+	- [ ] Buy it as a Kit/Assembled
+	- [ ] Download only this folder via: https://download-directory.github.io/
+	- [ ] Pinout?
 - [ ] Follow steps on product central https://www.notion.so/captainbobsim/Product-Central-fe05d96d32074a269806f0e77462978f
+- [ ] Thumbnail for Video
+- [ ] Add links to video

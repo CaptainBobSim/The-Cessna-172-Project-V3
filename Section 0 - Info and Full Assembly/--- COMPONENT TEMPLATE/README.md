@@ -6,8 +6,11 @@ Configuration Video:
 Welcome to the Simulator of your dreams!
 Support the project here: https://captainbobsim.com/project-support/
 
-How to navigate the files?
+🛩How to navigate the files? 🧭
+- STLs contain all of the print files
+- MobiFlight Files contain the software configuration using MobiFlight (You can merge it into your top level MobiFlight file)
 - Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
+
 
 
 __Bill 'o Materials:__
@@ -18,7 +21,6 @@ __Bill 'o Materials:__
 
 
 Pinout: 
-
 https://www.tablesgenerator.com/markdown_tables
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
