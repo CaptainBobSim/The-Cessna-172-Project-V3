@@ -7,7 +7,7 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR BANK DEGREES,Radians)" UUID="6357059b-d04d-42b5-ab24-5212f273d8bf" />
         <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*57.2958" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="-90" y="90" />
@@ -25,7 +25,7 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR PITCH DEGREES,Radians)" UUID="26539606-5bbf-4b94-a212-1ecf0d8d3733" />
         <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*57.2958" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="-35" y="-35" />
