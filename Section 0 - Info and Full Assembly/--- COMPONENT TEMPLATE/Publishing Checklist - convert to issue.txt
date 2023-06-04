@@ -5,7 +5,7 @@ Design Issues:
 
 PCB Checklist
 - [ ] Ground Plane on bottom
-- [ ] Stay Spicy airplane :)
+- [ ] "Stay Spicy ✈" airplane :)
 - [ ] Autoroute Traces
 - [ ] Write Version Number on PCB
 - [ ] CaptainBobSim.com
