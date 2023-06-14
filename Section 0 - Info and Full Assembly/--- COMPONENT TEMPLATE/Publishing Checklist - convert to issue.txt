@@ -20,7 +20,9 @@ Publishing Tasks:
 - [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
 - [ ] Mounting Template .DXF and maybe PDF
 - [ ] Attach .STEP and .f3d
-- [ ] MobiFlight .mcc file and .mfmc file
+- [ ] MobiFlight .mfmc file
+- [ ] FS2020 Mobi .mcc
+- [ ] X-Plane Mobi .mcc
 - [ ] Take pictures
 - [ ] Printables
 The Printables version will not be updated. The best place to get it is here: https://captainbobsim.com/product/the-cessna-172-project-files/?customize_changeset_uuid=
