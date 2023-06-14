@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="ac6b7a68-e708-4204-af0a-6d3afe83d064">
+      <active>true</active>
+      <description>Flaps Write</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Flaps_Potentiometer" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="157" y="0" />
+            <value x="277" y="256" />
+            <value x="363" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="InputAction" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="@ 16.0147 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="e3388f22-2d1f-475d-88fc-d93676b15e2c" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e2313464-b9c2-4cdb-af08-1d0c91b726a4">
+      <active>true</active>
+      <description>Flaps Servo</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)" UUID="c19b9300-13da-46f5-8489-56bceb192f64" />
+        <modifiers>
+          <transformation active="True" expression="$*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="0" y="0" />
+            <value x="100" y="100" />
+          </interpolation>
+        </modifiers>
+        <display type="Servo" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Flaps Position" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="3fe7aa18-71f4-45b2-bc42-45d961ce29e3">
+      <active>true</active>
+      <description>Flaps Input</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" name="Flaps Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Flaps_Potentiometer" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

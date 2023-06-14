@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="ec00842c-df34-4522-bbe1-664482af36d9">
+      <active>true</active>
+      <description>Flap Write</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Flaps_Input" varExpression="$" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="157" y="0" />
+            <value x="278" y="33" />
+            <value x="329" y="66" />
+            <value x="363" y="100" />
+          </interpolation>
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="XplaneInputAction" inputType="DataRef" path="sim/flightmodel/controls/flaprqst" expression="@/100" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a397a471-9f3e-4bae-981e-34d14cb974b5">
+      <active>true</active>
+      <description>Flap Position</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel/controls/flaprat" />
+        <modifiers>
+          <transformation active="True" expression="$*100" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="False">
+            <value x="0" y="0" />
+            <value x="1024" y="1024" />
+          </interpolation>
+        </modifiers>
+        <display type="Servo" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Flaps Position" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="5dd291a1-4c64-4a24-829f-b2c0f629ff2a">
+      <active>true</active>
+      <description>Flaps Input</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" name="Flaps Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Flaps_Input" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

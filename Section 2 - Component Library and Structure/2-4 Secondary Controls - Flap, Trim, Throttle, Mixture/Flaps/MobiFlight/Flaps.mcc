@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="f09f8bae-433c-4176-8f86-d1e3a62cbe9d">
+      <active>true</active>
+      <description>Flaps Input</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" name="Flaps Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 157 - 79.5291 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="0" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
