@@ -1,7 +1,9 @@
 Design Issues:
-- [ ] Decals
-- [ ] Engrave version of decals
 - [ ] Add Alignment nubs to parts that have decals
+
+Decals:
+- [ ] Decals Printer Friendly Version
+- [ ] Laser Engraving Friendly Version
 
 PCB Checklist
 - [ ] Ground Plane on bottom
@@ -9,7 +11,7 @@ PCB Checklist
 - [ ] Autoroute Traces
 - [ ] Write Version Number on PCB
 - [ ] CaptainBobSim.com
-- [ ] Write all component names
+- [ ] Write all component names and Pins
 
 Prototype Issues:
 - [ ] 
