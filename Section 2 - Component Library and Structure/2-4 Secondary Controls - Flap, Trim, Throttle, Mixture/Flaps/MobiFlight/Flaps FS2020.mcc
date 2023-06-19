@@ -15,7 +15,7 @@
             <value x="363" y="1024" />
           </interpolation>
         </modifiers>
-        <display type="InputAction" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal">
+        <display type="InputAction" serial="Flaps Arduino/ SN-c37-3e2" trigger="normal">
           <analog>
             <onChange type="MSFS2020CustomInputAction" command="@ 16.0147 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="e3388f22-2d1f-475d-88fc-d93676b15e2c" />
           </analog>
@@ -37,7 +37,7 @@
             <value x="100" y="100" />
           </interpolation>
         </modifiers>
-        <display type="Servo" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" servoAddress="Flaps Position" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
+        <display type="Servo" serial="Flaps Arduino/ SN-c37-3e2" trigger="normal" servoAddress="Flaps Servo" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
         <preconditions />
         <configrefs />
       </settings>
@@ -47,7 +47,7 @@
     <config guid="3fe7aa18-71f4-45b2-bc42-45d961ce29e3">
       <active>true</active>
       <description>Flaps Input</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Video Arduino/ SN-cÿÿÿÿÿÿÿ" name="Flaps Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-c37-3e2" name="Flap Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <analog>
           <onChange type="VariableInputAction" varType="number" varName="Flaps_Potentiometer" varExpression="@" />
         </analog>
