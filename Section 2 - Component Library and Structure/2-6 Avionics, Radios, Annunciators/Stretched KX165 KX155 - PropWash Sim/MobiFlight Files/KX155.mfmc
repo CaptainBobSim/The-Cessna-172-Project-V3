@@ -2,7 +2,7 @@
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ModuleName>MobiFlight Mega</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
-  <LedModule Name="Radio Display" DinPin="2" ClsPin="3" ClkPin="4" Brightness="15" NumModules="1" />
+  <LedModule Name="Radio Display" DinPin="2" ClsPin="3" ClkPin="4" Brightness="15" NumModules="4" />
   <Button Name="COM Power" Pin="5" />
   <Encoder Name="Com Volume" PinLeft="6" PinRight="7" EncoderType="0" />
   <Button Name="Com Swap" Pin="8" />

@@ -5,7 +5,7 @@
       <active>true</active>
       <description>7 seg COM Active</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_frequency_hz_833" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -19,12 +19,12 @@
       <active>true</active>
       <description>7 seg COM Standby</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833" />
         <modifiers>
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Displays" ledConnector="2" ledModuleSize="6" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Radio Display" ledConnector="2" ledModuleSize="6" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
         <preconditions />
         <configrefs />
       </settings>
@@ -33,12 +33,12 @@
       <active>true</active>
       <description>7 seg NAV Active</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:1,MHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav1_left_frequency_hz" />
         <modifiers>
-          <transformation active="True" expression="Round($*100,0)" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="Round($,0)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Radio Display" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
+        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Radio Display" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
         <preconditions />
         <configrefs />
       </settings>
@@ -47,12 +47,12 @@
       <active>true</active>
       <description>7 seg NAV Standby</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,MHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav1_standby_frequency_hz" />
         <modifiers>
-          <transformation active="True" expression="Round($*100,0)" substrStart="0" substrEnd="7" />
+          <transformation active="False" expression="Round($*100,0)" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Radio Display" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
+        <display type="Display Module" serial="MobiFlight Mega/ SN-f49-908" trigger="normal" ledAddress="Radio Display" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
         <preconditions />
         <configrefs />
       </settings>
@@ -64,9 +64,9 @@
       <description>COM Rough</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Com Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" presetId="ec154767-41ce-4a2f-865b-3e6fe7c90c89" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/actv_com1_coarse_down_833" expression="$" />
           <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_INC)" presetId="e1a79c8b-2e4a-49b2-9284-d1cf0adc5707" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/actv_com1_coarse_up_833" expression="$" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -78,9 +78,9 @@
       <description>COM Fine</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Com Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_DEC)" presetId="04725cc3-7346-4f5d-ad89-c1ffaaa6e978" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/actv_com1_coarse_up_833" expression="$" />
           <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_INC)" presetId="6b78a3e2-e3dc-411b-bb2d-224b011a2644" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/actv_com1_fine_up_833" expression="$" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -92,9 +92,9 @@
       <description>NAV Rough</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Nav Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" presetId="bcb45f55-c67a-44b9-a951-096e450ccec7" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/actv_nav1_coarse_down" expression="$" />
           <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_INC)" presetId="1ae481bc-bea6-4f58-a683-01c9d0c38e32" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/actv_nav1_coarse_up" expression="$" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -106,9 +106,9 @@
       <description>NAV Fine</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Nav Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_FRACT_DEC)" presetId="c9709caa-0465-4079-9291-703f5adb7451" />
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/actv_nav1_fine_down" expression="$" />
           <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV2_RADIO_FRACT_INC)" presetId="64b2ce51-c983-4ae8-8145-4a74c2fbf038" />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/actv_nav1_fine_down" expression="$" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -120,7 +120,7 @@
       <description>Switch COM</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Com Swap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM_STBY_RADIO_SWAP)" presetId="a526dd94-0322-4fd6-89c7-445ccbb5579c" />
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="$" />
           <onRelease />
         </button>
         <preconditions />
@@ -132,31 +132,7 @@
       <description>Switch NAV</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Nav Swap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_SWAP)" presetId="72e5dd2a-4e9d-4d61-940a-e523202f8dd0" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="a4bfaad8-78fd-4423-a7cc-179e19b18509">
-      <active>false</active>
-      <description>IDENT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Nav Ident" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR1_IDENT_ENABLE)" presetId="737bc74c-8557-421f-9376-972fb1995b6c" />
-          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR1_IDENT_DISABLE)" presetId="aadc23fe-114c-47a5-bb98-cf2035b13863" />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="29e3b381-2d7e-43e7-828a-00624ba94495">
-      <active>true</active>
-      <description>IDENT Toggle</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-f49-908" name="Nav Ident" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR1_IDENT_TOGGLE)" presetId="37c9eff4-c53d-4dfb-a7bc-33ce183b3378" />
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="$" />
           <onRelease />
         </button>
         <preconditions />

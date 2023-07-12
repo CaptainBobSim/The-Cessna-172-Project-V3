@@ -1,7 +1,4 @@
-
-
 Build/Config Video Here: [- YouTube](https://youtu.be/YGrNcZI5cK0)
-
 
 Want me to print the parts for you? Contact CaptainBobSim@gmail.com
 
@@ -21,8 +18,6 @@ __Bill 'o Materials:__
 📦 Rotary Encoder or Potentiometer (follow the wiring for your specific electronic)
 📦 x8 M3 8mm screws
 📦 x4 M3 10mm screws to mount to side
-
-
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
 
