@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="7af80301-36d4-476a-9616-6ddea95e0ff6">
+      <active>true</active>
+      <description>Vol Encoder A-B Left Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Vol Enco A-B Lef" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_VOL_1_DEC)" presetId="167a047e-eee9-48e4-8101-398dc99d6ebb" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_VOL_1_INC)" presetId="9048bec6-845d-444e-b5d6-d0e2e92ef68b" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f491cbc3-42c9-43a9-95cd-06cf562dd3e8">
+      <active>true</active>
+      <description>Flip Flop Left Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Flip Flop Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Switch)" presetId="8da1c6c8-03fd-49ba-b1d9-90ad72b1a0ce" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43300f61-eb20-4d25-8cf6-f8046330d299">
+      <active>true</active>
+      <description>Nav Inner A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nav inner A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Small_DEC)" presetId="d173eee1-1eeb-47b6-9ffa-5e74e9737f4f" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Small_INC)" presetId="4307e8c2-6ab7-4fc2-874f-b46dfb72a9d6" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c240c387-8aca-48fe-a186-c6eac8a67ae0">
+      <active>true</active>
+      <description>Nav outter A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nav Outer A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Large_DEC)" presetId="cc1d3714-0e32-47b0-9d93-e8aed37e88de" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Large_INC)" presetId="53006b08-5043-4e35-b644-1c29f3c7f9cc" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7011f70e-2ec1-4cd9-bc18-0e7a82a7982d">
+      <active>true</active>
+      <description>Nav Push Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nav Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Push)" presetId="f0fb9102-a592-4ce8-b810-41a9fbdc7419" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="296cd977-63cf-42d7-ac61-298449ad1227">
+      <active>true</active>
+      <description>HDG Encoder A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="HDG Encoder A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="1 (&gt;K:HEADING_BUG_DEC)" presetId="f0fc58e9-c560-40d2-99ac-9293fab28f8d" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT HEADING LOCK DIR:1, Degrees) 5 - dnor (&gt;K:1:HEADING_BUG_SET)" presetId="87da5aeb-34d1-4e11-8526-b505d0e75988" />
+          <onRight type="MSFS2020CustomInputAction" command="1 (&gt;K:HEADING_BUG_INC)" presetId="536e65bf-2036-4a9e-a151-bc06899e4315" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT HEADING LOCK DIR:1, Degrees) 5 + dnor (&gt;K:1:HEADING_BUG_SET)" presetId="946925f2-c30f-47a8-921c-50239db71a35" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0f8bc3b-d9f1-429b-b695-9ed78e256da2">
+      <active>true</active>
+      <description>HDG Push Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="HDG Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:HEADING INDICATOR, degrees) (&gt;K:HEADING_BUG_SET)" presetId="67c38b01-e4cd-448c-a572-cba1b6d250f5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5ffb010a-7e15-4824-859f-72fe652f1eab">
+      <active>true</active>
+      <description>AP Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="AP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT DISENGAGED, Bool) ! if{ (&gt;K:AP_MASTER) (A:AUTOPILOT MASTER, Bool) if{ (A:AUTOPILOT FLIGHT DIRECTOR ACTIVE, Bool) ! if{ 1 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) } } (A:AUTOPILOT MASTER, bool) ! if{ (H:Generic_Autopilot_Manual_Off) } }" presetId="92ea3094-6964-4c44-a131-fbdbf8ed0eb4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59cb5dd5-87a0-4801-882d-d828a4a29cf3">
+      <active>true</active>
+      <description>HDG Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Hdg" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_PANEL_HEADING_HOLD)" presetId="3f56b530-ef2e-4430-8811-ad9b135309f4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f5f082a-b920-4355-ab84-f80b89604680">
+      <active>true</active>
+      <description>NAV Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Switch)" presetId="8da1c6c8-03fd-49ba-b1d9-90ad72b1a0ce" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bdac950f-6b89-4b6b-b92c-0285d0aa3185">
+      <active>true</active>
+      <description>APR Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="APR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT APPROACH HOLD,Bool) (A:AUTOPILOT GLIDESLOPE HOLD, Bool) ! and if{ (&gt;K:AP_APR_HOLD) } (&gt;K:AP_APR_HOLD)" presetId="ea9a2313-6fa8-42e5-b392-f7f28907e241" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d90fbf24-7be8-4afa-b393-3a39288507e5">
+      <active>true</active>
+      <description>VS Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_PANEL_VS_HOLD)" presetId="1f6f5a4d-6b7d-4fea-bf7b-3b330a6f94d3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aec4458a-74db-4e69-a0cc-d18f3ecdabae">
+      <active>true</active>
+      <description>FLC Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FLC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:FLIGHT_LEVEL_CHANGE) (A:AIRSPEED INDICATED, knots) (&gt;K:AP_SPD_VAR_SET)" presetId="05dababd-c9ed-4951-a4f6-c5b6e07ed271" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b5c0c642-6823-4194-a427-e488d2c4aa38">
+      <active>true</active>
+      <description>FD Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT MASTER, bool) ! if{ 0 (&gt;K:TOGGLE_FLIGHT_DIRECTOR) }" presetId="acff9234-b036-4b01-b2e7-0c232440e91f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b64c74dd-08bb-49d5-aefa-5b65b42dc7b0">
+      <active>true</active>
+      <description>Alt Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_ALT_HOLD)" presetId="fb43246e-061d-4145-9616-10012527dbc8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55bb4651-0f50-4a59-90a8-848ddcffd6ce">
+      <active>true</active>
+      <description>VNV Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="VNV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_VNAV_TOGGLE)" presetId="ae7e3f46-16f2-4073-9b8f-959754289b5b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63e5a9e8-22d8-442f-871e-0fdec55cc3d1">
+      <active>true</active>
+      <description>BC Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="BC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:APGA_REV)" presetId="50c2811b-2fab-4d7b-83b6-2cdf8389c495" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b55c696-6218-463f-a9a6-d6e62f492ae5">
+      <active>true</active>
+      <description>Nose Up Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nose Up" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (&gt;K:AP_VS_VAR_INC) (&gt;H:AP_DN) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (&gt;K:AP_SPD_VAR_INC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (&gt;K:AP_PITCH_REF_INC_UP) }" presetId="bea6d521-d3a5-426a-9b0c-0a09e5a4bc61" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eabdf5f5-2b6c-4e15-a788-dbd2e230f360">
+      <active>true</active>
+      <description>Nose DN Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Nose Down" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (&gt;K:AP_VS_VAR_DEC) (&gt;H:AP_UP) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (&gt;K:AP_SPD_VAR_DEC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (&gt;K:AP_PITCH_REF_INC_DN) }" presetId="6d7c0ae0-2f9e-461d-8536-fe218d9f61c9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb7dac18-c72a-4cde-bad3-c845fcc45de5">
+      <active>true</active>
+      <description>Alt Inner A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Alt inner A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command=" (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 100 - (&gt;K:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up)" presetId="d03873bb-2f72-4d88-ba00-d338c5627c89" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command=" (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 100 + (&gt;K:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up)" presetId="3f7f4649-3ab8-47a7-9e4f-46ebce300400" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="676e16a9-e0e0-4709-aa35-43790c6ad002">
+      <active>true</active>
+      <description>Alt Outer A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Alt Outer A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command=" (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 1000 - (&gt;K:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up)" presetId="7f5c33b5-7347-4a93-b03a-04b9f49761aa" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command=" (A:AUTOPILOT ALTITUDE LOCK VAR, feet) 1000 + (&gt;K:AP_ALT_VAR_SET_ENGLISH) (&gt;H:AP_KNOB_Up)" presetId="6c3a4bf7-2c59-47c1-9e81-a38bd1f29916" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b35b155-8261-459b-8d51-2ba69176b2c3">
+      <active>true</active>
+      <description>SK1 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_1)" presetId="8bc40426-4f02-4ef2-9a4f-ed242c706635" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="57630ec5-1ee3-4295-ba85-f4f19dea0de0">
+      <active>true</active>
+      <description>SK2 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_2)" presetId="ebfd5493-6504-45df-8783-ea04b10a94f6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d00060d9-a080-42fb-a45d-92a3eacaaea2">
+      <active>true</active>
+      <description>SK3 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_3)" presetId="1b65283f-b2f1-4db2-8ffe-1d7b6d549ec7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d4977bb2-e395-4656-8c9a-68a6d1358fbe">
+      <active>true</active>
+      <description>SK4 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_4)" presetId="952f663e-5f95-467b-bc52-be694818802c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a44da00d-300d-4bc9-a39a-d9af6d12f4dc">
+      <active>true</active>
+      <description>SK5 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_5)" presetId="784d87b9-a499-4f16-8fbb-f556d8a174aa" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="675e19c7-a97e-4bdd-94b6-04df980122d4">
+      <active>true</active>
+      <description>SK6 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_6)" presetId="c177c0bf-78d9-47b8-b1f5-906e0126fe85" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="399fe8f4-6c2a-416b-b059-a484fc49bdc5">
+      <active>true</active>
+      <description>SK7 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_7)" presetId="a706b901-fd6d-4a1f-893a-4dc9f5c2ae4c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8397c79-c7fd-46c2-80a4-75b18de9554b">
+      <active>true</active>
+      <description>SK8 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_8)" presetId="10eb38b1-21eb-4e69-8f7e-3be816ca4403" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="868845d8-62ee-4d9b-86ec-ed8d1ceefd9c">
+      <active>true</active>
+      <description>SK9 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_9)" presetId="21ffc3fc-5f57-4689-9612-63cc9e7c53c4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d5fdf868-efa7-45b8-91d7-56834cd06091">
+      <active>true</active>
+      <description>SK10 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_10)" presetId="93d57e87-643b-4ca2-8190-590c736b4280" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44abe401-977a-481f-a72b-0376e5c7a868">
+      <active>true</active>
+      <description>SK11 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK11" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_11)" presetId="235e322b-1bf2-4328-94a8-a300e4bd59f2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28b2266a-6c39-4fb3-9aee-08fcce821a42">
+      <active>true</active>
+      <description>SK12 Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="SK12" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_12)" presetId="7cb85aba-44b1-40ac-97be-addd32d4b802" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b5f859e7-c6ad-496e-bd1a-6ea7b5808888">
+      <active>true</active>
+      <description>Vol EncoderA-B Right Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Vol Enco A-B Rig" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_VOL_2_DEC)" presetId="43b6acab-a27f-4955-a3d3-7dce8d756ec9" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_VOL_2_INC)" presetId="b68aaa7b-87e1-4aa5-84bf-f88502cb5a97" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cb78f26e-0e3f-49ab-a5aa-a42a45110c6c">
+      <active>true</active>
+      <description>Flip Flop Right Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Flip Flop Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Switch)" presetId="8da1c6c8-03fd-49ba-b1d9-90ad72b1a0ce" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18cd0645-a0e4-4b64-9bf3-5a15e332794f">
+      <active>true</active>
+      <description>Com Inner A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Com Inner A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_COM_Small_DEC)" presetId="c9e9d87f-1f76-4bc2-9d21-035f916d2a17" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Small_INC)" presetId="4307e8c2-6ab7-4fc2-874f-b46dfb72a9d6" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28492e09-c118-4034-bfe7-9253adaab303">
+      <active>true</active>
+      <description>Com Outer A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Com Outer A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Large_DEC)" presetId="cc1d3714-0e32-47b0-9d93-e8aed37e88de" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_NAV_Large_INC)" presetId="53006b08-5043-4e35-b644-1c29f3c7f9cc" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="693bef81-c135-4d39-9a74-46d418a15ccd">
+      <active>true</active>
+      <description>Com Push Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Com Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_COM_Push)" presetId="b1568dcd-a9c8-4b2b-b76c-c6c249ad7d5f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2451f89-9ac0-4d2d-bf3d-32f9926ca41d">
+      <active>true</active>
+      <description>CRS/BARO Inner A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="CRS Baro in AB" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_CRS_DEC)" presetId="5e79e34d-0346-447a-9f07-ce69d65d9a36" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_CRS_INC)" presetId="3b8cdf53-086f-4c56-810b-ffb66099fa43" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a0d0c08b-1da4-4187-9f5b-02ad4a235f36">
+      <active>true</active>
+      <description> CRS/BARO Outter A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="CRS Baro Out A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_BARO_DEC)" presetId="a1ad8c39-49b1-4cc8-85e7-6bbcdceeb29a" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_BARO_INC)" presetId="68104834-399d-4b74-a542-f7c4d7d81918" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f861dfeb-29f2-463a-a629-dc75bcc159bc">
+      <active>true</active>
+      <description>CRS/BARO Push Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="CRS Baro Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_CRS_PUSH)" presetId="03ed22c6-ea05-4dfc-ba9a-5cba0ce964ef" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1b64a7f5-2001-422c-881b-2bc0e40eeed5">
+      <active>true</active>
+      <description>DIR_TO Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Dir To" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_DIRECTTO)" presetId="2766a15c-f7a6-4a7e-ae54-8a3f35ea5047" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1fec3b29-47c9-4829-9a66-662c64adf2be">
+      <active>true</active>
+      <description>FPL Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FPL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FPL_Push)" presetId="22812c0c-f2f4-419c-b12c-0d5889752463" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c42feef4-6321-43ba-922f-c3aebe1c20ca">
+      <active>true</active>
+      <description>CLR Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_CLR)" presetId="dc6ffbf7-9ead-421c-850c-b3ac8198041f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="498e4aaf-4ee1-40d7-bcd9-246d78f33a67">
+      <active>true</active>
+      <description>Menu Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_MENU_Push)" presetId="3824ae98-519c-40ef-b083-bf1d9fd3d451" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07c66e53-16cf-4c2c-bb64-b8ca3e10eb2d">
+      <active>true</active>
+      <description>Proc Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="Proc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_PROC_Push)" presetId="cdeef2be-8be8-440f-91d8-d138f238fdc6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="57e6fa8a-2a07-42cb-99e3-0985a5cf814f">
+      <active>true</active>
+      <description>ENT Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="ENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_ENT_Push)" presetId="361208b1-4161-4752-9c65-8146fa5cb14d" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8168cc3-3d9a-464a-ab3e-83351293a206">
+      <active>true</active>
+      <description>FMS Inner A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FMS Inner A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FMS_Upper_DEC)" presetId="38c75d3c-023b-49c9-810c-cd429107c321" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FMS_Upper_INC)" presetId="e6fa50a6-17d7-491b-8c8f-a035410ae388" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18aa8e01-f029-4d0d-96b5-4b822a3b6c64">
+      <active>true</active>
+      <description>FMS Outter A-B Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FMS Outer A-B" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FMS_Lower_DEC)" presetId="22c0671b-e21b-4dad-a552-b0d410f88f70" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FMS_Lower_INC)" presetId="a7e26b80-418a-4200-b576-28b50741d3e3" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="05f98f67-d0ea-45e4-b6ad-5b334600b426">
+      <active>true</active>
+      <description>FMS Push Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Pilot/ SN-a55-9df" name="FMS Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_FMS_Upper_PUSH)" presetId="fc706663-24cf-4350-a9b7-35e4e1c6b7f8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c0341e8f-afbe-411c-a877-dd9aacfb878e">
+      <active>true</active>
+      <description>Joy Pilot Enc A-B</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Encoder A-B Pilo" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_RANGE_INC)" presetId="a209be51-8652-4265-bf3c-2863b5b282b3" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_RANGE_DEC)" presetId="f5754549-83b4-4a1b-9ef6-21fe444ceece" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc76dc23-e116-4fcc-83b5-a327c5174a7d">
+      <active>true</active>
+      <description>Joy Pilot Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Up Pilot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_JOYSTICK_UP)" presetId="6bb40234-5525-42f8-aef3-52ddb7336e29" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dfa5daaa-7939-4760-ab75-d3f237cd4553">
+      <active>true</active>
+      <description>Joy Pilot Left</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Left Pilot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_JOYSTICK_LEFT)" presetId="16f31eee-612c-410f-9825-e15ee959e268" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3654c247-32e7-46d8-8cb6-30e9dccb9505">
+      <active>true</active>
+      <description>Joy Pilot Dn</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Down Pilot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_JOYSTICK_DOWN)" presetId="5f72fc77-8c85-480b-86b5-eebfcdbcb759" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09edd8d1-6481-43a3-b672-169ca70a58d2">
+      <active>true</active>
+      <description>Joy Pilot Right</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Right Pilot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_JOYSTICK_RIGHT)" presetId="ade27413-b399-467b-bdb1-f9dc8ef2e6c8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09c64214-32a1-4b8d-b075-9cdf0d1c9da0">
+      <active>true</active>
+      <description>Joy Pilot Push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="G1000 Joystick/ SN-eb1-387" name="Joy Push Pilot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_JOYSTICK_PUSH)" presetId="8fb0272e-584c-4fdb-8ac1-b853124768bf" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

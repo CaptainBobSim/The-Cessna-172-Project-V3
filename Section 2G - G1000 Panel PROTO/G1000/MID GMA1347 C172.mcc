@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="92ee0b8b-a4e3-4312-b89e-095e740c7d9e">
+      <active>true</active>
+      <description>Com 2 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE:2,bool)" UUID="159c0b98-de47-4f65-828a-59c8652d3852" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM2" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fec384fa-d43b-4f18-a453-eeea1d7394e3">
+      <active>true</active>
+      <description>COM 1 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE:1,bool)" UUID="159c0b98-de47-4f65-828a-59c8652d3852" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM1" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b97cc4c3-45a1-4d41-b858-e34a7a4dc6f7">
+      <active>true</active>
+      <description>COM1 TRANS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:1, bool)" UUID="a13259a2-fbd6-4278-b03d-3f0d47aff019" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM1 MIC" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2644827-61b7-47b4-98cd-5cecea3e2af1">
+      <active>true</active>
+      <description>COM2 TRANS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:2, bool)" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM2 MIC" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8821346d-26e6-439e-8918-6fe67bb5f203">
+      <active>true</active>
+      <description>COM3 TRANS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:3, bool)" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM3 MIC" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="92ee9594-34f1-4aac-baae-d34a51bc9821">
+      <active>true</active>
+      <description>COM3 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE:3,bool)" UUID="159c0b98-de47-4f65-828a-59c8652d3852" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="50" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="COM3" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e683d2c0-31c7-4b51-881e-819969cb479f">
+      <active>true</active>
+      <description>MKR MUTE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MARKER BEACON TEST MUTE,Bool)" UUID="fe4800bb-241a-474f-81ea-8503157bc67e" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="MKR MUTE" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c49ec95f-1203-43e9-a01f-34eccda434ef">
+      <active>true</active>
+      <description>CABIN SPEAKER</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:SPEAKER ACTIVE,Bool)" UUID="ebecd40d-8b9b-473e-965a-e7839482a133" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="SPKR" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="732c489d-2805-4711-a556-ba96ac80219c">
+      <active>true</active>
+      <description>HI SENS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MARKER BEACON SENSITIVITY HIGH,Bool)" UUID="178509cd-8519-4797-a054-0aad78884f3d" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="HI SENS" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bde0125c-b67b-47ba-9fa4-010d35131239">
+      <active>true</active>
+      <description>DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:DME SOUND:1,Bool)" UUID="49394772-d6a9-4d7d-b8ed-daa39513abd0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="DME" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b80de8b-0522-4924-92a4-df7a9b98a79a">
+      <active>true</active>
+      <description>ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF SOUND:1,Bool)" UUID="e304f7aa-d764-4ce3-bf1a-690b96b2c038" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Garmin GMA134/ SN-4e9-8e3" trigger="normal" pin="ADF" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a956bfaf-74af-4276-bfc6-3095072b3cb2">
+      <active>true</active>
+      <description>COM1 MIC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM1 MIC IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_COM_Mic_1_Push) &#xA;0 (&gt;K:PILOT_TRANSMITTER_SET) &#xA;0 (&gt;K:COPILOT_TRANSMITTER_SET)" presetId="891448f4-44fe-43d7-a4f9-83be31a1bf2c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c47a4b39-32ad-4d66-84f0-70adb9dd94c3">
+      <active>true</active>
+      <description>COM 2 MIC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM2 MIC IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_COM_Mic_2_Push) &#xA;1 (&gt;K:PILOT_TRANSMITTER_SET) &#xA;1 (&gt;K:COPILOT_TRANSMITTER_SET) " presetId="b569f7c9-56e8-47f3-86dc-895fea45660b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d67759a7-1ad9-498d-91d8-617ffff3696a">
+      <active>true</active>
+      <description>COM3 MIC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM3 MIC IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_COM_Mic_3_Push)" presetId="ed065be4-5706-44c9-aed2-a95fa46e57cf" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a517ac87-cb66-4564-9995-d479598aa33f">
+      <active>true</active>
+      <description>COM 1-2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM 1-2 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_COM_Swap_1_2_Push)" presetId="1097e626-3545-4f5a-8f89-f42ef6b4f1c5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59011e25-ca46-49ce-b15c-fa9a5e5ade62">
+      <active>true</active>
+      <description>PA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="PA IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_PA_Push)" presetId="d69fe8be-72c0-4c7e-8568-e8fb6dd737c5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8331d503-693b-462b-9876-5fd2f875c980">
+      <active>true</active>
+      <description>MKR MUTE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="MKR MUTE IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:MARKER_BEACON_TEST_MUTE) &#xA;(&gt;H:AS1000_MID_MKR_Mute_Push) " presetId="5306a144-4fa1-4341-ade6-c45ed652ff4b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="284f7623-13c7-425e-960e-ee069fa8cc9c">
+      <active>true</active>
+      <description>DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="DME IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_DME1_IDENT_TOGGLE) &#xA;(&gt;H:AS1000_MID_DME_Push) " presetId="a6cac2a5-4ba9-4630-bee6-163df9597ac6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3867f894-f7c4-43f3-a6de-f8130c8c05f0">
+      <active>true</active>
+      <description>ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="ADF IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_ADF_IDENT_TOGGLE) &#xA;(&gt;H:AS1000_MID_ADF_Push)" presetId="11df6e76-92d7-4ef6-b5cb-fd5ef519293b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="73834da4-3ba2-4c83-b91c-5c693877629f">
+      <active>true</active>
+      <description>AUX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="AUX IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_AUX_Push)" presetId="8dda4764-db05-40e0-af30-cdc31a33a1d6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b4db677-4959-4259-a455-ca545482e1d4">
+      <active>true</active>
+      <description>MAN SQ</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="MAN SQ IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_MAN_SQ_Push)" presetId="dcbd2914-e67b-473a-93d9-6fa3ab93c791" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f175eea5-dc98-416d-8466-b401500709eb">
+      <active>true</active>
+      <description>PLAY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="PLAY IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_Play_Push)" presetId="6d3885de-5405-4f00-8144-6996e6ab1972" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f18a27a5-1e9b-4f51-84d8-ab765e922b58">
+      <active>true</active>
+      <description>NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="NAV2 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR2_IDENT_TOGGLE) &#xA;(&gt;H:AS1000_MID_NAV_2_Push) " presetId="d8bf8ebc-c82f-48bf-bf26-49563c67b80b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e0686e6-0091-4061-8c84-d956827555bf">
+      <active>true</active>
+      <description>DISPLAY BACKUP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="DISP BKUP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:AS1000_MID_Display_Backup_Active) ! (&gt;L:AS1000_MID_Display_Backup_Active)" presetId="1ea3403b-3713-4211-9fe7-019f2d3e1f13" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="df118dfe-a1fd-49dc-99d8-dc464318dd2a">
+      <active>true</active>
+      <description>NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="NAV1 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR1_IDENT_TOGGLE) &#xA;(&gt;H:AS1000_MID_NAV_1_Push)" presetId="e63740c5-aaa4-43da-a9c2-b9ca5f4b940b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da450dbe-dd77-47b1-8d93-76e7a9377aea">
+      <active>true</active>
+      <description>Pilot Mid</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="PILOT IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_Isolate_Pilot_Push) &#xA;(A:INTERCOM MODE, Enum) 0 == (A:INTERCOM SYSTEM ACTIVE, Bool) and if{ (&gt;K:TOGGLE_ICS) } els{ &#xA; (A:INTERCOM SYSTEM ACTIVE, Bool) ! if{ &#xA;   (&gt;K:TOGGLE_ICS) &#xA;   0 (&gt;K:INTERCOM_MODE_SET) } els{ &#xA;  1 2 0 3 (A:INTERCOM MODE, Enum) case (&gt;K:INTERCOM_MODE_SET) } } " presetId="14a69e53-09e3-491b-9a2e-7ca8415a4d44" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f0d2873-26da-4194-9bd3-61498ffe1b5c">
+      <active>true</active>
+      <description>Copiot Mid</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COPILOT IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_Isolate_Copilot_Push) &#xA;(A:INTERCOM MODE, Enum) 2 == (A:INTERCOM SYSTEM ACTIVE, Bool) and if{ (&gt;K:TOGGLE_ICS) } &#xA;els{ (A:INTERCOM SYSTEM ACTIVE, Bool) ! if{ &#xA;(&gt;K:TOGGLE_ICS) 2 (&gt;K:INTERCOM_MODE_SET) } &#xA;els{ 2 0 1 3 (A:INTERCOM MODE, Enum) case (&gt;K:INTERCOM_MODE_SET) } } " presetId="6b92978f-9913-43ae-a0b4-c97b5415c198" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c8badd93-0f4e-49a0-a23a-7fd466251e8d">
+      <active>true</active>
+      <description>Hi Sens Mid- Not Working</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="HI SENS IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_HI_SENS_Push)" presetId="5fa308d7-3cb6-4f45-a51f-b897a8781c5c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="269d4e20-3a00-4e7a-a9f5-1064560ccc3d">
+      <active>true</active>
+      <description>Spkr Mid</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="SPKR IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_SPEAKER) &#xA;(&gt;H:AS1000_MID_SPKR_Push)" presetId="b8be20a0-6acb-46d3-847a-d70bd796e5e8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="93418fbc-ab9e-4fe9-a633-d46e0f70d7ea">
+      <active>true</active>
+      <description>Tel mid - Not Working</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="TEL IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_TEL_Push)" presetId="b1f33e1c-c369-417c-8aa6-4f1fafd3fb4c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06132a24-6da7-403c-9fdb-6615d39f5adb">
+      <active>true</active>
+      <description>Com 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM 3 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_COM_3_Push)" presetId="0c064a55-460f-469e-b715-fa3798a2d78c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="522b664a-2d14-406b-9831-9f652ef835a3">
+      <active>true</active>
+      <description>Com 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM 2 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:COM RECEIVE:2, Bool) if{ 0 } els{ 1 } (&gt;K:COM2_RECEIVE_SELECT) &#xA;(&gt;H:AS1000_MID_COM_2_Push)  &#xA;" presetId="07df67e6-0bb1-44c1-a8ca-9d3431a898c1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="577a301d-25e0-45c5-9d4b-25524f7e3d81">
+      <active>true</active>
+      <description>Com 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COM 1 IN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:COM RECEIVE:1, Bool) if{ 0 } els{ 1 } (&gt;K:COM1_RECEIVE_SELECT) &#xA;(&gt;H:AS1000_MID_COM_1_Push) " presetId="8ac467d9-4f6c-4c34-8ca6-cadd33a82476" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9c7f65e5-269b-48ea-91a4-bf38b7786141">
+      <active>true</active>
+      <description>MID PILOT VOLUME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="PILOT PASS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(A:AUDIO PANEL VOLUME, percent) -- 0 max (&gt;K:AUDIO_PANEL_VOLUME_SET) " presetId="3b2d0943-e9c2-46f8-81fa-5a1c4d39c981" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(A:AUDIO PANEL VOLUME, percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) " presetId="46a09492-9226-4b3c-a77c-a2dcd63821fa" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dd3cf54e-5cc2-40a2-b0eb-360352f13bce">
+      <active>true</active>
+      <description>MID COPILOT VOLUME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Garmin GMA134/ SN-4e9-8e3" name="COPILOT PASS" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_Pass_Copilot_DEC)" presetId="9173f310-99b6-4130-933c-e8a1568675f2" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_MID_Pass_Copilot_INC)" presetId="f3d4b1f9-96a3-4a8f-863f-a058a3bafaad" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
