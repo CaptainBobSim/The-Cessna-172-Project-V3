@@ -4,7 +4,7 @@
     <config guid="cf02bbe3-9c22-45a0-a0f0-ed98d90e057d">
       <active>true</active>
       <description>Roll</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR BANK DEGREES,Radians)" UUID="6357059b-d04d-42b5-ab24-5212f273d8bf" />
         <modifiers>
           <transformation active="True" expression="$*57.2958" substrStart="0" substrEnd="7" />
@@ -14,7 +14,7 @@
             <value x="90" y="-90" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="-" trigger="normal" stepperAddress="Roll" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="-90" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-380-276" trigger="normal" stepperAddress="Roll" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="90" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -22,7 +22,7 @@
     <config guid="5eebb6db-8cb9-45ae-876e-5e9a38d7b5d8">
       <active>true</active>
       <description>Pitch Maybe Perfect</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:ATTITUDE INDICATOR PITCH DEGREES,Radians)" UUID="26539606-5bbf-4b94-a212-1ecf0d8d3733" />
         <modifiers>
           <transformation active="True" expression="$*57.2958" substrStart="0" substrEnd="7" />
@@ -32,7 +32,7 @@
             <value x="35" y="35" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="-" trigger="normal" stepperAddress="Pitch" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="35" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-380-276" trigger="normal" stepperAddress="Pitch" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="-35" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>

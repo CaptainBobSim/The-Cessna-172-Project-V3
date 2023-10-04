@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="c1022578-63bf-4df4-ac45-36b03f8c608e">
+      <active>true</active>
+      <description>OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59807390-0909-4ca1-a7df-59733153e300">
+      <active>true</active>
+      <description>RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="89474efa-ee80-4b6d-8f31-0c9cd1cb9990">
+      <active>true</active>
+      <description>LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b154980c-00f9-4164-b429-ddbd076c6159">
+      <active>true</active>
+      <description>BOTH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Both" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef7da5a0-330f-4a92-ab69-d9773aefbbeb">
+      <active>true</active>
+      <description>START</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Start" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/engine/actuators/ignition_key[0]" expression="4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14ca7509-96ec-4600-b6f8-3a4072643427">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_1_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/generator_1_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29a76d35-c1b9-464d-b762-26e95bcad400">
+      <active>true</active>
+      <description>BATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="BATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_1_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/battery_1_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5dc4580-14a6-400d-add5-1d197f631d4e">
+      <active>true</active>
+      <description>FUEL PUMP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pumps_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/fuel/fuel_pumps_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="767526aa-424b-4dfa-82fe-6a83b11c6b16">
+      <active>true</active>
+      <description>BCN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Beacon" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/beacon_lights_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/beacon_lights_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c537654a-8984-4140-a4df-8be3f1e5fb17">
+      <active>true</active>
+      <description>LAND</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Land" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/landing_lights_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/landing_lights_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbc69ffe-3e68-49ca-9cc7-20b00d583134">
+      <active>true</active>
+      <description>TAXI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Taxi" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/taxi_lights_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/taxi_lights_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="222e95c2-31a9-4c75-9e19-bb4d70f3c723">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Nav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/nav_lights_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/nav_lights_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d02e50f8-d703-436e-905a-2ba99071f4e4">
+      <active>true</active>
+      <description>STROBE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Strobe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/lights/strobe_lights_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/lights/strobe_lights_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f55c9b6-26f9-48a8-9f64-58312953f497">
+      <active>true</active>
+      <description>PITOT HEAT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Pitot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat0_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/ice/pitot_heat0_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c0ac667-05c6-4dd6-b0fc-43f92b5edfe3">
+      <active>true</active>
+      <description>AV 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Bus 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/systems/avionics_on" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/systems/avionics_off" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c70f38b4-cbce-4cf3-9cea-6dc7fa272e05">
+      <active>true</active>
+      <description>AV 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.2, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-f49-908" name="Bus 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/electrical/cross_tie_on" expression="" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/electrical/cross_tie_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

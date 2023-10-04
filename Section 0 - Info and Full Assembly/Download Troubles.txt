@@ -1,0 +1,3 @@
+Thank you so much for supporting the development of the Cessna 172 Project!
+If not all files are showing up you might try this link instead: https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/archive/refs/heads/main.zip
+If you prefer to clone this as a GitHub Repository you can do so with this address: https://github.com/CaptainBobSim/The-Cessna-172-Project-V3
