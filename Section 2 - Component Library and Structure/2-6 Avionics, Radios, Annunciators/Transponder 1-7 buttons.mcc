@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="5b13e2ec-c103-4ec0-acc5-88b00cf59ce6">
+      <active>true</active>
+      <description>XPNDR 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder0)" presetId="2b07b723-64b0-44c1-9bdf-f6193c10bf05" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1ba77345-b698-4545-8804-fe0d91c57db8">
+      <active>true</active>
+      <description>XPNDR 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder1)" presetId="09ddd15e-a50f-4f62-9532-3fd306f996cb" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="998c6590-6462-47be-976c-f0655cbf1ccc">
+      <active>true</active>
+      <description>XPNDR 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder2)" presetId="1eb9ae7f-c95d-443c-ba87-dd3810fe6216" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="298f7ee8-8eb8-480d-ba81-ff4656ee715a">
+      <active>true</active>
+      <description>XPNDR 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder3)" presetId="8f2a5b95-d06d-4156-af6c-f294e2d1438a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7708111-3342-4e9c-b397-d8e25e42ecd4">
+      <active>true</active>
+      <description>XPNDR 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder4)" presetId="a0777872-878e-4d48-ac84-34e87c041930" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="955f7754-d904-4326-9335-cdb605266c23">
+      <active>true</active>
+      <description>XPNDR 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder5)" presetId="99255895-102e-41b9-8763-2fc144768ed0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03531580-bf8f-4082-8d10-e41ddd5e1829">
+      <active>true</active>
+      <description>XPNDR 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder6)" presetId="38faa3cf-4058-454e-b486-f1726aeef8e6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ffeb55ed-78a5-41ff-92a2-3a17e5493601">
+      <active>true</active>
+      <description>XPNDR 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder7)" presetId="611e1dee-1148-4196-8a43-0d691368b979" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="acc0a3fe-b909-4ced-ab29-aba169733519">
+      <active>true</active>
+      <description>ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="f93b81d9-73f3-4734-a9b6-08f9684f179b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33e48116-4c76-497f-8d85-ba55dda06062">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="22f6b23a-79cd-4761-b066-b2bc1a309df6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82ade648-eff8-4aa4-9339-f46b4e878f15">
+      <active>true</active>
+      <description>VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderVFR)" presetId="cb4278d8-5c94-47b1-bb60-958da077feb6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c348ebc2-565b-4a1f-b939-d8a82b57a6de">
+      <active>true</active>
+      <description>OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6902c298-52d6-41b2-9ed5-14c6f7aafe66" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e682f6b-8ac7-4f9a-9442-dc0428f16f06">
+      <active>true</active>
+      <description>STBY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6bb83f0e-6466-4cc1-9f3d-26c205a340a5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="903475cb-f8a9-4bf5-88bd-1a65ce7e46c1">
+      <active>true</active>
+      <description>IDENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_IDENT_TOGGLE)" presetId="e813249a-5730-4972-a27c-022d97ae5a55" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e5ee370d-5008-4d68-ba82-f4752407a7ab">
+      <active>true</active>
+      <description>FUNC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderFUNC)" presetId="107d42fb-b4d4-4c98-a5cd-3b39dccb62bc" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db106e44-3aea-48e5-b1fb-c4a485754549">
+      <active>true</active>
+      <description>CRSR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderCRSR)" presetId="6f52353f-d404-423c-bfe2-fa2f9a31bd94" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bba84c07-3827-4796-9781-926d3dbae056">
+      <active>true</active>
+      <description>CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="PS3 GamePad / JS-137acac0-6b55-11ed-8005-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderCLR)" presetId="e5082fa3-af6a-40bf-aff0-c5163c00aa28" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="720ae4ad-dc7a-4dc0-a12f-697313e5ddd9">
+      <active>false</active>
+      <description>ENT// Must use specific data to aircraft if going to use</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="-" name="-" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8fd034f-728d-434e-bc9c-cbe747f7dda8">
+      <active>false</active>
+      <description>8 // No Data</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="-" name="-" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0a61f611-3933-47d4-81ca-5e4277ea86d8">
+      <active>false</active>
+      <description>9 // No Data</description>
+    </config>
+  </inputs>
+</MobiflightConnector>
