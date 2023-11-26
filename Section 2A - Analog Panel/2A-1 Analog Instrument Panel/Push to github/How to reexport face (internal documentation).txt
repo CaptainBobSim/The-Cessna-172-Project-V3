@@ -1,0 +1,15 @@
+## This is a developer doc, you don't have to pay attention :D
+
+
+- PANEL Trace: File used for cutting
+- PANEL ENGRAVE
+
+SOURCE: 
+- RAW: Directly from F360, will not have mirrored splines
+
+
+To update the DXF:
+- Select all faces from Fusion 360 and project them to a sketch
+- Export DXF into NEW file
+- Import 
+- Rename PANEL TRACE
