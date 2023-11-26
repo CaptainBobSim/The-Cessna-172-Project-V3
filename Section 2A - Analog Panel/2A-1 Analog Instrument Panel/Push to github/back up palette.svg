@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg4429"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="back up palette.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4431"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46057099"
+     inkscape:cx="261.63176"
+     inkscape:cy="386.4768"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4426" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.449792;stroke-opacity:0"
+       id="rect4971"
+       width="30"
+       height="30"
+       x="29.999992"
+       y="16.659575" />
+    <rect
+       style="fill:#ff0000;fill-opacity:0;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.449792;stroke-opacity:1"
+       id="rect4971-2"
+       width="30"
+       height="30"
+       x="60"
+       y="16.659573" />
+    <rect
+       style="fill:#00ff00;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.449792;stroke-opacity:0"
+       id="rect4971-8"
+       width="30"
+       height="30"
+       x="90"
+       y="16.659573" />
+    <rect
+       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.449792;stroke-opacity:0"
+       id="rect4971-3"
+       width="30"
+       height="30"
+       x="120"
+       y="16.659573" />
+    <rect
+       style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:0.449792;stroke-opacity:1"
+       id="rect4971-26"
+       width="30"
+       height="30"
+       x="-1.5258789e-05"
+       y="16.659575" />
+    <rect
+       style="fill:#ff0000;fill-rule:evenodd;stroke:#ff6600;stroke-width:0.449792;stroke-opacity:1;fill-opacity:0"
+       id="rect4971-0"
+       width="30"
+       height="30"
+       x="150"
+       y="16.659573" />
+    <rect
+       style="fill:#ff00ff;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.449792;stroke-opacity:0;fill-opacity:1"
+       id="rect4971-4"
+       width="30"
+       height="30"
+       x="180"
+       y="16.659573" />
+  </g>
+</svg>
