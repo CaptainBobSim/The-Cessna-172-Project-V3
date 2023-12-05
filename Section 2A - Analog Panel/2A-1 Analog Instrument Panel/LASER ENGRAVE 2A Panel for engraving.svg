@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1117.6mm"
-   height="863.60004mm"
-   viewBox="0 0 1117.6 863.60004"
+   width="1219.2mm"
+   height="609.59998mm"
+   viewBox="0 0 1219.2 609.59998"
    version="1.1"
    id="svg5"
    xml:space="preserve"
@@ -24,26 +24,26 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.13712609"
-     inkscape:cx="-430.26093"
-     inkscape:cy="2169.536"
+     inkscape:zoom="0.27425218"
+     inkscape:cx="127.61977"
+     inkscape:cy="1711.9281"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg5"><inkscape:page
+     inkscape:current-layer="g3"><inkscape:page
        x="0"
        y="0"
-       width="1117.6"
-       height="863.60004"
+       width="1219.2"
+       height="609.59998"
        id="page1139"
        margin="0"
        bleed="0" /><inkscape:page
-       x="-1207.6475"
-       y="1.229777e-05"
-       width="1117.6"
-       height="863.60004"
+       x="-1303.1523"
+       y="0"
+       width="1219.2"
+       height="609.59998"
        id="page23"
        margin="0"
        bleed="0" /></sodipodi:namedview><defs
@@ -3314,7 +3314,7 @@
          d="M 0,2448 H 3168 V 0 H 0 Z"
          id="path1095-0-7-1" /></clipPath></defs><g
      id="g2"
-     transform="matrix(0.26458333,0,0,0.26458333,-627.15496,334.79973)"
+     transform="matrix(0.26458333,0,0,0.26458333,-718.56673,213.75629)"
      style="display:inline"
      inkscape:label="IMPORT Panel Trace"><g
        inkscape:label="0"
@@ -17495,12 +17495,12 @@
            y="352.8959"
            sodipodi:role="line"
            id="tspan302-8"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.352778;stroke-opacity:0">RADIO LT</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.352778;stroke-opacity:0">RADIO LT</tspan><tspan
            x="4806.0337 4808.7808 4811.6045 4814.8979 4817.7979 4820.3843 4821.6797 4823.7202"
            y="357.97592"
            sodipodi:role="line"
            id="tspan304-9"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:0.352778;stroke-opacity:0">PANEL LT</tspan></text><g
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.352778;stroke-opacity:0">PANEL LT</tspan></text><g
          id="g308-2"
          transform="matrix(0.35277776,0,0,-0.35277778,4284.6998,643.77367)"
          style="fill:#ff0000;fill-opacity:0.00355871;stroke:#ff0000;stroke-opacity:1"><g
@@ -17559,21 +17559,21 @@
          y="411.30551"><tspan
            x="4801.7891"
            y="411.30551"
-           id="tspan3"><tspan
+           id="tspan9"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan1">B
+             id="tspan2">B
 </tspan></tspan><tspan
            x="4801.7891"
            y="414.95285"
-           id="tspan5"><tspan
+           id="tspan18"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan4">R
+             id="tspan16">R
 </tspan></tspan><tspan
            x="4801.7891"
            y="418.60018"
-           id="tspan8"><tspan
+           id="tspan23"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan7">T</tspan></tspan></text><g
+             id="tspan22">T</tspan></tspan></text><g
          id="g354-7"
          transform="matrix(0.35277776,0,0,-0.35277778,4284.6998,643.77367)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:1"><g
@@ -17611,15 +17611,15 @@
          y="366.56985"><tspan
            x="4801.981"
            y="366.56985"
-           id="tspan10">B
+           id="tspan24">B
 </tspan><tspan
            x="4801.981"
            y="370.16818"
-           id="tspan11">R
+           id="tspan25">R
 </tspan><tspan
            x="4801.981"
            y="373.76651"
-           id="tspan12">T</tspan></text><g
+           id="tspan26">T</tspan></text><g
          id="g386-2"
          transform="matrix(0.35277776,0,0,-0.35277778,4284.6998,643.77367)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:0.936"><g
@@ -19588,12 +19588,12 @@
        transform="matrix(0.08,0,0,-0.08,-7344.2153,2209.5536)"
        clip-path="url(#clipPath712-9)" /></g><text
      xml:space="preserve"
-     transform="matrix(0.23095465,0,0,0.26458333,-1173.7126,-4.0930281)"
+     transform="matrix(0.23095465,0,0,0.26458333,-1265.1244,-125.13646)"
      id="text1"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Bodoni MT';-inkscape-font-specification:'Bodoni MT';text-align:center;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect1);display:inline"><tspan
        x="919.2457"
        y="649.97412"
-       id="tspan13">DXF IS OUT OF DATE</tspan></text><g
+       id="tspan27">DXF IS OUT OF DATE</tspan></text><g
      id="g6-9"
      inkscape:label="Fuel Panel"
      transform="translate(-1201.6375,-182.80121)"><g
@@ -20027,18 +20027,18 @@
        xml:space="preserve"
        style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:'Helvetica Rounded';-inkscape-font-specification:HelveticaRounded-Bold;writing-mode:lr-tb;display:inline;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
        id="text1984-2"
-       x="-443.18652"
-       y="252.07568"
+       x="-534.59833"
+       y="131.03224"
        inkscape:label="SMOKING PROHIBITED"><tspan
-         x="-443.18652 -438.83691 -433.19775 -428.0166 -423.6665 -421.66016 -416.71973 -411.54443 -409.60156 -405.13086 -400.42578 -395.24414 -390.30371 -388.29736 -383.7124 -381.70605 -377.46387 -373.11426 -368.29443"
-         y="252.07568"
+         x="-534.59833 -530.24872 -524.60956 -519.42841 -515.07831 -513.07196 -508.13153 -502.95621 -501.01334 -496.54263 -491.83755 -486.65591 -481.71548 -479.70914 -475.12418 -473.11783 -468.87564 -464.52603 -459.70621"
+         y="131.03224"
          sodipodi:role="line"
          id="tspan1982-2"
          style="fill:#ff0000;stroke-width:0.352778">SMOKING PROHIBITED </tspan></text><g
        id="g1093-3-1-8"
        clip-path="url(#clipPath1097-8-2-3)"
        style="fill:#ff0000"
-       transform="matrix(0.35277777,0,0,-0.35277777,-1216.6657,850.45341)"
+       transform="matrix(0.35277777,0,0,-0.35277777,-1308.0775,729.40997)"
        inkscape:label="TST"><g
          id="g1099-8-8-3"
          transform="translate(1351.3467,1734.6577)"
@@ -20096,7 +20096,7 @@
            id="path1133-3-9-7" /></g></g><g
        id="g6"
        inkscape:label="Fuel Panel"
-       transform="translate(-2363.563,1.641968)"><g
+       transform="translate(-2454.9748,-119.40147)"><g
          id="g1425"
          transform="matrix(0.35277776,0,0,-0.35277778,1259.2095,510.3429)"
          style="display:none"><path
@@ -20517,7 +20517,7 @@
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;stroke-width:0.352778"> 40° F IN INSTRUMENT METEOROLOGICAL CONDITIONS</tspan></text></g><g
        id="g5"
        inkscape:label="Throttle Panel"
-       transform="translate(-1216.8873,-11.720778)"><g
+       transform="translate(-1308.2991,-132.76421)"><g
          id="g192"
          transform="matrix(0.35277776,0,0,-0.35277778,814.74709,549.04212)"><path
            d="M 0,0 H -185.819"
@@ -20719,15 +20719,15 @@
          y="631.1319"><tspan
            x="517.08917"
            y="631.1319"
-           id="tspan14">B
+           id="tspan28">B
 </tspan><tspan
            x="517.08917"
            y="634.7302"
-           id="tspan15">R
+           id="tspan29">R
 </tspan><tspan
            x="517.08917"
            y="638.32852"
-           id="tspan17">T</tspan></text><g
+           id="tspan30">T</tspan></text><g
          id="g354"
          transform="matrix(0.35277776,0,0,-0.35277778,-5.0620427e-6,863.60002)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:1"><g
@@ -20765,15 +20765,15 @@
          y="586.39624"><tspan
            x="517.28088"
            y="586.39624"
-           id="tspan19">B
+           id="tspan31">B
 </tspan><tspan
            x="517.28088"
            y="589.99454"
-           id="tspan20">R
+           id="tspan32">R
 </tspan><tspan
            x="517.28088"
            y="593.59287"
-           id="tspan21">T</tspan></text><g
+           id="tspan33">T</tspan></text><g
          id="g386"
          transform="matrix(0.35277776,0,0,-0.35277778,-5.0620427e-6,863.60002)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:0.936"><g
