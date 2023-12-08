@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>6 Pack LEFT</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Encoder Name="HDG Adjust" PinLeft="31" PinRight="33" EncoderType="3" />
+  <Button Name="HDG Adjust Push" Pin="14" />
+  <Encoder Name="HDG AP Adjust" PinLeft="60" PinRight="61" EncoderType="3" />
+  <Button Name="HDG AP Push" Pin="62" />
+  <Stepper Name="HDG Wheel" Pin1="9" Pin2="8" Pin3="7" Pin4="6" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="HDG AP Bug" Pin1="10" Pin2="11" Pin3="12" Pin4="13" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="Airspeed Stepper" Pin1="16" Pin2="18" Pin3="17" Pin4="19" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Stepper Name="Turn Coord_Plane" Pin1="38" Pin2="40" Pin3="39" Pin4="41" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="Turn Coord Ball" Pin1="42" Pin2="44" Pin3="43" Pin4="45" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="VSI Motor" Pin1="65" Pin2="67" Pin3="66" Pin4="68" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+</Config>
