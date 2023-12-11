@@ -178,7 +178,7 @@
       </settings>
     </config>
     <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
-      <active>true</active>
+      <active>false</active>
       <description>Airplane FS2020</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
@@ -226,7 +226,7 @@
             <value x="1000" y="-28" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord_Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -524,7 +524,7 @@
             <value x="1800" y="158" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="-" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="1458" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="-158" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs />
       </settings>
@@ -542,7 +542,7 @@
             <value x="1800" y="-158" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="360" stepperOutputRev="1100" stepperTestValue="210" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="210" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
@@ -587,6 +587,20 @@
         <configrefs>
           <configref active="True" ref="1a84b844-e625-4ae0-a1c4-0d93f22380fb" placeholder="v" />
         </configrefs>
+      </settings>
+    </config>
+    <config guid="5d6e3b46-02ad-41ca-b25b-dcc83a8c429a">
+      <active>false</active>
+      <description>Test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="6 Pack LEFT/ SN-125-4de" trigger="normal" stepperAddress="VSI Motor" stepperInputRev="1000" stepperOutputRev="1100" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <preconditions />
+        <configrefs />
       </settings>
     </config>
   </outputs>

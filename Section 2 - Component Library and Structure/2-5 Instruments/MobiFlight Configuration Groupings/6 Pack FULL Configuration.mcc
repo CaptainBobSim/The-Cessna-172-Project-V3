@@ -24,7 +24,7 @@
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -38,7 +38,7 @@
           <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -52,7 +52,7 @@
           <transformation active="True" expression="(#+(360-25))%360" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG Wheel" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="187" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="HDG Wheel" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="187" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="f4848912-6801-46fd-8f5b-f82f8a421ffa" placeholder="#" />
@@ -73,7 +73,7 @@
             <value x="360" y="0" />
           </interpolation>
         </modifiers>
-        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -91,7 +91,7 @@
             <value x="360" y="0" />
           </interpolation>
         </modifiers>
-        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -105,7 +105,7 @@
           <transformation active="True" expression="((!+#)+(360-5))%360" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG AP Bug" stepperInputRev="360" stepperOutputRev="5100" stepperTestValue="180" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="HDG AP Bug" stepperInputRev="360" stepperOutputRev="5100" stepperTestValue="180" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="f4848912-6801-46fd-8f5b-f82f8a421ffa" placeholder="#" />
@@ -141,7 +141,7 @@
             <value x="2000" y="3150" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="3600" stepperOutputRev="1100" stepperTestValue="3600" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Airspeed Stepper" stepperInputRev="3600" stepperOutputRev="1100" stepperTestValue="3600" stepperCompassMode="False" stepperAcceleration="3600" stepperSpeed="1800" />
         <preconditions />
         <configrefs />
       </settings>
@@ -178,7 +178,7 @@
       </settings>
     </config>
     <config guid="706b44c4-0a4d-42a4-90d4-7165b0e1ff09">
-      <active>true</active>
+      <active>false</active>
       <description>Airplane FS2020</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TURN INDICATOR RATE,Radians per second)" UUID="b5074cc0-e826-466c-aab0-4fabdb639680" />
@@ -190,7 +190,7 @@
             <value x="800" y="60" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="60" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="60" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -208,7 +208,7 @@
             <value x="800" y="60" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="10" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord Plane" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="10" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -226,7 +226,7 @@
             <value x="1000" y="-28" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="-28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -244,7 +244,7 @@
             <value x="1000" y="-28" />
           </interpolation>
         </modifiers>
-        <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord Ball" stepperInputRev="360" stepperOutputRev="729" stepperTestValue="28" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -258,7 +258,7 @@
           <transformation active="False" expression="100" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL|LOW|FUEL|FUEL R|---|--|-|OIL|PRESS|LVAC|VAC|VACR|VOLT" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="L FUEL|LOW|FUEL|FUEL R|---|--|-|OIL|PRESS|LVAC|VAC|VACR|VOLT" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -272,7 +272,7 @@
           <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
           <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="L FUEL" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="L FUEL" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
         </preconditions>
@@ -288,7 +288,7 @@
           <transformation active="False" expression="10" substrStart="0" substrEnd="7" />
           <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="FUEL R" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="FUEL R" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
         </preconditions>
@@ -304,7 +304,7 @@
           <transformation active="True" expression="#+!" substrStart="0" substrEnd="7" />
           <comparison active="False" value="5" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
         </preconditions>
@@ -323,7 +323,7 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="---|--|-" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="---|--|-" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -337,7 +337,7 @@
           <transformation active="True" expression="$*0.00694444" substrStart="0" substrEnd="7" />
           <comparison active="True" value="20" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="OIL|PRESS" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="OIL|PRESS" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
         </preconditions>
@@ -353,8 +353,10 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="LVAC|VAC" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
@@ -367,8 +369,10 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Output" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="VAC|VACR" pinBrightness="255" />
-        <preconditions />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="VAC|VACR" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
@@ -381,13 +385,13 @@
           <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
           <comparison active="True" value="24.5" operand="&lt;" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="VOLT" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
     </config>
     <config guid="c5b2448a-9b7a-41e2-ba5e-d1c93d1bf06a">
-      <active>false</active>
+      <active>true</active>
       <description>Is Tested</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
@@ -409,7 +413,7 @@
           <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -589,12 +593,26 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="b2285c11-2280-49d5-8bb8-143eaa5a912e">
+      <active>true</active>
+      <description>Test Steppers (Disable while in use)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="100FT" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
       <active>false</active>
       <description>HDG Drift Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
           <onLeftFast />
@@ -610,7 +628,7 @@
     <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
       <active>true</active>
       <description>HDG Drift Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
           <onLeftFast />
@@ -626,7 +644,7 @@
     <config guid="8534157f-111e-493a-b190-ef13ca466641">
       <active>false</active>
       <description>HDG AP Bug Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
           <onLeftFast />
@@ -640,7 +658,7 @@
     <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
       <active>true</active>
       <description>HDG AP Bug Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
           <onLeftFast />
@@ -654,7 +672,7 @@
     <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
       <active>true</active>
       <description>HDG Adjust DG Push Status</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
           <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
@@ -666,7 +684,7 @@
     <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
       <active>false</active>
       <description>HDG Bug Push - Zero</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack LEFT/ SN-d9e-0a3" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
           <onRelease />
@@ -678,7 +696,7 @@
     <config guid="d3c4798e-62a9-45d6-9071-83dcfd561d1f">
       <active>true</active>
       <description>TST</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="1" />
           <onRelease type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="0" />
@@ -690,7 +708,7 @@
     <config guid="47ae3a4c-5474-4d90-bab2-de6ad16a9b78">
       <active>true</active>
       <description>DIM</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Annunciator/ SN-58FFFEFFFEFFFFFFFF" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="50" />
           <onRelease type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="255" />
