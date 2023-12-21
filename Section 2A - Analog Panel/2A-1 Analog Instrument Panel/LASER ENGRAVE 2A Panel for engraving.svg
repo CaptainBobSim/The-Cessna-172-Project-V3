@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.27425218"
-     inkscape:cx="957.14827"
-     inkscape:cy="1434.8108"
+     inkscape:zoom="0.38785115"
+     inkscape:cx="778.64923"
+     inkscape:cy="1488.9733"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
@@ -19193,21 +19193,21 @@
          y="411.30551"><tspan
            x="4801.7891"
            y="411.30551"
-           id="tspan5"><tspan
+           id="tspan9"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan4">B
+             id="tspan2">B
 </tspan></tspan><tspan
            x="4801.7891"
            y="414.95285"
-           id="tspan10"><tspan
+           id="tspan29"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan8">R
+             id="tspan16">R
 </tspan></tspan><tspan
            x="4801.7891"
            y="418.60018"
-           id="tspan17"><tspan
+           id="tspan31"><tspan
              style="font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-             id="tspan15">T</tspan></tspan></text><g
+             id="tspan30">T</tspan></tspan></text><g
          id="g354-7"
          transform="matrix(0.35277776,0,0,-0.35277778,4284.6998,643.77367)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:1"><g
@@ -19245,15 +19245,15 @@
          y="366.56985"><tspan
            x="4801.981"
            y="366.56985"
-           id="tspan18">B
+           id="tspan32">B
 </tspan><tspan
            x="4801.981"
            y="370.16818"
-           id="tspan21">R
+           id="tspan33">R
 </tspan><tspan
            x="4801.981"
            y="373.76651"
-           id="tspan22">T</tspan></text><g
+           id="tspan34">T</tspan></text><g
          id="g386-2"
          transform="matrix(0.35277776,0,0,-0.35277778,4284.6998,643.77367)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:0.936"><g
@@ -19773,10 +19773,10 @@
          style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
          id="text1683-9"
          x="1268.2676"
-         y="474.65552"
+         y="473.06799"
          inkscape:label="WARNING"><tspan
            x="1268.2676 1271.228 1273.5986 1275.9695 1278.3401 1279.1443 1281.5151 1284.0833 1285.0815"
-           y="474.65552"
+           y="473.06799"
            sodipodi:role="line"
            id="tspan1681-5"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;stroke-width:0.352778">WARNING: </tspan></text><text
@@ -19784,15 +19784,15 @@
          style="font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Helvetica;-inkscape-font-specification:Helvetica-Bold;writing-mode:lr-tb;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
          id="text1689-3"
          x="1285.8865"
-         y="474.65552"
+         y="472.53882"
          inkscape:label="PITOT HEAT"><tspan
            x="1285.8865 1287.6277 1288.2712 1289.8042 1291.8589 1293.4421 1294.0854 1295.9822 1297.7234 1299.4121 1300.9954 1301.6389 1303.8486 1305.7454 1307.4866 1309.0698 1309.7134 1311.6099 1313.3511 1313.9946 1316.0493 1317.9458 1318.5891 1321.1123 1323.0088 1324.75 1326.6467 1327.29 1329.3447 1331.0859 1332.8274 1334.7239 1336.4128 1337.9961 1338.6396 1340.5361 1342.5908 1343.2344 1345.1309 1346.8721 1348.4553 1350.51"
-           y="474.65552"
+           y="472.53882"
            sodipodi:role="line"
            id="tspan1685-7"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;stroke-width:0.352778">PITOT HEAT MUST BE ON WHEN OPERATING BELOW</tspan><tspan
            x="1282.8667 1283.51 1284.9382 1286.3662 1287.354 1287.9976 1289.5808 1290.2241 1290.8677 1292.7642 1293.4077 1294.051 1295.9478 1297.689 1299.2722 1301.1687 1303.0652 1305.2751 1307.0164 1308.9128 1310.4961 1311.1396 1313.3494 1315.0908 1316.6741 1318.4153 1320.47 1322.3665 1324.4211 1326.0044 1328.0588 1330.1135 1330.7568 1332.6536 1334.55 1336.0833 1336.7268 1338.6233 1340.678 1342.5745 1344.4709 1345.1145 1346.6978 1347.3411 1349.3958 1351.2922"
-           y="478.88885"
+           y="476.77216"
            sodipodi:role="line"
            id="tspan1687-4"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ff0000;stroke-width:0.352778"> 40° F IN INSTRUMENT METEOROLOGICAL CONDITIONS</tspan></text></g></g><g
@@ -20628,15 +20628,15 @@
          y="631.1319"><tspan
            x="517.08917"
            y="631.1319"
-           id="tspan23">B
+           id="tspan38">B
 </tspan><tspan
            x="517.08917"
            y="634.7302"
-           id="tspan24">R
+           id="tspan40">R
 </tspan><tspan
            x="517.08917"
            y="638.32852"
-           id="tspan25">T</tspan></text><g
+           id="tspan42">T</tspan></text><g
          id="g354"
          transform="matrix(0.35277776,0,0,-0.35277778,-5.0620427e-6,863.60002)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:1"><g
@@ -20674,15 +20674,15 @@
          y="586.39624"><tspan
            x="517.28088"
            y="586.39624"
-           id="tspan26">B
+           id="tspan43">B
 </tspan><tspan
            x="517.28088"
            y="589.99454"
-           id="tspan27">R
+           id="tspan44">R
 </tspan><tspan
            x="517.28088"
            y="593.59287"
-           id="tspan28">T</tspan></text><g
+           id="tspan45">T</tspan></text><g
          id="g386"
          transform="matrix(0.35277776,0,0,-0.35277778,-5.0620427e-6,863.60002)"
          style="fill:#ff0000;fill-opacity:0;stroke:#ff0000;stroke-opacity:0.936"><g
