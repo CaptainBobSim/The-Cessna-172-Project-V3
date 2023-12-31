@@ -132,6 +132,7 @@ Volt, F, C</description>
         <display type="-" serial="MobiFligh Uno/ SN-7B9-5AE" trigger="normal" pin="" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="false" ref="f4d8cdc2-feea-4cec-a578-10ecbc147dae" operand="!=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="f8a27aa3-6c67-4ea2-b8f0-15785af36a85" operand="=" value="4" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
