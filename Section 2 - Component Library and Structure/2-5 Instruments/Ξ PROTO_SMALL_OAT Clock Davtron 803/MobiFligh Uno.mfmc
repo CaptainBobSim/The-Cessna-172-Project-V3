@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ModuleName>MobiFligh Uno</ModuleName>
-  <PowerSavingTime>600</PowerSavingTime>
-  <LcdDisplay Name="OT_CLK Display" Address="39" Cols="16" Lines="2" />
-  <Button Name="Top" Pin="2" />
-  <Button Name="Left" Pin="3" />
-  <Button Name="Right" Pin="4" />
-</Config>

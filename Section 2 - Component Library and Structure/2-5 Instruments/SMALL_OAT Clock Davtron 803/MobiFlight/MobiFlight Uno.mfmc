@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Uno</ModuleType>
+  <ModuleName>MobiFlight Uno</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LcdDisplay Name="OAT_CLK Display" Address="39" Cols="16" Lines="2" />
+  <Button Name="OAT_TOP" Pin="2" />
+  <Button Name="SELECT_LEFT" Pin="3" />
+  <Button Name="CONTROL_RIGHT" Pin="4" />
+</Config>

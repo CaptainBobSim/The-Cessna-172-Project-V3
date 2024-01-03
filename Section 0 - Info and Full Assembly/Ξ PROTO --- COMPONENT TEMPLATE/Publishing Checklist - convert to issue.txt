@@ -26,7 +26,7 @@ Publishing Tasks:
 - [ ] FS2020 Mobi .mcc
 - [ ] X-Plane Mobi .mcc
 - [ ] Take pictures
-- [ ] Printables
+- [ ] Printables https://www.printables.com/model/create
 The Printables version will not be updated. The best place to get it is here: https://captainbobsim.com/product/the-cessna-172-project-files/?customize_changeset_uuid=
 Find the MobiFlight code under Section 2/Instrument
 - [ ] Tweak the ReadMe
