@@ -13,3 +13,6 @@ To update the DXF:
 - Export DXF into NEW file
 - Import 
 - Rename PANEL TRACE
+
+
+Export as Poster Mode PDF page by page
