@@ -2,16 +2,16 @@
 [Configuration Video Here](https://youtu.be/P1zUqRlHDGw)
 
 [Buy it as a Kit or Assembled](https://captainbobsim.com/product/heading-indicator-kit-or-assembled/)
-[Buy a PCB to make Wiring Easier](https://captainbobsim.com/product/heading-indicator-circuit-board/)
-
+[Buy a PCB to make Wiring Easier](https://captainbobsim.com/product/heading-indicator-circuit-board/) Refer to the instructions on the product page on how to decipher the Circuit Board.
 
 Welcome to the Heading Indicator of your dreams!
 
-16x40 gear ratio (you need to rotate the motor 2.5 times for every rotation of the hdg bug - ie the bug rotates .4 times as fast as the motor)
+
+
+This uses a 16:40 gear ratio (you need to rotate the motor 2.5 times for every rotation of the hdg bug - ie the bug rotates .4 times as fast as the motor)
 
 To navigate all of the files on your journey towards homecockpitness,
 Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
-
 
 Bill 'o Materials:
 x2 BYJ48 Stepper Motors (and Drivers)
@@ -35,13 +35,9 @@ Orange Paint Marker
 
 Go to video for links: https://youtu.be/Jd7F1pjxnOc
 
-
-
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
 **[Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)**
 Contact CaptainBobSim@gmail.com for licensing details.
-
-
 
 Bill 'o Materials:
 x2 BYJ48 Stepper Motors & Drivers
