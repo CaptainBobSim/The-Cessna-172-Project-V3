@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>Transponder</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="XP-IDT" Pin="2" />
+  <Button Name="XP-0" Pin="3" />
+  <Button Name="XP-1" Pin="4" />
+  <Button Name="XP-2" Pin="5" />
+  <Button Name="XP-3" Pin="6" />
+  <Button Name="XP-4" Pin="7" />
+  <Button Name="XP-5" Pin="8" />
+  <Button Name="XP-6" Pin="9" />
+  <Button Name="XP-7" Pin="19" />
+  <Button Name="XP-CLR" Pin="21" />
+  <Button Name="XP-VFR" Pin="18" />
+  <Button Name="XP-OFF" Pin="20" />
+  <Button Name="XP-SBY" Pin="22" />
+  <Button Name="XP-TST" Pin="15" />
+  <Button Name="XP-ON" Pin="16" />
+  <Button Name="XP-ALT" Pin="17" />
+  <LedModule Name="LedModule" ModelType="0" DinPin="10" ClsPin="23" ClkPin="11" Brightness="15" NumModules="1" />
+</Config>
