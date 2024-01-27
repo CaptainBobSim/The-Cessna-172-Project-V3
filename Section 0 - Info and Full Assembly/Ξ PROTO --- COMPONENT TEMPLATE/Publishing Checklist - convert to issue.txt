@@ -12,6 +12,11 @@ PCB Checklist
 - [ ] Write Version Number on PCB
 - [ ] CaptainBobSim.com
 - [ ] Write all component names and Pins
+- [ ] Write resistor values: 150Ω red 100Ω white (at 5V!) 50Ω for sharing 4 white
+- [ ] Write Changelog - Top right, size 2.54mm
+Changelog
+V1.0 Initial Design (Date)
+
 
 Prototype Issues:
 - [ ] 
