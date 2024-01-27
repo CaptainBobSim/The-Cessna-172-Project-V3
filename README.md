@@ -33,6 +33,8 @@ Email CaptainBobSim@gmail.com or go to https://captainbobsim.com/want-to-help/
 Top level files are usually to big to store on GitHub, so instead you can download them from the links on [this spreadsheet.](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit?usp=sharing)
 Please start an issue should a link not properly work.
 
+Take a look at the [Standard components](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit#gid=2116223817) the Cessna 172 Project uses.
+
 ## Issues:
 We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
 Create a new issue for if a part breaks, so we can factor it into a redesign.
