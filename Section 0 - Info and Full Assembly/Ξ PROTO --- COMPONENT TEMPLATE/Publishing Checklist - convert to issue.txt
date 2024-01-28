@@ -1,5 +1,6 @@
 Design Issues:
 - [ ] Add Alignment nubs to parts that have decals
+- [ ] Heat Set Inserts
 
 Decals:
 - [ ] Decals Printer Friendly Version
