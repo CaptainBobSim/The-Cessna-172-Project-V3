@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>Switch Panel V2</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="OFF" Pin="2" />
+  <Button Name="R" Pin="3" />
+  <Button Name="L" Pin="4" />
+  <Button Name="Both" Pin="5" />
+  <Button Name="Start" Pin="6" />
+  <Button Name="ALT" Pin="7" />
+  <Button Name="BATT" Pin="8" />
+  <Button Name="Fuel Pump" Pin="9" />
+  <Button Name="Beacon" Pin="10" />
+  <Button Name="Land" Pin="11" />
+  <Button Name="Taxi" Pin="12" />
+  <Button Name="Nav" Pin="13" />
+  <Button Name="Strobe" Pin="14" />
+  <Button Name="Pitot" Pin="15" />
+  <Button Name="Bus 1" Pin="16" />
+  <Button Name="Bus 2" Pin="17" />
+  <Button Name="Alt Static" Pin="18" />
+  <Button Name="Cabin Air" Pin="19" />
+  <Button Name="Cabin Heat" Pin="20" />
+  <Stepper Name="Trim Motor" Pin1="21" Pin2="22" Pin3="23" Pin4="24" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Button Name="Fuel OFF" Pin="25" />
+  <Button Name="Fuel LFT" Pin="26" />
+  <Button Name="Fuel BOTH" Pin="27" />
+  <Button Name="Fuel RT" Pin="28" />
+  <Button Name="Fuel CUT" Pin="29" />
+  <Servo Name="Flaps" DataPin="30" />
+  <Button Name="Extra 1" Pin="31" />
+  <Button Name="Extra 2" Pin="32" />
+  <Output Name="Extra 3" Pin="33" />
+  <Output Name="CB_OUT_01" Pin="34" />
+  <Output Name="CB_OUT_02" Pin="35" />
+  <Output Name="CB_OUT_03" Pin="36" />
+  <Output Name="CB_OUT_04" Pin="37" />
+  <Output Name="CB_OUT_05" Pin="38" />
+  <Output Name="CB_OUT_06" Pin="40" />
+  <Output Name="CB_OUT_07" Pin="39" />
+  <Output Name="CB_OUT_08" Pin="41" />
+  <Output Name="CB_OUT_09" Pin="42" />
+  <Output Name="CB_OUT_10" Pin="43" />
+  <Output Name="CB_OUT_11" Pin="44" />
+  <Output Name="CB_OUT_12" Pin="45" />
+  <Output Name="CB_OUT_13" Pin="46" />
+  <Output Name="CB_OUT_14" Pin="47" />
+  <Button Name="CB_IN_01" Pin="48" />
+  <Button Name="CB_IN_02" Pin="49" />
+  <Button Name="CB_IN_03" Pin="50" />
+  <Button Name="CB_IN_04" Pin="51" />
+  <Button Name="CB_IN_05" Pin="52" />
+  <Button Name="CB_IN_06" Pin="53" />
+  <Button Name="CB_IN_07" Pin="54" />
+  <Button Name="CB_IN_08" Pin="55" />
+  <Button Name="CB_IN_09" Pin="56" />
+  <Button Name="CB_IN_10" Pin="57" />
+  <Button Name="CB_IN_11" Pin="58" />
+  <Button Name="CB_IN_12" Pin="59" />
+  <Button Name="CB_IN_13" Pin="60" />
+  <Button Name="CB_IN_14" Pin="61" />
+  <AnalogInput Name="Sig - Throttle" Pin="62" Sensitivity="10" />
+  <AnalogInput Name="Sig - Mixture" Pin="63" Sensitivity="10" />
+  <AnalogInput Name="Sig - Flaps" Pin="64" Sensitivity="10" />
+  <AnalogInput Name="Sig - Trim" Pin="65" Sensitivity="10" />
+  <AnalogInput Name="Sig - Aux1" Pin="66" Sensitivity="10" />
+  <AnalogInput Name="Sig - Aux2" Pin="67" Sensitivity="10" />
+  <AnalogInput Name="Sig - Aux3" Pin="68" Sensitivity="10" />
+  <AnalogInput Name="Sig - Aux4" Pin="69" Sensitivity="10" />
+</Config>

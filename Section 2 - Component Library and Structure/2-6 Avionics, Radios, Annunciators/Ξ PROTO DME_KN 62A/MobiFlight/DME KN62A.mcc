@@ -4,11 +4,23 @@
     <config guid="b2b4ee60-56ee-4f09-9fcb-7d98a5a4c72e">
       <active>true</active>
       <description>test</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
-        <test type="String" value="ooo-50" />
+        <test type="String" value="123456789" />
         <modifiers />
-        <display type="Display Module" serial="DME on IDC_20B1/ SN-8F5-322" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="-" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f041bfef-9ace-4b6f-9e5b-313a84763061">
+      <active>true</active>
+      <description>test2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="DME on IDC_20B1/ SN-D8F-39D" trigger="normal" pin="DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
