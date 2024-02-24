@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>KAP140_IDC20A&amp;B</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="(YD_L)" Pin="2" />
+  <Output Name="AP_L" Pin="3" />
+  <Output Name="(FD_L)" Pin="4" />
+  <Output Name="HDG_L" Pin="5" />
+  <Output Name="NAV_L" Pin="6" />
+  <Output Name="APR_L" Pin="7" />
+  <Output Name="REV_L" Pin="8" />
+  <Output Name="ALT_L" Pin="9" />
+  <Output Name="DN_L" Pin="10" />
+  <Output Name="UP_L" Pin="11" />
+  <Output Name="ARM_L" Pin="12" />
+  <Output Name="BARO_L" Pin="13" />
+  <Button Name="(YD_P)" Pin="14" />
+  <Button Name="AP_P" Pin="15" />
+  <Button Name="(FD_P)" Pin="16" />
+  <Button Name="HDG_P" Pin="17" />
+  <Button Name="NAV_P" Pin="18" />
+  <Button Name="APR_P" Pin="19" />
+  <LcdDisplay Name="KAP 140" Address="39" Cols="16" Lines="2" />
+  <Button Name="REV_P" Pin="22" />
+  <Button Name="ALT_P" Pin="23" />
+  <Button Name="DN_P" Pin="24" />
+  <Button Name="UP_P" Pin="25" />
+  <Button Name="ARM_P" Pin="26" />
+  <Button Name="BARO_P" Pin="27" />
+  <Encoder Name="AP Fine" PinLeft="28" PinRight="29" EncoderType="2" />
+  <Encoder Name="AP Rough" PinLeft="30" PinRight="31" EncoderType="2" />
+  <Button Name="ENC_PUSH" Pin="32" />
+</Config>

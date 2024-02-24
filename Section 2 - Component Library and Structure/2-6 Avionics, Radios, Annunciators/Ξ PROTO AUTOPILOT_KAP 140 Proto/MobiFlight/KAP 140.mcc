@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="f3d65ada-4414-4046-a021-3168e65bbcb2">
+      <active>true</active>
+      <description>mobi</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81bf9520-c852-4cc1-bbb9-9f604534f6bb">
+      <active>true</active>
+      <description>test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="KAP140_IDC20A&amp;B/ SN-143-0D4" trigger="normal" address="KAP 140">
+          <line>000 AP ALT^00000</line>
+          <line>000A000A ALRT FT</line>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
