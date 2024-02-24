@@ -1,11 +1,74 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
-    <config guid="f3d65ada-4414-4046-a021-3168e65bbcb2">
+    <config guid="81bf9520-c852-4cc1-bbb9-9f604534f6bb">
       <active>true</active>
-      <description>mobi</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>KAP 140 Display</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="BOB_A/ SN-143-0D4" trigger="normal" address="KAP 140">
+          <line>!!! AP ### ZZZZZ</line>
+          <line>@@@Prototype????</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="bda9160c-8350-426c-9bf9-856d1f7c8ad6" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="87086943-c1aa-437f-a223-bd99508d1af9" placeholder="#" testvalue="A" />
+          <configref active="True" ref="42bdd967-8ce8-4341-9763-5818e6576d9a" placeholder="!" testvalue="1" />
+          <configref active="True" ref="fdf6674f-9401-4892-82f3-ae532cce10ae" placeholder="?" testvalue="1" />
+          <configref active="True" ref="efbdd421-0747-46e3-9673-da38f136d942" placeholder="@" testvalue="1" />
+          <configref active="True" ref="966e886e-4b08-4a63-a843-21f1279a2a5b" placeholder="Z" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f2696856-1da2-4032-a903-1106eee25f2b">
+      <active>true</active>
+      <description>KAP 140 Display - AP OFF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="BOB_A/ SN-143-0D4" trigger="normal" address="KAP 140">
+          <line>           00000</line>
+          <line>              FT</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="bda9160c-8350-426c-9bf9-856d1f7c8ad6" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="87086943-c1aa-437f-a223-bd99508d1af9" placeholder="#" testvalue="A" />
+          <configref active="True" ref="42bdd967-8ce8-4341-9763-5818e6576d9a" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bbc7e087-d020-4f3e-98c2-cb9d01b6a573">
+      <active>false</active>
+      <description>KAP 140 Display - COLD DARK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="LcdDisplay" serial="BOB_A/ SN-143-0D4" trigger="normal" address="KAP 140">
+          <line>           00000</line>
+          <line>              FT</line>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="bda9160c-8350-426c-9bf9-856d1f7c8ad6" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="87086943-c1aa-437f-a223-bd99508d1af9" placeholder="#" testvalue="A" />
+          <configref active="True" ref="42bdd967-8ce8-4341-9763-5818e6576d9a" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f3d65ada-4414-4046-a021-3168e65bbcb2">
+      <active>false</active>
+      <description>LED Test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -13,21 +76,239 @@
         <configrefs />
       </settings>
     </config>
-    <config guid="81bf9520-c852-4cc1-bbb9-9f604534f6bb">
+    <config guid="42bdd967-8ce8-4341-9763-5818e6576d9a">
       <active>true</active>
-      <description>test</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+      <description>KAP 140 HDG/ROL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK,Bool)" UUID="4eb2a124-0af9-45c5-a665-00b94bc0c207" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="if(#=1, 3, $)" />
+          <comparison active="True" value="1" operand="=" ifValue="HDG" elseValue="" />
+          <comparison active="True" value="0" operand="=" ifValue="ROL" elseValue="" />
+          <comparison active="True" value="3" operand="=" ifValue="NAV" elseValue="" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="efbdd421-0747-46e3-9673-da38f136d942" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="efbdd421-0747-46e3-9673-da38f136d942">
+      <active>true</active>
+      <description>KAP 140 NAV -- FIGURE OUT WHEN IT'S WHERE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT NAV1 LOCK,Bool)" UUID="4224fc05-b6e9-44d4-9468-c546a05a99c4" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="NAV" elseValue="'   '" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87086943-c1aa-437f-a223-bd99508d1af9">
+      <active>true</active>
+      <description>KAP 140 ALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT ALTITUDE LOCK,Bool)" UUID="09df7de7-01e4-43ac-8015-9573385d8acb" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="ALT" elseValue=" VS" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5d17ce40-29ab-46ce-a1c9-dd4ccf612a72">
+      <active>true</active>
+      <description>KAP 140 ALT (Raw Reference)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT ALTITUDE LOCK,Bool)" UUID="09df7de7-01e4-43ac-8015-9573385d8acb" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="False" value="1" operand="=" ifValue="ALT" elseValue=" VS" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bda9160c-8350-426c-9bf9-856d1f7c8ad6">
+      <active>true</active>
+      <description>AP Master Power (Reference)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT MASTER,Bool)" UUID="59411677-275b-4f69-82d2-eb93c20db76c" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="LcdDisplay" serial="KAP140_IDC20A&amp;B/ SN-143-0D4" trigger="normal" address="KAP 140">
-          <line>000 AP ALT^00000</line>
-          <line>000A000A ALRT FT</line>
-        </display>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fdf6674f-9401-4892-82f3-ae532cce10ae">
+      <active>true</active>
+      <description>KAP 140 BARO/FT/FPM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT ALTITUDE LOCK,Bool)" UUID="09df7de7-01e4-43ac-8015-9573385d8acb" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="if(V=0,2),)" />
+          <transformation active="True" expression="if(B=1,4,'FT')" />
+          <comparison active="False" value="0" operand="=" ifValue="FT" elseValue="" />
+          <comparison active="False" value="1" operand="=" ifValue="ALERT" elseValue="" />
+          <comparison active="False" value="2" operand="=" ifValue="FPM" elseValue="" />
+          <comparison active="False" value="3" operand="=" ifValue="FT" elseValue="" />
+          <comparison active="True" value="4" operand="=" ifValue="HPA" elseValue="" />
+          <comparison active="False" value="5" operand="=" ifValue="IN HG" elseValue="" />
+          <transformation active="False" expression="FT" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="5d17ce40-29ab-46ce-a1c9-dd4ccf612a72" placeholder="V" testvalue="0" />
+          <configref active="True" ref="fc9c3a6e-b381-4530-b737-0058f48f3d67" placeholder="B" testvalue="1" />
+          <configref active="True" ref="87086943-c1aa-437f-a223-bd99508d1af9" placeholder="&lt;" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8e72a87d-7dbe-4be7-8f00-066724f756ae">
+      <active>true</active>
+      <description>ALERT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c4ed7173-7abe-4b09-8cda-e0d9ab8d1ded">
+      <active>true</active>
+      <description>AP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT DISENGAGED,Bool)" UUID="f9b5c39f-fab1-4991-b2fc-eca2f1c9a083" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="''" elseValue="AP" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc9c3a6e-b381-4530-b737-0058f48f3d67">
+      <active>true</active>
+      <description>Baro (Read Var) - should add delay with magic logic</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="KAP_140_BARO" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="625c884c-b2c1-4353-835c-6209afa646ec">
+      <active>false</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:KAP140_ALT_ALERTER, Number)" UUID="e69f4848-31d6-4a7e-a2ab-98a5c06d0d38" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="966e886e-4b08-4a63-a843-21f1279a2a5b">
+      <active>true</active>
+      <description>Raw Alt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Round($,0)" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-143-0D4" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
     </config>
   </outputs>
-  <inputs />
+  <inputs>
+    <config guid="0d549962-8a82-441e-bda0-115d1bbfbcdc">
+      <active>true</active>
+      <description>AP Power</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="AP_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_MASTER)" presetId="b17146c8-2db3-4239-b797-e7bc11d557da" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5cee1295-784c-4f9d-96a4-f5ca2cefb2ea">
+      <active>true</active>
+      <description>KAP 140 HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="HDG_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_HDG_HOLD)" presetId="1e879ccb-96c9-401e-b447-940c7380a410" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c97ea2c8-4cf2-4a0d-979c-084c8b2ecded">
+      <active>true</active>
+      <description>KAP 140 NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="NAV_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_NAV1_HOLD)" presetId="83a61eaf-5315-445b-bc1e-bc76135cca76" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="115c9be7-698f-47ac-82c8-095ae4b2c47d">
+      <active>true</active>
+      <description>KAP 140 ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="ALT_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_ALT_HOLD)" presetId="a946ee03-bd6d-4ed4-b1c2-72d26df93848" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67f626c1-548f-4e54-9c8a-31926629e87b">
+      <active>true</active>
+      <description>KAP 140 BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="BARO_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:KAP140_Push_BARO)" presetId="ed596e47-f596-4b4f-a9c1-fa379166fc57" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0fa6b44c-ed91-4666-95e6-8c68c961b468">
+      <active>true</active>
+      <description>KAP 140 BARO VAR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-143-0D4" name="BARO_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="KAP_140_BARO" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="KAP_140_BARO" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
 </MobiflightConnector>

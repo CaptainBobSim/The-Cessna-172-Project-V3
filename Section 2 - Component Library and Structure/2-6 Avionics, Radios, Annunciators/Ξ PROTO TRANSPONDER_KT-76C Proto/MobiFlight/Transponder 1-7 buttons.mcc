@@ -2,11 +2,11 @@
 <MobiflightConnector>
   <outputs>
     <config guid="47ac4529-3cdd-4d4c-a15b-595c4873df28">
-      <active>false</active>
+      <active>true</active>
       <description>XPNDR</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
-        <test type="Float" value="1" />
+        <test type="Float" value="1231" />
         <modifiers />
         <display type="Display Module" serial="BOB_A/ SN-143-0D4" trigger="normal" ledAddress="KT76 Display" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
         <preconditions />
@@ -26,7 +26,7 @@
       </settings>
     </config>
     <config guid="a0717af9-ddd9-4ed4-b4ba-1a91490d3839">
-      <active>true</active>
+      <active>false</active>
       <description>FLXXX</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
