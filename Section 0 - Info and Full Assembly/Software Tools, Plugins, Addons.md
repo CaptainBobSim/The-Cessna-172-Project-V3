@@ -4,6 +4,7 @@ https://flightsim.to/file/35759/msfs-pop-out-panel-manager
 https://flightsim.to/file/36500/ready-to-fly-button-skipper
 Not really but maybe cool https://flightsim.to/file/19345/msfs-2020-google-map-replacement
 https://flightsim.to/file/34176/msfs-world-map-landmarks-permanently-off
+https://github.com/pimarc/pms50-gns530
 
 ## Addon Aircraft
 
