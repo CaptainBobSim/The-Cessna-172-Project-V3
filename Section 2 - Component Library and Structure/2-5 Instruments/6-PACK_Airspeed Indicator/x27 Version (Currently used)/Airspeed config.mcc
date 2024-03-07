@@ -4,10 +4,11 @@
     <config guid="f43cbcaf-ee78-43da-8eb5-148aa488a305">
       <active>true</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AIRSPEED INDICATED,Knots)" UUID="bbb26a5f-319a-49bf-b48a-1f4e0da43e32" />
+        <test type="Float" value="1000" />
         <modifiers>
-          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*10" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
@@ -27,7 +28,7 @@
             <value x="200" y="3150" />
           </interpolation>
         </modifiers>
-        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <display type="Stepper" serial="6 Pack_A/ SN-125-4de" trigger="normal" stepperAddress="Turn Coord_Plane" stepperInputRev="1000" stepperOutputRev="729" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -35,10 +36,11 @@
     <config guid="a2987fa9-4bfa-4f77-b8c2-c7364c3c062a">
       <active>false</active>
       <description>Airspeed (Resolution increased by multiplying values by 10) XP</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/flightmodel/position/indicated_airspeed" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="$*10" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*10" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
