@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="99bc8226-647a-4fb9-9da6-f58f0b04841d">
+      <active>true</active>
+      <description>Test All</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="100" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="L FUEL|LOW|FUEL|FUEL R|---|--|-|OIL|PRESS|LVAC|VAC|VACR|VOLT" pinBrightness="255" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="TESTTRUE" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="09fda44a-ab69-4456-88b5-5a674ba86547">
+      <active>true</active>
+      <description>LOW FUEL L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL LEFT QUANTITY,Gallons)" UUID="d7c4bbf7-1e00-4940-8ff3-38b03588fb18" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="10" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="L FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb">
+      <active>true</active>
+      <description>LOW FUEL R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="10" />
+          <comparison active="True" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="FUEL R" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c041083e-4ada-48e6-b060-c9ee37d70262">
+      <active>true</active>
+      <description>LOW FUEL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUEL RIGHT QUANTITY,Gallons)" UUID="6dec643e-45a3-42fe-8b87-7b2dd08ea6e3" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#+!" />
+          <comparison active="False" value="5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="LOW|FUEL" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="09fda44a-ab69-4456-88b5-5a674ba86547" placeholder="#" testvalue="1" />
+          <configref active="True" ref="7181a6d1-5e4c-4f5f-894b-6fe0227a50eb" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a9378c15-6cbc-4bc7-b505-d5d1e509ed9d">
+      <active>true</active>
+      <description>Dash</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="1" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="---|--|-" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="17aa043b-320d-47c6-b7c1-0264753fd0be">
+      <active>true</active>
+      <description>OIL PRESS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GENERAL ENG OIL PRESSURE:1,Psf)" UUID="6f6b2c67-49cb-4f07-9bbc-170917f928d0" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$*0.00694444" />
+          <comparison active="True" value="20" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="OIL|PRESS" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66af18b1-7b65-434b-b3aa-f82243bff1a8">
+      <active>true</active>
+      <description>VAC L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WARNING VACUUM, Bool)" UUID="0c3ca597-5777-4b54-849c-f63b0c17881b" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="LVAC" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ccbff9ec-1ec9-4b87-9e95-dba43bbdd8f6">
+      <active>true</active>
+      <description>VAC</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WARNING VACUUM, Bool)" UUID="0c3ca597-5777-4b54-849c-f63b0c17881b" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$+#" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="VAC" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1">
+      <active>true</active>
+      <description>VAC R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="VACR" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="true" ref="99bc8226-647a-4fb9-9da6-f58f0b04841d" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f96c239-d1fb-43c3-b27b-228145962ad0">
+      <active>true</active>
+      <description>VOLT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ELECTRICAL MAIN BUS VOLTAGE,Volts)" UUID="c989f6c0-4d0c-4505-9354-1254051eb17a" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="24.5" operand="&lt;" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5b2448a-9b7a-41e2-ba5e-d1c93d1bf06a">
+      <active>true</active>
+      <description>Is Tested</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="TESTTRUE" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="VOLT" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="81cc783e-ab15-45f5-9bd9-5444337c5192">
+      <active>true</active>
+      <description>TimeVar</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="$" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="6 Pack_A/ SN-125-4de" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
+      <active>false</active>
+      <description>HDG Drift Adjust XP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="false" ref="AdjustStatusHDG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
+      <active>true</active>
+      <description>HDG Drift Adjust FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_INC)" presetId="4c3cde84-00e4-4a98-83f3-0e015dab0929" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="false" ref="AdjustStatusHDG" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8534157f-111e-493a-b190-ef13ca466641">
+      <active>false</active>
+      <description>HDG AP Bug Adjust XP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
+      <active>true</active>
+      <description>HDG AP Bug Adjust FS2020</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_INC)" presetId="debca2cf-3a15-40f0-b839-3e1e153cd0f4" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
+      <active>true</active>
+      <description>HDG Adjust DG Push Status</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
+      <active>false</active>
+      <description>HDG Bug Push - Zero</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3c4798e-62a9-45d6-9071-83dcfd561d1f">
+      <active>true</active>
+      <description>TST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="TESTTRUE" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="47ae3a4c-5474-4d90-bab2-de6ad16a9b78">
+      <active>true</active>
+      <description>DIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="6 Pack_A/ SN-125-4de" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="50" />
+          <onRelease type="VariableInputAction" varType="number" varName="BRIGHTNESS" varExpression="255" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="119b806f-777e-47d4-b471-cabb9b49e253">
+      <active>true</active>
+      <description>Khosman Potentiometer Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.1.4.0, Culture=neutral, PublicKeyToken=null" serial="AltimeterArduino/ SN-e19-de4" name="Kohlsman Window" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Altimeter_Adjust" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
