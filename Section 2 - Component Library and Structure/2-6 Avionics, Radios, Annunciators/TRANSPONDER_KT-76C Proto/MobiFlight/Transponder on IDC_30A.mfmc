@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>BOB_A</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="(YD_L)" Pin="2" />
+  <Output Name="AP_L" Pin="3" />
+  <Output Name="(FD_L)" Pin="4" />
+  <Output Name="HDG_L" Pin="5" />
+  <Output Name="NAV_L" Pin="6" />
+  <Output Name="APR_L" Pin="7" />
+  <Output Name="REV_L" Pin="8" />
+  <Output Name="ALT_L" Pin="9" />
+  <Output Name="DN_L" Pin="10" />
+  <Output Name="UP_L" Pin="11" />
+  <Output Name="ARM_L" Pin="12" />
+  <Output Name="BARO_L" Pin="13" />
+  <Button Name="(YD_P)" Pin="14" />
+  <Button Name="AP_P" Pin="15" />
+  <Button Name="(FD_P)" Pin="16" />
+  <Button Name="HDG_P" Pin="17" />
+  <Button Name="NAV_P" Pin="18" />
+  <Button Name="APR_P" Pin="19" />
+  <LcdDisplay Name="KAP 140" Address="39" Cols="16" Lines="2" />
+  <Button Name="REV_P" Pin="22" />
+  <Button Name="ALT_P" Pin="23" />
+  <Button Name="DN_P" Pin="24" />
+  <Button Name="UP_P" Pin="25" />
+  <Button Name="ARM_P" Pin="26" />
+  <Button Name="BARO_P" Pin="27" />
+  <Encoder Name="AP Fine" PinLeft="28" PinRight="29" EncoderType="2" />
+  <Encoder Name="AP Rough" PinLeft="30" PinRight="31" EncoderType="2" />
+  <Button Name="ENC_PUSH" Pin="32" />
+  <Button Name="33-40 are blank" Pin="33" />
+  <Button Name="1Blank" Pin="34" />
+  <Button Name="2Blank" Pin="35" />
+  <Button Name="Button" Pin="36" />
+  <Button Name="Button 1" Pin="37" />
+  <Button Name="Button 2" Pin="38" />
+  <Button Name="End blank" Pin="39" />
+  <Button Name="KT76 IDT" Pin="40" />
+  <Button Name="KT76 0" Pin="41" />
+  <Button Name="KT76 1" Pin="42" />
+  <Button Name="KT76 2" Pin="43" />
+  <Button Name="KT76 3" Pin="44" />
+  <Button Name="KT76 4" Pin="45" />
+  <Button Name="KT76 5" Pin="46" />
+  <Button Name="KT76 6" Pin="47" />
+  <Button Name="KT76 7" Pin="48" />
+  <Button Name="KT76 CLR" Pin="49" />
+  <Button Name="KT76 VFR" Pin="50" />
+  <Button Name="KT76 RS_OFF" Pin="51" />
+  <Button Name="KT76 RS_SBY" Pin="52" />
+  <Button Name="KT76 RS_TST" Pin="53" />
+  <Button Name="KT76 RS_ON" Pin="54" />
+  <Button Name="KT76 RS_ALT" Pin="55" />
+  <LedModule Name="KT76 Display" ModelType="0" DinPin="56" ClsPin="57" ClkPin="58" Brightness="15" NumModules="1" />
+</Config>

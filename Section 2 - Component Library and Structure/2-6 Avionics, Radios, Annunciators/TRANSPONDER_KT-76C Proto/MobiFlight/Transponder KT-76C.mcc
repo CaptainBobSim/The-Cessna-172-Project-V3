@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="47ac4529-3cdd-4d4c-a15b-595c4873df28">
+      <active>true</active>
+      <description>XPNDR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
+        <test type="Float" value="1231" />
+        <modifiers>
+          <transformation active="False" expression="if(#=0,'',$)" />
+          <transformation active="True" expression="if(#=2,'8888',$)" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_A/ SN-292-851" trigger="normal" ledAddress="KT76 Display" ledConnector="1" ledModuleSize="8" ledPadding="True" ledBrightnessRef="b2d7d958-856d-4dd2-8320-4e88ee72ca94" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="e695abcc-1977-4ea7-b014-4ea9ae58f8ea" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="a77a2c8e-02e2-4221-a8a4-aff8d382cdc1" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6d6e42c8-16c9-4ec7-9f3f-33acd64ac5c0">
+      <active>true</active>
+      <description>xpndrcode display</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="xpndrcode" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <padding active="True" direction="Right" length="4" character="-" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_A/ SN-292-851" trigger="normal" ledAddress="KT76 Display" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="e695abcc-1977-4ea7-b014-4ea9ae58f8ea" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b02ecceb-b284-4a02-b46b-dccaa2d0e292">
+      <active>true</active>
+      <description>Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER STATE:1,Enum)" UUID="7d54c6ef-2128-4df8-acf6-a5303fe54a8e" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="sbY" elseValue="" />
+          <comparison active="True" value="2" operand="=" ifValue="-88" elseValue="" />
+          <comparison active="True" value="3" operand="=" ifValue=" on" elseValue="" />
+          <comparison active="True" value="4" operand="=" ifValue="#" elseValue="" />
+          <comparison active="True" value="0" operand="=" ifValue="''" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_A/ SN-292-851" trigger="normal" ledAddress="KT76 Display" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b2d7d958-856d-4dd2-8320-4e88ee72ca94" ledPaddingChar=" " ledDigits="4,5,6,7" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="a0717af9-ddd9-4ed4-b4ba-1a91490d3839" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="341bf8dd-4fe9-4d89-a8e1-f66b1ff1d291">
+      <active>true</active>
+      <description>Flashing Ident Dot (need both)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER IDENT:1, Bool)" UUID="a6c94337-3700-4762-b288-1dbc0dba26da" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="''" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_A/ SN-292-851" trigger="normal" ledAddress="KT76 Display" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b2d7d958-856d-4dd2-8320-4e88ee72ca94" ledPaddingChar=" " ledDigits="4" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="config" active="true" ref="f46fe026-50d0-4c11-850b-f37690b3f48d" operand="=" value="15" logic="and" />
+          <precondition type="config" active="true" ref="a77a2c8e-02e2-4221-a8a4-aff8d382cdc1" operand="!=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="a77a2c8e-02e2-4221-a8a4-aff8d382cdc1" operand="!=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f46fe026-50d0-4c11-850b-f37690b3f48d">
+      <active>true</active>
+      <description>ident data  flash (need both)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER IDENT:1, Bool)" UUID="a6c94337-3700-4762-b288-1dbc0dba26da" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="'hi'" />
+          <transformation active="True" expression="$*1" />
+          <blink active="True" blinkValue="1" onOffSequence="500,500" />
+          <transformation active="True" expression="$*15" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-292-851" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a77a2c8e-02e2-4221-a8a4-aff8d382cdc1">
+      <active>true</active>
+      <description>Mode Raw</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER STATE:1,Enum)" UUID="7d54c6ef-2128-4df8-acf6-a5303fe54a8e" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="False" value="1" operand="=" ifValue="sbY" elseValue="" />
+          <comparison active="False" value="2" operand="=" ifValue="8888" elseValue="" />
+          <comparison active="False" value="3" operand="=" ifValue="on" elseValue="" />
+          <comparison active="False" value="4" operand="=" ifValue="'F'+#" elseValue="" />
+          <comparison active="False" value="0" operand="=" ifValue="''" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="a0717af9-ddd9-4ed4-b4ba-1a91490d3839" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a0717af9-ddd9-4ed4-b4ba-1a91490d3839">
+      <active>true</active>
+      <description>Flight Level Text</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INDICATED ALTITUDE,Feet)" UUID="3110ef7c-3b03-4d05-99d6-fb582d3ac3f8" />
+        <test type="Float" value="5200" />
+        <modifiers>
+          <transformation active="True" expression="Round($/100,0)" />
+          <padding active="True" direction="Left" length="3" character="O" />
+          <transformation active="False" expression="F$" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2d7d958-856d-4dd2-8320-4e88ee72ca94">
+      <active>true</active>
+      <description>Display Brightness Raw - Avionics Master &amp; Power</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AVIONICS MASTER SWITCH,Bool)" UUID="2ea07b00-6ae8-49dc-ac07-74ecfe0bebe6" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$*15" />
+          <transformation active="True" expression="if(#=0,0,$)" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="a77a2c8e-02e2-4221-a8a4-aff8d382cdc1" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9e3102ed-49d1-4cad-93a9-fb7cec4f861d">
+      <active>true</active>
+      <description>raw sim time</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="Round($%5,0)" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-292-851" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18c048d3-90d9-4277-adde-09939d191fb4">
+      <active>true</active>
+      <description>timefreeze</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="timefreeze" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#-$" />
+          <transformation active="True" expression="Round($,2)" />
+          <comparison active="False" value="5" operand="&gt;" ifValue="6" elseValue="" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-292-851" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e695abcc-1977-4ea7-b014-4ea9ae58f8ea">
+      <active>true</active>
+      <description>time bomb active (This just reads timefreeze)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#" />
+          <comparison active="True" value="4" operand="&lt;" ifValue="1" elseValue="0" />
+          <transformation active="False" expression="if(a&gt;=1,0,$)" />
+        </modifiers>
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onRelease type="VariableInputAction" varType="string" varName="xpndrcode" varExpression="''" />
+          </button>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="18c048d3-90d9-4277-adde-09939d191fb4" placeholder="#" testvalue="5" />
+          <configref active="True" ref="c817b288-f605-46bb-9458-5e6f2da4c1be" placeholder="a" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0a23a5a1-afde-4411-ab09-593e5780be52">
+      <active>false</active>
+      <description>// NEED BACKSPACE FUNCTION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0ddfe5d3-0fcd-437c-847f-a9f55c065422">
+      <active>false</active>
+      <description>// now there's an initialization problem</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ac702d07-ab2a-4663-9414-008157da1a82">
+      <active>false</active>
+      <description>//Pressing and holding the VFR for 2 sec shows last active code to be displayed</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="" serial="" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="daf2c727-011e-47f1-bc0a-985e4ccc803d">
+      <active>false</active>
+      <description>//FL091 not 091</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="" serial="" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="12749378-a1d2-4039-bf51-35b5cea91c34">
+      <active>true</active>
+      <description>-Backspace if 1 char (to 0)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="xpndrcode" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <substring active="False" start="0" end="0" />
+          <blink active="False" blinkValue="0" onOffSequence="500,250" />
+          <transformation active="True" expression="'-'" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-292-851" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="a65ef6ba-419d-42ea-8bc6-eae65506d2d1" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a1bf6dcd-973f-4225-810f-2289598f1abd">
+      <active>true</active>
+      <description>-ACTIVATE Backspace if 2 char (to 1)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="clearVar" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="0" />
+          <transformation active="False" expression="if(#=1,2,0)" />
+          <transformation active="False" expression="if(a=1,1,0)" />
+          <transformation active="True" expression="if(#=1,if($=1,1,0),0)" />
+        </modifiers>
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="b" />
+          </button>
+        </display>
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="2496303f-2b8f-4411-93d0-8f617050bb72" placeholder="#" testvalue="1" />
+          <configref active="True" ref="9c514b3e-9ff6-4b08-9218-ed04c68f4a52" placeholder="a" testvalue="1" />
+          <configref active="True" ref="12749378-a1d2-4039-bf51-35b5cea91c34" placeholder="b" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d2b1ecbe-74f1-4d12-9e0e-761c13ab2ce5">
+      <active>true</active>
+      <description>Backspace if 2 char (to 1)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="xpndrcode" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <substring active="True" start="0" end="1" />
+          <blink active="False" blinkValue="0" onOffSequence="500,250" />
+        </modifiers>
+        <display type="-" serial="BOB_A/ SN-292-851" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="40f405cd-6440-42d7-b88a-5b000d2f27cc">
+      <active>true</active>
+      <description>ACTIVATE Backspace if 2 char (to 1)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="clearVar" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="0" />
+          <transformation active="True" expression="if(#=2,if($=1,1,0),0)" />
+          <transformation active="False" expression="if(a=1,1,0)" />
+        </modifiers>
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="b" />
+          </button>
+        </display>
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="2496303f-2b8f-4411-93d0-8f617050bb72" placeholder="#" testvalue="1" />
+          <configref active="True" ref="9c514b3e-9ff6-4b08-9218-ed04c68f4a52" placeholder="a" testvalue="1" />
+          <configref active="True" ref="d2b1ecbe-74f1-4d12-9e0e-761c13ab2ce5" placeholder="b" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f9d4bbcc-4e26-499d-8d44-600de5fccfc8">
+      <active>true</active>
+      <description>Backspace if 3 char (to 2)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="string" varName="xpndrcode" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <substring active="True" start="0" end="2" />
+          <blink active="False" blinkValue="0" onOffSequence="500,250" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0e856c8b-84c2-4d0b-b9eb-1690f04d670a">
+      <active>true</active>
+      <description>ACTIVATE Backspace if 3 char (to 2)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="clearVar" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="False" expression="0" />
+          <transformation active="True" expression="if(#=3,if($=1,1,0),0)" />
+          <transformation active="False" expression="if(a=1,1,0)" />
+        </modifiers>
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="b" />
+          </button>
+        </display>
+        <preconditions>
+          <precondition type="variable" active="false" ref="clearVar" operand="=" value="1" logic="and" />
+          <precondition type="variable" active="false" ref="typeLength" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="2496303f-2b8f-4411-93d0-8f617050bb72" placeholder="#" testvalue="1" />
+          <configref active="True" ref="9c514b3e-9ff6-4b08-9218-ed04c68f4a52" placeholder="a" testvalue="1" />
+          <configref active="True" ref="f9d4bbcc-4e26-499d-8d44-600de5fccfc8" placeholder="b" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c817b288-f605-46bb-9458-5e6f2da4c1be">
+      <active>true</active>
+      <description>VFR Inverse Raw rewrite depend then remove?</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="vfr" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if(#&gt;5,0,1)" />
+        </modifiers>
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="vfr" varExpression="@" />
+          </button>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="18c048d3-90d9-4277-adde-09939d191fb4" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2496303f-2b8f-4411-93d0-8f617050bb72">
+      <active>true</active>
+      <description>Length of Code (Being Typed)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="typeLength" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="InputAction" serial="BOB_A/ SN-292-851" trigger="normal">
+          <button>
+            <onRelease type="VariableInputAction" varType="number" varName="typeLength" varExpression="$*#" />
+          </button>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="e695abcc-1977-4ea7-b014-4ea9ae58f8ea" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="01bc1bd8-47ba-4819-b711-6f3a3b8bfb0f">
+      <active>false</active>
+      <description>timefreeze -4 for if len = 4</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="timefreeze" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="if(#&lt;=4,1,0)" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <button>
+            <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="$-4" />
+          </button>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="2496303f-2b8f-4411-93d0-8f617050bb72" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="5b13e2ec-c103-4ec0-acc5-88b00cf59ce6">
+      <active>true</active>
+      <description>XPNDR 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder0)" presetId="2b07b723-64b0-44c1-9bdf-f6193c10bf05" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1ba77345-b698-4545-8804-fe0d91c57db8">
+      <active>true</active>
+      <description>XPNDR 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder1)" presetId="09ddd15e-a50f-4f62-9532-3fd306f996cb" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="998c6590-6462-47be-976c-f0655cbf1ccc">
+      <active>true</active>
+      <description>XPNDR 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder2)" presetId="1eb9ae7f-c95d-443c-ba87-dd3810fe6216" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="298f7ee8-8eb8-480d-ba81-ff4656ee715a">
+      <active>true</active>
+      <description>XPNDR 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder3)" presetId="8f2a5b95-d06d-4156-af6c-f294e2d1438a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7708111-3342-4e9c-b397-d8e25e42ecd4">
+      <active>true</active>
+      <description>XPNDR 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder4)" presetId="a0777872-878e-4d48-ac84-34e87c041930" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="955f7754-d904-4326-9335-cdb605266c23">
+      <active>true</active>
+      <description>XPNDR 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder5)" presetId="99255895-102e-41b9-8763-2fc144768ed0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03531580-bf8f-4082-8d10-e41ddd5e1829">
+      <active>true</active>
+      <description>XPNDR 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder6)" presetId="38faa3cf-4058-454e-b486-f1726aeef8e6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ffeb55ed-78a5-41ff-92a2-3a17e5493601">
+      <active>true</active>
+      <description>XPNDR 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder7)" presetId="611e1dee-1148-4196-8a43-0d691368b979" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c348ebc2-565b-4a1f-b939-d8a82b57a6de">
+      <active>true</active>
+      <description>OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6902c298-52d6-41b2-9ed5-14c6f7aafe66" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e682f6b-8ac7-4f9a-9442-dc0428f16f06">
+      <active>true</active>
+      <description>STBY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_SBY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6bb83f0e-6466-4cc1-9f3d-26c205a340a5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="539ae676-e18c-4541-b65c-29b52d1e0274">
+      <active>true</active>
+      <description>TST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="9f327640-f61f-4492-a224-589bdeac983a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="acc0a3fe-b909-4ced-ab29-aba169733519">
+      <active>true</active>
+      <description>ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="f93b81d9-73f3-4734-a9b6-08f9684f179b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33e48116-4c76-497f-8d85-ba55dda06062">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="22f6b23a-79cd-4761-b066-b2bc1a309df6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bba84c07-3827-4796-9781-926d3dbae056">
+      <active>true</active>
+      <description>CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderCLR)" presetId="e5082fa3-af6a-40bf-aff0-c5163c00aa28" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82ade648-eff8-4aa4-9339-f46b4e878f15">
+      <active>true</active>
+      <description>VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderVFR)" presetId="cb4278d8-5c94-47b1-bb60-958da077feb6" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="903475cb-f8a9-4bf5-88bd-1a65ce7e46c1">
+      <active>true</active>
+      <description>IDENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 IDT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_IDENT_TOGGLE)" presetId="e813249a-5730-4972-a27c-022d97ae5a55" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7d3241f-7921-4421-bd73-03ca3e5b5bd0">
+      <active>true</active>
+      <description>Var0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="xpndrcode" varExpression="$O" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="69599810-768d-4e90-acaa-5ea709e3a40d">
+      <active>true</active>
+      <description>Var1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="xpndrcode" varExpression="$1" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d9a4b839-88f0-4146-a62f-4d0872debe26">
+      <active>true</active>
+      <description>Var1 clear time</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6881adfc-65c2-4e6f-bef9-60eb598c3f10">
+      <active>true</active>
+      <description>Var2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$2" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e47508a5-8959-4892-882c-240b83b12411">
+      <active>true</active>
+      <description>Var2 clear time</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="00f29124-eb24-4d0e-905b-9e24d8b39940">
+      <active>true</active>
+      <description>Var3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$3" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="222eedfb-4d49-41a4-bf4e-beaef8754ef6">
+      <active>true</active>
+      <description>Var4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$4" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="53358a91-7b29-49a0-926f-79e05587cb2c">
+      <active>true</active>
+      <description>Var5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$5" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="06c647eb-da23-42f2-8cea-508aaef631cf">
+      <active>true</active>
+      <description>Var6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$6" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2ac16e85-79f8-4e0a-877f-8f42e772dead">
+      <active>true</active>
+      <description>Var7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="xpndrcode" varExpression="$7" />
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fffdbba7-4c8d-467f-87bc-916e4d6d8578">
+      <active>true</active>
+      <description>CLR Reset the time until exit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#" />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="e695abcc-1977-4ea7-b014-4ea9ae58f8ea" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c7afa36b-b7da-4830-9d73-8fa1756a4d61">
+      <active>true</active>
+      <description>VFR Exit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onRelease type="VariableInputAction" varType="number" varName="timefreeze" varExpression="#-4" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9e3102ed-49d1-4cad-93a9-fb7cec4f861d" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4fba1d89-e578-4628-8c4c-a84ac457fadd">
+      <active>true</active>
+      <description>Clear Variable (For BS)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="clearVar" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="clearVar" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1fc39821-6787-4114-825a-14040dcc5ae7">
+      <active>true</active>
+      <description>Length initialize</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 RS_TST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="lengthThing" varExpression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5e36d104-62c9-4789-971f-5b963b8dd54c">
+      <active>true</active>
+      <description>lensub init</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 IDT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="string" varName="lensub" varExpression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="50dd87e9-8938-4664-9529-4a6f56671511">
+      <active>true</active>
+      <description>vfr inverse var</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="vfr" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="85fa48f8-bfd3-4c9f-92eb-a7e6ce2e760f">
+      <active>true</active>
+      <description>Length -1 </description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$-1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="95308517-92c3-4bb6-aff6-1b19d592964c">
+      <active>true</active>
+      <description>Var0 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1088e54-f08a-4898-b2e0-d8c1363234b7">
+      <active>true</active>
+      <description>Var1 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2df808bb-0c16-4581-982a-ca23fdaf51e3">
+      <active>true</active>
+      <description>Var2 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9509f472-819a-42f5-b215-63417ae7a9d2">
+      <active>true</active>
+      <description>Var3 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="123849d4-186e-4e7a-ac6c-7ec0e533c383">
+      <active>true</active>
+      <description>Var4 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bab92e38-2141-41a2-a1ac-8af5172c9906">
+      <active>true</active>
+      <description>Var5 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9cdb707b-75a6-4c09-8d34-dd146a9fbfc8">
+      <active>true</active>
+      <description>Var6 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8b07d350-e7fb-4773-ad41-0076fd4222f7">
+      <active>true</active>
+      <description>Var7 Inc Length</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.1.0, Culture=neutral, PublicKeyToken=null" serial="BOB_A/ SN-292-851" name="KT76 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="typeLength" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
