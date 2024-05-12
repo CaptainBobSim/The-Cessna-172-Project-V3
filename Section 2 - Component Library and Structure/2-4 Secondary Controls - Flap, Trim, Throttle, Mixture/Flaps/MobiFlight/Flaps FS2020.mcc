@@ -4,10 +4,11 @@
     <config guid="ac6b7a68-e708-4204-af0a-6d3afe83d064">
       <active>true</active>
       <description>Flaps Write</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Flaps_Potentiometer" varExpression="$" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="157" y="0" />
@@ -15,7 +16,7 @@
             <value x="363" y="1024" />
           </interpolation>
         </modifiers>
-        <display type="InputAction" serial="Flaps Arduino/ SN-c37-3e2" trigger="normal">
+        <display type="InputAction" serial="Flaps Arduino/ SN-G88-57F" trigger="normal">
           <analog>
             <onChange type="MSFS2020CustomInputAction" command="@ 16.0147 * 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="e3388f22-2d1f-475d-88fc-d93676b15e2c" />
           </analog>
@@ -27,17 +28,18 @@
     <config guid="e2313464-b9c2-4cdb-af08-1d0c91b726a4">
       <active>true</active>
       <description>Flaps Servo</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:TRAILING EDGE FLAPS LEFT PERCENT,Percent Over 100)" UUID="c19b9300-13da-46f5-8489-56bceb192f64" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="$*100" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*100" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="False">
             <value x="0" y="0" />
             <value x="100" y="100" />
           </interpolation>
         </modifiers>
-        <display type="Servo" serial="Flaps Arduino/ SN-c37-3e2" trigger="normal" servoAddress="Flaps Servo" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
+        <display type="Servo" serial="Flaps Arduino/ SN-G88-57F" trigger="normal" servoAddress="Flaps Servo" servoMin="0" servoMax="100" servoMaxRotationPercent="20" />
         <preconditions />
         <configrefs />
       </settings>
@@ -47,7 +49,7 @@
     <config guid="3fe7aa18-71f4-45b2-bc42-45d961ce29e3">
       <active>true</active>
       <description>Flaps Input</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-c37-3e2" name="Flap Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Flaps Arduino/ SN-G88-57F" name="Flap Input" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <analog>
           <onChange type="VariableInputAction" varType="number" varName="Flaps_Potentiometer" varExpression="@" />
         </analog>
