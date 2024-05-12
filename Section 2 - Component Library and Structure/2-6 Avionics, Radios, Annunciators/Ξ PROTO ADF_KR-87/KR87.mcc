@@ -1,6 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
+    <config guid="0be5c04b-8cd2-4d90-adee-7c4550854f25">
+      <active>true</active>
+      <description>COLD AND DARK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BFO" varExpression="$" />
+        <test type="Float" value="12345678" />
+        <modifiers>
+          <transformation active="True" expression="'        '" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <preconditions>
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
     <config guid="de8f0230-35fc-443f-aa73-0cb7d06b0eac">
       <active>true</active>
       <description>FREQ Active</description>
@@ -9,7 +25,9 @@
         <test type="Float" value="12345678" />
         <modifiers />
         <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="4,5,6,7" ledDecimalPoints="2" />
-        <preconditions />
+        <preconditions>
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
+        </preconditions>
         <configrefs />
       </settings>
     </config>
@@ -23,6 +41,7 @@
         <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3" />
         <preconditions>
           <precondition type="variable" active="true" ref="FREQ" operand="&gt;=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -33,10 +52,14 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="BFO" varExpression="$" />
         <test type="Float" value="1" />
-        <modifiers />
+        <modifiers>
+          <transformation active="True" expression="$*#" />
+        </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="BFO_LED" pinBrightness="255" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="#" testvalue="1" />
+        </configrefs>
       </settings>
     </config>
     <config guid="a94ef208-4334-453a-b7a6-54ba19543b4a">
@@ -45,10 +68,14 @@
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="ANT" varExpression="$" />
         <test type="Float" value="1" />
-        <modifiers />
+        <modifiers>
+          <transformation active="True" expression="$*#" />
+        </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ANT_LED" pinBrightness="255" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="#" testvalue="1" />
+        </configrefs>
       </settings>
     </config>
     <config guid="970051be-ec1f-4124-a298-bdcb366fc64a">
@@ -59,10 +86,13 @@
         <test type="Float" value="1" />
         <modifiers>
           <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
+          <transformation active="True" expression="$*#" />
         </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ADF_LED" pinBrightness="255" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="#" testvalue="1" />
+        </configrefs>
       </settings>
     </config>
     <config guid="644ff750-4733-4ced-bfcb-096000f3e93e">
@@ -73,10 +103,13 @@
         <test type="Float" value="1" />
         <modifiers>
           <comparison active="True" value="1" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
         </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="FRQ_LED" pinBrightness="255" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="#" testvalue="1" />
+        </configrefs>
       </settings>
     </config>
     <config guid="c3f6b961-6945-4b1e-84cd-f78ead4dd72b">
@@ -92,6 +125,7 @@
         <preconditions>
           <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
           <precondition type="variable" active="true" ref="FLT" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -105,10 +139,11 @@
         <modifiers>
           <transformation active="True" expression="Floor($/60)" />
         </modifiers>
-        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1" ledDecimalPoints="2" />
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1" ledDecimalPoints="2" />
         <preconditions>
           <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
           <precondition type="variable" active="true" ref="FLT" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
         </preconditions>
         <configrefs />
       </settings>
@@ -128,6 +163,7 @@
         <preconditions>
           <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
           <precondition type="variable" active="true" ref="FLT" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
         </preconditions>
         <configrefs>
           <configref active="True" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" placeholder="#" testvalue="1" />
@@ -149,6 +185,7 @@
         <preconditions>
           <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
           <precondition type="variable" active="true" ref="FLT" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="5259777a-74da-466c-a13b-925b576a44bc" operand="=" value="1" logic="and" />
         </preconditions>
         <configrefs>
           <configref active="True" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" placeholder="#" testvalue="1" />
@@ -163,11 +200,13 @@
         <test type="Float" value="1" />
         <modifiers>
           <transformation active="True" expression="$*(#-1)" />
+          <transformation active="True" expression="$*!" />
         </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="FLT_LED" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="644ff750-4733-4ced-bfcb-096000f3e93e" placeholder="#" testvalue="1" />
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="!" testvalue="1" />
         </configrefs>
       </settings>
     </config>
@@ -180,11 +219,13 @@
         <modifiers>
           <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
           <transformation active="True" expression="$*(#-1)" />
+          <transformation active="True" expression="$*!" />
         </modifiers>
         <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ET_LED" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="644ff750-4733-4ced-bfcb-096000f3e93e" placeholder="#" testvalue="1" />
+          <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="!" testvalue="1" />
         </configrefs>
       </settings>
     </config>
@@ -231,7 +272,7 @@
       <active>true</active>
       <description>ET BLINKER</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers>
           <blink active="True" blinkValue="1" onOffSequence="500,500" />
@@ -251,7 +292,7 @@
       <active>true</active>
       <description>ET Blink to reset</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers>
           <blink active="True" blinkValue="1" onOffSequence="500,500" />
@@ -264,6 +305,34 @@
         <preconditions>
           <precondition type="config" active="true" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" operand="=" value="1" logic="and" />
         </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5259777a-74da-466c-a13b-925b576a44bc">
+      <active>true</active>
+      <description>Power</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ADF_PWR" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="f4952ed8-b6b8-4bb1-b71f-821be11371d8" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f4952ed8-b6b8-4bb1-b71f-821be11371d8">
+      <active>true</active>
+      <description>Battery</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT AVIONICS ON,Bool)" UUID="91f78aaf-2873-4e63-9b7e-17548e4d42f9" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
         <configrefs />
       </settings>
     </config>
@@ -454,6 +523,31 @@
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="SET_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="ADF_SET_RST" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b18d25f0-8384-45f9-bd7b-ad0a5e2a5587">
+      <active>true</active>
+      <description>adf volume</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="VOL" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_VOLUME_DEC)&#xA;(&gt;K:ADF_VOLUME_DEC)&#xA;(&gt;K:ADF_VOLUME_INC)" presetId="feee467f-f609-4293-a135-da14133e3d23" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ADF_VOLUME_INC)&#xA;(&gt;K:ADF_VOLUME_INC)&#xA;(&gt;K:ADF_VOLUME_INC)" presetId="3e258e52-f64b-40af-a61f-e48d56f2c1b9" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="011fbbd7-2ca5-422b-8726-d4a3679b58d6">
+      <active>true</active>
+      <description>adf PWR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="VOL_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onRelease type="VariableInputAction" varType="number" varName="ADF_PWR" varExpression="if($=0,1,0)" />
         </button>
         <preconditions />
         <configrefs />
