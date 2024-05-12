@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="de8f0230-35fc-443f-aa73-0cb7d06b0eac">
+      <active>true</active>
+      <description>FREQ Active</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF ACTIVE FREQUENCY:1,KHz)" UUID="2e699250-5034-4b3b-9f4d-a24c6a441ba2" />
+        <test type="Float" value="12345678" />
+        <modifiers />
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="4,5,6,7" ledDecimalPoints="2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78c823e9-56c0-432b-a97f-8e9d8cbff3b5">
+      <active>true</active>
+      <description>FREQ Stby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF STANDBY FREQUENCY:1,KHz)" UUID="1734cf8b-af1b-4f74-94e8-f18513c7dd88" />
+        <test type="Float" value="12345678" />
+        <modifiers />
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="FREQ" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="081dcffe-654e-486d-ad69-5a2fee9a7ef0">
+      <active>true</active>
+      <description>BFO</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BFO" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="BFO_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a94ef208-4334-453a-b7a6-54ba19543b4a">
+      <active>true</active>
+      <description>ANT LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ANT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ANT_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="970051be-ec1f-4124-a298-bdcb366fc64a">
+      <active>true</active>
+      <description>ADF LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ANT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
+        </modifiers>
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ADF_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="644ff750-4733-4ced-bfcb-096000f3e93e">
+      <active>true</active>
+      <description>FREQ LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FREQ" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="&gt;=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="FRQ_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3f6b961-6945-4b1e-84cd-f78ead4dd72b">
+      <active>true</active>
+      <description>Flight Time Thicc Value</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Floor($/3600)" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
+          <precondition type="variable" active="true" ref="FLT" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c766f58b-dcb5-459a-89d5-c522dc921681">
+      <active>true</active>
+      <description>Flight Time Smol Value</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="Floor($/60)" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
+          <precondition type="variable" active="true" ref="FLT" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07a04b82-31ac-4d72-ad66-d0667c04b1bd">
+      <active>true</active>
+      <description>Elapsed Time Thicc Value</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ET" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="3600" operand="&gt;=" ifValue="Floor(($/3600)%60)" elseValue="Floor(($/60)%60)" />
+          <padding active="False" direction="Left" length="4" character=" " />
+          <transformation active="False" expression="if(#=1,0,$)" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
+          <precondition type="variable" active="true" ref="FLT" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6e4280c1-4ca5-4ca3-9724-33d5e8ca3eac">
+      <active>true</active>
+      <description>Elapsed Time Smol Value</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ET" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="3600" operand="&gt;=" ifValue="Floor(($/60)%60)" elseValue="Floor(($)%60)" />
+          <padding active="False" direction="Left" length="4" character=" " />
+          <transformation active="False" expression="if(#=1,0,$)" />
+        </modifiers>
+        <display type="Display Module" serial="BOB_B/ SN-D8F-39D" trigger="normal" ledAddress="DME_7 Seg" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="FREQ" operand="=" value="0" logic="and" />
+          <precondition type="variable" active="true" ref="FLT" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="467dc38f-5db1-4fa1-957c-48ce4669e373">
+      <active>true</active>
+      <description>FLT/ET Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FLT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$*(#-1)" />
+        </modifiers>
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="FLT_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="644ff750-4733-4ced-bfcb-096000f3e93e" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4e162c97-8216-41c4-9e70-d267f0da1ee9">
+      <active>true</active>
+      <description>(copy) FLT/ET Toggle Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FLT" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="0" elseValue="1" />
+          <transformation active="True" expression="$*(#-1)" />
+        </modifiers>
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ET_LED" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="644ff750-4733-4ced-bfcb-096000f3e93e" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d0f07365-71b4-45d0-843f-c407a86b4cb4">
+      <active>true</active>
+      <description>Set Reset Status -
+ 1: Zero
+2: Start
+3: Stop</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ADF_SET_RST" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="($%3)+1" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="false" ref="f4d8cdc2-feea-4cec-a578-10ecbc147dae" operand="!=" value="1" logic="and" />
+          <precondition type="config" active="false" ref="f8a27aa3-6c67-4ea2-b8f0-15785af36a85" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cb7382ef-2e65-44ae-9f5c-5d03dd288d56">
+      <active>true</active>
+      <description>Clear if 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ADF_SET_RST" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions>
+          <precondition type="config" active="false" ref="f4d8cdc2-feea-4cec-a578-10ecbc147dae" operand="!=" value="1" logic="and" />
+          <precondition type="config" active="false" ref="f8a27aa3-6c67-4ea2-b8f0-15785af36a85" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b2b3804d-77b3-4f34-a207-c9cc74480f54">
+      <active>true</active>
+      <description>ET BLINKER</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <blink active="True" blinkValue="1" onOffSequence="500,500" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="ET" varExpression="$+1" />
+          </button>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f7853292-812f-4b7d-a0d3-0bd5048cc989">
+      <active>true</active>
+      <description>ET Blink to reset</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <blink active="True" blinkValue="1" onOffSequence="500,500" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="ET" varExpression="$*0" />
+          </button>
+        </display>
+        <preconditions>
+          <precondition type="config" active="true" ref="d0f07365-71b4-45d0-843f-c407a86b4cb4" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a9ea7fee-f58b-4d6e-8be2-b91660e841ca">
+      <active>true</active>
+      <description>BFO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="BFO_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:adf_bfo)" presetId="07ce35ff-75ad-4c09-9695-c7c776ca1561" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7f145995-92c4-4431-9521-5afde02dedd1">
+      <active>true</active>
+      <description>ADF/ANT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="ADF_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:adf_AntAdf)" presetId="99a09dfc-e274-4b76-bde7-8799cd7dd34d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0673d394-fbb7-49c5-841c-e208e9642f82">
+      <active>true</active>
+      <description>BFO Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="BFO_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="BFO" varExpression="if($&gt;0,0,1)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="656c1dd4-57ed-4b5e-8dbe-1026226e9931">
+      <active>true</active>
+      <description>ADF/ANT Variable</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="ADF_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ANT" varExpression="if($&gt;0,0,1)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dd46b3ee-2021-4e2d-9552-f4f782d6902b">
+      <active>true</active>
+      <description>Freq</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FRQ_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:adf_frqTransfert)" presetId="234fe759-1d30-4b4e-ae35-760b9cee1a69" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="213c0c09-0030-4972-923e-84102ac72d75">
+      <active>true</active>
+      <description>freq var</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FRQ_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FREQ" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14b5a489-5966-4afe-af7b-06098aaa39a6">
+      <active>true</active>
+      <description>freq var clear by ET</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FLT_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FREQ" varExpression="$*0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67b9b84e-dc15-43fa-b739-6cd8f332765e">
+      <active>true</active>
+      <description>Set/RST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="SET_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:adf_SetRst)" presetId="efa8b552-7655-4f22-bea2-144a75456bff" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e606eac-dbb7-4036-b537-8531b27dfdc8">
+      <active>true</active>
+      <description>FLT/ET</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FLT_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:adf_FltEt)" presetId="140dfb97-1131-4e6d-abc1-0ed1b4fa7cd3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2dacfb02-468c-456d-ab2b-00e990cb4b72">
+      <active>true</active>
+      <description>FLT/ET Variable Swappy</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FLT_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="FLT" varExpression="if($&gt;0,0,1)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="953470f2-0885-4c3d-8c04-c9a6c128afc7">
+      <active>false</active>
+      <description>sim snapshot variable?</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="SET_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cada544e-d2f3-48c7-9e90-b300fb6a8c8d">
+      <active>true</active>
+      <description>Knob Pushed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="ENC_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ENC_P" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="ENC_P" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3243b3a5-651f-4e12-bae9-d49771fba2ad">
+      <active>true</active>
+      <description>fine ADF 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FINE" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_1_DEC)" presetId="66b19233-6b58-4c08-9b35-c62f45e9c4b7" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ADF_1_INC)" presetId="427ce722-902a-4264-b25c-2b96621281cb" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="ENC_P" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="adce9f28-1d43-42f9-90e4-b42d328db492">
+      <active>true</active>
+      <description>fine ADF 10 (push)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="FINE" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_10_DEC)" presetId="0e4cf0c2-4d10-4f03-83b6-139870954f43" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ADF_10_INC)" presetId="8625bd32-b821-4d2b-a5d6-ce7650464819" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="ENC_P" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="55583663-ff74-4f77-a756-b3ad39ade366">
+      <active>true</active>
+      <description>Rough ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="ROUGH" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_100_DEC)" presetId="823422fb-6b3a-4b07-a115-82135ad542d6" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ADF_100_INC)" presetId="b83b3328-afd6-4c8a-9eec-a9d74729bb3d" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="false" ref="ENC_P" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9d74282-557a-4483-a445-fa0ac7cb29fa">
+      <active>true</active>
+      <description>ADF_SET_RST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="BOB_B/ SN-D8F-39D" name="SET_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ADF_SET_RST" varExpression="$+1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
