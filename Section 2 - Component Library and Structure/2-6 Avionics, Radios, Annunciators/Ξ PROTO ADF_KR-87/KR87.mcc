@@ -70,8 +70,9 @@
         <test type="Float" value="1" />
         <modifiers>
           <transformation active="True" expression="$*#" />
+          <transformation active="True" expression="$*100" />
         </modifiers>
-        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ANT_LED" pinBrightness="255" />
+        <display type="Output" serial="BOB_B/ SN-D8F-39D" trigger="normal" pin="ANT_LED" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="5259777a-74da-466c-a13b-925b576a44bc" placeholder="#" testvalue="1" />
