@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="f5f80c50-6633-4778-a78a-5cba1cf10984">
+      <active>true</active>
+      <description>Elevator Trim (Read Variable and Write to Trim) MSFS2020</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Trim_Wheel" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1024" y="65535" />
+          </interpolation>
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="MSFS2020CustomInputAction" command="@ 2.0001 / 16383 - -16383 max 16383 min (&gt;K:ELEVATOR_TRIM_SET)" presetId="dfa1e109-b523-45b8-9d28-5e8b13d71dbc" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="decb93ca-70ae-4e6c-b58f-efa42f7dc9fe">
+      <active>true</active>
+      <description>Read the Trim Wheel</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-0c7-b3d" name="Stepper_Pot" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="Trim_Wheel" varExpression="@" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

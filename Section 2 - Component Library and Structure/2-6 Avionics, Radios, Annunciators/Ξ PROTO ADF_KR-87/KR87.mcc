@@ -317,6 +317,7 @@
         <test type="Float" value="1" />
         <modifiers>
           <transformation active="True" expression="$*#" />
+          <transformation active="False" expression="$+1" />
         </modifiers>
         <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="9125397c-9ce1-4714-bde7-2ced8329749c">
+      <active>true</active>
+      <description>SIM TIME RAW</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME,second)" UUID="3e5c1b39-4900-4afe-a6ed-344fe77ba325" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="034b4e4e-67c4-44f1-b51e-a3a11475fafe">
+      <active>true</active>
+      <description>Just read the failure and write a variable that captures "sim time" when failure is 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ELECTRICAL MASTER BATTERY,Bool)" UUID="e48e8dce-5b66-4959-9aa0-af2839b9b849" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="InputAction" serial="">
+          <button>
+            <onPress type="VariableInputAction" varType="number" varName="FAILURE1" varExpression="#" />
+          </button>
+        </display>
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9125397c-9ce1-4714-bde7-2ced8329749c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d025f8e5-fa2b-4ea3-bd02-860f448f4f6b">
+      <active>true</active>
+      <description>FAILURE TIME Trigger as LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FAILURE1" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="#-$" />
+          <comparison active="True" value="3" operand="&lt;=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9125397c-9ce1-4714-bde7-2ced8329749c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
