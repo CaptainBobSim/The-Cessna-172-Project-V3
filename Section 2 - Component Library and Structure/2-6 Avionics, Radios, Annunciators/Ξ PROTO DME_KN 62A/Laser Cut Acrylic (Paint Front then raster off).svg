@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="Laser Cut Acrylic (Paint Front then raster off).svg"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -25,14 +25,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.8284272"
-     inkscape:cx="319.43548"
-     inkscape:cy="270.29156"
+     inkscape:cx="275.06453"
+     inkscape:cy="270.64511"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-height="1111"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg5" /><defs
+     inkscape:current-layer="layer10" /><defs
      id="defs2"><rect
        x="-155.35452"
        y="532.27854"
@@ -132,7 +132,7 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect826);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan3">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text></g><g
+             id="tspan1">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text></g><g
          inkscape:groupmode="layer"
          id="layer2"
          inkscape:label="Don't place decals Here"
@@ -150,7 +150,7 @@
            style="font-size:18.6667px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:-0.15px;white-space:pre;shape-inside:url(#rect2221);display:inline"><tspan
              x="-155.35547"
              y="549.43297"
-             id="tspan4">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text></g></g><text
+             id="tspan2">NO DECALS HERE ---NO DECALS HERE ---NO DECALS HERE ---</tspan></text></g></g><text
        xml:space="preserve"
        style="font-size:3.175px;line-height:1.25;font-family:ChunkFive;-inkscape-font-specification:ChunkFive;letter-spacing:-0.0396875px;fill:#ffffff;stroke-width:0.264583"
        x="74.43119"
@@ -338,7 +338,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="Mirror test"
-     style="display:none"><text
+     style="display:inline"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:Calibri;letter-spacing:-0.0396875px;display:inline;fill:#000000;fill-opacity:1;stroke-width:0.264583"
        x="-109.46652"
