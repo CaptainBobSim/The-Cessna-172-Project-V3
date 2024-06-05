@@ -448,6 +448,18 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="e5ccff13-ac2c-4bba-b5a2-3fd4480cc3c9">
+      <active>true</active>
+      <description>test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="" serial="" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="5b13e2ec-c103-4ec0-acc5-88b00cf59ce6">
