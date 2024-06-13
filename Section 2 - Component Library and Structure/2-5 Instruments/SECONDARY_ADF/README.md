@@ -2,7 +2,6 @@ Build/Config Video Here: [Build an ADF Instrument for a Flight Sim | C172 #52 - 
 
 🛒Buy it as a Kit or Assembled: [ADF Instrument (Kit or Assembled) - Captain Bob Flight Simulation](https://captainbobsim.com/product/adf-instrument/)
 
-
 Welcome to the Simulator of your dreams!
 Support the project here: https://captainbobsim.com/project-support/
 
@@ -11,8 +10,6 @@ Support the project here: https://captainbobsim.com/project-support/
 - STLs contain all of the print files
 - MobiFlight Files contain the software configuration using MobiFlight (You can merge it into your top level MobiFlight file)
 - Source Files is where you'll find all of the raw files if you want to make any customizations for yourself.
-
-
 
 __Bill 'o Materials:__
 
@@ -39,8 +36,6 @@ Hook Up Wire
 Soldering Material
 
 x4 Panel Mounting Screws
-
-
 
 Pinout: 
 https://www.tablesgenerator.com/markdown_tables
