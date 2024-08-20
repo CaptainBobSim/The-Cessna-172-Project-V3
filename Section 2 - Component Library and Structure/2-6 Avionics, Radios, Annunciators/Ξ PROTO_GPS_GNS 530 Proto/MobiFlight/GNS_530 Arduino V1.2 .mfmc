@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ModuleType>MobiFlight Mega</ModuleType>
-  <ModuleName>test file</ModuleName>
+  <ModuleName>GNS 530</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <Button Name="COM_SWAP" Pin="10" />
   <Button Name="COM_PRESS" Pin="45" />
@@ -21,9 +21,10 @@
   <Button Name="DIRECT" Pin="65" />
   <Button Name="RNG_DN" Pin="66" />
   <Button Name="RNG_UP" Pin="67" />
-  <Encoder Name="Left Fine" PinLeft="50" PinRight="51" EncoderType="0" />
-  <Encoder Name="Left Rough" PinLeft="52" PinRight="53" EncoderType="0" />
-  <Encoder Name="Right Fine" PinLeft="40" PinRight="41" EncoderType="0" />
-  <Encoder Name="Right Rough" PinLeft="42" PinRight="43" EncoderType="0" />
+  <Encoder Name="Left Fine" PinLeft="50" PinRight="51" EncoderType="2" />
+  <Encoder Name="Left Rough" PinLeft="52" PinRight="53" EncoderType="2" />
+  <Encoder Name="Right Fine" PinLeft="40" PinRight="41" EncoderType="2" />
+  <Encoder Name="Right Rough" PinLeft="42" PinRight="43" EncoderType="2" />
   <Encoder Name="COM" PinLeft="12" PinRight="44" EncoderType="0" />
+  <AnalogInput Name="Photoresistor" Pin="68" Sensitivity="1" />
 </Config>
