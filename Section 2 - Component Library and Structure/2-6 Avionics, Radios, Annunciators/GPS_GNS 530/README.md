@@ -5,14 +5,10 @@ Purchase the Circuit Board Here: http://captainbobsim.com/product/gns-530-circui
 Get a Kit Here: http://captainbobsim.com/product/gns-530-kit/
 Get a fully assembled unit here: http://captainbobsim.com/product/gns-530-assembled/
 
-
-
 Welcome to the Simulator of your dreams!
 
 To navigate all of the files on your journey towards homecockpitness,
 Source Files is where you'll find all of the raw files if you want to make any customizations for yourself. I provided the circuit board outline as a dxf if anyone wants to cut their own perfboard instead of getting a PCB. I'd highly recommend a PCB however as there are approximately 130 traces.
-
-
 
 Bill 'o Materials:
 
