@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="01dd4d1e-0772-44ca-b9a7-1f4c85dc4be1">
+      <active>true</active>
+      <description>##### SWITCH PANEL UPDATED 2024-08-28</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_OFF)" presetId="7f359c38-133e-405f-93a0-0df063b93dbc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1022578-63bf-4df4-ac45-36b03f8c608e">
+      <active>true</active>
+      <description>OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_OFF)" presetId="7f359c38-133e-405f-93a0-0df063b93dbc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59807390-0909-4ca1-a7df-59733153e300">
+      <active>true</active>
+      <description>RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_RIGHT)" presetId="6a93954b-67e7-4d2d-9e88-5ad98819d93d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="89474efa-ee80-4b6d-8f31-0c9cd1cb9990">
+      <active>true</active>
+      <description>LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_LEFT)" presetId="f10342df-b8d4-4a36-9782-5efe43dde583" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b154980c-00f9-4164-b429-ddbd076c6159">
+      <active>true</active>
+      <description>BOTH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Both" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x0892" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="3" />
+          </onPress>
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef7da5a0-330f-4a92-ab69-d9773aefbbeb">
+      <active>true</active>
+      <description>START</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Both" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MAGNETO_START)" presetId="89b50022-a05b-490a-9442-f412b502757e" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14ca7509-96ec-4600-b6f8-3a4072643427">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:GENERAL ENG MASTER ALTERNATOR:1, Bool) 0 == if{ 1 (&gt;K:TOGGLE_ALTERNATOR1) }" presetId="6bbd0554-e462-4757-9b2e-02aadf88b369" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:GENERAL ENG MASTER ALTERNATOR:1, Bool) 1 == if{ 1 (&gt;K:TOGGLE_ALTERNATOR1) }" presetId="7e3146df-8a59-46ac-8820-1b237992a175" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29a76d35-c1b9-464d-b762-26e95bcad400">
+      <active>true</active>
+      <description>BATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="BATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MASTER BATTERY:1, Bool) 0 == if{ 1 (&gt;K:TOGGLE_MASTER_BATTERY) }" presetId="1cd8a184-3533-4f10-9547-66f786350453" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MASTER BATTERY:1, Bool) 1 == if{ 1 (&gt;K:TOGGLE_MASTER_BATTERY) }" presetId="8bec73e0-1b2f-4cdf-b5a7-38705efb0fb8" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5dc4580-14a6-400d-add5-1d197f631d4e">
+      <active>true</active>
+      <description>FUEL PUMP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 s0 (A:GENERAL ENG FUEL PUMP SWITCH EX1:1, Enum) != if{ l0 (&gt;K:ELECT_FUEL_PUMP1_SET)" presetId="0" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 s0 (A:GENERAL ENG FUEL PUMP SWITCH EX1:1, Enum) != if{ l0 (&gt;K:ELECT_FUEL_PUMP1_SET)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="767526aa-424b-4dfa-82fe-6a83b11c6b16">
+      <active>true</active>
+      <description>BCN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Beacon" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:BEACON_LIGHTS_SET)" presetId="876cc2ca-f2f3-4976-b127-2de104ad6ff8" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:BEACON_LIGHTS_SET)" presetId="d7e202e2-11c8-4793-87ac-33b107e10c4c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c537654a-8984-4140-a4df-8be3f1e5fb17">
+      <active>true</active>
+      <description>LAND</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Land" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_ON)" presetId="35e4eeec-24be-415e-84f2-adc360882d7f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:LANDING_LIGHTS_OFF)" presetId="3988a3a1-613e-4128-8af8-fd72c1a441ca" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbc69ffe-3e68-49ca-9cc7-20b00d583134">
+      <active>true</active>
+      <description>TAXI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Taxi" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:TAXI_LIGHTS_SET)" presetId="de6a10e9-de1b-41ca-90bc-77b5faf9f660" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:TAXI_LIGHTS_SET)" presetId="d4c024a6-e293-441d-84f8-e26c3ec13f7f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="222e95c2-31a9-4c75-9e19-bb4d70f3c723">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Nav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:NAV_LIGHTS_SET)" presetId="4d3c4792-81b2-4170-a177-c63452540194" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:NAV_LIGHTS_SET)" presetId="1b199647-edfa-40f1-b2ca-8b004598c403" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d02e50f8-d703-436e-905a-2ba99071f4e4">
+      <active>true</active>
+      <description>STROBE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Strobe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:STROBES_ON)" presetId="4e4e5190-4ce5-4bb4-83e1-4f01857b4102" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:STROBES_OFF)" presetId="1b89a2d8-6ffc-41bc-abd3-9bcff681e8a2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f55c9b6-26f9-48a8-9f64-58312953f497">
+      <active>true</active>
+      <description>PITOT HEAT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Pitot" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_ON)" presetId="ce094f1c-281d-4cec-bdec-a2487fa9d1d0" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:PITOT_HEAT_OFF)" presetId="441ec40a-3c27-42f2-8834-8d2a1e940dc1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c0ac667-05c6-4dd6-b0fc-43f92b5edfe3">
+      <active>true</active>
+      <description>AV 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Bus 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:24, Bool) ! if{ 24 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:24, Bool) 1 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:4, Bool) != if{ 4 1 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="cb46e874-c2d4-40b4-ac09-2b617628252b" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:24, Bool) if{ 24 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:24, Bool) 1 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:4, Bool) != if{ 4 1 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="6f9f4b50-e1fd-4749-ae27-b46726523b7c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a87d58ed-e554-4cf2-90d2-efde40ccbbe6">
+      <active>true</active>
+      <description>AV 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="Switch Panel/ SN-658-ba3" name="Bus 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:25, Bool) ! if{ 25 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:25, Bool) 2 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:5, Bool) != if{ 5 2 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="eb66a200-08fd-40de-af19-479337a040b6" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:25, Bool) if{ 25 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } &#xA;(A:CIRCUIT SWITCH ON:25, Bool) 2 (&gt;A:BUS LOOKUP INDEX, Number) (A:BUS CONNECTION ON:5, Bool) != if{ 5 2 (&gt;K:2:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE) }" presetId="dfc933a3-926a-4b30-a3ee-8a9bfd370c33" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

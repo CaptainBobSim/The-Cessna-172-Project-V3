@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MobiFlight Mega</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="Displays" ModelType="0" DinPin="13" ClsPin="12" ClkPin="11" Brightness="15" NumModules="4" />
+  <Encoder Name="COM Rough" PinLeft="14" PinRight="15" EncoderType="2" />
+  <Encoder Name="COM Fine" PinLeft="18" PinRight="17" EncoderType="2" />
+  <Button Name="COM Press" Pin="16" />
+  <Button Name="COM SWAP" Pin="22" />
+  <Button Name="Nav Vol Press" Pin="24" />
+  <Button Name="NAV SWAP" Pin="30" />
+  <Encoder Name="Nav Vol" PinLeft="26" PinRight="28" EncoderType="0" />
+  <Button Name="Vol SW" Pin="23" />
+  <Button Name="NAV Press" Pin="27" />
+  <Encoder Name="NAV Rough" PinLeft="33" PinRight="25" EncoderType="2" />
+  <Encoder Name="NAV Fine" PinLeft="31" PinRight="29" EncoderType="2" />
+</Config>

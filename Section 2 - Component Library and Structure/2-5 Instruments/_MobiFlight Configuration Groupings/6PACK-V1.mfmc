@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>6PACK-V1</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="L FUEL" Pin="2" />
+  <Output Name="LOW" Pin="3" />
+  <Output Name="FUEL" Pin="4" />
+  <Output Name="FUEL R" Pin="5" />
+  <Output Name="---" Pin="6" />
+  <Output Name="--" Pin="7" />
+  <Output Name="-" Pin="8" />
+  <Output Name="OIL" Pin="9" />
+  <Output Name="PRESS" Pin="10" />
+  <Output Name="LVAC" Pin="11" />
+  <Output Name="VAC" Pin="12" />
+  <Output Name="VACR" Pin="13" />
+  <Encoder Name="HDG Adjust" PinLeft="52" PinRight="53" EncoderType="3" />
+  <Button Name="HDG Adjust Push" Pin="54" />
+  <Encoder Name="HDG AP Adjust" PinLeft="60" PinRight="61" EncoderType="3" />
+  <Button Name="HDG AP Push" Pin="62" />
+  <Stepper Name="HDG Wheel" Pin1="47" Pin2="48" Pin3="49" Pin4="50" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="HDG AP Bug" Pin1="55" Pin2="56" Pin3="57" Pin4="58" BtnPin="0" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="Airspeed Stepper" Pin1="16" Pin2="18" Pin3="17" Pin4="19" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+  <Stepper Name="Turn Coord_Plane" Pin1="38" Pin2="40" Pin3="39" Pin4="41" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="Turn Coord Ball" Pin1="42" Pin2="44" Pin3="43" Pin4="45" BtnPin="0" Mode="0" Backlash="0" Deactivate="false" Profile="0" />
+  <Stepper Name="VSI Motor" Pin1="65" Pin2="67" Pin3="66" Pin4="68" BtnPin="0" Mode="1" Backlash="0" Deactivate="false" Profile="2" />
+</Config>
