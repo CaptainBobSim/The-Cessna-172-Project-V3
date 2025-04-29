@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>ADF_KR-87_IDC_30</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="ANT_LED" Pin="44" />
+  <Output Name="ADF_LED" Pin="45" />
+  <Output Name="BFO_LED" Pin="46" />
+  <Output Name="FRQ_LED" Pin="47" />
+  <Output Name="FLT_LED" Pin="48" />
+  <Output Name="ET_LED" Pin="49" />
+  <Button Name="ADF_P" Pin="50" />
+  <Button Name="BFO_P" Pin="51" />
+  <Button Name="FRQ_P" Pin="52" />
+  <Button Name="FLT_P" Pin="53" />
+  <Button Name="SET_P" Pin="34" />
+  <Button Name="VOLP" Pin="35" />
+  <Button Name="PUSH" Pin="42" />
+  <Encoder Name="VOL" PinLeft="36" PinRight="37" EncoderType="0" />
+  <Encoder Name="FINE" PinLeft="38" PinRight="39" EncoderType="0" />
+  <Encoder Name="ROUGH" PinLeft="40" PinRight="41" EncoderType="0" />
+  <LedModule Name="Display Module" ModelType="0" DinPin="10" ClsPin="11" ClkPin="12" Brightness="15" NumModules="1" />
+</Config>

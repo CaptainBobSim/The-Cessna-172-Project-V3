@@ -34,7 +34,7 @@ DC Shunt
 HDMI Cable 2m
 12V Power Cable
 
-Pinout:
+Pinout for Onboard Arduino:
 
 | Pin | Function           |                       |              |
 | --- | ------------------ | --------------------- | ------------ |
@@ -78,6 +78,52 @@ Pinout:
 | 38  | ___(BLANK)___      |                       | Empty        |
 | 39  | PHOTORESISTOR      | Analog pin 14         | Analog Input |
 | 40  | ANALOG_EXTRA       | Analog pin 15         | Analog Input |
+
+
+Pinout for EXTRA PINS Pin Header.
+| Pin | Function             | Arduino Pin  |
+|-----|----------------------|--------------|
+|   1 | GND                  |              |
+|   2 | 5V                   |              |
+|   3 | Digital pin 2 (PWM)  |    Button    |
+|   4 | Digital pin 3 (PWM)  |     Empty    |
+|   5 | Digital pin 4 (PWM)  |    Encoder   |
+|   6 | Digital pin 5 (PWM)  |    Encoder   |
+|   7 | Digital pin 14 (TX3) |    Button    |
+|   8 | Digital pin 15 (RX3) |    Button    |
+|   9 | Digital pin 16 (TX2) |    Encoder   |
+|  10 | Digital pin 17 (RX2) |    Encoder   |
+|  11 | Digital pin 18 (TX1) |    Button    |
+|  12 | Digital pin 19 (RX1) |    Encoder   |
+|  13 | Digital pin 20 (SDA) |    Encoder   |
+|  14 | Digital pin 21 (SCL) |    Encoder   |
+|  15 | Digital pin 22       |    Encoder   |
+|  16 | Analog pin 0         |    Button    |
+|  17 | Analog pin 1         |    Button    |
+|  18 | Analog pin 2         |    Button    |
+|  19 | Analog pin 3         |    Button    |
+|  20 | Analog pin 4         |    Button    |
+|  21 | Digital pin 23       |    Button    |
+|  22 | Digital pin 24       |    Button    |
+|  23 | Digital pin 6 (PWM)  |    Encoder   |
+|  24 | Digital pin 7 (PWM)  |    Encoder   |
+|  25 | Digital pin 8 (PWM)  |    Encoder   |
+|  26 | Digital pin 9 (PWM)  |    Encoder   |
+|  27 | Digital pin 25       |    Button    |
+|  28 | Digital pin 26       |    Button    |
+|  29 | Digital pin 27       |    Button    |
+|  30 | Digital pin 28       |    Button    |
+|  31 | Digital pin 29       |    Button    |
+|  32 | Digital pin 30       |    Button    |
+|  33 | Digital pin 31       |    Button    |
+|  34 | Digital pin 32       |     Empty    |
+|  35 |                      |     Empty    |
+|  36 |                      |     Empty    |
+|  37 |                      |     Empty    |
+|  38 |                      |     Empty    |
+|  39 | Analog pin 8         | Analog Input |
+|  40 | Analog pin 9         | Analog Input |
+
 
 YOU MAY NOT SELL THESE WITHOUT PERMISSION
 **[Copyright _ Non Commerical_ Not for Resale](https://creativecommons.org/licenses/by-nc/4.0/)**
