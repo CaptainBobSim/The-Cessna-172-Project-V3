@@ -4,18 +4,18 @@
   <ModuleName>KMA28_40A</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <Output Name="LED_O" Pin="2" />
-  <Output Name="LED_M" Pin="3" />
-  <Output Name="LED_I" Pin="4" />
-  <Encoder Name="VOL" PinLeft="5" PinRight="6" EncoderType="0" />
-  <Button Name="VOL_PU" Pin="7" />
-  <Button Name="HI_SW" Pin="8" />
-  <Button Name="TM_SW" Pin="9" />
+  <Output Name="LED_M" Pin="68" />
+  <Output Name="LED_I" Pin="5" />
+  <Encoder Name="VOL" PinLeft="4" PinRight="13" EncoderType="0" />
+  <Button Name="VOL_PU" Pin="40" />
+  <Button Name="HI_SW" Pin="14" />
+  <Button Name="TM_SW" Pin="15" />
   <Button Name="ISO_SW" Pin="10" />
   <Button Name="CREW_SW" Pin="11" />
-  <Output Name="COM1_L" Pin="12" />
-  <Button Name="COM1_P" Pin="13" />
-  <Output Name="COM2_L" Pin="14" />
-  <Button Name="COM2_P" Pin="15" />
+  <Output Name="COM1_L" Pin="42" />
+  <Button Name="COM1_P" Pin="66" />
+  <Output Name="COM2_L" Pin="63" />
+  <Button Name="COM2_P" Pin="54" />
   <Output Name="NAV1_L" Pin="16" />
   <Button Name="NAV1_P" Pin="17" />
   <Output Name="NAV2_L" Pin="18" />

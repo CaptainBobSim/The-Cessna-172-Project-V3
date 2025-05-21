@@ -10,7 +10,7 @@
         <modifiers>
           <transformation active="True" expression="'hi'" />
         </modifiers>
-        <display type="Display Module" serial="test file/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions />
         <configrefs />
       </settings>
@@ -24,7 +24,7 @@
         <modifiers>
           <transformation active="True" expression="'hi'" />
         </modifiers>
-        <display type="Display Module" serial="test file/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions />
         <configrefs />
       </settings>
@@ -38,7 +38,7 @@
         <modifiers>
           <transformation active="True" expression="'hi'" />
         </modifiers>
-        <display type="Display Module" serial="test file/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions />
         <configrefs />
       </settings>
@@ -52,7 +52,7 @@
         <modifiers>
           <transformation active="True" expression="1" />
         </modifiers>
-        <display type="Output" serial="test file/ SN-5FC-1CF" trigger="normal" pin="DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -70,7 +70,7 @@
     <config guid="d3d66c27-e521-4db5-a032-a203b76eae0d">
       <active>true</active>
       <description>OFF</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="test file/ SN-5FC-1CF" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_DME)" presetId="2978f4fc-bd4c-4d6b-a887-6653f494ed8e" />
         </button>

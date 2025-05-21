@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>MobiFlight Mega</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
-  <Button Name="Button" Pin="2" />
-  <Button Name="Button 1" Pin="3" />
-  <Button Name="Button 2" Pin="4" />
-  <Button Name="Button 3" Pin="5" />
-  <Button Name="Button 4" Pin="6" />
-  <Button Name="Button 5" Pin="7" />
-  <Button Name="Button 6" Pin="8" />
+  <Button Name="Button2" Pin="2" />
+  <Button Name="Button3" Pin="3" />
+  <Button Name="Button4" Pin="4" />
+  <Button Name="Button5" Pin="5" />
+  <Button Name="Button6" Pin="6" />
+  <Button Name="Button7" Pin="7" />
+  <Button Name="Button8" Pin="8" />
   <Button Name="Button 7" Pin="9" />
   <Button Name="Button 8" Pin="10" />
   <Button Name="Button 9" Pin="11" />
