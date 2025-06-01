@@ -4,13 +4,14 @@
     <config guid="5c9ade4a-4526-48b8-a310-b4d97f44163f">
       <active>true</active>
       <description>Heading Card Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:HEADING INDICATOR,Degrees)" UUID="432ee95b-4bff-42b6-9ce2-58ce4e6a6344" />
+        <test type="Float" value="1800" />
         <modifiers>
-          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="-" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" pin="" pinBrightness="255" />
+        <display type="Stepper" serial="PrototypeArduino/ SN-292-851" trigger="normal" stepperAddress="HDG Wheel" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -18,10 +19,11 @@
     <config guid="a71da16d-ab3d-4e81-9649-c148e3fbd9b1">
       <active>false</active>
       <description>Heading Card Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="-" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" pin="" pinBrightness="255" />
@@ -32,10 +34,11 @@
     <config guid="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412">
       <active>false</active>
       <description>Heading Card Raw TEST</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="-" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" pin="" pinBrightness="255" />
@@ -46,35 +49,37 @@
     <config guid="24cb5269-ee83-4f08-942a-dad90b87d67c">
       <active>true</active>
       <description>Heading Card Accounting for Zero Position</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="(#+(360-0))%360" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="(#+(360-0))%360" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG Wheel" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="187" />
         <preconditions />
         <configrefs>
-          <configref active="True" ref="5c9ade4a-4526-48b8-a310-b4d97f44163f" placeholder="#" />
-          <configref active="True" ref="a71da16d-ab3d-4e81-9649-c148e3fbd9b1" placeholder="#" />
-          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" />
+          <configref active="True" ref="5c9ade4a-4526-48b8-a310-b4d97f44163f" placeholder="#" testvalue="1" />
+          <configref active="True" ref="a71da16d-ab3d-4e81-9649-c148e3fbd9b1" placeholder="#" testvalue="1" />
+          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" testvalue="1" />
         </configrefs>
       </settings>
     </config>
     <config guid="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc">
       <active>true</active>
       <description>Heading Bug Raw FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT HEADING LOCK DIR,Degrees)" UUID="e47210e8-7db4-4980-9f57-b3682fb3742d" />
+        <test type="Float" value="180" />
         <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="False" expression="$" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="360" />
             <value x="360" y="0" />
           </interpolation>
         </modifiers>
-        <display type="-" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" trigger="normal" pin="" pinBrightness="255" />
+        <display type="Stepper" serial="PrototypeArduino/ SN-292-851" trigger="normal" stepperAddress="HDG AP Bug" stepperInputRev="1000" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs />
       </settings>
@@ -82,10 +87,11 @@
     <config guid="8cefc78d-ac7a-46f0-b7ec-fcdee599884e">
       <active>false</active>
       <description>Heading Bug Raw XPLANE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="XplaneDataRef" path="sim/cockpit/autopilot/heading_mag" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="False" expression="90" substrStart="0" substrEnd="7" />
+          <transformation active="False" expression="90" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="360" />
@@ -100,20 +106,21 @@
     <config guid="7102e75f-de45-4a21-8705-6af4d4db60bf">
       <active>true</active>
       <description>Heading Bug Accounting for Zero and Heading Card</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <test type="Float" value="1" />
         <modifiers>
-          <transformation active="True" expression="((!+#)+(360-5))%360" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="((!+#)+(360-5))%360" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Stepper" serial="6 Pack LEFT/ SN-d9e-0a3" trigger="normal" stepperAddress="HDG AP Bug" stepperInputRev="360" stepperOutputRev="5100" stepperTestValue="180" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
         <preconditions />
         <configrefs>
-          <configref active="True" ref="5c9ade4a-4526-48b8-a310-b4d97f44163f" placeholder="#" />
-          <configref active="True" ref="a71da16d-ab3d-4e81-9649-c148e3fbd9b1" placeholder="#" />
-          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" />
-          <configref active="True" ref="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc" placeholder="!" />
-          <configref active="True" ref="8cefc78d-ac7a-46f0-b7ec-fcdee599884e" placeholder="!" />
+          <configref active="True" ref="5c9ade4a-4526-48b8-a310-b4d97f44163f" placeholder="#" testvalue="1" />
+          <configref active="True" ref="a71da16d-ab3d-4e81-9649-c148e3fbd9b1" placeholder="#" testvalue="1" />
+          <configref active="True" ref="1660e7f8-19c1-4081-b6b6-ce8b8c3b9412" placeholder="#" testvalue="1" />
+          <configref active="True" ref="08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc" placeholder="!" testvalue="1" />
+          <configref active="True" ref="8cefc78d-ac7a-46f0-b7ec-fcdee599884e" placeholder="!" testvalue="1" />
         </configrefs>
       </settings>
     </config>
@@ -122,7 +129,7 @@
     <config guid="f63b66ca-1aec-42d8-bcf5-811d02ba40b7">
       <active>false</active>
       <description>HDG Drift Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/instruments/DG_sync_down" expression="" />
           <onLeftFast />
@@ -138,7 +145,7 @@
     <config guid="1eaf9404-17d2-4208-85a4-98fef275e03f">
       <active>true</active>
       <description>HDG Drift Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:GYRO_DRIFT_DEC)" presetId="170d189d-d9cd-4f8e-938e-a673668d60c8" />
           <onLeftFast />
@@ -154,7 +161,7 @@
     <config guid="8534157f-111e-493a-b190-ef13ca466641">
       <active>false</active>
       <description>HDG AP Bug Adjust XP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/autopilot/heading_down" expression="" />
           <onLeftFast />
@@ -168,7 +175,7 @@
     <config guid="eb7a2950-dc81-4224-9902-3b4a41138ccc">
       <active>true</active>
       <description>HDG AP Bug Adjust FS2020</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Adjust" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:HEADING_BUG_DEC)" presetId="cab52499-c789-4249-bc21-31f920d4e604" />
           <onLeftFast />
@@ -182,7 +189,7 @@
     <config guid="4a0604ee-9be4-441c-aac5-7f47927734ec">
       <active>true</active>
       <description>HDG Adjust DG Push Status</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG Adjust Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="1" />
           <onRelease type="VariableInputAction" varType="number" varName="AdjustStatusHDG" varExpression="0" />
@@ -194,10 +201,9 @@
     <config guid="3af015e2-f623-47dd-bed7-16b40fdc9955">
       <active>false</active>
       <description>HDG Bug Push - Zero</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.7, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.2.0, Culture=neutral, PublicKeyToken=null" serial="First Arduino/ SN-cÿÿÿÿÿÿÿ" name="HDG AP Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit/autopilot/heading" expression="0" />
-          <onRelease />
         </button>
         <preconditions />
         <configrefs />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>HDG</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Encoder Name="HDG Adjust" PinLeft="4" PinRight="14" EncoderType="3" />
+  <Button Name="HDG Adjust Push" Pin="2" />
+  <Encoder Name="HDG AP Adjust" PinLeft="5" PinRight="15" EncoderType="3" />
+  <Button Name="HDG AP Push" Pin="3" />
+  <Stepper Name="HDG Wheel" Pin1="18" Pin2="20" Pin3="22" Pin4="55" BtnPin="13" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+  <Stepper Name="HDG AP Bug" Pin1="56" Pin2="54" Pin3="21" Pin4="19" BtnPin="8" Mode="0" Backlash="3" Deactivate="false" Profile="0" />
+</Config>

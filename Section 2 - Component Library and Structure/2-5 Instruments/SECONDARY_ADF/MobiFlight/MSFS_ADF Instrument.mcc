@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="dca3fa17-af95-4bd6-9480-87bcaf013e14">
+      <active>true</active>
+      <description>Gear Ring</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF CARD,Degrees)" UUID="39dd04b5-fb23-4684-85d7-39e224d0a463" />
+        <test type="Float" value="360" />
+        <modifiers />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-9EF-80F" trigger="normal" stepperAddress="Needle" stepperInputRev="360" stepperOutputRev="5355" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ab8a5366-d148-4e64-a668-4b1a45ea247a">
+      <active>true</active>
+      <description>Pointy Arrow</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV RELATIVE BEARING TO STATION:1,Degrees)" UUID="07c8780a-659d-4a48-9732-d9c7c5ceaf3e" />
+        <test type="Float" value="90" />
+        <modifiers />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-9EF-80F" trigger="normal" stepperAddress="Gear_Ring" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="2a3efbb0-b2b3-4a7b-9148-1b41fa3a7f8b">
+      <active>true</active>
+      <description>Move the Card</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9EF-80F" name="ADF_Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ADF_CARD_DEC)" presetId="7c7f3203-86c4-49de-8930-376e03c3e2bd" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ADF_CARD_INC)" presetId="4e6b16de-089f-4f25-9c37-15e3120ea423" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
