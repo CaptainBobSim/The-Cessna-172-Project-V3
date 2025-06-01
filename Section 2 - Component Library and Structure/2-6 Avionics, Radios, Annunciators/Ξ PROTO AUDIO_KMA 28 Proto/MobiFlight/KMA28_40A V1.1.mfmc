@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ModuleType>MobiFlight Mega</ModuleType>
+<ModuleName>test file</ModuleName>
+<PowerSavingTime>600</PowerSavingTime>
+<Output Name="LED_O" Pin="2" />
+<Output Name="LED_M" Pin="3" />
+<Output Name="LED_I" Pin="4" />
+<Button Name="VOL_PU" Pin="15" />
+<Button Name="HI_SW" Pin="16" />
+<Button Name="TM_SW" Pin="17" />
+<Button Name="ISO_SW" Pin="18" />
+<Button Name="CREW_SW" Pin="19" />
+<Output Name="COM1_L" Pin="20" />
+<Button Name="COM1_P" Pin="21" />
+<Output Name="COM2_L" Pin="22" />
+<Button Name="COM2_P" Pin="54" />
+<Output Name="NAV1_L" Pin="55" />
+<Button Name="NAV1_P" Pin="56" />
+<Output Name="NAV2_L" Pin="57" />
+<Button Name="NAV2_P" Pin="58" />
+<Output Name="MKR_L" Pin="23" />
+<Button Name="MKR_P" Pin="24" />
+<Output Name="ICS_L" Pin="6" />
+<Button Name="ICS_P" Pin="7" />
+<Output Name="ADF_L" Pin="8" />
+<Button Name="ADF_P" Pin="9" />
+<Output Name="AUX_L" Pin="25" />
+<Button Name="AUX_P" Pin="26" />
+<Output Name="DME_L" Pin="27" />
+<Button Name="DME_P" Pin="28" />
+<Output Name="SPR_L" Pin="29" />
+<Button Name="SPR_P" Pin="30" />
+<Button Name="COM3" Pin="31" />
+<Button Name="COM2" Pin="32" />
+<Button Name="COM1" Pin="33" />
+<Button Name="COM1/2" Pin="59" />
+<Button Name="COM2/1" Pin="60" />
+<Button Name="TEL" Pin="61" />
+<Output Name="Transmit" Pin="62" />
+<Output Name="Swap" Pin="63" />
+<Button Name="" Pin="41" />
+<Button Name="" Pin="42" />
+<Button Name="" Pin="43" />
+<Button Name="" Pin="44" />
+<Button Name="" Pin="45" />
+<Button Name="" Pin="46" />
+<Button Name="" Pin="47" />
+<Button Name="" Pin="48" />
+<Button Name="" Pin="49" />
+<Button Name="" Pin="50" />
+<Button Name="" Pin="51" />
+<Button Name="" Pin="52" />
+<Button Name="" Pin="53" />
+<Button Name="" Pin="54" />
+<Button Name="" Pin="55" />
+<Button Name="" Pin="56" />
+<Button Name="" Pin="57" />
+<Button Name="" Pin="58" />
+<Button Name="" Pin="59" />
+<Button Name="" Pin="60" />
+<Button Name="" Pin="61" />
+<Button Name="" Pin="62" />
+<Button Name="" Pin="63" />
+<Button Name="" Pin="64" />
+<Button Name="" Pin="65" />
+<Button Name="" Pin="66" />
+<Button Name="" Pin="67" />
+<Button Name="" Pin="68" />
+<Button Name="" Pin="69" />
+<Encoder Name="VOL" PinLeft="5" PinRight="14" EncoderType="0" />
+</Config>

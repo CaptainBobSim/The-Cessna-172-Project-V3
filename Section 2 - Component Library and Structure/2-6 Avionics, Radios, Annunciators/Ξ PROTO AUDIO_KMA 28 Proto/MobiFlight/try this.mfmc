@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ModuleType>MobiFlight Mega</ModuleType>
+<ModuleName>test file</ModuleName>
+<PowerSavingTime>600</PowerSavingTime>
+<Output Name="LED_O" Pin="" />
+<Output Name="LED_M" Pin="" />
+<Output Name="LED_I" Pin="" />
+<Button Name="VOL_PU" Pin="" />
+<Button Name="HI_SW" Pin="" />
+<Button Name="TM_SW" Pin="" />
+<Button Name="ISO_SW" Pin="28" />
+<Button Name="CREW_SW" Pin="27" />
+<Output Name="COM1_L" Pin="" />
+<Button Name="COM1_P" Pin="25" />
+<Output Name="COM2_L" Pin="" />
+<Button Name="COM2_P" Pin="54" />
+<Output Name="NAV1_L" Pin="" />
+<Button Name="NAV1_P" Pin="56" />
+<Output Name="NAV2_L" Pin="" />
+<Button Name="NAV2_P" Pin="58" />
+<Output Name="MKR_L" Pin="" />
+<Button Name="MKR_P" Pin="25" />
+<Output Name="ICS_L" Pin="" />
+<Button Name="ICS_P" Pin="7" />
+<Output Name="ADF_L" Pin="" />
+<Button Name="ADF_P" Pin="29" />
+<Output Name="AUX_L" Pin="" />
+<Button Name="AUX_P" Pin="20" />
+<Output Name="DME_L" Pin="" />
+<Button Name="DME_P" Pin="18" />
+<Output Name="SPR_L" Pin="" />
+<Button Name="SPR_P" Pin="30" />
+<Button Name="COM3" Pin="32" />
+<Button Name="COM2" Pin="31" />
+<Button Name="COM1" Pin="59" />
+<Button Name="COM1/2" Pin="33" />
+<Button Name="COM2/1" Pin="61" />
+<Button Name="TEL" Pin="60" />
+<Output Name="Transmit" Pin="" />
+<Output Name="Swap" Pin="" />
+</Config>
