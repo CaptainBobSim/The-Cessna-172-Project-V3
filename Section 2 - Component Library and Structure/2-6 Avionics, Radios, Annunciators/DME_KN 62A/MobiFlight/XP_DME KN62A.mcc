@@ -23,7 +23,7 @@
           <transformation active="True" expression="''" />
           <transformation active="False" expression="Round($,1)" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="0" logic="and" />
         </preconditions>
@@ -39,7 +39,7 @@
         <modifiers>
           <transformation active="True" expression="0" />
         </modifiers>
-        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="0" logic="and" />
         </preconditions>
@@ -56,7 +56,7 @@
           <transformation active="False" expression="'hi'" />
           <transformation active="True" expression="Round($,1)*10" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="5,6,7" ledDecimalPoints="6" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="5,6,7" ledDecimalPoints="6" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
         </preconditions>
@@ -73,7 +73,7 @@
           <transformation active="False" expression="'hi'" />
           <transformation active="True" expression="Round($,0)" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="2,3,4" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="b41217f9-ae50-4f72-b4a4-876cebd0336f" operand="!=" value="1" logic="and" />
@@ -91,7 +91,7 @@
           <transformation active="False" expression="'hi'" />
           <transformation active="True" expression="Round($,0)" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="True" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="b41217f9-ae50-4f72-b4a4-876cebd0336f" operand="!=" value="1" logic="and" />
@@ -109,7 +109,7 @@
           <transformation active="False" expression="'hi'" />
           <transformation active="True" expression="Round($,1)" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
+        <display type="Display Module" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="b41217f9-ae50-4f72-b4a4-876cebd0336f" operand="=" value="1" logic="and" />
@@ -126,7 +126,7 @@
         <modifiers>
           <transformation active="True" expression="1" />
         </modifiers>
-        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED1" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="DME_LED1" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
         </preconditions>
@@ -142,7 +142,7 @@
         <modifiers>
           <comparison active="True" value="0" operand="=" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED2" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="DME_LED2" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="!=" value="0" logic="and" />
         </preconditions>
@@ -158,7 +158,7 @@
         <modifiers>
           <comparison active="True" value="1" operand="!=" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED3|DME_LED5" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="DME_LED3|DME_LED5" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
         </preconditions>
@@ -174,7 +174,7 @@
         <modifiers>
           <comparison active="True" value="1" operand="=" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="DME_LED4" pinBrightness="255" />
+        <display type="Output" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="DME_LED4" pinBrightness="255" />
         <preconditions>
           <precondition type="config" active="true" ref="b41217f9-ae50-4f72-b4a4-876cebd0336f" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="374011b8-0102-412c-8745-3e2787686d7c" operand="=" value="1" logic="and" />
@@ -189,7 +189,7 @@
         <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/DME_mode" />
         <test type="Float" value="1" />
         <modifiers />
-        <display type="-" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" pin="" pinBrightness="255" />
+        <display type="-" serial="DME_KN62A_B/ SN-C3G-D80" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -199,7 +199,7 @@
     <config guid="84d7c216-5b2c-4f24-84f2-9b751de29793">
       <active>true</active>
       <description>RMT - FREQ</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_MODE1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME_MODE1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/DME_mode" expression="0" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/DME_mode" expression="1" />
@@ -211,7 +211,7 @@
     <config guid="cd8b10e0-a35f-4c4d-a06d-182f20f976b2">
       <active>true</active>
       <description>FREQ - G/ST</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_MODE2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME_MODE2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/DME_mode" expression="2" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/DME_mode" expression="1" />
@@ -223,7 +223,7 @@
     <config guid="2e51a2fe-4095-42ce-884f-75acc0f6de32">
       <active>true</active>
       <description>Rough</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME-Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME-Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_dme_coarse_down" expression="$-10" />
           <onLeftFast />
@@ -237,7 +237,7 @@
     <config guid="d1f94652-8db0-40a1-a9b9-22f614e1c564">
       <active>false</active>
       <description>Fine</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME-Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME-Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/dme_left_frequency_hz" expression="$-100" />
           <onLeftFast />
@@ -251,7 +251,7 @@
     <config guid="e6d297e7-a16a-4269-a9d2-5be85d9740c7">
       <active>true</active>
       <description>PWR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/dme_power" expression="0" />
           <onRelease type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/dme_power" expression="1" />
@@ -263,7 +263,7 @@
     <config guid="ecca7627-618a-408e-b680-6975f232cc3e">
       <active>true</active>
       <description>PWR Var</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME_PWR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="VariableInputAction" varType="number" varName="DME_PWR" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="DME_PWR" varExpression="1" />
@@ -275,7 +275,7 @@
     <config guid="02ef8f48-3b94-4db7-8527-9e1fb5db0aca">
       <active>true</active>
       <description>Thingie</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-5FC-1CF" name="DME_Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="DME_KN62A_B/ SN-C3G-D80" name="DME_Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button />
         <preconditions />
         <configrefs />
