@@ -5,12 +5,12 @@
       <active>true</active>
       <description>NM</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="MyVar" varExpression="$" />
+        <source type="SimConnect" VarType="CODE" Value="(A:HSI DISTANCE,Nautical miles)" UUID="bb1a814f-2587-41c6-9691-4b17631c43b4" />
         <test type="String" value="123456789" />
         <modifiers>
           <transformation active="True" expression="'hi'" />
         </modifiers>
-        <display type="Display Module" serial="DME_KN62A_B/ SN-5FC-1CF" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
+        <display type="Display Module" serial="-" trigger="normal" ledAddress="DME" ledConnector="1" ledModuleSize="8" ledPadding="False" ledReverseDigits="True" ledPaddingChar=" " ledDigits="0,1,2,3,4,5,6,7" />
         <preconditions />
         <configrefs />
       </settings>
