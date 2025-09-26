@@ -1,11 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
+    <config guid="855aecb5-7354-480a-861c-735ded9f507a">
+      <active>true</active>
+      <description>TEST ALL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="LED_O|LED_M|LED_I|COM1_L|COM2_L|NAV1_L|NAV2_L|MKR_L|ICS_L|ADF_L|AUX_L|DME_L|SPR_L|Transmit|Swap" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
     <config guid="26021c29-79ee-4d81-90b6-d43541fb6b85">
       <active>true</active>
       <description>LED TEST</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="LED_O" pinBrightness="255" />
@@ -29,7 +41,7 @@
       <active>true</active>
       <description>LED_M</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="LED_M" pinBrightness="255" />
@@ -53,7 +65,7 @@
       <active>true</active>
       <description>COM1</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="COM1_L" pinBrightness="255" />
@@ -65,7 +77,7 @@
       <active>true</active>
       <description>COM2</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="COM2_L" pinBrightness="255" />
@@ -77,7 +89,7 @@
       <active>true</active>
       <description>NAV1</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="NAV1_L" pinBrightness="255" />
@@ -89,7 +101,7 @@
       <active>true</active>
       <description>NAV2</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="NAV2_L" pinBrightness="255" />
@@ -101,7 +113,7 @@
       <active>true</active>
       <description>MKR</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="MKR_L" pinBrightness="255" />
@@ -113,7 +125,7 @@
       <active>true</active>
       <description>ICS</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="ICS_L" pinBrightness="255" />
@@ -125,7 +137,7 @@
       <active>true</active>
       <description>ADF</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="ADF_L" pinBrightness="255" />
@@ -137,7 +149,7 @@
       <active>true</active>
       <description>AUX</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="AUX_L" pinBrightness="255" />
@@ -149,7 +161,7 @@
       <active>true</active>
       <description>DME</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="DME_L" pinBrightness="255" />
@@ -161,7 +173,7 @@
       <active>true</active>
       <description>SPR</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="SPR_L" pinBrightness="255" />
@@ -173,7 +185,7 @@
       <active>true</active>
       <description>TRANSMIT</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="Transmit" pinBrightness="255" />
@@ -185,7 +197,7 @@
       <active>true</active>
       <description>SWAP</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="Output" serial="test file/ SN-292-851" trigger="normal" pin="Swap" pinBrightness="255" />
