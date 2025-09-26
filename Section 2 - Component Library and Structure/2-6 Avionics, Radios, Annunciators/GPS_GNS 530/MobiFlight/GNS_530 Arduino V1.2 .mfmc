@@ -27,4 +27,5 @@
   <Encoder Name="Right Rough" PinLeft="42" PinRight="43" EncoderType="2" />
   <Encoder Name="COM" PinLeft="12" PinRight="44" EncoderType="0" />
   <AnalogInput Name="Photoresistor" Pin="68" Sensitivity="2" />
+  <Button Name="L_PRESS" Pin="33" />
 </Config>
