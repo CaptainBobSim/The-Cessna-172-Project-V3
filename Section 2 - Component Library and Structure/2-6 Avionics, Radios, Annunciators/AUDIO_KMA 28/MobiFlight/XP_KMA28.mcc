@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="d4c00197-81c0-4379-9e9f-bb0aa2e261cc">
+      <active>true</active>
+      <description>LED_O</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/misc/outer_marker_lit" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="LED_O" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6d04e5c-1cc0-4176-8998-f13642f1793e">
+      <active>true</active>
+      <description>LED_M</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/middle_marker_lit" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="LED_M" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5565b47b-8bdd-429b-9ba4-cd01391301f5">
+      <active>true</active>
+      <description>LED_I</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/indicators/inner_marker_lit" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="LED_I" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c181e775-f6a1-4d62-aec7-07996b5fe8f4">
+      <active>true</active>
+      <description>COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_selection_com1" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="COM1_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="39124809-2ec9-4add-b2e5-d9f6a573d534">
+      <active>true</active>
+      <description>COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_selection_com2" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="COM2_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7c7599e4-80d6-4a1f-a46f-aa802cd4f2b4">
+      <active>true</active>
+      <description>NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_selection_nav1" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="NAV1_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2952821-abaf-4a79-8bc7-74c9070e27a8">
+      <active>true</active>
+      <description>NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_selection_nav2" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="NAV2_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a36d0bb8-6b0a-4bce-bab6-d91ebae61e96">
+      <active>true</active>
+      <description>MKR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_marker_enabled" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="MKR_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="493f3946-9bc5-4406-b74e-2356a8f837c3">
+      <active>false</active>
+      <description>ICS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INTERCOM SYSTEM ACTIVE,Bool)" UUID="00ae62dd-a323-4b0a-9faa-5af7c9c0788c" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="ICS_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6db60099-ffde-40c7-9e8b-1ecb3d756ac7">
+      <active>true</active>
+      <description>ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_selection_adf1" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="ADF_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2b090a2e-c4ec-4b96-a2d6-5eb2a03ed990">
+      <active>false</active>
+      <description>AUX</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="AuxDummy" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="AUX_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f06c3a8-bbff-471a-9d41-efffb49e39eb">
+      <active>true</active>
+      <description>DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/audio_dme_enabled" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="DME_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7d1449c-121c-43a1-9261-02fdc7746765">
+      <active>false</active>
+      <description>SPR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:SPEAKER ACTIVE,Bool)" UUID="ebecd40d-8b9b-473e-965a-e7839482a133" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="SPR_L" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aaa8d3e5-fe37-43d0-a134-25c57fc85007">
+      <active>false</active>
+      <description>TRANSMIT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:PILOT TRANSMITTING,Bool)" UUID="52024d40-60a4-4444-b248-576abbb31c94" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="Transmit" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66978400-bb6a-4344-bc70-4b8f9546d8cc">
+      <active>false</active>
+      <description>SWAP</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="KMA28/ SN-397-88A" trigger="normal" pin="Swap" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="1d604cda-cab0-4d17-9d67-ff98980a5501">
+      <active>false</active>
+      <description>VOL Knob</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="VOL" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="DataRef" path="sim/operation/sound/master_volume_ratio" expression="$" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) &#xA;(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) &#xA;(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) &#xA;(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) &#xA;(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (&gt;K:AUDIO_PANEL_VOLUME_SET) " presetId="350ca165-8240-414c-b949-5e5e052ae7ea" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d81b3ac3-8530-4afb-b210-a9d46f493eeb">
+      <active>true</active>
+      <description>HI/LO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="HI_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/annunciator/marker_beacon_sens_hi" expression="$" />
+          <onRelease type="XplaneInputAction" inputType="Command" path="sim/annunciator/marker_beacon_sens_lo" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ca49d5b-4d19-485b-a52c-bc5dc3da7cd7">
+      <active>false</active>
+      <description>LO/TM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="TM_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:MARKER_BEACON_TEST_MUTE)" presetId="485d9976-13b1-4518-bca0-0a939c39c563" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;K:MARKER_BEACON_SENSITIVITY_LOW)" presetId="3cf5163a-2aae-4bda-afd0-2c805fc6b49f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59a7d2bb-1b5d-45c5-a2db-6dec9edb2c72">
+      <active>false</active>
+      <description>ISO/ALL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="ISO_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:INTERCOM_MODE_SET)" presetId="c9d56f6e-1aef-445e-bcdc-6b3215b6f981" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:INTERCOM_MODE_SET)" presetId="c9d56f6e-1aef-445e-bcdc-6b3215b6f981" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2d583205-cf3d-4a9e-a4ab-8db5bc4bf4c9">
+      <active>false</active>
+      <description>ALL/CREW</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="CREW_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:INTERCOM_MODE_SET)" presetId="c9d56f6e-1aef-445e-bcdc-6b3215b6f981" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:INTERCOM_MODE_SET)" presetId="c9d56f6e-1aef-445e-bcdc-6b3215b6f981" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e25b3618-2d18-415f-9d31-43bc0fd8c27c">
+      <active>true</active>
+      <description>Com1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM1_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/select_audio_com1" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a129dcaf-94a2-44ff-a384-736925f2c653">
+      <active>true</active>
+      <description>Com2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM2_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/monitor_audio_com2" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0529b439-5f5d-4de9-9bb9-f6138da39a3b">
+      <active>true</active>
+      <description>Nav1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="NAV1_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/select_audio_nav1" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78ed3dda-88e3-4bba-b509-0c33230162d9">
+      <active>true</active>
+      <description>Nav2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="NAV2_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/select_audio_nav2" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18a28a33-c1bb-4ade-b159-14e60201e5c8">
+      <active>true</active>
+      <description>MKR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="MKR_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/monitor_audio_mkr" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="222792d3-eaf9-4ded-be85-cb9daf221f3f">
+      <active>false</active>
+      <description>ICS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="ICS_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_ICS)" presetId="cf92da77-92a1-4181-ba33-ee30f5668978" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="17315a1b-250f-48db-93a5-b0982bbe7022">
+      <active>true</active>
+      <description>ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="ADF_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/monitor_audio_adf1" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04dd3f32-16ad-4336-b830-2ee0bf46a54c">
+      <active>true</active>
+      <description>AUX (Dummy)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="AUX_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="AuxDummy" varExpression="($+1)%2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06a11c10-80fa-4efb-8db4-0309fd541831">
+      <active>true</active>
+      <description>DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="DME_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/monitor_audio_dme" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b7952c20-6931-4020-9313-40b076c972ae">
+      <active>true</active>
+      <description>SPR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="SPR_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_SPEAKER)" presetId="3f02d528-b3a6-434a-8e1e-cc51dc247ef0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a97b202a-d4c3-44bb-88d6-213ddc35a7fc">
+      <active>true</active>
+      <description>COM3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:COPILOT_TRANSMITTER_SET)&#xA;2 (&gt;K:PILOT_TRANSMITTER_SET)" presetId="f7641dde-c79e-440f-888d-17061ea7b0a4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c8ab5df-7752-44f1-a220-073b873263ef">
+      <active>true</active>
+      <description>COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/transmit_audio_com2" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec5a8d3c-2f0c-416c-bbd5-d2c5eb576eec">
+      <active>true</active>
+      <description>COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/audio_panel/transmit_audio_com1" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1359e6db-d880-46ed-b1ea-d2aacfc042bb">
+      <active>false</active>
+      <description>COM1/2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM1/2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:PILOT_TRANSMITTER_SET)&#xA;1 (&gt;K:COPILOT_TRANSMITTER_SET)" presetId="f7641dde-c79e-440f-888d-17061ea7b0a4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9589e042-e60a-4e6b-849d-fc85c1e6bf23">
+      <active>false</active>
+      <description>COM2/1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="COM2/1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:PILOT_TRANSMITTER_SET)&#xA;0 (&gt;K:COPILOT_TRANSMITTER_SET)" presetId="f7641dde-c79e-440f-888d-17061ea7b0a4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e2ab172b-bb0a-4d10-b737-55c26cd72510">
+      <active>false</active>
+      <description>TEL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="TEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;K:PILOT_TRANSMITTER_SET)&#xA;5 (&gt;K:COPILOT_TRANSMITTER_SET)" presetId="7c26ad0e-9031-4109-a086-fdcf9b1c75bb" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="584be05b-c1c9-4200-bc4d-bb536b774be2">
+      <active>true</active>
+      <description>Keyboard Aux</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="KMA28/ SN-397-88A" name="AUX_P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="KeyInputAction" key="Multiply" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

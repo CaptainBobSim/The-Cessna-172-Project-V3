@@ -25,6 +25,7 @@ Prototype Issues:
 Publishing Tasks:
 - [ ] Put Partslist in ReadMe Initialize in the BOM (Private) then copy to the ReadMe and video description 
 - [ ] Add Wiring diagram PNG (Also embed in video)
+- [ ] Export video so you have a YouTube Link (Put in private)
 - [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
 - [ ] Mounting Template .DXF and maybe PDF
 - [ ] Attach .STEP and .f3d
