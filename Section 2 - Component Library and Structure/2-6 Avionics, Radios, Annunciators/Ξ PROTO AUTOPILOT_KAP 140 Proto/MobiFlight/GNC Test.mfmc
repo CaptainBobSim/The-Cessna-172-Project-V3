@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight GNC255 Mega</ModuleType>
+  <ModuleName>MGA</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <CustomDevice Name="OLE" CustomType="MOBIFLIGHT_GNC255" Pins="52|51|53|49|68" Config="">
+    <ConfiguredPins>
+      <string>52</string>
+      <string>51</string>
+      <string>53</string>
+      <string>49</string>
+      <string>68</string>
+    </ConfiguredPins>
+  </CustomDevice>
+</Config>
