@@ -154,7 +154,7 @@
       <description>GNS 530 RANGE DN</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-628-9AF" name="RNG_DN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g1000n1_range_down" expression="$" />
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_out" expression="$" />
         </button>
         <preconditions />
         <configrefs />
@@ -165,7 +165,7 @@
       <description>GNS 530 RANGE UP</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-628-9AF" name="RNG_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g1000n1_range_up" expression="$" />
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/GPS/g430n1_zoom_in" expression="$" />
         </button>
         <preconditions />
         <configrefs />
