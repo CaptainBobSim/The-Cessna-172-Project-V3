@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="8fd7df92-f466-40dc-b594-8ce3323183ab">
+      <active>true</active>
+      <description />
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="" serial="-" trigger="change" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="7b7424ea-2146-4909-936a-799618d5cdfe">
+      <active>true</active>
+      <description>GNS 530 COM Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="COM_SWAP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_COMSWAP_Push)" presetId="68675bb4-602b-4228-8866-1e0e24f46965" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb607f37-4f3c-4d10-8a23-40c2d5b8dcc4">
+      <active>true</active>
+      <description>GNS 530 NAV Swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="NAV_SWAP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_NAVSWAP_Push)" presetId="9f0c963a-4940-4876-a8af-7cb60a1b9f51" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9bc27cfb-8b4b-4be3-aabc-39d77754c645">
+      <active>true</active>
+      <description>GNS 530 CDI</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="CDI" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_CDI_Push)" presetId="74d557fa-7e41-4cd4-ac0a-07054836557a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5fabe912-9225-45cb-aad3-ced83f862992">
+      <active>true</active>
+      <description>GNS 530 OBS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="OBS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_OBS_Push)" presetId="3d7ad856-adcc-4fc4-9c0c-c8c669439116" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c1c1dae-81e9-4bc2-ad2e-e7b0f73d1f4c">
+      <active>true</active>
+      <description>GNS 530 MSG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_MSG_Push)" presetId="33f2e276-9327-49ee-87e5-fc6aac074656" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7368fa72-47a1-4905-8420-988f47c46926">
+      <active>true</active>
+      <description>GNS 530 FPL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="FPL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_FPL_Push)" presetId="e2d52825-f506-4df6-a08f-ededf6320314" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3bf6e721-e1c9-4a79-a148-3af97983bb2f">
+      <active>true</active>
+      <description>GNS 530 VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_VNAV_Push)" presetId="05fef90a-d70d-4b7a-8b2c-0dddce861212" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3471b7bf-8a9b-4041-a028-9a6c74968a13">
+      <active>true</active>
+      <description>GNS 530 PROC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="PROC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_PROC_Push)" presetId="86fe165a-ddb9-4657-862f-d2b0fb3a6816" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6998b5f0-67fd-449b-b08b-0743dd9abe94">
+      <active>true</active>
+      <description>GNS 530 ENT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="ENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_ENT_Push)" presetId="307f9eed-94f8-41d0-b169-83d00d9a4f2f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5de172d2-6b66-44bb-b0ee-d630e2e525c6">
+      <active>true</active>
+      <description>GNS 530 CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_CLR_Push)" presetId="96dec0cd-5aac-46a9-8def-741869273cfc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f463f09f-1028-45fd-9a02-9ecd3bd3eaef">
+      <active>true</active>
+      <description>GNS 530 MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_MENU_Push)" presetId="6af12162-8455-4f53-ad22-8fd6bb82c8f2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3dc5b36b-5e90-4a57-8647-3b380960df60">
+      <active>true</active>
+      <description>GNS 530 DIRECT TO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="DIRECT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_DirectTo_Push)" presetId="3ae5605a-c023-4b7a-bf8e-11312b6d1986" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bf71abb3-33a5-4f19-925a-0163fd81c996">
+      <active>true</active>
+      <description>GNS 530 RANGE DN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="RNG_DN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RNG_Dezoom)" presetId="98cce1bc-318d-4bd4-a378-919c875aa564" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5593a3a-2eaf-45cb-aa28-de0184e9febf">
+      <active>true</active>
+      <description>GNS 530 RANGE UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="RNG_UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RNG_Zoom)" presetId="4bed29e5-ec89-472d-afa4-29d21431857e" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="88c8db75-1f2b-4c0b-9028-5db679a33328">
+      <active>true</active>
+      <description>GNS 530 COM Encoder Volume</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="COM" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM1_VOLUME_DEC)&#xA;(&gt;K:COM1_VOLUME_DEC)&#xA;(&gt;K:COM1_VOLUME_DEC)" presetId="22402ea3-a3bd-4999-a4fa-1868905f875b" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM1_VOLUME_INC)&#xA;(&gt;K:COM1_VOLUME_INC)&#xA;(&gt;K:COM1_VOLUME_INC)" presetId="f594aaeb-f43e-4883-a2d8-736c6482a334" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ddd05a7-37ae-43c3-9cbb-f8d116f90c3f">
+      <active>true</active>
+      <description>GNS 530 NAV Encoder Volume</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="NAV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_VOLUME_DEC)&#xA;(&gt;K:NAV1_VOLUME_DEC)&#xA;(&gt;K:NAV1_VOLUME_DEC)" presetId="16aa9658-eeaf-4ea8-81a1-bdd109d02f15" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_VOLUME_INC)&#xA;(&gt;K:NAV1_VOLUME_INC)&#xA;(&gt;K:NAV1_VOLUME_INC)" presetId="48cd213e-fb7c-4ff7-99a9-a99563304fee" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="62b5fad5-4bbb-4fe8-bde3-2450545c9029">
+      <active>true</active>
+      <description>GNS 530 PUSH SQ</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="COM_PRESS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_COMMNAV1_TEST_TOGGLE)" presetId="9fe48811-90ea-4b56-8712-ee93a180d4a5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c026b28a-774d-4225-ae93-d0bc35860f09">
+      <active>true</active>
+      <description>GNS 530 PUSH ID</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="NAV_PRESS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:RADIO_VOR1_IDENT_TOGGLE)" presetId="db2fc654-eb8c-45f1-a26b-c9f172accc1d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9336be5-66bd-4170-9ae4-e50dfe5dec39">
+      <active>true</active>
+      <description>GNS 530 Left Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="Left Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS530_LeftSmallKnob_Left)" presetId="54c9fbef-275b-4c8f-8357-c921d5c717b2" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS530_LeftSmallKnob_Right)" presetId="f27546e8-b061-464c-8509-f9e7e884e161" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="32d7472e-7c26-4444-8e70-7c4a5ac6ece8">
+      <active>true</active>
+      <description>GNS 530 Left Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="Left Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS530_LeftLargeKnob_Left)" presetId="05518a2f-5e17-4bae-ac90-dc5517d26277" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS530_LeftLargeKnob_Right)" presetId="defaf8fa-8018-4e70-8a7d-86e533b253f7" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f98e2f2-b0b9-4e6d-93b9-be1868d0d56d">
+      <active>true</active>
+      <description>GNS 530 Left Push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="Left Press" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_LeftSmallKnob_Push)" presetId="f0260cd1-9089-4595-893d-a2b8686f2fa1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07b42ef7-49d6-40f2-a469-ebf6fae7064f">
+      <active>true</active>
+      <description>GNS 530 Right Fine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="Right Fine" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RightSmallKnob_Left)" presetId="115b2bd4-5c2e-43a5-ad0c-0297e8023454" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RightSmallKnob_Right)" presetId="c3962792-4a50-487a-aaba-c8b5ba16f354" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4d90f72e-0a3b-4cd7-82cf-cfec827306fc">
+      <active>true</active>
+      <description>GNS 530 Right Rough</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="Right Rough" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RightLargeKnob_Left)" presetId="cc371db9-05b3-45e9-8700-7841ddae3f2a" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RightLargeKnob_Right)" presetId="ce4dd394-2599-4602-a42c-1f09271b8825" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="580b9069-fe32-46c4-948f-a41e00edd5a8">
+      <active>true</active>
+      <description>GNS 530 Right Push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" serial="GNS 530/ SN-5FC-1CF" name="R_PRESS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS530_RightSmallKnob_Push)" presetId="07ff4423-26c6-4612-a9c9-c4068b2b1c21" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
