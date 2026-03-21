@@ -36,15 +36,16 @@ Please start an issue should a link not properly work.
 Take a look at the [Standard components](https://docs.google.com/spreadsheets/d/1PClelHtWd3HWM-4E4RQvf7FtlqrC03PmzhzorxXTbhs/edit#gid=2116223817) the Cessna 172 Project uses.
 
 ## Issues:
-We all have issues. Let's be honest. If you find any that pertain to the 172 project, create a new blank issue, and describe what it is the best you can.
-Create a new issue for if a part breaks, so we can factor it into a redesign.
+We all have our issues :) If you find any that pertain to the 172 project, create a new blank issue and describe it as best you can.
+Create a new issue for if a part breaks so that we can factor it into a redesign.
+https://github.com/CaptainBobSim/The-Cessna-172-Project-V3/issues
 
 ## Why?
-The Flight Simulation Community has given me so much and I would like to give back. Free C172 Plans were what started me off in flight simulation when I was younger, and I don't want cost to be an obstacle for any aspiring individuals to build their very own Cessna 172 Flight Sim.
+The Flight Simulation Community has given me so much and I would like to give back. Free C172 Plans were what got me into flight simulation when I was younger, and I don't want cost to be an obstacle for aspiring individuals building their own Cessna 172 Flight Sim.
 
-If you are just getting started in Flight Simulation: I believe in you. You can do this. It will take time and hard work, but for me it is definitely worth it, and you might find it is too.
+If you are just getting started in Flight Simulation, I believe in you. You can do this. It will take time and hard work, but for me, it is definitely worth it, and you might find it is too.
 
-"Everyone is smart and can be smarter"
+"Everyone is smart and can be smarter."
 
 ## Special Thanks:
 Thank you to Kovinator for being an absolute madlad and helping so much with the instruments! He made all of the servo small fuel instruments as well as various adaptaions of large instruments. <br />
