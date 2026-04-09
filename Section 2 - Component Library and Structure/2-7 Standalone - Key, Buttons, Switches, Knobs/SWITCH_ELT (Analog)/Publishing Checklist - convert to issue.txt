@@ -1,5 +1,6 @@
 Design Issues:
 - [ ] Add Alignment nubs to parts that have decals
+- [ ] Heat Set Inserts
 
 Decals:
 - [ ] Decals Printer Friendly Version
@@ -12,13 +13,19 @@ PCB Checklist
 - [ ] Write Version Number on PCB
 - [ ] CaptainBobSim.com
 - [ ] Write all component names and Pins
+- [ ] Write resistor values: 150Ω red 100Ω white (at 5V!) 50Ω for sharing 4 white
+- [ ] Write Changelog - Top right, size 2.54mm
+Changelog
+V1.0 Initial Design (Date)
+
 
 Prototype Issues:
 - [ ] 
 
 Publishing Tasks:
-- [ ] Add Wiring diagram PNG (Also add to video)
-- [ ] Partslist on ReadMe (Also add to video)
+- [ ] Put Partslist in ReadMe Initialize in the BOM (Private) then copy to the ReadMe and video description 
+- [ ] Add Wiring diagram PNG (Also embed in video)
+- [ ] Export video so you have a YouTube Link (Put in private)
 - [ ] Rotate and export all STLs using Prusa for easy printability (no slicer rotate)
 - [ ] Mounting Template .DXF and maybe PDF
 - [ ] Attach .STEP and .f3d
@@ -29,10 +36,10 @@ Publishing Tasks:
 - [ ] Printables https://www.printables.com/model/create
 The Printables version will not be updated. The best place to get it is here: https://captainbobsim.com/product/the-cessna-172-project-files/?customize_changeset_uuid=
 Find the MobiFlight code under Section 2/Instrument
+Find BOM in video description.
 - [ ] Tweak the ReadMe
 	- [ ] Video Here
 	- [ ] Buy it as a Kit/Assembled
-	- [ ] Download only this folder via: https://download-directory.github.io/
 	- [ ] Pinout?
 - [ ] Follow steps on product central https://www.notion.so/captainbobsim/Product-Central-fe05d96d32074a269806f0e77462978f
 - [ ] Thumbnail for Video
