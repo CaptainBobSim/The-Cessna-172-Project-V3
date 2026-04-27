@@ -1,0 +1,1158 @@
+{
+  "Name": "XP_KMA28",
+  "ConfigFiles": [
+    {
+      "Label": "XP_KMA28",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-6 Avionics, Radios, Annunciators\\AUDIO_KMA 28\\MobiFlight\\XP_KMA28.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/misc/outer_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED_O",
+            "Pin": "LED_O",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED_O",
+          "GUID": "d4c00197-81c0-4379-9e9f-bb0aa2e261cc",
+          "Active": true,
+          "Name": "LED_O",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/middle_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED_M",
+            "Pin": "LED_M",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED_M",
+          "GUID": "f6d04e5c-1cc0-4176-8998-f13642f1793e",
+          "Active": true,
+          "Name": "LED_M",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/inner_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LED_I",
+            "Pin": "LED_I",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LED_I",
+          "GUID": "5565b47b-8bdd-429b-9ba4-cd01391301f5",
+          "Active": true,
+          "Name": "LED_I",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM1_L",
+            "Pin": "COM1_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "COM1_L",
+          "GUID": "c181e775-f6a1-4d62-aec7-07996b5fe8f4",
+          "Active": true,
+          "Name": "COM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM2_L",
+            "Pin": "COM2_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "COM2_L",
+          "GUID": "39124809-2ec9-4add-b2e5-d9f6a573d534",
+          "Active": true,
+          "Name": "COM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV1_L",
+            "Pin": "NAV1_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "NAV1_L",
+          "GUID": "7c7599e4-80d6-4a1f-a46f-aa802cd4f2b4",
+          "Active": true,
+          "Name": "NAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV2_L",
+            "Pin": "NAV2_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "NAV2_L",
+          "GUID": "c2952821-abaf-4a79-8bc7-74c9070e27a8",
+          "Active": true,
+          "Name": "NAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_marker_enabled"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "MKR_L",
+            "Pin": "MKR_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "MKR_L",
+          "GUID": "a36d0bb8-6b0a-4bce-bab6-d91ebae61e96",
+          "Active": true,
+          "Name": "MKR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "00ae62dd-a323-4b0a-9faa-5af7c9c0788c",
+              "Value": "(A:INTERCOM SYSTEM ACTIVE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ICS_L",
+            "Pin": "ICS_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ICS_L",
+          "GUID": "493f3946-9bc5-4406-b74e-2356a8f837c3",
+          "Active": false,
+          "Name": "ICS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_adf1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ADF_L",
+            "Pin": "ADF_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ADF_L",
+          "GUID": "6db60099-ffde-40c7-9e8b-1ecb3d756ac7",
+          "Active": true,
+          "Name": "ADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "AuxDummy",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "AUX_L",
+            "Pin": "AUX_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "AUX_L",
+          "GUID": "2b090a2e-c4ec-4b96-a2d6-5eb2a03ed990",
+          "Active": false,
+          "Name": "AUX",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_dme_enabled"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_L",
+            "Pin": "DME_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_L",
+          "GUID": "1f06c3a8-bbff-471a-9d41-efffb49e39eb",
+          "Active": true,
+          "Name": "DME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "ebecd40d-8b9b-473e-965a-e7839482a133",
+              "Value": "(A:SPEAKER ACTIVE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SPR_L",
+            "Pin": "SPR_L",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "SPR_L",
+          "GUID": "a7d1449c-121c-43a1-9261-02fdc7746765",
+          "Active": false,
+          "Name": "SPR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "52024d40-60a4-4444-b248-576abbb31c94",
+              "Value": "(A:PILOT TRANSMITTING,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Transmit",
+            "Pin": "Transmit",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "Transmit",
+          "GUID": "aaa8d3e5-fe37-43d0-a134-25c57fc85007",
+          "Active": false,
+          "Name": "TRANSMIT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Swap",
+            "Pin": "Swap",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "Swap",
+          "GUID": "66978400-bb6a-4344-bc70-4b8f9546d8cc",
+          "Active": false,
+          "Name": "SWAP",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/operation/sound/master_volume_ratio",
+              "Expression": "$"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) \n(A:AUDIO PANEL VOLUME,Percent) ++ 100 min (>K:AUDIO_PANEL_VOLUME_SET) ",
+              "PresetId": "350ca165-8240-414c-b949-5e5e052ae7ea"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "VOL"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "VOL",
+          "GUID": "1d604cda-cab0-4d17-9d67-ff98980a5501",
+          "Active": false,
+          "Name": "VOL Knob",
+          "Type": "InputConfigItem",
+          "Controller": null
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/annunciator/marker_beacon_sens_hi",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/annunciator/marker_beacon_sens_lo",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "HI_SW"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "HI_SW",
+          "GUID": "d81b3ac3-8530-4afb-b210-a9d46f493eeb",
+          "Active": true,
+          "Name": "HI/LO",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:MARKER_BEACON_TEST_MUTE)",
+              "PresetId": "485d9976-13b1-4518-bca0-0a939c39c563"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:MARKER_BEACON_SENSITIVITY_LOW)",
+              "PresetId": "3cf5163a-2aae-4bda-afd0-2c805fc6b49f"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "TM_SW"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "TM_SW",
+          "GUID": "4ca49d5b-4d19-485b-a52c-bc5dc3da7cd7",
+          "Active": false,
+          "Name": "LO/TM",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:INTERCOM_MODE_SET)",
+              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:INTERCOM_MODE_SET)",
+              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ISO_SW"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ISO_SW",
+          "GUID": "59a7d2bb-1b5d-45c5-a2db-6dec9edb2c72",
+          "Active": false,
+          "Name": "ISO/ALL",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:INTERCOM_MODE_SET)",
+              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981"
+            },
+            "onRelease": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:INTERCOM_MODE_SET)",
+              "PresetId": "c9d56f6e-1aef-445e-bcdc-6b3215b6f981"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CREW_SW"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CREW_SW",
+          "GUID": "2d583205-cf3d-4a9e-a4ab-8db5bc4bf4c9",
+          "Active": false,
+          "Name": "ALL/CREW",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/select_audio_com1",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM1_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM1_P",
+          "GUID": "e25b3618-2d18-415f-9d31-43bc0fd8c27c",
+          "Active": true,
+          "Name": "Com1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_com2",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM2_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM2_P",
+          "GUID": "a129dcaf-94a2-44ff-a384-736925f2c653",
+          "Active": true,
+          "Name": "Com2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/select_audio_nav1",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NAV1_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV1_P",
+          "GUID": "0529b439-5f5d-4de9-9bb9-f6138da39a3b",
+          "Active": true,
+          "Name": "Nav1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/select_audio_nav2",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NAV2_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAV2_P",
+          "GUID": "78ed3dda-88e3-4bba-b509-0c33230162d9",
+          "Active": true,
+          "Name": "Nav2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_mkr",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MKR_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "MKR_P",
+          "GUID": "18a28a33-c1bb-4ade-b159-14e60201e5c8",
+          "Active": true,
+          "Name": "MKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_ICS)",
+              "PresetId": "cf92da77-92a1-4181-ba33-ee30f5668978"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ICS_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ICS_P",
+          "GUID": "222792d3-eaf9-4ded-be85-cb9daf221f3f",
+          "Active": false,
+          "Name": "ICS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_adf1",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ADF_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ADF_P",
+          "GUID": "17315a1b-250f-48db-93a5-b0982bbe7022",
+          "Active": true,
+          "Name": "ADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "AuxDummy",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "($+1)%2"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "AUX_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "AUX_P",
+          "GUID": "04dd3f32-16ad-4336-b830-2ee0bf46a54c",
+          "Active": true,
+          "Name": "AUX (Dummy)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_dme",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "DME_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "DME_P",
+          "GUID": "06a11c10-80fa-4efb-8db4-0309fd541831",
+          "Active": true,
+          "Name": "DME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_SPEAKER)",
+              "PresetId": "3f02d528-b3a6-434a-8e1e-cc51dc247ef0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SPR_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SPR_P",
+          "GUID": "b7952c20-6931-4020-9313-40b076c972ae",
+          "Active": true,
+          "Name": "SPR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:COPILOT_TRANSMITTER_SET)\n2 (>K:PILOT_TRANSMITTER_SET)",
+              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM3"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM3",
+          "GUID": "a97b202a-d4c3-44bb-88d6-213ddc35a7fc",
+          "Active": true,
+          "Name": "COM3",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/transmit_audio_com2",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM2",
+          "GUID": "2c8ab5df-7752-44f1-a220-073b873263ef",
+          "Active": true,
+          "Name": "COM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/transmit_audio_com1",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM1",
+          "GUID": "ec5a8d3c-2f0c-416c-bbd5-d2c5eb576eec",
+          "Active": true,
+          "Name": "COM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:PILOT_TRANSMITTER_SET)\n1 (>K:COPILOT_TRANSMITTER_SET)",
+              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM1/2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM1/2",
+          "GUID": "1359e6db-d880-46ed-b1ea-d2aacfc042bb",
+          "Active": false,
+          "Name": "COM1/2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>K:PILOT_TRANSMITTER_SET)\n0 (>K:COPILOT_TRANSMITTER_SET)",
+              "PresetId": "f7641dde-c79e-440f-888d-17061ea7b0a4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COM2/1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COM2/1",
+          "GUID": "9589e042-e60a-4e6b-849d-fc85c1e6bf23",
+          "Active": false,
+          "Name": "COM2/1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "4 (>K:PILOT_TRANSMITTER_SET)\n5 (>K:COPILOT_TRANSMITTER_SET)",
+              "PresetId": "7c26ad0e-9031-4109-a086-fdcf9b1c75bb"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "TEL"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "TEL",
+          "GUID": "e2ab172b-bb0a-4d10-b737-55c26cd72510",
+          "Active": false,
+          "Name": "TEL",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "KeyInputAction",
+              "Key": 106,
+              "Control": false,
+              "Alt": false,
+              "Shift": false
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "AUX_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "AUX_P",
+          "GUID": "584be05b-c1c9-4200-bc4d-bb536b774be2",
+          "Active": true,
+          "Name": "Keyboard Aux",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "KMA28",
+            "Serial": "SN-397-88A"
+          }
+        }
+      ]
+    },
+    {
+      "Label": "New profile",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": []
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

@@ -1,0 +1,165 @@
+{
+  "Name": "C172-ELT_XP",
+  "ConfigFiles": [
+    {
+      "Label": "ELT",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ELT_POS",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ELT_POS",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ELT_ON"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ELT_ON",
+          "GUID": "06fbbbc1-eed8-4feb-99d0-6454815ab2d1",
+          "Active": true,
+          "Name": "ELT ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Switch Panel V2",
+            "Serial": "SN-292-851"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ELT_POS",
+                "Number": 2.0,
+                "Text": "2",
+                "Expression": "2"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ELT_POS",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ELT_RST"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ELT_RST",
+          "GUID": "42f68953-f074-46c4-8f6c-3d8209bd3cff",
+          "Active": true,
+          "Name": "ELT \"Reset\"",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "Switch Panel V2",
+            "Serial": "SN-292-851"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ELT_POS",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ELT_LED",
+            "Pin": "ELT_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ELT_LED",
+          "GUID": "af9a531a-6df6-4870-bc07-8035262ba185",
+          "Active": true,
+          "Name": "ELT Light",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "Switch Panel V2",
+            "Serial": "SN-292-851"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "0",
+                "OnOffSequence": [
+                  250,
+                  250
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 639123210440354117,
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "0",
+                "ElseValue": "",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0"
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

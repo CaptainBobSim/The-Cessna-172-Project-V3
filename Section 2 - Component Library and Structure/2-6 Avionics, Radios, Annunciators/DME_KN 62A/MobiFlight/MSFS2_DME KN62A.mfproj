@@ -1,0 +1,985 @@
+{
+  "Name": "MSFS2_DME KN62A",
+  "ConfigFiles": [
+    {
+      "Label": "MSFS2_DME KN62A",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-6 Avionics, Radios, Annunciators\\DME_KN 62A\\MobiFlight\\MSFS2_DME KN62A.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "DME_PWR",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "374011b8-0102-412c-8745-3e2787686d7c",
+          "Active": true,
+          "Name": "Read Power",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "DME_MODE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "b41217f9-ae50-4f72-b4a4-876cebd0336f",
+          "Active": true,
+          "Name": "Read Mode",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "MyVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "123456789"
+          },
+          "Device": {
+            "Name": "DME",
+            "DisplayLedAddress": "DME",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DME",
+          "GUID": "fde336ae-5263-438d-acc0-ae302c35bbe6",
+          "Active": true,
+          "Name": "All Displays off",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "''",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "MyVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5",
+            "Pin": "DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_LED1|DME_LED2|DME_LED3|DME_LED4|DME_LED5",
+          "GUID": "e12ccfd0-088d-4c03-9a04-6ab3080bce4a",
+          "Active": true,
+          "Name": "All LEDs off",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "29a5199a-298d-45d9-bd7f-bc64c4603443",
+              "Value": "(A:NAV DME:1,Nautical miles)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "123456789"
+          },
+          "Device": {
+            "Name": "DME",
+            "DisplayLedAddress": "DME",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [
+              "5",
+              "6"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DME",
+          "GUID": "b2b4ee60-56ee-4f09-9fcb-7d98a5a4c72e",
+          "Active": true,
+          "Name": "NM Display",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,1)*10",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "0",
+                "ElseValue": "Round($,1)*10",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "'---'",
+                "ElseValue": "$",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0745b1ba-1d9b-44d1-b811-7805950e4994",
+              "Value": "(A:HSI SPEED,Knots)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "123456789"
+          },
+          "Device": {
+            "Name": "DME",
+            "DisplayLedAddress": "DME",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "2",
+              "3",
+              "4"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DME",
+          "GUID": "e7f52e69-f04d-41ec-8195-bb949060a352",
+          "Active": true,
+          "Name": "KT Display",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "b41217f9-ae50-4f72-b4a4-876cebd0336f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "'hi'",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,0)",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "bb1a814f-2587-41c6-9691-4b17631c43b4",
+              "Value": "(A:HSI DISTANCE,Nautical miles)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "123456789"
+          },
+          "Device": {
+            "Name": "DME",
+            "DisplayLedAddress": "DME",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DME",
+          "GUID": "09c43991-3f9c-446c-9aa0-6165ff54e0c5",
+          "Active": true,
+          "Name": "MIN Display",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "b41217f9-ae50-4f72-b4a4-876cebd0336f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "((#/10)/K)*60",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,0)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "b2b4ee60-56ee-4f09-9fcb-7d98a5a4c72e",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "e7f52e69-f04d-41ec-8195-bb949060a352",
+              "Placeholder": "K",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:1,MHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "123456789"
+          },
+          "Device": {
+            "Name": "DME",
+            "DisplayLedAddress": "DME",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "DME",
+          "GUID": "73a11e5e-f029-4f9a-8edd-02043e675c06",
+          "Active": true,
+          "Name": "FREQ Display",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "b41217f9-ae50-4f72-b4a4-876cebd0336f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($*10,1)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "'-----'",
+                "ElseValue": "$",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "MyVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_LED1",
+            "Pin": "DME_LED1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_LED1",
+          "GUID": "f041bfef-9ace-4b6f-9e5b-313a84763061",
+          "Active": true,
+          "Name": "NM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "1",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "DME_MODE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_LED2",
+            "Pin": "DME_LED2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_LED2",
+          "GUID": "bcbc426f-1cb1-4ad8-a99f-3eb3b38058b8",
+          "Active": true,
+          "Name": "RMT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "DME_MODE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_LED3|DME_LED5",
+            "Pin": "DME_LED3|DME_LED5",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_LED3|DME_LED5",
+          "GUID": "9a06568d-cc49-439a-8f5c-7a1a9f19afbe",
+          "Active": true,
+          "Name": "NM KT MIN",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "!=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "DME_MODE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "DME_LED4",
+            "Pin": "DME_LED4",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "DME_LED4",
+          "GUID": "cbb5ebc3-f3a9-4398-bbea-3514a19ab4ed",
+          "Active": true,
+          "Name": "MHZ",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "b41217f9-ae50-4f72-b4a4-876cebd0336f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "config",
+              "Ref": "374011b8-0102-412c-8745-3e2787686d7c",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_PWR",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_PWR",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "DME_PWR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "DME_PWR",
+          "GUID": "ecca7627-618a-408e-b680-6975f232cc3e",
+          "Active": true,
+          "Name": "PWR Sw",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_MODE",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_MODE",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "DME_MODE1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "DME_MODE1",
+          "GUID": "84d7c216-5b2c-4f24-84f2-9b751de29793",
+          "Active": true,
+          "Name": "RMT - FREQ",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_MODE",
+                "Number": 2.0,
+                "Text": "2",
+                "Expression": "2"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "DME_MODE",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "DME_MODE2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "DME_MODE2",
+          "GUID": "cd8b10e0-a35f-4c4d-a06d-182f20f976b2",
+          "Active": true,
+          "Name": "FREQ - G/ST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_WHOLE_DEC)",
+              "PresetId": "bcb45f55-c67a-44b9-a951-096e450ccec7"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_WHOLE_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "DME-Rough"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "DME-Rough",
+          "GUID": "2e51a2fe-4095-42ce-884f-75acc0f6de32",
+          "Active": true,
+          "Name": "Rough",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_FRACT_DEC)",
+              "PresetId": "f92f319c-75e2-471e-845a-764540c65040"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "[110400000] (>K:NAV1_RADIO_SET_HZ) ",
+              "PresetId": "e5465182-8965-4f0a-b5d3-3d5ab519b179"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "DME-Fine"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "DME-Fine",
+          "GUID": "07dd4e28-0451-4c6f-824d-d02247273636",
+          "Active": true,
+          "Name": "Fine",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c4e33180-5afe-49c5-9f96-fb9e391278f7",
+              "Value": "(A:NAV DMESPEED:1,Knots)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "d3e43e45-11b5-45fc-9e48-c653a398d748",
+          "Active": true,
+          "Name": "DME Reference",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

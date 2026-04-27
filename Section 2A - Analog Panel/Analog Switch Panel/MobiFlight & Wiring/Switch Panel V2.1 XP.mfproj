@@ -1,0 +1,555 @@
+{
+  "Name": "Switch Panel V3 XP11",
+  "ConfigFiles": [
+    {
+      "Label": "Switch Panel V3 XP11",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2A - Analog Panel\\Analog Switch Panel\\MobiFlight & Wiring\\Switch Panel V3 XP11.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/engine/actuators/ignition_key[0]",
+              "Expression": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "OFF"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "OFF",
+          "GUID": "c1022578-63bf-4df4-ac45-36b03f8c608e",
+          "Active": true,
+          "Name": "OFF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/engine/actuators/ignition_key[0]",
+              "Expression": "1"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "R"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "R",
+          "GUID": "59807390-0909-4ca1-a7df-59733153e300",
+          "Active": true,
+          "Name": "RIGHT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/engine/actuators/ignition_key[0]",
+              "Expression": "2"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "L"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "L",
+          "GUID": "89474efa-ee80-4b6d-8f31-0c9cd1cb9990",
+          "Active": true,
+          "Name": "LEFT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/engine/actuators/ignition_key[0]",
+              "Expression": "3"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Both"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Both",
+          "GUID": "b154980c-00f9-4164-b429-ddbd076c6159",
+          "Active": true,
+          "Name": "BOTH",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/engine/actuators/ignition_key[0]",
+              "Expression": "4"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Start"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Start",
+          "GUID": "ef7da5a0-330f-4a92-ab69-d9773aefbbeb",
+          "Active": true,
+          "Name": "START",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/generator_1_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/generator_1_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ALT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ALT",
+          "GUID": "14ca7509-96ec-4600-b6f8-3a4072643427",
+          "Active": true,
+          "Name": "ALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/battery_1_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/battery_1_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BATT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BATT",
+          "GUID": "29a76d35-c1b9-464d-b762-26e95bcad400",
+          "Active": true,
+          "Name": "BATT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/fuel/fuel_pumps_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/fuel/fuel_pumps_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Fuel Pump"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Fuel Pump",
+          "GUID": "a5dc4580-14a6-400d-add5-1d197f631d4e",
+          "Active": true,
+          "Name": "FUEL PUMP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/beacon_lights_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/beacon_lights_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Beacon"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Beacon",
+          "GUID": "767526aa-424b-4dfa-82fe-6a83b11c6b16",
+          "Active": true,
+          "Name": "BCN",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/landing_lights_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/landing_lights_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Land"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Land",
+          "GUID": "c537654a-8984-4140-a4df-8be3f1e5fb17",
+          "Active": true,
+          "Name": "LAND",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/taxi_lights_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/taxi_lights_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Taxi"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Taxi",
+          "GUID": "fbc69ffe-3e68-49ca-9cc7-20b00d583134",
+          "Active": true,
+          "Name": "TAXI",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/nav_lights_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/nav_lights_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Nav"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Nav",
+          "GUID": "222e95c2-31a9-4c75-9e19-bb4d70f3c723",
+          "Active": true,
+          "Name": "NAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/strobe_lights_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/lights/strobe_lights_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Strobe"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Strobe",
+          "GUID": "d02e50f8-d703-436e-905a-2ba99071f4e4",
+          "Active": true,
+          "Name": "STROBE",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/ice/pitot_heat0_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/ice/pitot_heat0_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Pitot"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Pitot",
+          "GUID": "3f55c9b6-26f9-48a8-9f64-58312953f497",
+          "Active": true,
+          "Name": "PITOT HEAT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/systems/avionics_on",
+              "Expression": "$"
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/systems/avionics_off",
+              "Expression": "$"
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Bus 1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Bus 1",
+          "GUID": "4c0ac667-05c6-4dd6-b0fc-43f92b5edfe3",
+          "Active": true,
+          "Name": "AV 1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/cross_tie_on",
+              "Expression": ""
+            },
+            "onRelease": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/electrical/cross_tie_off",
+              "Expression": ""
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Bus 2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Bus 2",
+          "GUID": "c70f38b4-cbce-4cf3-9cea-6dc7fa272e05",
+          "Active": true,
+          "Name": "AV 2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "SwitchPanel V2-1",
+            "Serial": "SN-143-0D4"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

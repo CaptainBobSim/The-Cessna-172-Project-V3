@@ -1,0 +1,3223 @@
+{
+  "Name": "Transponder KT-76C",
+  "ConfigFiles": [
+    {
+      "Label": "Transponder KT-76C",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-6 Avionics, Radios, Annunciators\\TRANSPONDER_KT-76C\\MobiFlight\\Transponder KT-76C.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
+              "Value": "(A:TRANSPONDER CODE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1231.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "b2d7d958-856d-4dd2-8320-4e88ee72ca94",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "20f07699-e6c5-4ad6-ab4b-529271493909",
+          "Active": false,
+          "Name": "// TRANSPONDER CONFIGURATION UPDATED 2026-04-25",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=0,'',$)",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=2,'8888',$)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "0ddfe5d3-0fcd-437c-847f-a9f55c065422",
+          "Active": false,
+          "Name": "// Known issue: initialization problem.",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "ac702d07-ab2a-4663-9414-008157da1a82",
+          "Active": false,
+          "Name": "// Known issue: pressing and holding the VFR for 2 sec shows last active code to be displayed.",
+          "Type": "OutputConfigItem",
+          "Controller": null
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "",
+          "DeviceName": null,
+          "GUID": "0a23a5a1-afde-4411-ab09-593e5780be52",
+          "Active": false,
+          "Name": "// Known issue: Clear \"Backspace\" function is limited.",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
+              "Value": "(A:TRANSPONDER CODE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 12345678.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "b2d7d958-856d-4dd2-8320-4e88ee72ca94",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "47ac4529-3cdd-4d4c-a15b-595c4873df28",
+          "Active": true,
+          "Name": "XPNDR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=0,'',$)",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=2,'8888',$)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "string",
+              "Name": "xpndrcode",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1234.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "6d6e42c8-16c9-4ec7-9f3f-33acd64ac5c0",
+          "Active": true,
+          "Name": "xpndrcode display",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Padding",
+                "Character": "-",
+                "Length": 4,
+                "Direction": 1,
+                "Active": true
+              }
+            ]
+          },
+          "Value": "----",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
+              "Value": "(A:TRANSPONDER STATE:1,Enum)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "b2d7d958-856d-4dd2-8320-4e88ee72ca94",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "b02ecceb-b284-4a02-b46b-dccaa2d0e292",
+          "Active": true,
+          "Name": "Mode",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "sbY",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "-88",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": " on",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "#",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "''",
+                "ElseValue": "",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a0717af9-ddd9-4ed4-b4ba-1a91490d3839",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "sbY"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
+              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "KT-76",
+            "DisplayLedAddress": "KT-76",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "4"
+            ],
+            "DisplayLedDecimalPoints": [
+              "4"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "b2d7d958-856d-4dd2-8320-4e88ee72ca94",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "KT-76",
+          "GUID": "341bf8dd-4fe9-4d89-a8e1-f66b1ff1d291",
+          "Active": true,
+          "Name": "Flashing Ident Dot (need both)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "f46fe026-50d0-4c11-850b-f37690b3f48d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "15",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "''",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
+              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f46fe026-50d0-4c11-850b-f37690b3f48d",
+          "Active": true,
+          "Name": "Ident data  flash (need both)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "'hi'",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*1",
+                "Active": true
+              },
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 639127392596239922,
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*15",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "15"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
+              "Value": "(A:TRANSPONDER STATE:1,Enum)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+          "Active": true,
+          "Name": "Mode Raw (for reading)",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "sbY",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "8888",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "on",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "'F'+#",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "''",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a0717af9-ddd9-4ed4-b4ba-1a91490d3839",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3110ef7c-3b03-4d05-99d6-fb582d3ac3f8",
+              "Value": "(A:INDICATED ALTITUDE,Feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 5200.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "a0717af9-ddd9-4ed4-b4ba-1a91490d3839",
+          "Active": true,
+          "Name": "Flight Level Text",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($/100,0)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": "O",
+                "Length": 3,
+                "Direction": 0,
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "F$",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "4996.20166015625",
+          "Value": "O50"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "2ea07b00-6ae8-49dc-ac07-74ecfe0bebe6",
+              "Value": "(A:AVIONICS MASTER SWITCH,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "b2d7d958-856d-4dd2-8320-4e88ee72ca94",
+          "Active": true,
+          "Name": "Display Brightness Raw - Avionics Master & Power",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*15",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=0,0,$)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a77a2c8e-02e2-4221-a8a4-aff8d382cdc1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "15"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3e5c1b39-4900-4afe-a6ed-344fe77ba325",
+              "Value": "(E:SIMULATION TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+          "Active": true,
+          "Name": "raw sim time",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Round($%5,0)",
+                "Active": false
+              }
+            ]
+          },
+          "RawValue": "751.8172607421875",
+          "Value": "751.8172607421875"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "timefreeze",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "18c048d3-90d9-4277-adde-09939d191fb4",
+          "Active": true,
+          "Name": "timefreeze",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "#-$",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "Round($,2)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": ">",
+                "Value": "5",
+                "IfValue": "6",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "644.393615722656",
+          "Value": "107.42"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "string",
+                "Name": "xpndrcode",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "''"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+          "Active": true,
+          "Name": "\"Time Bomb\" 1 for 4 seconds then back to 0",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "#",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "4",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(a>=1,0,$)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "18c048d3-90d9-4277-adde-09939d191fb4",
+              "Placeholder": "#",
+              "TestValue": "5"
+            },
+            {
+              "Active": true,
+              "Ref": "c817b288-f605-46bb-9458-5e6f2da4c1be",
+              "Placeholder": "a",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "string",
+              "Name": "xpndrcode",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "12749378-a1d2-4039-bf51-35b5cea91c34",
+          "Active": true,
+          "Name": "-Backspace if 1 char (to 0)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Substring",
+                "Start": 0,
+                "End": 0,
+                "Active": false
+              },
+              {
+                "Type": "Blink",
+                "BlinkValue": "0",
+                "OnOffSequence": [
+                  500,
+                  250
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "'-'",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "a65ef6ba-419d-42ea-8bc6-eae65506d2d1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "Value": "-"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "clearVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 0.0,
+                "Text": "-",
+                "Expression": "b"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "a1bf6dcd-973f-4225-810f-2289598f1abd",
+          "Active": true,
+          "Name": "-ACTIVATE Backspace if 2 char (to 1)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "0",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=1,2,0)",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(a=1,1,0)",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=1,if($=1,1,0),0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "2496303f-2b8f-4411-93d0-8f617050bb72",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "9c514b3e-9ff6-4b08-9218-ed04c68f4a52",
+              "Placeholder": "a",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "12749378-a1d2-4039-bf51-35b5cea91c34",
+              "Placeholder": "b",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "string",
+              "Name": "xpndrcode",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "d2b1ecbe-74f1-4d12-9e0e-761c13ab2ce5",
+          "Active": true,
+          "Name": "Backspace if 2 char (to 1)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Substring",
+                "Start": 0,
+                "End": 1,
+                "Active": true
+              },
+              {
+                "Type": "Blink",
+                "BlinkValue": "0",
+                "OnOffSequence": [
+                  500,
+                  250
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "clearVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "b"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "40f405cd-6440-42d7-b88a-5b000d2f27cc",
+          "Active": true,
+          "Name": "ACTIVATE Backspace if 2 char (to 1)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "0",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=2,if($=1,1,0),0)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(a=1,1,0)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "2496303f-2b8f-4411-93d0-8f617050bb72",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "9c514b3e-9ff6-4b08-9218-ed04c68f4a52",
+              "Placeholder": "a",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "d2b1ecbe-74f1-4d12-9e0e-761c13ab2ce5",
+              "Placeholder": "b",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "string",
+              "Name": "xpndrcode",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f9d4bbcc-4e26-499d-8d44-600de5fccfc8",
+          "Active": true,
+          "Name": "Backspace if 3 char (to 2)",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Substring",
+                "Start": 0,
+                "End": 2,
+                "Active": true
+              },
+              {
+                "Type": "Blink",
+                "BlinkValue": "0",
+                "OnOffSequence": [
+                  500,
+                  250
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 0,
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "clearVar",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 12.0,
+                "Text": "12",
+                "Expression": "b"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "0e856c8b-84c2-4d0b-b9eb-1690f04d670a",
+          "Active": true,
+          "Name": "ACTIVATE Backspace if 3 char (to 2)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "clearVar",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "variable",
+              "Ref": "typeLength",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "0",
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=3,if($=1,1,0),0)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(a=1,1,0)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "2496303f-2b8f-4411-93d0-8f617050bb72",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "9c514b3e-9ff6-4b08-9218-ed04c68f4a52",
+              "Placeholder": "a",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "f9d4bbcc-4e26-499d-8d44-600de5fccfc8",
+              "Placeholder": "b",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "vfr",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "vfr",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "@"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "c817b288-f605-46bb-9458-5e6f2da4c1be",
+          "Active": true,
+          "Name": "VFR Inverse Raw rewrite depend then remove?",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#>5,0,1)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "18c048d3-90d9-4277-adde-09939d191fb4",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "typeLength",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 2.0,
+                "Text": "2",
+                "Expression": "$*#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "2496303f-2b8f-4411-93d0-8f617050bb72",
+          "Active": true,
+          "Name": "Length of Code (Being Typed)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "timefreeze",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 637.369262695313,
+                "Text": "637.369262695313",
+                "Expression": "$-4"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "01bc1bd8-47ba-4819-b711-6f3a3b8bfb0f",
+          "Active": true,
+          "Name": "timefreeze -4 for if len = 4",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#<=4,1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "2496303f-2b8f-4411-93d0-8f617050bb72",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "644.393615722656",
+          "Value": "1"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder0)",
+              "PresetId": "2b07b723-64b0-44c1-9bdf-f6193c10bf05"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "0"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "0",
+          "GUID": "5b13e2ec-c103-4ec0-acc5-88b00cf59ce6",
+          "Active": true,
+          "Name": "XPNDR 0",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder1)",
+              "PresetId": "09ddd15e-a50f-4f62-9532-3fd306f996cb"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "1",
+          "GUID": "1ba77345-b698-4545-8804-fe0d91c57db8",
+          "Active": true,
+          "Name": "XPNDR 1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder2)",
+              "PresetId": "1eb9ae7f-c95d-443c-ba87-dd3810fe6216"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "2",
+          "GUID": "998c6590-6462-47be-976c-f0655cbf1ccc",
+          "Active": true,
+          "Name": "XPNDR 2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder3)",
+              "PresetId": "8f2a5b95-d06d-4156-af6c-f294e2d1438a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "3"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "3",
+          "GUID": "298f7ee8-8eb8-480d-ba81-ff4656ee715a",
+          "Active": true,
+          "Name": "XPNDR 3",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder4)",
+              "PresetId": "a0777872-878e-4d48-ac84-34e87c041930"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "4",
+          "GUID": "d7708111-3342-4e9c-b397-d8e25e42ecd4",
+          "Active": true,
+          "Name": "XPNDR 4",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder5)",
+              "PresetId": "99255895-102e-41b9-8763-2fc144768ed0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "5",
+          "GUID": "955f7754-d904-4326-9335-cdb605266c23",
+          "Active": true,
+          "Name": "XPNDR 5",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder6)",
+              "PresetId": "38faa3cf-4058-454e-b486-f1726aeef8e6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "6"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "6",
+          "GUID": "03531580-bf8f-4082-8d10-e41ddd5e1829",
+          "Active": true,
+          "Name": "XPNDR 6",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:Transponder7)",
+              "PresetId": "611e1dee-1148-4196-8a43-0d691368b979"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "7"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "7",
+          "GUID": "ffeb55ed-78a5-41ff-92a2-3a17e5493601",
+          "Active": true,
+          "Name": "XPNDR 7",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "6902c298-52d6-41b2-9ed5-14c6f7aafe66"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_OFF"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_OFF",
+          "GUID": "c348ebc2-565b-4a1f-b939-d8a82b57a6de",
+          "Active": true,
+          "Name": "OFF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "6bb83f0e-6466-4cc1-9f3d-26c205a340a5"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_SBY"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_SBY",
+          "GUID": "8e682f6b-8ac7-4f9a-9442-dc0428f16f06",
+          "Active": true,
+          "Name": "STBY",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "PRESS",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "9f327640-f61f-4492-a224-589bdeac983a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_TST"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_TST",
+          "GUID": "539ae676-e18c-4541-b65c-29b52d1e0274",
+          "Active": true,
+          "Name": "TST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "f93b81d9-73f3-4734-a9b6-08f9684f179b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_ON"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_ON",
+          "GUID": "acc0a3fe-b909-4ced-ab29-aba169733519",
+          "Active": true,
+          "Name": "ON",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "4 (>A:TRANSPONDER STATE:1, Enum)",
+              "PresetId": "22f6b23a-79cd-4761-b066-b2bc1a309df6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_ALT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_ALT",
+          "GUID": "33e48116-4c76-497f-8d85-ba55dda06062",
+          "Active": true,
+          "Name": "ALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:TransponderCLR)",
+              "PresetId": "e5082fa3-af6a-40bf-aff0-c5163c00aa28"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CLR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CLR",
+          "GUID": "bba84c07-3827-4796-9781-926d3dbae056",
+          "Active": true,
+          "Name": "CLR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:TransponderVFR)",
+              "PresetId": "cb4278d8-5c94-47b1-bb60-958da077feb6"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VFR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VFR",
+          "GUID": "82ade648-eff8-4aa4-9339-f46b4e878f15",
+          "Active": true,
+          "Name": "VFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:XPNDR_IDENT_TOGGLE)",
+              "PresetId": "e813249a-5730-4972-a27c-022d97ae5a55"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "IDT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "IDT",
+          "GUID": "903475cb-f8a9-4bf5-88bd-1a65ce7e46c1",
+          "Active": true,
+          "Name": "IDENT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "string",
+                "Name": "xpndrcode",
+                "Number": 0.0,
+                "Text": "OOOO",
+                "Expression": "$O"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 617.09326171875,
+                "Text": "617.09326171875",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "0"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "0",
+          "GUID": "a7d3241f-7921-4421-bd73-03ca3e5b5bd0",
+          "Active": true,
+          "Name": "Var0",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "string",
+                "Name": "xpndrcode",
+                "Number": 0.0,
+                "Text": "1",
+                "Expression": "$1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "1",
+          "GUID": "69599810-768d-4e90-acaa-5ea709e3a40d",
+          "Active": true,
+          "Name": "Var1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 640.61669921875,
+                "Text": "640.61669921875",
+                "Expression": "#"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "1",
+          "GUID": "d9a4b839-88f0-4146-a62f-4d0872debe26",
+          "Active": true,
+          "Name": "Var1 clear time",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 12.0,
+                "Text": "12",
+                "Expression": "$2"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 641.046264648438,
+                "Text": "641.046264648438",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "2",
+          "GUID": "6881adfc-65c2-4e6f-bef9-60eb598c3f10",
+          "Active": true,
+          "Name": "Var2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 640.925964355469,
+                "Text": "640.925964355469",
+                "Expression": "#"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "2",
+          "GUID": "e47508a5-8959-4892-882c-240b83b12411",
+          "Active": true,
+          "Name": "Var2 clear time",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 123.0,
+                "Text": "123",
+                "Expression": "$3"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 641.369262695313,
+                "Text": "641.369262695313",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "3"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "3",
+          "GUID": "00f29124-eb24-4d0e-905b-9e24d8b39940",
+          "Active": true,
+          "Name": "Var3",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 1234.0,
+                "Text": "1234",
+                "Expression": "$4"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 641.627136230469,
+                "Text": "641.627136230469",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "4",
+          "GUID": "222eedfb-4d49-41a4-bf4e-beaef8754ef6",
+          "Active": true,
+          "Name": "Var4",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 5555.0,
+                "Text": "5555",
+                "Expression": "$5"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 512.421752929688,
+                "Text": "#",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "5",
+          "GUID": "53358a91-7b29-49a0-926f-79e05587cb2c",
+          "Active": true,
+          "Name": "Var5",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 6666.0,
+                "Text": "6666",
+                "Expression": "$6"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 487.446014404297,
+                "Text": "#",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "6"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "6",
+          "GUID": "06c647eb-da23-42f2-8cea-508aaef631cf",
+          "Active": true,
+          "Name": "Var6",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "xpndrcode",
+                "Number": 7777.0,
+                "Text": "7777",
+                "Expression": "$7"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 578.608581542969,
+                "Text": "#",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "7"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "7",
+          "GUID": "2ac16e85-79f8-4e0a-877f-8f42e772dead",
+          "Active": true,
+          "Name": "Var7",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 644.393615722656,
+                "Text": "644.393615722656",
+                "Expression": "#"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CLR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CLR",
+          "GUID": "fffdbba7-4c8d-467f-87bc-916e4d6d8578",
+          "Active": true,
+          "Name": "CLR Reset the time until exit",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "e695abcc-1977-4ea7-b014-4ea9ae58f8ea",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " ",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "timefreeze",
+                "Number": 257.120452880859,
+                "Text": "#-4",
+                "Expression": "#-4"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VFR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VFR",
+          "GUID": "c7afa36b-b7da-4830-9d73-8fa1756a4d61",
+          "Active": true,
+          "Name": "VFR Exit",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "9e3102ed-49d1-4cad-93a9-fb7cec4f861d",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "clearVar",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "clearVar",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CLR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CLR",
+          "GUID": "4fba1d89-e578-4628-8c4c-a84ac457fadd",
+          "Active": true,
+          "Name": "Clear Variable (For BS)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "string",
+                "Name": "lengthThing",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "$"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "RS_TST"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "RS_TST",
+          "GUID": "1fc39821-6787-4114-825a-14040dcc5ae7",
+          "Active": true,
+          "Name": "Length initialize",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "string",
+                "Name": "lensub",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "$"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "IDT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "IDT",
+          "GUID": "5e36d104-62c9-4789-971f-5b963b8dd54c",
+          "Active": true,
+          "Name": "lensub init",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "vfr",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VFR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VFR",
+          "GUID": "50dd87e9-8938-4664-9529-4a6f56671511",
+          "Active": true,
+          "Name": "vfr inverse var",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "$-1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "CLR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "CLR",
+          "GUID": "85fa48f8-bfd3-4c9f-92eb-a7e6ce2e760f",
+          "Active": true,
+          "Name": "Length -1 ",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 4.0,
+                "Text": "4",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "0"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "0",
+          "GUID": "95308517-92c3-4bb6-aff6-1b19d592964c",
+          "Active": true,
+          "Name": "Var0 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 2.0,
+                "Text": "2",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "1",
+          "GUID": "c1088e54-f08a-4898-b2e0-d8c1363234b7",
+          "Active": true,
+          "Name": "Var1 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 3.0,
+                "Text": "3",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "2",
+          "GUID": "2df808bb-0c16-4581-982a-ca23fdaf51e3",
+          "Active": true,
+          "Name": "Var2 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 4.0,
+                "Text": "4",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "3"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "3",
+          "GUID": "9509f472-819a-42f5-b215-63417ae7a9d2",
+          "Active": true,
+          "Name": "Var3 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 5.0,
+                "Text": "5",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "4"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "4",
+          "GUID": "123849d4-186e-4e7a-ac6c-7ec0e533c383",
+          "Active": true,
+          "Name": "Var4 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 3.0,
+                "Text": "3",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "5"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "5",
+          "GUID": "bab92e38-2141-41a2-a1ac-8af5172c9906",
+          "Active": true,
+          "Name": "Var5 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 3.0,
+                "Text": "3",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "6"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "6",
+          "GUID": "9cdb707b-75a6-4c09-8d34-dd146a9fbfc8",
+          "Active": true,
+          "Name": "Var6 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "typeLength",
+                "Number": 4.0,
+                "Text": "4",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "7"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "7",
+          "GUID": "8b07d350-e7fb-4773-ad41-0076fd4222f7",
+          "Active": true,
+          "Name": "Var7 Inc Length",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "DME_XPNDR",
+            "Serial": "SN-628-9AF"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

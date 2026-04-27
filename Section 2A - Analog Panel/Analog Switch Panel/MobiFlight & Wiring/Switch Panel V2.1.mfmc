@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ModuleType>MobiFlight Mega</ModuleType>
-  <ModuleName>Switch Panel V2</ModuleName>
+  <ModuleName>SwitchPanel V2-1</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <Button Name="OFF" Pin="2" />
   <Button Name="R" Pin="3" />
@@ -60,12 +60,12 @@
   <Button Name="CB_IN_12" Pin="59" />
   <Button Name="CB_IN_13" Pin="60" />
   <Button Name="CB_IN_14" Pin="61" />
-  <AnalogInput Name="Sig - Throttle" Pin="62" Sensitivity="10" />
-  <AnalogInput Name="Sig - Mixture" Pin="63" Sensitivity="10" />
-  <AnalogInput Name="Sig - Flaps" Pin="64" Sensitivity="10" />
-  <AnalogInput Name="Sig - Trim" Pin="65" Sensitivity="10" />
-  <AnalogInput Name="Sig - Aux1" Pin="66" Sensitivity="10" />
-  <AnalogInput Name="Sig - Aux2" Pin="67" Sensitivity="10" />
-  <AnalogInput Name="Sig - Aux3" Pin="68" Sensitivity="10" />
-  <AnalogInput Name="Sig - Aux4" Pin="69" Sensitivity="10" />
+  <AnalogInput Name="Sig - Trim" Pin="62" Sensitivity="10" />
+  <AnalogInput Name="Sig - Throttle" Pin="63" Sensitivity="10" />
+  <AnalogInput Name="Sig - Mixture" Pin="64" Sensitivity="10" />
+  <AnalogInput Name="Sig - Flaps" Pin="65" Sensitivity="10" />
+  <AnalogInput Name="Sig - X" Pin="66" Sensitivity="10" />
+  <AnalogInput Name="Sig - Y" Pin="67" Sensitivity="10" />
+  <AnalogInput Name="Sig - Z" Pin="68" Sensitivity="10" />
+  <AnalogInput Name="Sig - AUX" Pin="69" Sensitivity="10" />
 </Config>
