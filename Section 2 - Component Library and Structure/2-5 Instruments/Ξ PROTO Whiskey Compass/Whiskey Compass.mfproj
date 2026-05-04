@@ -1,0 +1,99 @@
+{
+  "Name": "Whiskey Compass",
+  "ConfigFiles": [
+    {
+      "Label": "Whiskey Compass",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-5 Instruments\\Ξ PROTO Whiskey Compass\\Whiskey Compass.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/misc/compass_indicated"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 180.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Whiskey Compass",
+            "Address": "Whiskey Compass",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Whiskey Compass",
+          "GUID": "a8c790d0-3ed0-4a4d-aabf-3839bbc3a48c",
+          "Active": false,
+          "Name": "XPL - Compass",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MobiFlight Mega",
+            "Serial": "SN-G3F-F9B"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "8afcebd6-55ff-4c0f-a1c2-35d814090537",
+              "Value": "(A:WISKEY COMPASS INDICATION DEGREES,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 90.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Whiskey Compass",
+            "Address": "Whiskey Compass",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Whiskey Compass",
+          "GUID": "1e9e41a6-614c-4868-a080-b9fc418d92b7",
+          "Active": true,
+          "Name": "MSFS - Compass",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "MobiFlight Mega",
+            "Serial": "SN-G3F-F9B"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "360-$",
+                "Active": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
