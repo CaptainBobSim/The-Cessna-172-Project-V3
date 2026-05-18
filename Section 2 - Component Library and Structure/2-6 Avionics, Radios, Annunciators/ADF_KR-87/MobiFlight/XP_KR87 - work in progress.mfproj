@@ -1,0 +1,2003 @@
+{
+  "Name": "KR87_XP",
+  "ConfigFiles": [
+    {
+      "Label": "KR87",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-6 Avionics, Radios, Annunciators\\ADF_KR-87\\MobiFlight\\KR87.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "BFO",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 12345678.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "0be5c04b-8cd2-4d90-adee-7c4550854f25",
+          "Active": true,
+          "Name": "COLD AND DARK",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "'        '",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "1",
+          "Value": "        ",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/adf1_left_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 12345678.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "de8f0230-35fc-443f-aa73-0cb7d06b0eac",
+          "Active": true,
+          "Name": "FREQ Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 4,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "400",
+          "Value": "0400"
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/adf1_right_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 12345678.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "78c823e9-56c0-432b-a97f-8e9d8cbff3b5",
+          "Active": true,
+          "Name": "FREQ Stby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "FREQ",
+              "Serial": null,
+              "Pin": null,
+              "Operand": ">=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Padding",
+                "Character": "0",
+                "Length": 4,
+                "Direction": 0,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "597",
+          "Value": "0597"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "BFO",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "BFO_LED",
+            "Pin": "BFO_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "BFO_LED",
+          "GUID": "081dcffe-654e-486d-ad69-5a2fee9a7ef0",
+          "Active": true,
+          "Name": "BFO",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ANT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ANT_LED",
+            "Pin": "ANT_LED",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ANT_LED",
+          "GUID": "a94ef208-4334-453a-b7a6-54ba19543b4a",
+          "Active": true,
+          "Name": "ANT LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*100",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "100"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ANT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ADF_LED",
+            "Pin": "ADF_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ADF_LED",
+          "GUID": "970051be-ec1f-4124-a298-bdcb366fc64a",
+          "Active": true,
+          "Name": "ADF LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "0",
+                "ElseValue": "1",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "1",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "FREQ",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "FRQ_LED",
+            "Pin": "FRQ_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "FRQ_LED",
+          "GUID": "644ff750-4733-4ced-bfcb-096000f3e93e",
+          "Active": true,
+          "Name": "FREQ LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "5",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/clock_timer/elapsed_time_seconds"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "c3f6b961-6945-4b1e-84cd-f78ead4dd72b",
+          "Active": true,
+          "Name": "Flight Time Thicc Value -- TEST",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "FREQ",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "FLT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($/3600)",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3e5c1b39-4900-4afe-a6ed-344fe77ba325",
+              "Value": "(E:SIMULATION TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "c766f58b-dcb5-459a-89d5-c522dc921681",
+          "Active": true,
+          "Name": "Flight Time Smol Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "FREQ",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "FLT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "Floor($/60)",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Source": "SIMCONNECT_NOT_AVAILABLE",
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ET",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "07a04b82-31ac-4d72-ad66-d0667c04b1bd",
+          "Active": true,
+          "Name": "Elapsed Time Thicc Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "FREQ",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "FLT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "3600",
+                "IfValue": "Floor(($/3600)%60)",
+                "ElseValue": "Floor(($/60)%60)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": " ",
+                "Length": 4,
+                "Direction": 0,
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=1,0,$)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ET",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Display Module",
+            "DisplayLedAddress": "Display Module",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1"
+            ],
+            "DisplayLedDecimalPoints": [
+              "2"
+            ],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Display Module",
+          "GUID": "6e4280c1-4ca5-4ca3-9724-33d5e8ca3eac",
+          "Active": true,
+          "Name": "Elapsed Time Smol Value",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "FREQ",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "variable",
+              "Ref": "FLT",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "3600",
+                "IfValue": "Floor(($/60)%60)",
+                "ElseValue": "Floor(($)%60)",
+                "Active": true
+              },
+              {
+                "Type": "Padding",
+                "Character": " ",
+                "Length": 4,
+                "Direction": 0,
+                "Active": false
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "if(#=1,0,$)",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "FLT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "FLT_LED",
+            "Pin": "FLT_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "FLT_LED",
+          "GUID": "467dc38f-5db1-4fa1-957c-48ce4669e373",
+          "Active": true,
+          "Name": "FLT/ET Toggle",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*(#-1)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*!",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "644ff750-4733-4ced-bfcb-096000f3e93e",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "FLT",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ET_LED",
+            "Pin": "ET_LED",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ET_LED",
+          "GUID": "4e162c97-8216-41c4-9e70-d267f0da1ee9",
+          "Active": true,
+          "Name": "(copy) FLT/ET Toggle Copy",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "0",
+                "ElseValue": "1",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*(#-1)",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*!",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "644ff750-4733-4ced-bfcb-096000f3e93e",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "5259777a-74da-466c-a13b-925b576a44bc",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ADF_SET_RST",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+          "Active": true,
+          "Name": "Set Reset Status -\n 1: Zero\n2: Start\n3: Stop",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "config",
+              "Ref": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "4",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "($%3)+1",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ADF_SET_RST",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "cb7382ef-2e65-44ae-9f5c-5d03dd288d56",
+          "Active": true,
+          "Name": "Clear if 1 (Initialize to allow for quick start)",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "f4d8cdc2-feea-4cec-a578-10ecbc147dae",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "!=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            },
+            {
+              "Type": "config",
+              "Ref": "f8a27aa3-6c67-4ea2-b8f0-15785af36a85",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "4",
+              "Logic": "and",
+              "Active": false
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ET",
+                "Number": 4.0,
+                "Text": "4",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "b2b3804d-77b3-4f34-a207-c9cc74480f54",
+          "Active": true,
+          "Name": "ET BLINKER",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "2",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 639146893058887522,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "1",
+          "Status": {
+            "Source": "SIMCONNECT_NOT_AVAILABLE",
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "VarType": 0
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "ButtonInputConfig": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ET",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "$*0"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "f7853292-812f-4b7d-a0d3-0bd5048cc989",
+          "Active": true,
+          "Name": "ET Blink to reset",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "d0f07365-71b4-45d0-843f-c407a86b4cb4",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Blink",
+                "BlinkValue": "1",
+                "OnOffSequence": [
+                  500,
+                  500
+                ],
+                "OffDurationInMs": 500,
+                "FirstExecutionTime": 639146893058887522,
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "1",
+          "Status": {
+            "Source": "SIMCONNECT_NOT_AVAILABLE"
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "ADF_PWR",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "5259777a-74da-466c-a13b-925b576a44bc",
+          "Active": true,
+          "Name": "Power",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$+1",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "0",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "f4952ed8-b6b8-4bb1-b71f-821be11371d8",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ],
+          "RawValue": "0",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "91f78aaf-2873-4e63-9b7e-17548e4d42f9",
+              "Value": "(A:CIRCUIT AVIONICS ON,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "f4952ed8-b6b8-4bb1-b71f-821be11371d8",
+          "Active": true,
+          "Name": "Battery",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "RawValue": "0",
+          "Value": "0",
+          "Status": {
+            "Source": "SIMCONNECT_NOT_AVAILABLE"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/adf1_power",
+              "Expression": "$"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BFO_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BFO_P",
+          "GUID": "a9ea7fee-f58b-4d6e-8be2-b91660e841ca",
+          "Active": true,
+          "Name": "BFO",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/adf1_power",
+              "Expression": "if($=1, 2, 1)"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ADF_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ADF_P",
+          "GUID": "7f145995-92c4-4431-9521-5afde02dedd1",
+          "Active": true,
+          "Name": "ADF/ANT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "BFO",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "if($>0,0,1)"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BFO_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BFO_P",
+          "GUID": "0673d394-fbb7-49c5-841c-e208e9642f82",
+          "Active": true,
+          "Name": "BFO Variable",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ANT",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "if($>0,0,1)"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "ADF_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "ADF_P",
+          "GUID": "656c1dd4-57ed-4b5e-8dbe-1026226e9931",
+          "Active": true,
+          "Name": "ADF/ANT Variable",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:adf_frqTransfert)",
+              "PresetId": "234fe759-1d30-4b4e-ae35-760b9cee1a69"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FRQ_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FRQ_P",
+          "GUID": "dd46b3ee-2021-4e2d-9552-f4f782d6902b",
+          "Active": true,
+          "Name": "Freq",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FREQ",
+                "Number": 5.0,
+                "Text": "5",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FRQ_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FRQ_P",
+          "GUID": "213c0c09-0030-4972-923e-84102ac72d75",
+          "Active": true,
+          "Name": "freq var",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FREQ",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "$*0"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FLT_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FLT_P",
+          "GUID": "14b5a489-5966-4afe-af7b-06098aaa39a6",
+          "Active": true,
+          "Name": "freq var clear by ET",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:adf_SetRst)",
+              "PresetId": "efa8b552-7655-4f22-bea2-144a75456bff"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SET_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SET_P",
+          "GUID": "67b9b84e-dc15-43fa-b739-6cd8f332765e",
+          "Active": true,
+          "Name": "Set/RST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>H:adf_FltEt)",
+              "PresetId": "140dfb97-1131-4e6d-abc1-0ed1b4fa7cd3"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FLT_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FLT_P",
+          "GUID": "9e606eac-dbb7-4036-b537-8531b27dfdc8",
+          "Active": true,
+          "Name": "FLT/ET",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "FLT",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "if($>0,0,1)"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FLT_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FLT_P",
+          "GUID": "2dacfb02-468c-456d-ab2b-00e990cb4b72",
+          "Active": true,
+          "Name": "FLT/ET Variable Swappy",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SET_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SET_P",
+          "GUID": "953470f2-0885-4c3d-8c04-c9a6c128afc7",
+          "Active": false,
+          "Name": "sim snapshot variable?",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ENC_P",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ENC_P",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "PUSH"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "PUSH",
+          "GUID": "cada544e-d2f3-48c7-9e90-b300fb6a8c8d",
+          "Active": true,
+          "Name": "Knob Pushed",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_ones_tens_down",
+              "Expression": "$"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_ones_tens_up",
+              "Expression": "$"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "FINE"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "FINE",
+          "GUID": "3243b3a5-651f-4e12-bae9-d49771fba2ad",
+          "Active": true,
+          "Name": "fine ADF 1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ENC_P",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_tens_down",
+              "Expression": "$"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_tens_up",
+              "Expression": "$"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "FINE"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "FINE",
+          "GUID": "adce9f28-1d43-42f9-90e4-b42d328db492",
+          "Active": true,
+          "Name": "fine ADF 10 (push)",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ENC_P",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_hundreds_thous_down",
+              "Expression": "$"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_adf1_hundreds_thous_up",
+              "Expression": "$"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ROUGH"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ROUGH",
+          "GUID": "55583663-ff74-4f77-a756-b3ad39ade366",
+          "Active": true,
+          "Name": "Rough ADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "ENC_P",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ADF_SET_RST",
+                "Number": 6.0,
+                "Text": "6",
+                "Expression": "$+1"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "SET_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "SET_P",
+          "GUID": "b9d74282-557a-4483-a445-fa0ac7cb29fa",
+          "Active": true,
+          "Name": "ADF_SET_RST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/audio_volume_adf1",
+              "Expression": "$-0.1"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/audio_volume_adf1",
+              "Expression": "$+0.1"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "VOL"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "VOL",
+          "GUID": "b18d25f0-8384-45f9-bd7b-ad0a5e2a5587",
+          "Active": true,
+          "Name": "adf volume",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "ADF_PWR",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "if($=0,1,0)"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "VOL_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "VOL_P",
+          "GUID": "011fbbd7-2ca5-422b-8726-d4a3679b58d6",
+          "Active": true,
+          "Name": "adf PWR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-F83-546"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
