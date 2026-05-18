@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="a8c790d0-3ed0-4a4d-aabf-3839bbc3a48c">
+      <active>true</active>
+      <description>XPL - Compass</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/misc/compass_indicated" />
+        <test type="Float" value="180" />
+        <modifiers />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-273-D68" trigger="normal" stepperAddress="Compass Stepper" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1e9e41a6-614c-4868-a080-b9fc418d92b7">
+      <active>true</active>
+      <description>MSFS - Compass</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.2.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WISKEY COMPASS INDICATION DEGREES,Degrees)" UUID="8afcebd6-55ff-4c0f-a1c2-35d814090537" />
+        <test type="Float" value="180" />
+        <modifiers />
+        <display type="Stepper" serial="MobiFlight Mega/ SN-273-D68" trigger="normal" stepperAddress="Compass Stepper" stepperInputRev="360" stepperOutputRev="2040" stepperTestValue="500" stepperCompassMode="True" stepperAcceleration="800" stepperSpeed="467" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
