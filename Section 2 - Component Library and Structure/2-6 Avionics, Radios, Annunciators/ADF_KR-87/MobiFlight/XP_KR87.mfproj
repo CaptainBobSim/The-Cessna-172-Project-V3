@@ -53,7 +53,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -76,7 +76,7 @@
               }
             ]
           },
-          "RawValue": "1",
+          "RawValue": "0",
           "Value": "        ",
           "Status": {
             "Precondition": "not satisfied"
@@ -85,7 +85,7 @@
         {
           "Source": {
             "XplaneDataRef": {
-              "Path": "sim/cockpit2/radios/actuators/adf1_left_frequency_hz"
+              "Path": "sim/cockpit2/radios/actuators/adf1_frequency_hz"
             },
             "Type": "XplaneSource"
           },
@@ -122,7 +122,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -147,13 +147,13 @@
               }
             ]
           },
-          "RawValue": "400",
-          "Value": "0400"
+          "RawValue": "200",
+          "Value": "0200"
         },
         {
           "Source": {
             "XplaneDataRef": {
-              "Path": "sim/cockpit2/radios/actuators/adf1_right_frequency_hz"
+              "Path": "sim/cockpit2/radios/actuators/adf1_standby_frequency_hz"
             },
             "Type": "XplaneSource"
           },
@@ -188,7 +188,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -223,19 +223,15 @@
               }
             ]
           },
-          "RawValue": "597",
-          "Value": "0597"
+          "RawValue": "200",
+          "Value": "0200"
         },
         {
           "Source": {
-            "MobiFlightVariable": {
-              "TYPE": "number",
-              "Name": "BFO",
-              "Number": 0.0,
-              "Text": "",
-              "Expression": "$"
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/adf1_power"
             },
-            "Type": "VariableSource"
+            "Type": "XplaneSource"
           },
           "TestValue": {
             "type": 1,
@@ -257,13 +253,21 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
               {
                 "Type": "Transformation",
                 "Expression": "$*#",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "1",
+                "ElseValue": "0",
                 "Active": true
               }
             ]
@@ -276,8 +280,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "1"
+          "RawValue": "2",
+          "Value": "0"
         },
         {
           "Source": {
@@ -310,7 +314,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
@@ -334,8 +338,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "100"
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -368,7 +372,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
@@ -395,8 +399,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "0"
+          "RawValue": "0",
+          "Value": "1"
         },
         {
           "Source": {
@@ -429,7 +433,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
@@ -456,13 +460,13 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "5",
+          "RawValue": "4",
           "Value": "1"
         },
         {
           "Source": {
             "XplaneDataRef": {
-              "Path": "sim/cockpit2/clock_timer/elapsed_time_seconds"
+              "Path": "sim/time/total_flight_time_sec"
             },
             "Type": "XplaneSource"
           },
@@ -493,11 +497,11 @@
           "DeviceName": "Display Module",
           "GUID": "c3f6b961-6945-4b1e-84cd-f78ead4dd72b",
           "Active": true,
-          "Name": "Flight Time Thicc Value -- TEST",
+          "Name": "Flight Time Thicc Value",
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -536,24 +540,30 @@
               {
                 "Type": "Transformation",
                 "Expression": "Floor($/3600)",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "3600",
+                "IfValue": "Floor(($/3600)%60)",
+                "ElseValue": "Floor(($/60)%60)",
                 "Active": true
               }
             ]
           },
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "855.21649169921875",
+          "Value": "14",
           "Status": {
             "Precondition": "not satisfied"
           }
         },
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "3e5c1b39-4900-4afe-a6ed-344fe77ba325",
-              "Value": "(E:SIMULATION TIME,second)",
-              "VarType": 2
+            "XplaneDataRef": {
+              "Path": "sim/time/total_flight_time_sec"
             },
-            "Type": "SimConnectSource"
+            "Type": "XplaneSource"
           },
           "TestValue": {
             "type": 1,
@@ -586,7 +596,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -624,15 +634,22 @@
             "Items": [
               {
                 "Type": "Transformation",
-                "Expression": "Floor($/60)",
+                "Expression": "Floor($%60)",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "3600",
+                "IfValue": "Floor(($/60)%60)",
+                "ElseValue": "Floor(($)%60)",
                 "Active": true
               }
             ]
           },
-          "RawValue": "0",
-          "Value": "0",
+          "RawValue": "855.21649169921875",
+          "Value": "15",
           "Status": {
-            "Source": "SIMCONNECT_NOT_AVAILABLE",
             "Precondition": "not satisfied"
           }
         },
@@ -678,7 +695,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -792,7 +809,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -895,7 +912,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
@@ -925,7 +942,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "0",
+          "RawValue": "1",
           "Value": "0"
         },
         {
@@ -954,12 +971,12 @@
           "DeviceType": "Output",
           "DeviceName": "ET_LED",
           "GUID": "4e162c97-8216-41c4-9e70-d267f0da1ee9",
-          "Active": true,
+          "Active": false,
           "Name": "(copy) FLT/ET Toggle Copy",
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Modifiers": {
             "Items": [
@@ -996,9 +1013,7 @@
               "Placeholder": "!",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -1054,7 +1069,7 @@
               }
             ]
           },
-          "RawValue": "0",
+          "RawValue": "3",
           "Value": "1"
         },
         {
@@ -1122,13 +1137,15 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "0",
-          "Value": "0"
+          "RawValue": "3",
+          "Value": "3"
         },
         {
           "Source": {
             "SimConnectValue": {
-              "VarType": 0
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
             },
             "Type": "SimConnectSource"
           },
@@ -1143,8 +1160,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ET",
-                "Number": 4.0,
-                "Text": "4",
+                "Number": 1.0,
+                "Text": "1",
                 "Expression": "$+1"
               }
             },
@@ -1190,7 +1207,7 @@
             ]
           },
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Source": "SIMCONNECT_NOT_AVAILABLE",
             "Precondition": "not satisfied"
@@ -1261,7 +1278,7 @@
             ]
           },
           "RawValue": "0",
-          "Value": "1",
+          "Value": "0",
           "Status": {
             "Source": "SIMCONNECT_NOT_AVAILABLE"
           }
@@ -1294,17 +1311,17 @@
               {
                 "Type": "Transformation",
                 "Expression": "$*#",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Transformation",
                 "Expression": "$+1",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Transformation",
-                "Expression": "0",
-                "Active": false
+                "Expression": "1",
+                "Active": true
               }
             ]
           },
@@ -1352,7 +1369,7 @@
               "Type": "XplaneInputAction",
               "InputType": "DataRef",
               "Path": "sim/cockpit2/radios/actuators/adf1_power",
-              "Expression": "$"
+              "Expression": "if($=2, 3, 2)"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -1373,7 +1390,43 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "BFO",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "if($>0,0,1)"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BFO_P"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BFO_P",
+          "GUID": "0673d394-fbb7-49c5-841c-e208e9642f82",
+          "Active": true,
+          "Name": "BFO Variable",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "ADF_KR-87_IDC_30",
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1405,43 +1458,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
-        },
-        {
-          "button": {
-            "onPress": {
-              "Type": "VariableInputAction",
-              "Variable": {
-                "TYPE": "number",
-                "Name": "BFO",
-                "Number": 1.0,
-                "Text": "1",
-                "Expression": "if($>0,0,1)"
-              }
-            },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
-            "LongReleaseDelay": 350,
-            "HoldDelay": 350,
-            "RepeatDelay": 0
-          },
-          "Device": {
-            "Type": "Button",
-            "Name": "BFO_P"
-          },
-          "DeviceType": "Button",
-          "DeviceName": "BFO_P",
-          "GUID": "0673d394-fbb7-49c5-841c-e208e9642f82",
-          "Active": true,
-          "Name": "BFO Variable",
-          "Type": "InputConfigItem",
-          "Controller": {
-            "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1453,8 +1470,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ANT",
-                "Number": 1.0,
-                "Text": "1",
+                "Number": 0.0,
+                "Text": "0",
                 "Expression": "if($>0,0,1)"
               }
             },
@@ -1477,7 +1494,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1485,9 +1502,10 @@
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:adf_frqTransfert)",
-              "PresetId": "234fe759-1d30-4b4e-ae35-760b9cee1a69"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/adf1_standy_flip",
+              "Expression": "$"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -1508,7 +1526,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1520,8 +1538,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FREQ",
-                "Number": 5.0,
-                "Text": "5",
+                "Number": 4.0,
+                "Text": "4",
                 "Expression": "$+1"
               }
             },
@@ -1544,7 +1562,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1580,7 +1598,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1611,7 +1629,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1642,7 +1660,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1678,7 +1696,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1705,7 +1723,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           }
         },
         {
@@ -1748,7 +1766,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1782,7 +1800,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -1826,7 +1844,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -1873,7 +1891,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "Preconditions": [
             {
@@ -1895,8 +1913,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ADF_SET_RST",
-                "Number": 6.0,
-                "Text": "6",
+                "Number": 3.0,
+                "Text": "3",
                 "Expression": "$+1"
               }
             },
@@ -1919,7 +1937,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           },
           "RawValue": "RELEASE",
           "Value": " "
@@ -1953,7 +1971,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           }
         },
         {
@@ -1987,7 +2005,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
-            "Serial": "SN-F83-546"
+            "Serial": "SN-830-A75"
           }
         }
       ]
