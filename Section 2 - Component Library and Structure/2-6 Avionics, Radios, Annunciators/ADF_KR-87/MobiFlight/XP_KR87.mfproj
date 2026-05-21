@@ -75,11 +75,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "        ",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -141,14 +136,12 @@
               {
                 "Type": "Padding",
                 "Character": "0",
-                "Length": 4,
+                "Length": 3,
                 "Direction": 0,
                 "Active": true
               }
             ]
-          },
-          "RawValue": "200",
-          "Value": "0200"
+          }
         },
         {
           "Source": {
@@ -217,14 +210,12 @@
               {
                 "Type": "Padding",
                 "Character": "0",
-                "Length": 4,
+                "Length": 3,
                 "Direction": 0,
                 "Active": true
               }
             ]
-          },
-          "RawValue": "200",
-          "Value": "0200"
+          }
         },
         {
           "Source": {
@@ -279,9 +270,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "2",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -337,9 +326,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -398,9 +385,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "1"
+          ]
         },
         {
           "Source": {
@@ -459,9 +444,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "4",
-          "Value": "1"
+          ]
         },
         {
           "Source": {
@@ -551,11 +534,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "855.21649169921875",
-          "Value": "14",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -646,11 +624,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "855.21649169921875",
-          "Value": "15",
-          "Status": {
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -760,12 +733,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0",
-          "Status": {
-            "Precondition": "not satisfied"
-          }
+          ]
         },
         {
           "Source": {
@@ -874,12 +842,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "0",
-          "Status": {
-            "Precondition": "not satisfied"
-          }
+          ]
         },
         {
           "Source": {
@@ -941,9 +904,7 @@
               "Placeholder": "!",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "1",
-          "Value": "0"
+          ]
         },
         {
           "Source": {
@@ -1068,9 +1029,7 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "3",
-          "Value": "1"
+          }
         },
         {
           "Source": {
@@ -1136,9 +1095,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "3",
-          "Value": "3"
+          ]
         },
         {
           "Source": {
@@ -1205,12 +1162,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "0",
-          "Status": {
-            "Source": "SIMCONNECT_NOT_AVAILABLE",
-            "Precondition": "not satisfied"
           }
         },
         {
@@ -1276,11 +1227,6 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "0",
-          "Status": {
-            "Source": "SIMCONNECT_NOT_AVAILABLE"
           }
         },
         {
@@ -1332,9 +1278,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "0",
-          "Value": "1"
+          ]
         },
         {
           "Source": {
@@ -1356,12 +1300,7 @@
           "Active": true,
           "Name": "Battery",
           "Type": "OutputConfigItem",
-          "Controller": null,
-          "RawValue": "0",
-          "Value": "0",
-          "Status": {
-            "Source": "SIMCONNECT_NOT_AVAILABLE"
-          }
+          "Controller": null
         },
         {
           "button": {
@@ -1391,9 +1330,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1427,9 +1364,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1459,9 +1394,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1470,8 +1403,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ANT",
-                "Number": 0.0,
-                "Text": "0",
+                "Number": 1.0,
+                "Text": "1",
                 "Expression": "if($>0,0,1)"
               }
             },
@@ -1495,9 +1428,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1527,9 +1458,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1538,8 +1467,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "FREQ",
-                "Number": 4.0,
-                "Text": "4",
+                "Number": 3.0,
+                "Text": "3",
                 "Expression": "$+1"
               }
             },
@@ -1563,9 +1492,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1599,9 +1526,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1630,9 +1555,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1661,9 +1584,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1697,9 +1618,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "button": {
@@ -1767,9 +1686,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
@@ -1857,10 +1774,7 @@
               "Logic": "and",
               "Active": true
             }
-          ],
-          "Status": {
-            "Precondition": "not satisfied"
-          }
+          ]
         },
         {
           "encoder": {
@@ -1913,8 +1827,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "ADF_SET_RST",
-                "Number": 3.0,
-                "Text": "3",
+                "Number": 2.0,
+                "Text": "2",
                 "Expression": "$+1"
               }
             },
@@ -1938,9 +1852,7 @@
           "Controller": {
             "Name": "ADF_KR-87_IDC_30",
             "Serial": "SN-830-A75"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+          }
         },
         {
           "encoder": {
