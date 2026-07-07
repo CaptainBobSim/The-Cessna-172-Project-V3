@@ -1,0 +1,312 @@
+{
+  "Name": "Altimeter FS2020",
+  "ConfigFiles": [
+    {
+      "Label": "Altimeter FS2020",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-5 Instruments\\6-PACK_Altimeter\\Altimeter FS2020.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3110ef7c-3b03-4d05-99d6-fb582d3ac3f8",
+              "Value": "(A:INDICATED ALTITUDE,Feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Hundred",
+            "Address": "Hundred",
+            "InputRev": 1000,
+            "TestValue": -1000,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Hundred",
+          "GUID": "b3723ffc-24ba-44ae-9e92-e172fb497ce7",
+          "Active": true,
+          "Name": "Hundreds Needle",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "-($%1000)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3110ef7c-3b03-4d05-99d6-fb582d3ac3f8",
+              "Value": "(A:INDICATED ALTITUDE,Feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "One Thousand",
+            "Address": "One Thousand",
+            "InputRev": 1000,
+            "TestValue": 1000,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "One Thousand",
+          "GUID": "81eed118-c9ba-4125-9905-a761bbb87bcf",
+          "Active": true,
+          "Name": "Thousands Needle",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "($%10000)/10",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3110ef7c-3b03-4d05-99d6-fb582d3ac3f8",
+              "Value": "(A:INDICATED ALTITUDE,Feet)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Ten Thousand",
+            "Address": "Ten Thousand",
+            "InputRev": 1000,
+            "TestValue": -1000,
+            "OutputRev": 2040,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Ten Thousand",
+          "GUID": "29d51b3f-ada7-4229-b4e8-718bd36f746c",
+          "Active": true,
+          "Name": "Ten Thousands Needle",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "((-$)%100000)/100",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "Altimeter_Adjust",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "AnalogInputConfig": {
+            "onChange": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "@ 0.338639 16 * * (>K:2:KOHLSMAN_SET) l0 (>L:INSTRUMENT_Altimeter_1)",
+              "PresetId": "5a018434-3058-4956-9f0f-83c28fcdfc65"
+            }
+          },
+          "DeviceType": "InputAction",
+          "DeviceName": null,
+          "GUID": "86b0246e-d497-433a-99a6-a3bd668c2b56",
+          "Active": true,
+          "Name": "Altimeter Adjust Read",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "17": 2790.0,
+                  "72": 2992.0,
+                  "110": 3150.0
+                },
+                "Count": 3,
+                "Max": -1.7976931348623157E+308,
+                "Min": 1.7976931348623157E+308,
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "2f595653-50dd-4394-8895-af62769febe5",
+              "Value": "(A:KOHLSMAN SETTING HG, inHg)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "35604fc1-a467-4e1f-89bf-8be013f4b7b4",
+          "Active": false,
+          "Name": "Altset actual read (reference)",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "analog": {
+            "onChange": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "Altimeter_Adjust",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "@"
+              }
+            }
+          },
+          "Device": {
+            "Type": "AnalogInput",
+            "Name": "Kohlsman Window"
+          },
+          "DeviceType": "AnalogInput",
+          "DeviceName": "Kohlsman Window",
+          "GUID": "119b806f-777e-47d4-b471-cabb9b49e253",
+          "Active": true,
+          "Name": "Khosman Potentiometer Variable",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "AltimeterArduino",
+            "Serial": "SN-e19-de4"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

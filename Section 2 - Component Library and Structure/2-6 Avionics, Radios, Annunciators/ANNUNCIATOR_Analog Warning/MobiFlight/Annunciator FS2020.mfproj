@@ -1,0 +1,775 @@
+{
+  "Name": "Annunciator FS2020",
+  "ConfigFiles": [
+    {
+      "Label": "Annunciator FS2020",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-6 Avionics, Radios, Annunciators\\ANNUNCIATOR_Analog Warning\\MobiFlight\\Annunciator FS2020.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "TESTTRUE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 255.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "L FUEL|LOW FUEL|FUEL R|--|---|OIL PRESS|L VAC|VAC|VAC R|VOLT",
+            "Pin": "L FUEL|LOW FUEL|FUEL R|--|---|OIL PRESS|L VAC|VAC|VAC R|VOLT",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "L FUEL|LOW FUEL|FUEL R|--|---|OIL PRESS|L VAC|VAC|VAC R|VOLT",
+          "GUID": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+          "Active": true,
+          "Name": "Test All",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "TESTTRUE",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "100",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d7c4bbf7-1e00-4940-8ff3-38b03588fb18",
+              "Value": "(A:FUEL LEFT QUANTITY,Gallons)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "L FUEL",
+            "Pin": "L FUEL",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "L FUEL",
+          "GUID": "09fda44a-ab69-4456-88b5-5a674ba86547",
+          "Active": true,
+          "Name": "LOW FUEL L",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "10",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "5",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "6dec643e-45a3-42fe-8b87-7b2dd08ea6e3",
+              "Value": "(A:FUEL RIGHT QUANTITY,Gallons)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LOW FUEL",
+            "Pin": "LOW FUEL",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LOW FUEL",
+          "GUID": "c041083e-4ada-48e6-b060-c9ee37d70262",
+          "Active": true,
+          "Name": "LOW FUEL",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "#+!",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "5",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": false
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "09fda44a-ab69-4456-88b5-5a674ba86547",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "7181a6d1-5e4c-4f5f-894b-6fe0227a50eb",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "6dec643e-45a3-42fe-8b87-7b2dd08ea6e3",
+              "Value": "(A:FUEL RIGHT QUANTITY,Gallons)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "FUEL R",
+            "Pin": "FUEL R",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "FUEL R",
+          "GUID": "7181a6d1-5e4c-4f5f-894b-6fe0227a50eb",
+          "Active": true,
+          "Name": "LOW FUEL R",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "10",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "5",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "TESTTRUE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "--|---",
+            "Pin": "--|---",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "--|---",
+          "GUID": "a9378c15-6cbc-4bc7-b505-d5d1e509ed9d",
+          "Active": true,
+          "Name": "Dash",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "1",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "6f6b2c67-49cb-4f07-9bbc-170917f928d0",
+              "Value": "(A:GENERAL ENG OIL PRESSURE:1,Psf)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "OIL PRESS",
+            "Pin": "OIL PRESS",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "OIL PRESS",
+          "GUID": "17aa043b-320d-47c6-b7c1-0264753fd0be",
+          "Active": true,
+          "Name": "OIL PRESS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*0.00694444",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "20",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c3ca597-5777-4b54-849c-f63b0c17881b",
+              "Value": "(A:WARNING VACUUM, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "L VAC",
+            "Pin": "L VAC",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "L VAC",
+          "GUID": "66af18b1-7b65-434b-b3aa-f82243bff1a8",
+          "Active": true,
+          "Name": "VAC L",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c3ca597-5777-4b54-849c-f63b0c17881b",
+              "Value": "(A:WARNING VACUUM, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VAC",
+            "Pin": "VAC",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VAC",
+          "GUID": "ccbff9ec-1ec9-4b87-9e95-dba43bbdd8f6",
+          "Active": true,
+          "Name": "VAC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$+#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "TESTTRUE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VAC R",
+            "Pin": "VAC R",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VAC R",
+          "GUID": "5999a8ac-3536-4b4e-a9d2-c1a0df3d1ce1",
+          "Active": true,
+          "Name": "VAC R",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "c989f6c0-4d0c-4505-9354-1254051eb17a",
+              "Value": "(A:ELECTRICAL MAIN BUS VOLTAGE,Volts)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VOLT",
+            "Pin": "VOLT",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VOLT",
+          "GUID": "2f96c239-d1fb-43c3-b27b-228145962ad0",
+          "Active": true,
+          "Name": "VOLT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "99bc8226-647a-4fb9-9da6-f58f0b04841d",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ],
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "<",
+                "Value": "24.5",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "TESTTRUE",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "VOLT",
+            "Pin": "VOLT",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "VOLT",
+          "GUID": "c5b2448a-9b7a-41e2-ba5e-d1c93d1bf06a",
+          "Active": false,
+          "Name": "Is Tested",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "3e5c1b39-4900-4afe-a6ed-344fe77ba325",
+              "Value": "(E:SIMULATION TIME,second)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "81cc783e-ab15-45f5-9bd9-5444337c5192",
+          "Active": true,
+          "Name": "TimeVar",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "TESTTRUE",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "TESTTRUE",
+                "Number": 0.0,
+                "Text": "0",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "Annunciator_TST"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "Annunciator_TST",
+          "GUID": "d3c4798e-62a9-45d6-9071-83dcfd561d1f",
+          "Active": true,
+          "Name": "TST",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "BRIGHTNESS",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "50"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "BRIGHTNESS",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "255"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "BRT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "BRT",
+          "GUID": "47ae3a4c-5474-4d90-bab2-de6ad16a9b78",
+          "Active": true,
+          "Name": "DIM",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

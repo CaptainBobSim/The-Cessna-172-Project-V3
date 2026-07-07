@@ -1,0 +1,148 @@
+{
+  "Name": "Attitude Indicator FS2020",
+  "ConfigFiles": [
+    {
+      "Label": "Attitude Indicator FS2020",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-5 Instruments\\6-PACK_Attitude Indicator\\MobiFlight Files\\Attitude Indicator FS2020.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "6357059b-d04d-42b5-ab24-5212f273d8bf",
+              "Value": "(A:ATTITUDE INDICATOR BANK DEGREES,Radians)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 180.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Attitude Roll",
+            "Address": "Attitude Roll",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": false,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Attitude Roll",
+          "GUID": "cf02bbe3-9c22-45a0-a0f0-ed98d90e057d",
+          "Active": true,
+          "Name": "Roll",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*57.2958",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "-90": 90.0,
+                  "90": -90.0
+                },
+                "Count": 2,
+                "Max": 90.0,
+                "Min": -90.0,
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "26539606-5bbf-4b94-a212-1ecf0d8d3733",
+              "Value": "(A:ATTITUDE INDICATOR PITCH DEGREES,Radians)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "Attitude Pitch",
+            "Address": "Attitude Pitch",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": false,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "Attitude Pitch",
+          "GUID": "5eebb6db-8cb9-45ae-876e-5e9a38d7b5d8",
+          "Active": true,
+          "Name": "Pitch Maybe Perfect",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*57.2958",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "-35": -35.0,
+                  "35": 35.0
+                },
+                "Count": 2,
+                "Max": 35.0,
+                "Min": -35.0,
+                "Active": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

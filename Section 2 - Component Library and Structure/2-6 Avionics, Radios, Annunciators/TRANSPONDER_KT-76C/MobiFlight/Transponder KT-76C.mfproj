@@ -46,8 +46,8 @@
           "Name": "// TRANSPONDER CONFIGURATION UPDATED 2026-04-25",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -207,8 +207,8 @@
           "Name": "XPNDR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -244,8 +244,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "0",
-          "Value": "0"
+          "RawValue": "1200",
+          "Value": "1200"
         },
         {
           "Source": {
@@ -288,8 +288,8 @@
           "Name": "xpndrcode display",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -358,8 +358,8 @@
           "Name": "Mode",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -413,8 +413,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "sbY"
+          "RawValue": "4",
+          "Value": "OO0"
         },
         {
           "Source": {
@@ -454,8 +454,8 @@
           "Name": "Flashing Ident Dot (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -524,8 +524,8 @@
           "Name": "Ident data  flash (need both)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -558,7 +558,7 @@
             ]
           },
           "RawValue": "0",
-          "Value": "15"
+          "Value": "0"
         },
         {
           "Source": {
@@ -633,8 +633,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "1"
+          "RawValue": "4",
+          "Value": "4"
         },
         {
           "Source": {
@@ -678,8 +678,8 @@
               }
             ]
           },
-          "RawValue": "4996.20166015625",
-          "Value": "O50"
+          "RawValue": "4214.4501953125",
+          "Value": "O42"
         },
         {
           "Source": {
@@ -748,8 +748,8 @@
           "Name": "raw sim time",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -760,8 +760,8 @@
               }
             ]
           },
-          "RawValue": "751.8172607421875",
-          "Value": "751.8172607421875"
+          "RawValue": "48.234539031982422",
+          "Value": "48.234539031982422"
         },
         {
           "Source": {
@@ -786,8 +786,8 @@
           "Name": "timefreeze",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -819,8 +819,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "644.393615722656",
-          "Value": "107.42"
+          "RawValue": "0",
+          "Value": "48.23"
         },
         {
           "Source": {
@@ -859,8 +859,8 @@
           "Name": "\"Time Bomb\" 1 for 4 seconds then back to 0",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -924,8 +924,8 @@
           "Name": "-Backspace if 1 char (to 0)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -1026,8 +1026,8 @@
           "Name": "-ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -1121,8 +1121,8 @@
           "Name": "Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -1209,8 +1209,8 @@
           "Name": "ACTIVATE Backspace if 2 char (to 1)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -1384,8 +1384,8 @@
           "Name": "ACTIVATE Backspace if 3 char (to 2)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -1492,8 +1492,8 @@
           "Name": "VFR Inverse Raw rewrite depend then remove?",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Modifiers": {
             "Items": [
@@ -1538,8 +1538,8 @@
               "Variable": {
                 "TYPE": "number",
                 "Name": "typeLength",
-                "Number": 2.0,
-                "Text": "2",
+                "Number": 0.0,
+                "Text": "0",
                 "Expression": "$*#"
               }
             },
@@ -1556,8 +1556,8 @@
           "Name": "Length of Code (Being Typed)",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -1567,8 +1567,8 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "1",
-          "Value": "1"
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -1628,7 +1628,7 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "644.393615722656",
+          "RawValue": "0",
           "Value": "1"
         },
         {
@@ -1656,11 +1656,9 @@
           "Name": "XPNDR 0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1687,11 +1685,9 @@
           "Name": "XPNDR 1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1718,11 +1714,9 @@
           "Name": "XPNDR 2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1749,11 +1743,9 @@
           "Name": "XPNDR 3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1780,11 +1772,9 @@
           "Name": "XPNDR 4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1811,11 +1801,9 @@
           "Name": "XPNDR 5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1842,11 +1830,9 @@
           "Name": "XPNDR 6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1873,11 +1859,9 @@
           "Name": "XPNDR 7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1904,11 +1888,9 @@
           "Name": "OFF",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1935,11 +1917,9 @@
           "Name": "STBY",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "PRESS",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1966,11 +1946,9 @@
           "Name": "TST",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -1997,11 +1975,9 @@
           "Name": "ON",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2028,11 +2004,9 @@
           "Name": "ALT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2059,11 +2033,9 @@
           "Name": "CLR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2090,11 +2062,9 @@
           "Name": "VFR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2121,11 +2091,9 @@
           "Name": "IDENT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2166,8 +2134,8 @@
           "Name": "Var0",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2176,9 +2144,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2210,8 +2176,8 @@
           "Name": "Var1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2220,9 +2186,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2254,8 +2218,8 @@
           "Name": "Var1 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2264,9 +2228,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2307,8 +2269,8 @@
           "Name": "Var2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2317,9 +2279,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2351,8 +2311,8 @@
           "Name": "Var2 clear time",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2361,9 +2321,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2404,8 +2362,8 @@
           "Name": "Var3",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2414,9 +2372,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2457,8 +2413,8 @@
           "Name": "Var4",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2467,9 +2423,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2510,8 +2464,8 @@
           "Name": "Var5",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2520,9 +2474,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2563,8 +2515,8 @@
           "Name": "Var6",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2573,9 +2525,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2616,8 +2566,8 @@
           "Name": "Var7",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2626,9 +2576,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2660,8 +2608,8 @@
           "Name": "CLR Reset the time until exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "Preconditions": [
             {
@@ -2683,8 +2631,6 @@
               "TestValue": "1"
             }
           ],
-          "RawValue": "RELEASE",
-          "Value": " ",
           "Status": {
             "Precondition": "not satisfied"
           }
@@ -2719,8 +2665,8 @@
           "Name": "VFR Exit",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
           },
           "ConfigRefs": [
             {
@@ -2729,9 +2675,7 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ],
-          "RawValue": "RELEASE",
-          "Value": " "
+          ]
         },
         {
           "button": {
@@ -2772,11 +2716,9 @@
           "Name": "Clear Variable (For BS)",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2808,11 +2750,9 @@
           "Name": "Length initialize",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2844,11 +2784,9 @@
           "Name": "lensub init",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2880,11 +2818,9 @@
           "Name": "vfr inverse var",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2916,11 +2852,9 @@
           "Name": "Length -1 ",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2952,11 +2886,9 @@
           "Name": "Var0 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -2988,11 +2920,9 @@
           "Name": "Var1 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3024,11 +2954,9 @@
           "Name": "Var2 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3060,11 +2988,9 @@
           "Name": "Var3 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3096,11 +3022,9 @@
           "Name": "Var4 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3132,11 +3056,9 @@
           "Name": "Var5 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3168,11 +3090,9 @@
           "Name": "Var6 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         },
         {
           "button": {
@@ -3204,11 +3124,9 @@
           "Name": "Var7 Inc Length",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "DME_XPNDR",
-            "Serial": "SN-628-9AF"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Name": "Transponder",
+            "Serial": "SN-F83-546"
+          }
         }
       ]
     }

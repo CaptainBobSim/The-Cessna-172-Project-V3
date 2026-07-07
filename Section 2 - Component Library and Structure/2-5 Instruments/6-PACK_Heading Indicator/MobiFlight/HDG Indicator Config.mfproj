@@ -1,0 +1,557 @@
+{
+  "Name": "HDG Indicator Config",
+  "ConfigFiles": [
+    {
+      "Label": "HDG Indicator Config",
+      "FileName": "C:\\Users\\Trevor\\Documents\\GitHub\\The-Cessna-172-Project-V3\\Section 2 - Component Library and Structure\\2-5 Instruments\\6-PACK_Heading Indicator\\MobiFlight\\HDG Indicator Config.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "432ee95b-4bff-42b6-9ce2-58ce4e6a6344",
+              "Value": "(A:HEADING INDICATOR,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1800.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "5c9ade4a-4526-48b8-a310-b4d97f44163f",
+          "Active": true,
+          "Name": "Heading Card Raw FS2020",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$*10",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/gauges/indicators/heading_vacuum_deg_mag_pilot"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "a71da16d-ab3d-4e81-9649-c148e3fbd9b1",
+          "Active": false,
+          "Name": "Heading Card Raw XPLANE",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "432ee95b-4bff-42b6-9ce2-58ce4e6a6344",
+              "Value": "(A:HEADING INDICATOR,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 100.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "HDG Wheel",
+            "Address": "HDG Wheel",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 2040,
+            "CompassMode": false,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "HDG Wheel",
+          "GUID": "24cb5269-ee83-4f08-942a-dad90b87d67c",
+          "Active": true,
+          "Name": "Heading Card Accounting for Zero Position",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "($+(360-0))%360",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$-12",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5c9ade4a-4526-48b8-a310-b4d97f44163f",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "a71da16d-ab3d-4e81-9649-c148e3fbd9b1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e47210e8-7db4-4980-9f57-b3682fb3742d",
+              "Value": "(A:AUTOPILOT HEADING LOCK DIR,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 180.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc",
+          "Active": false,
+          "Name": "Heading Bug Raw FS2020",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 360.0,
+                  "360": 0.0
+                },
+                "Count": 2,
+                "Max": 360.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/autopilot/heading_mag"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "8cefc78d-ac7a-46f0-b7ec-fcdee599884e",
+          "Active": false,
+          "Name": "Heading Bug Raw XPLANE",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "90",
+                "Active": false
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "",
+                "Value": "",
+                "IfValue": "",
+                "ElseValue": "",
+                "Active": false
+              },
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 360.0,
+                  "360": 0.0
+                },
+                "Count": 2,
+                "Max": 360.0,
+                "Min": 0.0,
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e47210e8-7db4-4980-9f57-b3682fb3742d",
+              "Value": "(A:AUTOPILOT HEADING LOCK DIR,Degrees)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 180.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "HDG Bug",
+            "Address": "HDG Bug",
+            "InputRev": 360,
+            "TestValue": 500,
+            "OutputRev": 5200,
+            "CompassMode": true,
+            "Acceleration": 800,
+            "Speed": 467,
+            "Type": "Stepper"
+          },
+          "DeviceType": "Stepper",
+          "DeviceName": "HDG Bug",
+          "GUID": "7102e75f-de45-4a21-8705-6af4d4db60bf",
+          "Active": false,
+          "Name": "Heading Bug Accounting for Zero and Heading Card",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Interpolation",
+                "Values": {
+                  "0": 360.0,
+                  "360": 0.0
+                },
+                "Count": 2,
+                "Max": 360.0,
+                "Min": 0.0,
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "(($+#)+(360-0))%360",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$+5",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "5c9ade4a-4526-48b8-a310-b4d97f44163f",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": false,
+              "Ref": "a71da16d-ab3d-4e81-9649-c148e3fbd9b1",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": false,
+              "Ref": "08d41c5c-2cdc-46bc-a44b-aaf8f898b1cc",
+              "Placeholder": "!",
+              "TestValue": "1"
+            },
+            {
+              "Active": false,
+              "Ref": "8cefc78d-ac7a-46f0-b7ec-fcdee599884e",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/instruments/DG_sync_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/instruments/DG_sync_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG Adjust"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG Adjust",
+          "GUID": "f63b66ca-1aec-42d8-bcf5-811d02ba40b7",
+          "Active": false,
+          "Name": "HDG Drift Adjust XP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "AdjustStatusHDG",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_DEC)",
+              "PresetId": "170d189d-d9cd-4f8e-938e-a673668d60c8"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:GYRO_DRIFT_INC)",
+              "PresetId": "4c3cde84-00e4-4a98-83f3-0e015dab0929"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG Adjust"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG Adjust",
+          "GUID": "1eaf9404-17d2-4208-85a4-98fef275e03f",
+          "Active": true,
+          "Name": "HDG Drift Adjust FS2020",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "AdjustStatusHDG",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": false
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG AP Adjust"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG AP Adjust",
+          "GUID": "8534157f-111e-493a-b190-ef13ca466641",
+          "Active": false,
+          "Name": "HDG AP Bug Adjust XP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_DEC)",
+              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:HEADING_BUG_INC)",
+              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG AP Adjust"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG AP Adjust",
+          "GUID": "eb7a2950-dc81-4224-9902-3b4a41138ccc",
+          "Active": true,
+          "Name": "HDG AP Bug Adjust FS2020",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "AdjustStatusHDG",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "1"
+              }
+            },
+            "onRelease": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "AdjustStatusHDG",
+                "Number": 0.0,
+                "Text": "",
+                "Expression": "0"
+              }
+            },
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "HDG Adjust Push"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "HDG Adjust Push",
+          "GUID": "4a0604ee-9be4-441c-aac5-7f47927734ec",
+          "Active": true,
+          "Name": "HDG Adjust DG Push Status",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit/autopilot/heading",
+              "Expression": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "HDG AP Push"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "HDG AP Push",
+          "GUID": "3af015e2-f623-47dd-bed7-16b40fdc9955",
+          "Active": false,
+          "Name": "HDG Bug Push - Zero",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "6PACK-V1-1",
+            "Serial": "SN-49D-A33"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
